@@ -1,0 +1,30 @@
+name: Flutter CI
+on:
+  push:
+    branches:
+      - main  # mainブランチへのpush時に実行
+  pull_request:
+    branches:
+      - main  # mainブランチへのPR作成時に実行
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.3.0
+        with:
+          flutter-version: '3.29.2'
+          cache: true
+      - name: Clean Flutter build
+        run: flutter clean
+      - name: Install dependencies
+        run: flutter pub get
+      - name: Run linter
+        run: flutter analyze
+#      - name: Run tests
+#        run: flutter test

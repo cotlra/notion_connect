@@ -1,0 +1,19 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        generate_for:
+          include:
+            - lib/src/model/**/*.dart
+        options:
+          union_key: type
+          union_value_case: snake
+      json_serializable:
+        generate_for:
+          include:
+            - lib/src/model/**/*.dart
+        options:
+          field_rename: snake # none -> snake
+          explicit_to_json: true
+          checked: true
+          include_if_null: false
