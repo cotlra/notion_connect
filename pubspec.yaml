@@ -1,7 +1,7 @@
 name: notion_connect
 description: "API Client Package for Notion API"
 version: 0.0.1
-homepage:
+publish_to: none
 
 environment:
   sdk: ^3.6.0
