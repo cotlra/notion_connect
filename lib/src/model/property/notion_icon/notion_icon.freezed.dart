@@ -16,6 +16,8 @@ NotionIcon _$NotionIconFromJson(Map<String, dynamic> json) {
   switch (json['type']) {
     case 'emoji':
       return NotionEmoji.fromJson(json);
+    case 'custom_emoji':
+      return NotionCustomEmoji.fromJson(json);
     case 'internal':
       return NotionFileIcon.fromJson(json);
     case 'external':
@@ -127,6 +129,108 @@ class _$NotionEmojiCopyWithImpl<$Res> implements $NotionEmojiCopyWith<$Res> {
           : emoji // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class NotionCustomEmoji implements NotionIcon {
+  const NotionCustomEmoji({this.emoji, this.customEmoji, final String? $type})
+      : $type = $type ?? 'custom_emoji';
+  factory NotionCustomEmoji.fromJson(Map<String, dynamic> json) =>
+      _$NotionCustomEmojiFromJson(json);
+
+  final String? emoji;
+  final NotionCustomEmojiObject? customEmoji;
+
+  @JsonKey(name: 'type')
+  final String $type;
+
+  /// Create a copy of NotionIcon
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $NotionCustomEmojiCopyWith<NotionCustomEmoji> get copyWith =>
+      _$NotionCustomEmojiCopyWithImpl<NotionCustomEmoji>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$NotionCustomEmojiToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is NotionCustomEmoji &&
+            (identical(other.emoji, emoji) || other.emoji == emoji) &&
+            (identical(other.customEmoji, customEmoji) ||
+                other.customEmoji == customEmoji));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, emoji, customEmoji);
+
+  @override
+  String toString() {
+    return 'NotionIcon.customEmoji(emoji: $emoji, customEmoji: $customEmoji)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $NotionCustomEmojiCopyWith<$Res>
+    implements $NotionIconCopyWith<$Res> {
+  factory $NotionCustomEmojiCopyWith(
+          NotionCustomEmoji value, $Res Function(NotionCustomEmoji) _then) =
+      _$NotionCustomEmojiCopyWithImpl;
+  @useResult
+  $Res call({String? emoji, NotionCustomEmojiObject? customEmoji});
+
+  $NotionCustomEmojiObjectCopyWith<$Res>? get customEmoji;
+}
+
+/// @nodoc
+class _$NotionCustomEmojiCopyWithImpl<$Res>
+    implements $NotionCustomEmojiCopyWith<$Res> {
+  _$NotionCustomEmojiCopyWithImpl(this._self, this._then);
+
+  final NotionCustomEmoji _self;
+  final $Res Function(NotionCustomEmoji) _then;
+
+  /// Create a copy of NotionIcon
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? emoji = freezed,
+    Object? customEmoji = freezed,
+  }) {
+    return _then(NotionCustomEmoji(
+      emoji: freezed == emoji
+          ? _self.emoji
+          : emoji // ignore: cast_nullable_to_non_nullable
+              as String?,
+      customEmoji: freezed == customEmoji
+          ? _self.customEmoji
+          : customEmoji // ignore: cast_nullable_to_non_nullable
+              as NotionCustomEmojiObject?,
+    ));
+  }
+
+  /// Create a copy of NotionIcon
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $NotionCustomEmojiObjectCopyWith<$Res>? get customEmoji {
+    if (_self.customEmoji == null) {
+      return null;
+    }
+
+    return $NotionCustomEmojiObjectCopyWith<$Res>(_self.customEmoji!, (value) {
+      return _then(_self.copyWith(customEmoji: value));
+    });
   }
 }
 
@@ -621,6 +725,181 @@ class __$NotionExternalIconObjectCopyWithImpl<$Res>
       expiryTime: freezed == expiryTime
           ? _self.expiryTime
           : expiryTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+mixin _$NotionCustomEmojiObject {
+  String? get id;
+  String? get name;
+  String? get url;
+
+  /// Create a copy of NotionCustomEmojiObject
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $NotionCustomEmojiObjectCopyWith<NotionCustomEmojiObject> get copyWith =>
+      _$NotionCustomEmojiObjectCopyWithImpl<NotionCustomEmojiObject>(
+          this as NotionCustomEmojiObject, _$identity);
+
+  /// Serializes this NotionCustomEmojiObject to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is NotionCustomEmojiObject &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, name, url);
+
+  @override
+  String toString() {
+    return 'NotionCustomEmojiObject(id: $id, name: $name, url: $url)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $NotionCustomEmojiObjectCopyWith<$Res> {
+  factory $NotionCustomEmojiObjectCopyWith(NotionCustomEmojiObject value,
+          $Res Function(NotionCustomEmojiObject) _then) =
+      _$NotionCustomEmojiObjectCopyWithImpl;
+  @useResult
+  $Res call({String? id, String? name, String? url});
+}
+
+/// @nodoc
+class _$NotionCustomEmojiObjectCopyWithImpl<$Res>
+    implements $NotionCustomEmojiObjectCopyWith<$Res> {
+  _$NotionCustomEmojiObjectCopyWithImpl(this._self, this._then);
+
+  final NotionCustomEmojiObject _self;
+  final $Res Function(NotionCustomEmojiObject) _then;
+
+  /// Create a copy of NotionCustomEmojiObject
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
+  }) {
+    return _then(_self.copyWith(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      url: freezed == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _NotionCustomEmojiObject implements NotionCustomEmojiObject {
+  const _NotionCustomEmojiObject({this.id, this.name, this.url});
+  factory _NotionCustomEmojiObject.fromJson(Map<String, dynamic> json) =>
+      _$NotionCustomEmojiObjectFromJson(json);
+
+  @override
+  final String? id;
+  @override
+  final String? name;
+  @override
+  final String? url;
+
+  /// Create a copy of NotionCustomEmojiObject
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$NotionCustomEmojiObjectCopyWith<_NotionCustomEmojiObject> get copyWith =>
+      __$NotionCustomEmojiObjectCopyWithImpl<_NotionCustomEmojiObject>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$NotionCustomEmojiObjectToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _NotionCustomEmojiObject &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, name, url);
+
+  @override
+  String toString() {
+    return 'NotionCustomEmojiObject(id: $id, name: $name, url: $url)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$NotionCustomEmojiObjectCopyWith<$Res>
+    implements $NotionCustomEmojiObjectCopyWith<$Res> {
+  factory _$NotionCustomEmojiObjectCopyWith(_NotionCustomEmojiObject value,
+          $Res Function(_NotionCustomEmojiObject) _then) =
+      __$NotionCustomEmojiObjectCopyWithImpl;
+  @override
+  @useResult
+  $Res call({String? id, String? name, String? url});
+}
+
+/// @nodoc
+class __$NotionCustomEmojiObjectCopyWithImpl<$Res>
+    implements _$NotionCustomEmojiObjectCopyWith<$Res> {
+  __$NotionCustomEmojiObjectCopyWithImpl(this._self, this._then);
+
+  final _NotionCustomEmojiObject _self;
+  final $Res Function(_NotionCustomEmojiObject) _then;
+
+  /// Create a copy of NotionCustomEmojiObject
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
+  }) {
+    return _then(_NotionCustomEmojiObject(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      url: freezed == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }

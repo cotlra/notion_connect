@@ -8,6 +8,10 @@ sealed class NotionIcon with _$NotionIcon {
   const factory NotionIcon.emoji({
     String? emoji,
   }) = NotionEmoji;
+  const factory NotionIcon.customEmoji({
+    String? emoji,
+    NotionCustomEmojiObject? customEmoji,
+  }) = NotionCustomEmoji;
   const factory NotionIcon.internal({
     NotionFileIconObject? file,
   }) = NotionFileIcon;
@@ -38,4 +42,16 @@ abstract class NotionExternalIconObject with _$NotionExternalIconObject {
 
   factory NotionExternalIconObject.fromJson(Map<String, dynamic> json) =>
       _$NotionExternalIconObjectFromJson(json);
+}
+
+@freezed
+abstract class NotionCustomEmojiObject with _$NotionCustomEmojiObject {
+  const factory NotionCustomEmojiObject({
+    String? id,
+    String? name,
+    String? url,
+  }) = _NotionCustomEmojiObject;
+
+  factory NotionCustomEmojiObject.fromJson(Map<String, dynamic> json) =>
+      _$NotionCustomEmojiObjectFromJson(json);
 }
