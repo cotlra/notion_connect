@@ -12,9 +12,13 @@ _NotionDate _$NotionDateFromJson(Map<String, dynamic> json) => $checkedCreate(
       ($checkedConvert) {
         final val = _NotionDate(
           start: $checkedConvert(
-              'start', (v) => v == null ? null : DateTime.parse(v as String)),
+              'start',
+              (v) => _$JsonConverterFromJson<String, DateTime>(
+                  v, const DateConverter().fromJson)),
           end: $checkedConvert(
-              'end', (v) => v == null ? null : DateTime.parse(v as String)),
+              'end',
+              (v) => _$JsonConverterFromJson<String, DateTime>(
+                  v, const DateConverter().fromJson)),
           timeZone: $checkedConvert('time_zone', (v) => v as String?),
         );
         return val;
@@ -24,7 +28,25 @@ _NotionDate _$NotionDateFromJson(Map<String, dynamic> json) => $checkedCreate(
 
 Map<String, dynamic> _$NotionDateToJson(_NotionDate instance) =>
     <String, dynamic>{
-      if (instance.start?.toIso8601String() case final value?) 'start': value,
-      if (instance.end?.toIso8601String() case final value?) 'end': value,
+      if (_$JsonConverterToJson<String, DateTime>(
+              instance.start, const DateConverter().toJson)
+          case final value?)
+        'start': value,
+      if (_$JsonConverterToJson<String, DateTime>(
+              instance.end, const DateConverter().toJson)
+          case final value?)
+        'end': value,
       if (instance.timeZone case final value?) 'time_zone': value,
     };
+
+Value? _$JsonConverterFromJson<Json, Value>(
+  Object? json,
+  Value? Function(Json json) fromJson,
+) =>
+    json == null ? null : fromJson(json as Json);
+
+Json? _$JsonConverterToJson<Json, Value>(
+  Value? value,
+  Json? Function(Value value) toJson,
+) =>
+    value == null ? null : toJson(value);

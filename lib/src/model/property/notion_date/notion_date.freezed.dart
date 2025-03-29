@@ -15,7 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionDate {
+  @DateConverter()
   DateTime? get start;
+  @DateConverter()
   DateTime? get end;
   String? get timeZone;
 
@@ -56,7 +58,10 @@ abstract mixin class $NotionDateCopyWith<$Res> {
           NotionDate value, $Res Function(NotionDate) _then) =
       _$NotionDateCopyWithImpl;
   @useResult
-  $Res call({DateTime? start, DateTime? end, String? timeZone});
+  $Res call(
+      {@DateConverter() DateTime? start,
+      @DateConverter() DateTime? end,
+      String? timeZone});
 }
 
 /// @nodoc
@@ -95,13 +100,16 @@ class _$NotionDateCopyWithImpl<$Res> implements $NotionDateCopyWith<$Res> {
 /// @nodoc
 @JsonSerializable()
 class _NotionDate implements NotionDate {
-  const _NotionDate({this.start, this.end, this.timeZone});
+  const _NotionDate(
+      {@DateConverter() this.start, @DateConverter() this.end, this.timeZone});
   factory _NotionDate.fromJson(Map<String, dynamic> json) =>
       _$NotionDateFromJson(json);
 
   @override
+  @DateConverter()
   final DateTime? start;
   @override
+  @DateConverter()
   final DateTime? end;
   @override
   final String? timeZone;
@@ -150,7 +158,10 @@ abstract mixin class _$NotionDateCopyWith<$Res>
       __$NotionDateCopyWithImpl;
   @override
   @useResult
-  $Res call({DateTime? start, DateTime? end, String? timeZone});
+  $Res call(
+      {@DateConverter() DateTime? start,
+      @DateConverter() DateTime? end,
+      String? timeZone});
 }
 
 /// @nodoc

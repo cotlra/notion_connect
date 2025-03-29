@@ -11,29 +11,56 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+This package is Notion API client.
+
+About Notion API, See [Notion API document](https://developers.notion.com/reference/intro).
 
 ## Getting started
+Install dio package.
+```console
+flutter pub add dio
+```
+or
+```console
+dart pub add dio
+```
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Next, Install notion_connect.
+```yaml
+dependencies:
+  notion_connect:
+    git:
+      url: https://github.com/cotlra/notion_connect
+      ref: main
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+Create NotionApiClient instance and use it.
 ```dart
-const like = 'sample';
+final options = BaseOptions(
+  connectTimeout: const Duration(milliseconds: 5000),
+  receiveTimeout: const Duration(seconds: 10),
+);
+final dio = Dio(options);
+final client = NotionApiClient(
+  dio,
+  'secret_xxxxxxxxxx...',
+);
+
+final res = await client.retrievePage(
+  pageId: 'xxxxxxxxxx...',
+);
+
+print(res.id);
+
+final res = await client.createPage(
+  data: NotionPage()
+);
+
+print(res.id);
+
+
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
