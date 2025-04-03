@@ -114,12 +114,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionBlockList> appendBlockChildren({
+    required String authorization,
     required String blockId,
     required Map<String, dynamic> data,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data);
     final _options = _setStreamType<NotionBlockList>(
@@ -144,10 +146,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionBlock> retrieveBlock({required String blockId}) async {
+  Future<NotionBlock> retrieveBlock({
+    required String authorization,
+    required String blockId,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionBlock>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -172,6 +178,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionBlockList> retrieveBlockChildren({
+    required String authorization,
     required String blockId,
     String? startCursor,
     int? pageSize,
@@ -182,7 +189,8 @@ class _NotionApiClientBase implements NotionApiClientBase {
       r'page_size': pageSize,
     };
     queryParameters.removeWhere((k, v) => v == null);
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionBlockList>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -207,12 +215,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionBlock> updateBlock({
+    required String authorization,
     required String blockId,
     required NotionBlock data,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = data;
     final _options = _setStreamType<NotionBlock>(
       Options(method: 'PATCH', headers: _headers, extra: _extra)
@@ -236,10 +246,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionBlock> deleteBlock({required String blockId}) async {
+  Future<NotionBlock> deleteBlock({
+    required String authorization,
+    required String blockId,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionBlock>(
       Options(method: 'DELETE', headers: _headers, extra: _extra)
@@ -263,10 +277,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionPage> createPage({required NotionPage data}) async {
+  Future<NotionPage> createPage({
+    required String authorization,
+    required NotionPage data,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data.toJson());
     final _options = _setStreamType<NotionPage>(
@@ -292,6 +310,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionPage> retrievePage({
+    required String authorization,
     required String pageId,
     List<String>? filterProperties,
   }) async {
@@ -300,7 +319,8 @@ class _NotionApiClientBase implements NotionApiClientBase {
       r'filter_properties[]': filterProperties,
     };
     queryParameters.removeWhere((k, v) => v == null);
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionPage>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -325,6 +345,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionPagePropertyItem> retrievePagePropertyItem({
+    required String authorization,
     required String pageId,
     required String propertyId,
     String? startCursor,
@@ -336,7 +357,8 @@ class _NotionApiClientBase implements NotionApiClientBase {
       r'page_size': pageSize,
     };
     queryParameters.removeWhere((k, v) => v == null);
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionPagePropertyItem>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -361,12 +383,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionPage> updatePageProperties({
+    required String authorization,
     required String pageId,
     required NotionPage data,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data.toJson());
     final _options = _setStreamType<NotionPage>(
@@ -391,10 +415,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionDatabase> createDatabase({required NotionDatabase data}) async {
+  Future<NotionDatabase> createDatabase({
+    required String authorization,
+    required NotionDatabase data,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data.toJson());
     final _options = _setStreamType<NotionDatabase>(
@@ -420,6 +448,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionPageOrDatabaseList> queryDatabase({
+    required String authorization,
     required String databaseId,
     required Map<String, dynamic> data,
     String? filterProperties,
@@ -429,7 +458,8 @@ class _NotionApiClientBase implements NotionApiClientBase {
       r'filter_properties': filterProperties,
     };
     queryParameters.removeWhere((k, v) => v == null);
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data);
     final _options = _setStreamType<NotionPageOrDatabaseList>(
@@ -454,10 +484,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionDatabase> retrieveDatabase({required String databaseId}) async {
+  Future<NotionDatabase> retrieveDatabase({
+    required String authorization,
+    required String databaseId,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionDatabase>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -482,12 +516,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionDatabase> updateDatabase({
+    required String authorization,
     required String databaseId,
     required NotionDatabase data,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data.toJson());
     final _options = _setStreamType<NotionDatabase>(
@@ -513,6 +549,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionUserList> listAllUsers({
+    required String authorization,
     String? startCursor,
     int? pageSize,
   }) async {
@@ -522,7 +559,8 @@ class _NotionApiClientBase implements NotionApiClientBase {
       r'page_size': pageSize,
     };
     queryParameters.removeWhere((k, v) => v == null);
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionUserList>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -546,10 +584,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionUser> retrieveUser({required String userId}) async {
+  Future<NotionUser> retrieveUser({
+    required String authorization,
+    required String userId,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionUser>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -573,10 +615,13 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionUser> retrieveMyTokensBotUser() async {
+  Future<NotionUser> retrieveMyTokensBotUser({
+    required String authorization,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionUser>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -600,10 +645,14 @@ class _NotionApiClientBase implements NotionApiClientBase {
   }
 
   @override
-  Future<NotionComment> createComment({required NotionComment data}) async {
+  Future<NotionComment> createComment({
+    required String authorization,
+    required NotionComment data,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = data;
     final _options = _setStreamType<NotionComment>(
       Options(method: 'POST', headers: _headers, extra: _extra)
@@ -628,6 +677,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionCommentList> retrieveComments({
+    required String authorization,
     String? blockId,
     String? startCursor,
     int? pageSize,
@@ -639,7 +689,8 @@ class _NotionApiClientBase implements NotionApiClientBase {
       r'page_size': pageSize,
     };
     queryParameters.removeWhere((k, v) => v == null);
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<NotionCommentList>(
       Options(method: 'GET', headers: _headers, extra: _extra)
@@ -664,11 +715,13 @@ class _NotionApiClientBase implements NotionApiClientBase {
 
   @override
   Future<NotionPageOrDatabaseList> searchByTitle({
+    required String authorization,
     required Map<String, dynamic> data,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Authorization': authorization};
+    _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
     _data.addAll(data);
     final _options = _setStreamType<NotionPageOrDatabaseList>(

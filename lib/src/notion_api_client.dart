@@ -18,13 +18,10 @@ import 'model/query/notion_sort/notion_sort.dart';
 import 'notion_api_client_base.dart';
 
 class NotionApiClient {
-  NotionApiClient(Dio dio, String integrationId) {
+  NotionApiClient(Dio dio) {
     dio.options.contentType = 'application/json';
     if (!dio.options.headers.containsKey('Notion-Version')) {
       dio.options.headers['Notion-Version'] = '2022-06-28';
-    }
-    if (!dio.options.headers.containsKey('Authorization')) {
-      dio.options.headers['Authorization'] = 'Bearer $integrationId';
     }
     client = NotionApiClientBase(dio);
   }
@@ -52,11 +49,13 @@ class NotionApiClient {
   }
 
   Future<NotionBlockList> appendBlockChildren({
+    required String token,
     required String blockId,
     required List<NotionBlock> children,
     String? after,
   }) {
     return client.appendBlockChildren(
+      authorization: _getAuthorization(token),
       blockId: blockId,
       data: {
         'children': children.map((e) => e.toJson()).toList(),
@@ -66,17 +65,21 @@ class NotionApiClient {
   }
 
   Future<NotionBlock> retrieveBlock({
+    required String token,
     required String blockId,
   }) {
-    return client.retrieveBlock(blockId: blockId);
+    return client.retrieveBlock(
+        authorization: _getAuthorization(token), blockId: blockId);
   }
 
   Future<NotionBlockList> retrieveBlockChildren({
+    required String token,
     required String blockId,
     String? startCursor,
     int? pageSize,
   }) {
     return client.retrieveBlockChildren(
+      authorization: _getAuthorization(token),
       blockId: blockId,
       startCursor: startCursor,
       pageSize: pageSize,
@@ -84,45 +87,55 @@ class NotionApiClient {
   }
 
   Future<NotionBlock> updateBlock({
+    required String token,
     required String blockId,
     required NotionBlock data,
     bool? archived,
   }) {
     return client.updateBlock(
+      authorization: _getAuthorization(token),
       blockId: blockId,
       data: data,
     );
   }
 
   Future<NotionBlock> deleteBlock({
+    required String token,
     required String blockId,
   }) {
-    return client.deleteBlock(blockId: blockId);
+    return client.deleteBlock(
+        authorization: _getAuthorization(token), blockId: blockId);
   }
 
   Future<NotionPage> createPage({
+    required String token,
     required NotionPage data,
   }) {
-    return client.createPage(data: data);
+    return client.createPage(
+        authorization: _getAuthorization(token), data: data);
   }
 
   Future<NotionPage> retrievePage({
+    required String token,
     required String pageId,
     List<String>? filterProperties,
   }) {
     return client.retrievePage(
+      authorization: _getAuthorization(token),
       pageId: pageId,
       filterProperties: filterProperties,
     );
   }
 
   Future<NotionPagePropertyItem> retrievePagePropertyItem({
+    required String token,
     required String pageId,
     required String propertyId,
     String? startCursor,
     int? pageSize,
   }) {
     return client.retrievePagePropertyItem(
+      authorization: _getAuthorization(token),
       pageId: pageId,
       propertyId: propertyId,
       startCursor: startCursor,
@@ -131,19 +144,24 @@ class NotionApiClient {
   }
 
   Future<NotionPage> updatePageProperties({
+    required String token,
     required String pageId,
     required NotionPage data,
   }) {
-    return client.updatePageProperties(pageId: pageId, data: data);
+    return client.updatePageProperties(
+        authorization: _getAuthorization(token), pageId: pageId, data: data);
   }
 
   Future<NotionDatabase> createDatabase({
+    required String token,
     required NotionDatabase data,
   }) {
-    return client.createDatabase(data: data);
+    return client.createDatabase(
+        authorization: _getAuthorization(token), data: data);
   }
 
   Future<NotionPageOrDatabaseList> queryDatabase({
+    required String token,
     required String databaseId,
     String? filterProperties,
     NotionFilter? filter,
@@ -152,6 +170,7 @@ class NotionApiClient {
     int? pageSize,
   }) {
     return client.queryDatabase(
+      authorization: _getAuthorization(token),
       databaseId: databaseId,
       filterProperties: filterProperties,
       data: {
@@ -164,47 +183,69 @@ class NotionApiClient {
   }
 
   Future<NotionDatabase> retrieveDatabase({
+    required String token,
     required String databaseId,
   }) {
-    return client.retrieveDatabase(databaseId: databaseId);
+    return client.retrieveDatabase(
+        authorization: _getAuthorization(token), databaseId: databaseId);
   }
 
   Future<NotionDatabase> updateDatabase({
+    required String token,
     required String databaseId,
     required NotionDatabase data,
   }) {
-    return client.updateDatabase(databaseId: databaseId, data: data);
+    return client.updateDatabase(
+        authorization: _getAuthorization(token),
+        databaseId: databaseId,
+        data: data);
   }
 
   Future<NotionUserList> listAllUsers({
+    required String token,
     String? startCursor,
     int? pageSize,
   }) {
-    return client.listAllUsers(startCursor: startCursor, pageSize: pageSize);
+    return client.listAllUsers(
+        authorization: _getAuthorization(token),
+        startCursor: startCursor,
+        pageSize: pageSize);
   }
 
   Future<NotionUser> retrieveUser({
+    required String token,
     required String userId,
   }) {
-    return client.retrieveUser(userId: userId);
+    return client.retrieveUser(
+        authorization: _getAuthorization(token), userId: userId);
   }
 
-  Future<NotionUser> retrieveMyTokensBotUser() {
-    return client.retrieveMyTokensBotUser();
+  Future<NotionUser> retrieveMyTokensBotUser({
+    required String token,
+  }) {
+    return client.retrieveMyTokensBotUser(
+      authorization: _getAuthorization(token),
+    );
   }
 
   Future<NotionComment> createComment({
+    required String token,
     required NotionComment data,
   }) {
-    return client.createComment(data: data);
+    return client.createComment(
+      authorization: _getAuthorization(token),
+      data: data,
+    );
   }
 
   Future<NotionCommentList> retrieveComments({
+    required String token,
     String? blockId,
     String? startCursor,
     int? pageSize,
   }) {
     return client.retrieveComments(
+      authorization: _getAuthorization(token),
       blockId: blockId,
       startCursor: startCursor,
       pageSize: pageSize,
@@ -212,6 +253,7 @@ class NotionApiClient {
   }
 
   Future<NotionPageOrDatabaseList> searchByTitle({
+    required String token,
     String? query,
     NotionFilter? filter,
     NotionEntryTimestampSort? sort,
@@ -219,6 +261,7 @@ class NotionApiClient {
     int? pageSize,
   }) {
     return client.searchByTitle(
+      authorization: _getAuthorization(token),
       data: {
         if (query != null) 'query': query,
         if (filter != null) 'filter': filter.toJson(),
@@ -227,5 +270,9 @@ class NotionApiClient {
         if (pageSize != null) 'page_size': pageSize,
       },
     );
+  }
+
+  String _getAuthorization(String token) {
+    return 'Bearer $token';
   }
 }
