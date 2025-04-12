@@ -77,19 +77,19 @@ class Date extends DateTime {
   }
 
   @override
-  int get hour => throw UnimplementedError();
+  int get hour => 0;
 
   @override
-  int get minute => throw UnimplementedError();
+  int get minute => 0;
 
   @override
-  int get second => throw UnimplementedError();
+  int get second => 0;
 
   @override
-  int get millisecond => throw UnimplementedError();
+  int get millisecond => 0;
 
   @override
-  int get microsecond => throw UnimplementedError();
+  int get microsecond => 0;
 
   @override
   String toString() {
