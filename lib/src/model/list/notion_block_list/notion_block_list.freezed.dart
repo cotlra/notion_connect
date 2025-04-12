@@ -15,9 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionBlockList {
+  bool get hasMore;
   List<NotionBlock> get results;
   String? get nextCursor;
-  bool get hasMore;
 
   /// Create a copy of NotionBlockList
   /// with the given fields replaced by the non-null parameter values.
@@ -35,20 +35,20 @@ mixin _$NotionBlockList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionBlockList &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             const DeepCollectionEquality().equals(other.results, results) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
+                other.nextCursor == nextCursor));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(results), nextCursor, hasMore);
+  int get hashCode => Object.hash(runtimeType, hasMore,
+      const DeepCollectionEquality().hash(results), nextCursor);
 
   @override
   String toString() {
-    return 'NotionBlockList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
+    return 'NotionBlockList(hasMore: $hasMore, results: $results, nextCursor: $nextCursor)';
   }
 }
 
@@ -58,7 +58,7 @@ abstract mixin class $NotionBlockListCopyWith<$Res> {
           NotionBlockList value, $Res Function(NotionBlockList) _then) =
       _$NotionBlockListCopyWithImpl;
   @useResult
-  $Res call({List<NotionBlock> results, String? nextCursor, bool hasMore});
+  $Res call({bool hasMore, List<NotionBlock> results, String? nextCursor});
 }
 
 /// @nodoc
@@ -74,11 +74,15 @@ class _$NotionBlockListCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? hasMore = null,
     Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = null,
   }) {
     return _then(_self.copyWith(
+      hasMore: null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
       results: null == results
           ? _self.results
           : results // ignore: cast_nullable_to_non_nullable
@@ -87,10 +91,6 @@ class _$NotionBlockListCopyWithImpl<$Res>
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: null == hasMore
-          ? _self.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }
@@ -99,13 +99,15 @@ class _$NotionBlockListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionBlockList implements NotionBlockList {
   const _NotionBlockList(
-      {final List<NotionBlock> results = const [],
-      this.nextCursor,
-      required this.hasMore})
+      {required this.hasMore,
+      final List<NotionBlock> results = const [],
+      this.nextCursor})
       : _results = results;
   factory _NotionBlockList.fromJson(Map<String, dynamic> json) =>
       _$NotionBlockListFromJson(json);
 
+  @override
+  final bool hasMore;
   final List<NotionBlock> _results;
   @override
   @JsonKey()
@@ -117,8 +119,6 @@ class _NotionBlockList implements NotionBlockList {
 
   @override
   final String? nextCursor;
-  @override
-  final bool hasMore;
 
   /// Create a copy of NotionBlockList
   /// with the given fields replaced by the non-null parameter values.
@@ -140,20 +140,20 @@ class _NotionBlockList implements NotionBlockList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _NotionBlockList &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             const DeepCollectionEquality().equals(other._results, _results) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
+                other.nextCursor == nextCursor));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_results), nextCursor, hasMore);
+  int get hashCode => Object.hash(runtimeType, hasMore,
+      const DeepCollectionEquality().hash(_results), nextCursor);
 
   @override
   String toString() {
-    return 'NotionBlockList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
+    return 'NotionBlockList(hasMore: $hasMore, results: $results, nextCursor: $nextCursor)';
   }
 }
 
@@ -165,7 +165,7 @@ abstract mixin class _$NotionBlockListCopyWith<$Res>
       __$NotionBlockListCopyWithImpl;
   @override
   @useResult
-  $Res call({List<NotionBlock> results, String? nextCursor, bool hasMore});
+  $Res call({bool hasMore, List<NotionBlock> results, String? nextCursor});
 }
 
 /// @nodoc
@@ -181,11 +181,15 @@ class __$NotionBlockListCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
+    Object? hasMore = null,
     Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = null,
   }) {
     return _then(_NotionBlockList(
+      hasMore: null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
       results: null == results
           ? _self._results
           : results // ignore: cast_nullable_to_non_nullable
@@ -194,10 +198,6 @@ class __$NotionBlockListCopyWithImpl<$Res>
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: null == hasMore
-          ? _self.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }

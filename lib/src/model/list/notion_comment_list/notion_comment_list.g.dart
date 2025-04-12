@@ -12,6 +12,7 @@ _NotionCommentList _$NotionCommentListFromJson(Map<String, dynamic> json) =>
       json,
       ($checkedConvert) {
         final val = _NotionCommentList(
+          hasMore: $checkedConvert('has_more', (v) => v as bool),
           results: $checkedConvert(
               'results',
               (v) =>
@@ -21,16 +22,15 @@ _NotionCommentList _$NotionCommentListFromJson(Map<String, dynamic> json) =>
                       .toList() ??
                   const []),
           nextCursor: $checkedConvert('next_cursor', (v) => v as String?),
-          hasMore: $checkedConvert('has_more', (v) => v as bool),
         );
         return val;
       },
-      fieldKeyMap: const {'nextCursor': 'next_cursor', 'hasMore': 'has_more'},
+      fieldKeyMap: const {'hasMore': 'has_more', 'nextCursor': 'next_cursor'},
     );
 
 Map<String, dynamic> _$NotionCommentListToJson(_NotionCommentList instance) =>
     <String, dynamic>{
+      'has_more': instance.hasMore,
       'results': instance.results.map((e) => e.toJson()).toList(),
       if (instance.nextCursor case final value?) 'next_cursor': value,
-      'has_more': instance.hasMore,
     };

@@ -13,6 +13,7 @@ _NotionPageOrDatabaseList _$NotionPageOrDatabaseListFromJson(
       json,
       ($checkedConvert) {
         final val = _NotionPageOrDatabaseList(
+          hasMore: $checkedConvert('has_more', (v) => v as bool),
           results: $checkedConvert(
               'results',
               (v) =>
@@ -22,17 +23,16 @@ _NotionPageOrDatabaseList _$NotionPageOrDatabaseListFromJson(
                       .toList() ??
                   const []),
           nextCursor: $checkedConvert('next_cursor', (v) => v as String?),
-          hasMore: $checkedConvert('has_more', (v) => v as bool),
         );
         return val;
       },
-      fieldKeyMap: const {'nextCursor': 'next_cursor', 'hasMore': 'has_more'},
+      fieldKeyMap: const {'hasMore': 'has_more', 'nextCursor': 'next_cursor'},
     );
 
 Map<String, dynamic> _$NotionPageOrDatabaseListToJson(
         _NotionPageOrDatabaseList instance) =>
     <String, dynamic>{
+      'has_more': instance.hasMore,
       'results': instance.results.map((e) => e.toJson()).toList(),
       if (instance.nextCursor case final value?) 'next_cursor': value,
-      'has_more': instance.hasMore,
     };

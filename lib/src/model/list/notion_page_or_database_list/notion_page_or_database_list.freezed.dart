@@ -15,9 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionPageOrDatabaseList {
+  bool get hasMore;
   List<NotionPageOrDatabase> get results;
   String? get nextCursor;
-  bool get hasMore;
 
   /// Create a copy of NotionPageOrDatabaseList
   /// with the given fields replaced by the non-null parameter values.
@@ -35,20 +35,20 @@ mixin _$NotionPageOrDatabaseList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionPageOrDatabaseList &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             const DeepCollectionEquality().equals(other.results, results) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
+                other.nextCursor == nextCursor));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(results), nextCursor, hasMore);
+  int get hashCode => Object.hash(runtimeType, hasMore,
+      const DeepCollectionEquality().hash(results), nextCursor);
 
   @override
   String toString() {
-    return 'NotionPageOrDatabaseList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
+    return 'NotionPageOrDatabaseList(hasMore: $hasMore, results: $results, nextCursor: $nextCursor)';
   }
 }
 
@@ -59,7 +59,7 @@ abstract mixin class $NotionPageOrDatabaseListCopyWith<$Res> {
       _$NotionPageOrDatabaseListCopyWithImpl;
   @useResult
   $Res call(
-      {List<NotionPageOrDatabase> results, String? nextCursor, bool hasMore});
+      {bool hasMore, List<NotionPageOrDatabase> results, String? nextCursor});
 }
 
 /// @nodoc
@@ -75,11 +75,15 @@ class _$NotionPageOrDatabaseListCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? hasMore = null,
     Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = null,
   }) {
     return _then(_self.copyWith(
+      hasMore: null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
       results: null == results
           ? _self.results
           : results // ignore: cast_nullable_to_non_nullable
@@ -88,10 +92,6 @@ class _$NotionPageOrDatabaseListCopyWithImpl<$Res>
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: null == hasMore
-          ? _self.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }
@@ -100,13 +100,15 @@ class _$NotionPageOrDatabaseListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionPageOrDatabaseList implements NotionPageOrDatabaseList {
   const _NotionPageOrDatabaseList(
-      {final List<NotionPageOrDatabase> results = const [],
-      this.nextCursor,
-      required this.hasMore})
+      {required this.hasMore,
+      final List<NotionPageOrDatabase> results = const [],
+      this.nextCursor})
       : _results = results;
   factory _NotionPageOrDatabaseList.fromJson(Map<String, dynamic> json) =>
       _$NotionPageOrDatabaseListFromJson(json);
 
+  @override
+  final bool hasMore;
   final List<NotionPageOrDatabase> _results;
   @override
   @JsonKey()
@@ -118,8 +120,6 @@ class _NotionPageOrDatabaseList implements NotionPageOrDatabaseList {
 
   @override
   final String? nextCursor;
-  @override
-  final bool hasMore;
 
   /// Create a copy of NotionPageOrDatabaseList
   /// with the given fields replaced by the non-null parameter values.
@@ -142,20 +142,20 @@ class _NotionPageOrDatabaseList implements NotionPageOrDatabaseList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _NotionPageOrDatabaseList &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             const DeepCollectionEquality().equals(other._results, _results) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
+                other.nextCursor == nextCursor));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_results), nextCursor, hasMore);
+  int get hashCode => Object.hash(runtimeType, hasMore,
+      const DeepCollectionEquality().hash(_results), nextCursor);
 
   @override
   String toString() {
-    return 'NotionPageOrDatabaseList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
+    return 'NotionPageOrDatabaseList(hasMore: $hasMore, results: $results, nextCursor: $nextCursor)';
   }
 }
 
@@ -168,7 +168,7 @@ abstract mixin class _$NotionPageOrDatabaseListCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {List<NotionPageOrDatabase> results, String? nextCursor, bool hasMore});
+      {bool hasMore, List<NotionPageOrDatabase> results, String? nextCursor});
 }
 
 /// @nodoc
@@ -184,11 +184,15 @@ class __$NotionPageOrDatabaseListCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
+    Object? hasMore = null,
     Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = null,
   }) {
     return _then(_NotionPageOrDatabaseList(
+      hasMore: null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
       results: null == results
           ? _self._results
           : results // ignore: cast_nullable_to_non_nullable
@@ -197,10 +201,6 @@ class __$NotionPageOrDatabaseListCopyWithImpl<$Res>
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: null == hasMore
-          ? _self.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }

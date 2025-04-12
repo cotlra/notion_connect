@@ -8,9 +8,9 @@ part 'notion_page_or_database_list.g.dart';
 @freezed
 abstract class NotionPageOrDatabaseList with _$NotionPageOrDatabaseList {
   const factory NotionPageOrDatabaseList({
-    @Default(const []) List<NotionPageOrDatabase> results,
-    String? nextCursor,
     required bool hasMore,
+    @Default([]) List<NotionPageOrDatabase> results,
+    String? nextCursor,
   }) = _NotionPageOrDatabaseList;
 
   factory NotionPageOrDatabaseList.fromJson(Map<String, dynamic> json) =>

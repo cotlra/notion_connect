@@ -15,9 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionUserList {
-  List<NotionUser>? get results;
-  String? get nextCursor;
   bool get hasMore;
+  List<NotionUser> get results;
+  String? get nextCursor;
 
   /// Create a copy of NotionUserList
   /// with the given fields replaced by the non-null parameter values.
@@ -35,20 +35,20 @@ mixin _$NotionUserList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionUserList &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             const DeepCollectionEquality().equals(other.results, results) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
+                other.nextCursor == nextCursor));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(results), nextCursor, hasMore);
+  int get hashCode => Object.hash(runtimeType, hasMore,
+      const DeepCollectionEquality().hash(results), nextCursor);
 
   @override
   String toString() {
-    return 'NotionUserList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
+    return 'NotionUserList(hasMore: $hasMore, results: $results, nextCursor: $nextCursor)';
   }
 }
 
@@ -58,7 +58,7 @@ abstract mixin class $NotionUserListCopyWith<$Res> {
           NotionUserList value, $Res Function(NotionUserList) _then) =
       _$NotionUserListCopyWithImpl;
   @useResult
-  $Res call({List<NotionUser>? results, String? nextCursor, bool hasMore});
+  $Res call({bool hasMore, List<NotionUser> results, String? nextCursor});
 }
 
 /// @nodoc
@@ -74,23 +74,23 @@ class _$NotionUserListCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
-    Object? nextCursor = freezed,
     Object? hasMore = null,
+    Object? results = null,
+    Object? nextCursor = freezed,
   }) {
     return _then(_self.copyWith(
-      results: freezed == results
-          ? _self.results
-          : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionUser>?,
-      nextCursor: freezed == nextCursor
-          ? _self.nextCursor
-          : nextCursor // ignore: cast_nullable_to_non_nullable
-              as String?,
       hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
               as bool,
+      results: null == results
+          ? _self.results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<NotionUser>,
+      nextCursor: freezed == nextCursor
+          ? _self.nextCursor
+          : nextCursor // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -99,28 +99,26 @@ class _$NotionUserListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionUserList implements NotionUserList {
   const _NotionUserList(
-      {final List<NotionUser>? results = const [],
-      this.nextCursor,
-      required this.hasMore})
+      {required this.hasMore,
+      final List<NotionUser> results = const [],
+      this.nextCursor})
       : _results = results;
   factory _NotionUserList.fromJson(Map<String, dynamic> json) =>
       _$NotionUserListFromJson(json);
 
-  final List<NotionUser>? _results;
+  @override
+  final bool hasMore;
+  final List<NotionUser> _results;
   @override
   @JsonKey()
-  List<NotionUser>? get results {
-    final value = _results;
-    if (value == null) return null;
+  List<NotionUser> get results {
     if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_results);
   }
 
   @override
   final String? nextCursor;
-  @override
-  final bool hasMore;
 
   /// Create a copy of NotionUserList
   /// with the given fields replaced by the non-null parameter values.
@@ -142,20 +140,20 @@ class _NotionUserList implements NotionUserList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _NotionUserList &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             const DeepCollectionEquality().equals(other._results, _results) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
+                other.nextCursor == nextCursor));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_results), nextCursor, hasMore);
+  int get hashCode => Object.hash(runtimeType, hasMore,
+      const DeepCollectionEquality().hash(_results), nextCursor);
 
   @override
   String toString() {
-    return 'NotionUserList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
+    return 'NotionUserList(hasMore: $hasMore, results: $results, nextCursor: $nextCursor)';
   }
 }
 
@@ -167,7 +165,7 @@ abstract mixin class _$NotionUserListCopyWith<$Res>
       __$NotionUserListCopyWithImpl;
   @override
   @useResult
-  $Res call({List<NotionUser>? results, String? nextCursor, bool hasMore});
+  $Res call({bool hasMore, List<NotionUser> results, String? nextCursor});
 }
 
 /// @nodoc
@@ -183,23 +181,23 @@ class __$NotionUserListCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
-    Object? results = freezed,
-    Object? nextCursor = freezed,
     Object? hasMore = null,
+    Object? results = null,
+    Object? nextCursor = freezed,
   }) {
     return _then(_NotionUserList(
-      results: freezed == results
-          ? _self._results
-          : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionUser>?,
-      nextCursor: freezed == nextCursor
-          ? _self.nextCursor
-          : nextCursor // ignore: cast_nullable_to_non_nullable
-              as String?,
       hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
               as bool,
+      results: null == results
+          ? _self._results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<NotionUser>,
+      nextCursor: freezed == nextCursor
+          ? _self.nextCursor
+          : nextCursor // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }

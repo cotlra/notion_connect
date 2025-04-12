@@ -8,9 +8,9 @@ part 'notion_comment_list.g.dart';
 @freezed
 abstract class NotionCommentList with _$NotionCommentList {
   const factory NotionCommentList({
-    @Default(const []) List<NotionComment> results,
-    String? nextCursor,
     required bool hasMore,
+    @Default([]) List<NotionComment> results,
+    String? nextCursor,
   }) = _NotionCommentList;
 
   factory NotionCommentList.fromJson(Map<String, dynamic> json) =>
