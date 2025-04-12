@@ -6,18 +6,21 @@ part 'notion_user.g.dart';
 @Freezed(fallbackUnion: 'user')
 sealed class NotionUser with _$NotionUser {
   const factory NotionUser.person({
+    @Default('user') String object,
     String? id,
     String? name,
     String? avatarUrl,
     NotionPersonObject? person,
   }) = NotionPerson;
   const factory NotionUser.bot({
+    @Default('user') String object,
     String? id,
     String? name,
     String? avatarUrl,
     NotionBotObject? bot,
   }) = NotionBot;
   const factory NotionUser.user({
+    @Default('user') String object,
     String? id,
     String? name,
     String? avatarUrl,

@@ -12,6 +12,7 @@ NotionPerson _$NotionPersonFromJson(Map<String, dynamic> json) =>
       json,
       ($checkedConvert) {
         final val = NotionPerson(
+          object: $checkedConvert('object', (v) => v as String? ?? 'user'),
           id: $checkedConvert('id', (v) => v as String?),
           name: $checkedConvert('name', (v) => v as String?),
           avatarUrl: $checkedConvert('avatar_url', (v) => v as String?),
@@ -29,6 +30,7 @@ NotionPerson _$NotionPersonFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$NotionPersonToJson(NotionPerson instance) =>
     <String, dynamic>{
+      'object': instance.object,
       if (instance.id case final value?) 'id': value,
       if (instance.name case final value?) 'name': value,
       if (instance.avatarUrl case final value?) 'avatar_url': value,
@@ -41,6 +43,7 @@ NotionBot _$NotionBotFromJson(Map<String, dynamic> json) => $checkedCreate(
       json,
       ($checkedConvert) {
         final val = NotionBot(
+          object: $checkedConvert('object', (v) => v as String? ?? 'user'),
           id: $checkedConvert('id', (v) => v as String?),
           name: $checkedConvert('name', (v) => v as String?),
           avatarUrl: $checkedConvert('avatar_url', (v) => v as String?),
@@ -57,6 +60,7 @@ NotionBot _$NotionBotFromJson(Map<String, dynamic> json) => $checkedCreate(
     );
 
 Map<String, dynamic> _$NotionBotToJson(NotionBot instance) => <String, dynamic>{
+      'object': instance.object,
       if (instance.id case final value?) 'id': value,
       if (instance.name case final value?) 'name': value,
       if (instance.avatarUrl case final value?) 'avatar_url': value,
@@ -70,6 +74,7 @@ NotionPartialUser _$NotionPartialUserFromJson(Map<String, dynamic> json) =>
       json,
       ($checkedConvert) {
         final val = NotionPartialUser(
+          object: $checkedConvert('object', (v) => v as String? ?? 'user'),
           id: $checkedConvert('id', (v) => v as String?),
           name: $checkedConvert('name', (v) => v as String?),
           avatarUrl: $checkedConvert('avatar_url', (v) => v as String?),
@@ -82,6 +87,7 @@ NotionPartialUser _$NotionPartialUserFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$NotionPartialUserToJson(NotionPartialUser instance) =>
     <String, dynamic>{
+      'object': instance.object,
       if (instance.id case final value?) 'id': value,
       if (instance.name case final value?) 'name': value,
       if (instance.avatarUrl case final value?) 'avatar_url': value,

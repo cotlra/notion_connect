@@ -26,6 +26,7 @@ NotionUser _$NotionUserFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$NotionUser {
+  String get object;
   String? get id;
   String? get name;
   String? get avatarUrl;
@@ -45,6 +46,7 @@ mixin _$NotionUser {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionUser &&
+            (identical(other.object, object) || other.object == object) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.avatarUrl, avatarUrl) ||
@@ -53,11 +55,11 @@ mixin _$NotionUser {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, avatarUrl);
+  int get hashCode => Object.hash(runtimeType, object, id, name, avatarUrl);
 
   @override
   String toString() {
-    return 'NotionUser(id: $id, name: $name, avatarUrl: $avatarUrl)';
+    return 'NotionUser(object: $object, id: $id, name: $name, avatarUrl: $avatarUrl)';
   }
 }
 
@@ -67,7 +69,7 @@ abstract mixin class $NotionUserCopyWith<$Res> {
           NotionUser value, $Res Function(NotionUser) _then) =
       _$NotionUserCopyWithImpl;
   @useResult
-  $Res call({String? id, String? name, String? avatarUrl});
+  $Res call({String object, String? id, String? name, String? avatarUrl});
 }
 
 /// @nodoc
@@ -82,11 +84,16 @@ class _$NotionUserCopyWithImpl<$Res> implements $NotionUserCopyWith<$Res> {
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? object = null,
     Object? id = freezed,
     Object? name = freezed,
     Object? avatarUrl = freezed,
   }) {
     return _then(_self.copyWith(
+      object: null == object
+          ? _self.object
+          : object // ignore: cast_nullable_to_non_nullable
+              as String,
       id: freezed == id
           ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -107,11 +114,19 @@ class _$NotionUserCopyWithImpl<$Res> implements $NotionUserCopyWith<$Res> {
 @JsonSerializable()
 class NotionPerson implements NotionUser {
   const NotionPerson(
-      {this.id, this.name, this.avatarUrl, this.person, final String? $type})
+      {this.object = 'user',
+      this.id,
+      this.name,
+      this.avatarUrl,
+      this.person,
+      final String? $type})
       : $type = $type ?? 'person';
   factory NotionPerson.fromJson(Map<String, dynamic> json) =>
       _$NotionPersonFromJson(json);
 
+  @override
+  @JsonKey()
+  final String object;
   @override
   final String? id;
   @override
@@ -143,6 +158,7 @@ class NotionPerson implements NotionUser {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionPerson &&
+            (identical(other.object, object) || other.object == object) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.avatarUrl, avatarUrl) ||
@@ -152,11 +168,12 @@ class NotionPerson implements NotionUser {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, avatarUrl, person);
+  int get hashCode =>
+      Object.hash(runtimeType, object, id, name, avatarUrl, person);
 
   @override
   String toString() {
-    return 'NotionUser.person(id: $id, name: $name, avatarUrl: $avatarUrl, person: $person)';
+    return 'NotionUser.person(object: $object, id: $id, name: $name, avatarUrl: $avatarUrl, person: $person)';
   }
 }
 
@@ -169,7 +186,8 @@ abstract mixin class $NotionPersonCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? id,
+      {String object,
+      String? id,
       String? name,
       String? avatarUrl,
       NotionPersonObject? person});
@@ -189,12 +207,17 @@ class _$NotionPersonCopyWithImpl<$Res> implements $NotionPersonCopyWith<$Res> {
   @override
   @pragma('vm:prefer-inline')
   $Res call({
+    Object? object = null,
     Object? id = freezed,
     Object? name = freezed,
     Object? avatarUrl = freezed,
     Object? person = freezed,
   }) {
     return _then(NotionPerson(
+      object: null == object
+          ? _self.object
+          : object // ignore: cast_nullable_to_non_nullable
+              as String,
       id: freezed == id
           ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -233,11 +256,19 @@ class _$NotionPersonCopyWithImpl<$Res> implements $NotionPersonCopyWith<$Res> {
 @JsonSerializable()
 class NotionBot implements NotionUser {
   const NotionBot(
-      {this.id, this.name, this.avatarUrl, this.bot, final String? $type})
+      {this.object = 'user',
+      this.id,
+      this.name,
+      this.avatarUrl,
+      this.bot,
+      final String? $type})
       : $type = $type ?? 'bot';
   factory NotionBot.fromJson(Map<String, dynamic> json) =>
       _$NotionBotFromJson(json);
 
+  @override
+  @JsonKey()
+  final String object;
   @override
   final String? id;
   @override
@@ -269,6 +300,7 @@ class NotionBot implements NotionUser {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionBot &&
+            (identical(other.object, object) || other.object == object) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.avatarUrl, avatarUrl) ||
@@ -278,11 +310,12 @@ class NotionBot implements NotionUser {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, avatarUrl, bot);
+  int get hashCode =>
+      Object.hash(runtimeType, object, id, name, avatarUrl, bot);
 
   @override
   String toString() {
-    return 'NotionUser.bot(id: $id, name: $name, avatarUrl: $avatarUrl, bot: $bot)';
+    return 'NotionUser.bot(object: $object, id: $id, name: $name, avatarUrl: $avatarUrl, bot: $bot)';
   }
 }
 
@@ -294,7 +327,11 @@ abstract mixin class $NotionBotCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? id, String? name, String? avatarUrl, NotionBotObject? bot});
+      {String object,
+      String? id,
+      String? name,
+      String? avatarUrl,
+      NotionBotObject? bot});
 
   $NotionBotObjectCopyWith<$Res>? get bot;
 }
@@ -311,12 +348,17 @@ class _$NotionBotCopyWithImpl<$Res> implements $NotionBotCopyWith<$Res> {
   @override
   @pragma('vm:prefer-inline')
   $Res call({
+    Object? object = null,
     Object? id = freezed,
     Object? name = freezed,
     Object? avatarUrl = freezed,
     Object? bot = freezed,
   }) {
     return _then(NotionBot(
+      object: null == object
+          ? _self.object
+          : object // ignore: cast_nullable_to_non_nullable
+              as String,
       id: freezed == id
           ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -355,11 +397,18 @@ class _$NotionBotCopyWithImpl<$Res> implements $NotionBotCopyWith<$Res> {
 @JsonSerializable()
 class NotionPartialUser implements NotionUser {
   const NotionPartialUser(
-      {this.id, this.name, this.avatarUrl, final String? $type})
+      {this.object = 'user',
+      this.id,
+      this.name,
+      this.avatarUrl,
+      final String? $type})
       : $type = $type ?? 'user';
   factory NotionPartialUser.fromJson(Map<String, dynamic> json) =>
       _$NotionPartialUserFromJson(json);
 
+  @override
+  @JsonKey()
+  final String object;
   @override
   final String? id;
   @override
@@ -390,6 +439,7 @@ class NotionPartialUser implements NotionUser {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is NotionPartialUser &&
+            (identical(other.object, object) || other.object == object) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.avatarUrl, avatarUrl) ||
@@ -398,11 +448,11 @@ class NotionPartialUser implements NotionUser {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, avatarUrl);
+  int get hashCode => Object.hash(runtimeType, object, id, name, avatarUrl);
 
   @override
   String toString() {
-    return 'NotionUser.user(id: $id, name: $name, avatarUrl: $avatarUrl)';
+    return 'NotionUser.user(object: $object, id: $id, name: $name, avatarUrl: $avatarUrl)';
   }
 }
 
@@ -414,7 +464,7 @@ abstract mixin class $NotionPartialUserCopyWith<$Res>
       _$NotionPartialUserCopyWithImpl;
   @override
   @useResult
-  $Res call({String? id, String? name, String? avatarUrl});
+  $Res call({String object, String? id, String? name, String? avatarUrl});
 }
 
 /// @nodoc
@@ -430,11 +480,16 @@ class _$NotionPartialUserCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
+    Object? object = null,
     Object? id = freezed,
     Object? name = freezed,
     Object? avatarUrl = freezed,
   }) {
     return _then(NotionPartialUser(
+      object: null == object
+          ? _self.object
+          : object // ignore: cast_nullable_to_non_nullable
+              as String,
       id: freezed == id
           ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
