@@ -14,21 +14,23 @@ _NotionBlockList _$NotionBlockListFromJson(Map<String, dynamic> json) =>
         final val = _NotionBlockList(
           results: $checkedConvert(
               'results',
-              (v) => (v as List<dynamic>?)
-                  ?.map((e) => NotionBlock.fromJson(e as Map<String, dynamic>))
-                  .toList()),
-          hasMore: $checkedConvert('has_more', (v) => v as bool?),
+              (v) =>
+                  (v as List<dynamic>?)
+                      ?.map((e) =>
+                          NotionBlock.fromJson(e as Map<String, dynamic>))
+                      .toList() ??
+                  const []),
           nextCursor: $checkedConvert('next_cursor', (v) => v as String?),
+          hasMore: $checkedConvert('has_more', (v) => v as bool),
         );
         return val;
       },
-      fieldKeyMap: const {'hasMore': 'has_more', 'nextCursor': 'next_cursor'},
+      fieldKeyMap: const {'nextCursor': 'next_cursor', 'hasMore': 'has_more'},
     );
 
 Map<String, dynamic> _$NotionBlockListToJson(_NotionBlockList instance) =>
     <String, dynamic>{
-      if (instance.results?.map((e) => e.toJson()).toList() case final value?)
-        'results': value,
-      if (instance.hasMore case final value?) 'has_more': value,
+      'results': instance.results.map((e) => e.toJson()).toList(),
       if (instance.nextCursor case final value?) 'next_cursor': value,
+      'has_more': instance.hasMore,
     };

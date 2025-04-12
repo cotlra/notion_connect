@@ -14,11 +14,14 @@ _NotionUserList _$NotionUserListFromJson(Map<String, dynamic> json) =>
         final val = _NotionUserList(
           results: $checkedConvert(
               'results',
-              (v) => (v as List<dynamic>?)
-                  ?.map((e) => NotionUser.fromJson(e as Map<String, dynamic>))
-                  .toList()),
+              (v) =>
+                  (v as List<dynamic>?)
+                      ?.map(
+                          (e) => NotionUser.fromJson(e as Map<String, dynamic>))
+                      .toList() ??
+                  const []),
           nextCursor: $checkedConvert('next_cursor', (v) => v as String?),
-          hasMore: $checkedConvert('has_more', (v) => v as bool?),
+          hasMore: $checkedConvert('has_more', (v) => v as bool),
         );
         return val;
       },
@@ -30,5 +33,5 @@ Map<String, dynamic> _$NotionUserListToJson(_NotionUserList instance) =>
       if (instance.results?.map((e) => e.toJson()).toList() case final value?)
         'results': value,
       if (instance.nextCursor case final value?) 'next_cursor': value,
-      if (instance.hasMore case final value?) 'has_more': value,
+      'has_more': instance.hasMore,
     };

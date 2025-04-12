@@ -15,9 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionPageOrDatabaseList {
-  List<NotionPageOrDatabase>? get results;
+  List<NotionPageOrDatabase> get results;
   String? get nextCursor;
-  bool? get hasMore;
+  bool get hasMore;
 
   /// Create a copy of NotionPageOrDatabaseList
   /// with the given fields replaced by the non-null parameter values.
@@ -59,7 +59,7 @@ abstract mixin class $NotionPageOrDatabaseListCopyWith<$Res> {
       _$NotionPageOrDatabaseListCopyWithImpl;
   @useResult
   $Res call(
-      {List<NotionPageOrDatabase>? results, String? nextCursor, bool? hasMore});
+      {List<NotionPageOrDatabase> results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -75,23 +75,23 @@ class _$NotionPageOrDatabaseListCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
+    Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_self.copyWith(
-      results: freezed == results
+      results: null == results
           ? _self.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionPageOrDatabase>?,
+              as List<NotionPageOrDatabase>,
       nextCursor: freezed == nextCursor
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: freezed == hasMore
+      hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }
@@ -100,27 +100,26 @@ class _$NotionPageOrDatabaseListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionPageOrDatabaseList implements NotionPageOrDatabaseList {
   const _NotionPageOrDatabaseList(
-      {final List<NotionPageOrDatabase>? results,
+      {final List<NotionPageOrDatabase> results = const [],
       this.nextCursor,
-      this.hasMore})
+      required this.hasMore})
       : _results = results;
   factory _NotionPageOrDatabaseList.fromJson(Map<String, dynamic> json) =>
       _$NotionPageOrDatabaseListFromJson(json);
 
-  final List<NotionPageOrDatabase>? _results;
+  final List<NotionPageOrDatabase> _results;
   @override
-  List<NotionPageOrDatabase>? get results {
-    final value = _results;
-    if (value == null) return null;
+  @JsonKey()
+  List<NotionPageOrDatabase> get results {
     if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_results);
   }
 
   @override
   final String? nextCursor;
   @override
-  final bool? hasMore;
+  final bool hasMore;
 
   /// Create a copy of NotionPageOrDatabaseList
   /// with the given fields replaced by the non-null parameter values.
@@ -169,7 +168,7 @@ abstract mixin class _$NotionPageOrDatabaseListCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {List<NotionPageOrDatabase>? results, String? nextCursor, bool? hasMore});
+      {List<NotionPageOrDatabase> results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -185,23 +184,23 @@ class __$NotionPageOrDatabaseListCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
-    Object? results = freezed,
+    Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_NotionPageOrDatabaseList(
-      results: freezed == results
+      results: null == results
           ? _self._results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionPageOrDatabase>?,
+              as List<NotionPageOrDatabase>,
       nextCursor: freezed == nextCursor
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: freezed == hasMore
+      hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }

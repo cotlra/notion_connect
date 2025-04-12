@@ -15,9 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionCommentList {
-  List<NotionComment>? get results;
+  List<NotionComment> get results;
   String? get nextCursor;
-  bool? get hasMore;
+  bool get hasMore;
 
   /// Create a copy of NotionCommentList
   /// with the given fields replaced by the non-null parameter values.
@@ -58,7 +58,7 @@ abstract mixin class $NotionCommentListCopyWith<$Res> {
           NotionCommentList value, $Res Function(NotionCommentList) _then) =
       _$NotionCommentListCopyWithImpl;
   @useResult
-  $Res call({List<NotionComment>? results, String? nextCursor, bool? hasMore});
+  $Res call({List<NotionComment> results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -74,23 +74,23 @@ class _$NotionCommentListCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
+    Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_self.copyWith(
-      results: freezed == results
+      results: null == results
           ? _self.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionComment>?,
+              as List<NotionComment>,
       nextCursor: freezed == nextCursor
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: freezed == hasMore
+      hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }
@@ -99,27 +99,26 @@ class _$NotionCommentListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionCommentList implements NotionCommentList {
   const _NotionCommentList(
-      {required final List<NotionComment>? results,
-      required this.nextCursor,
+      {final List<NotionComment> results = const [],
+      this.nextCursor,
       required this.hasMore})
       : _results = results;
   factory _NotionCommentList.fromJson(Map<String, dynamic> json) =>
       _$NotionCommentListFromJson(json);
 
-  final List<NotionComment>? _results;
+  final List<NotionComment> _results;
   @override
-  List<NotionComment>? get results {
-    final value = _results;
-    if (value == null) return null;
+  @JsonKey()
+  List<NotionComment> get results {
     if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_results);
   }
 
   @override
   final String? nextCursor;
   @override
-  final bool? hasMore;
+  final bool hasMore;
 
   /// Create a copy of NotionCommentList
   /// with the given fields replaced by the non-null parameter values.
@@ -166,7 +165,7 @@ abstract mixin class _$NotionCommentListCopyWith<$Res>
       __$NotionCommentListCopyWithImpl;
   @override
   @useResult
-  $Res call({List<NotionComment>? results, String? nextCursor, bool? hasMore});
+  $Res call({List<NotionComment> results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -182,23 +181,23 @@ class __$NotionCommentListCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
-    Object? results = freezed,
+    Object? results = null,
     Object? nextCursor = freezed,
-    Object? hasMore = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_NotionCommentList(
-      results: freezed == results
+      results: null == results
           ? _self._results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionComment>?,
+              as List<NotionComment>,
       nextCursor: freezed == nextCursor
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: freezed == hasMore
+      hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }

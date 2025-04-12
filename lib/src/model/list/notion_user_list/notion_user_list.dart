@@ -8,9 +8,9 @@ part 'notion_user_list.g.dart';
 @freezed
 abstract class NotionUserList with _$NotionUserList {
   const factory NotionUserList({
-    required List<NotionUser>? results,
-    required String? nextCursor,
-    required bool? hasMore,
+    @Default(const []) List<NotionUser>? results,
+    String? nextCursor,
+    required bool hasMore,
   }) = _NotionUserList;
 
   factory NotionUserList.fromJson(Map<String, dynamic> json) =>

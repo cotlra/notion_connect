@@ -15,9 +15,9 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$NotionBlockList {
-  List<NotionBlock>? get results;
-  bool? get hasMore;
+  List<NotionBlock> get results;
   String? get nextCursor;
+  bool get hasMore;
 
   /// Create a copy of NotionBlockList
   /// with the given fields replaced by the non-null parameter values.
@@ -36,19 +36,19 @@ mixin _$NotionBlockList {
         (other.runtimeType == runtimeType &&
             other is NotionBlockList &&
             const DeepCollectionEquality().equals(other.results, results) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor));
+                other.nextCursor == nextCursor) &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(results), hasMore, nextCursor);
+      const DeepCollectionEquality().hash(results), nextCursor, hasMore);
 
   @override
   String toString() {
-    return 'NotionBlockList(results: $results, hasMore: $hasMore, nextCursor: $nextCursor)';
+    return 'NotionBlockList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
   }
 }
 
@@ -58,7 +58,7 @@ abstract mixin class $NotionBlockListCopyWith<$Res> {
           NotionBlockList value, $Res Function(NotionBlockList) _then) =
       _$NotionBlockListCopyWithImpl;
   @useResult
-  $Res call({List<NotionBlock>? results, bool? hasMore, String? nextCursor});
+  $Res call({List<NotionBlock> results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -74,23 +74,23 @@ class _$NotionBlockListCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
-    Object? hasMore = freezed,
+    Object? results = null,
     Object? nextCursor = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_self.copyWith(
-      results: freezed == results
+      results: null == results
           ? _self.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionBlock>?,
-      hasMore: freezed == hasMore
-          ? _self.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as List<NotionBlock>,
       nextCursor: freezed == nextCursor
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
+      hasMore: null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -99,25 +99,26 @@ class _$NotionBlockListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionBlockList implements NotionBlockList {
   const _NotionBlockList(
-      {final List<NotionBlock>? results, this.hasMore, this.nextCursor})
+      {final List<NotionBlock> results = const [],
+      this.nextCursor,
+      required this.hasMore})
       : _results = results;
   factory _NotionBlockList.fromJson(Map<String, dynamic> json) =>
       _$NotionBlockListFromJson(json);
 
-  final List<NotionBlock>? _results;
+  final List<NotionBlock> _results;
   @override
-  List<NotionBlock>? get results {
-    final value = _results;
-    if (value == null) return null;
+  @JsonKey()
+  List<NotionBlock> get results {
     if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_results);
   }
 
   @override
-  final bool? hasMore;
-  @override
   final String? nextCursor;
+  @override
+  final bool hasMore;
 
   /// Create a copy of NotionBlockList
   /// with the given fields replaced by the non-null parameter values.
@@ -140,19 +141,19 @@ class _NotionBlockList implements NotionBlockList {
         (other.runtimeType == runtimeType &&
             other is _NotionBlockList &&
             const DeepCollectionEquality().equals(other._results, _results) &&
-            (identical(other.hasMore, hasMore) || other.hasMore == hasMore) &&
             (identical(other.nextCursor, nextCursor) ||
-                other.nextCursor == nextCursor));
+                other.nextCursor == nextCursor) &&
+            (identical(other.hasMore, hasMore) || other.hasMore == hasMore));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_results), hasMore, nextCursor);
+      const DeepCollectionEquality().hash(_results), nextCursor, hasMore);
 
   @override
   String toString() {
-    return 'NotionBlockList(results: $results, hasMore: $hasMore, nextCursor: $nextCursor)';
+    return 'NotionBlockList(results: $results, nextCursor: $nextCursor, hasMore: $hasMore)';
   }
 }
 
@@ -164,7 +165,7 @@ abstract mixin class _$NotionBlockListCopyWith<$Res>
       __$NotionBlockListCopyWithImpl;
   @override
   @useResult
-  $Res call({List<NotionBlock>? results, bool? hasMore, String? nextCursor});
+  $Res call({List<NotionBlock> results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -180,23 +181,23 @@ class __$NotionBlockListCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
-    Object? results = freezed,
-    Object? hasMore = freezed,
+    Object? results = null,
     Object? nextCursor = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_NotionBlockList(
-      results: freezed == results
+      results: null == results
           ? _self._results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NotionBlock>?,
-      hasMore: freezed == hasMore
-          ? _self.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as List<NotionBlock>,
       nextCursor: freezed == nextCursor
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
+      hasMore: null == hasMore
+          ? _self.hasMore
+          : hasMore // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }

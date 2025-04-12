@@ -17,7 +17,7 @@ T _$identity<T>(T value) => value;
 mixin _$NotionUserList {
   List<NotionUser>? get results;
   String? get nextCursor;
-  bool? get hasMore;
+  bool get hasMore;
 
   /// Create a copy of NotionUserList
   /// with the given fields replaced by the non-null parameter values.
@@ -58,7 +58,7 @@ abstract mixin class $NotionUserListCopyWith<$Res> {
           NotionUserList value, $Res Function(NotionUserList) _then) =
       _$NotionUserListCopyWithImpl;
   @useResult
-  $Res call({List<NotionUser>? results, String? nextCursor, bool? hasMore});
+  $Res call({List<NotionUser>? results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -76,7 +76,7 @@ class _$NotionUserListCopyWithImpl<$Res>
   $Res call({
     Object? results = freezed,
     Object? nextCursor = freezed,
-    Object? hasMore = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_self.copyWith(
       results: freezed == results
@@ -87,10 +87,10 @@ class _$NotionUserListCopyWithImpl<$Res>
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: freezed == hasMore
+      hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }
@@ -99,8 +99,8 @@ class _$NotionUserListCopyWithImpl<$Res>
 @JsonSerializable()
 class _NotionUserList implements NotionUserList {
   const _NotionUserList(
-      {required final List<NotionUser>? results,
-      required this.nextCursor,
+      {final List<NotionUser>? results = const [],
+      this.nextCursor,
       required this.hasMore})
       : _results = results;
   factory _NotionUserList.fromJson(Map<String, dynamic> json) =>
@@ -108,6 +108,7 @@ class _NotionUserList implements NotionUserList {
 
   final List<NotionUser>? _results;
   @override
+  @JsonKey()
   List<NotionUser>? get results {
     final value = _results;
     if (value == null) return null;
@@ -119,7 +120,7 @@ class _NotionUserList implements NotionUserList {
   @override
   final String? nextCursor;
   @override
-  final bool? hasMore;
+  final bool hasMore;
 
   /// Create a copy of NotionUserList
   /// with the given fields replaced by the non-null parameter values.
@@ -166,7 +167,7 @@ abstract mixin class _$NotionUserListCopyWith<$Res>
       __$NotionUserListCopyWithImpl;
   @override
   @useResult
-  $Res call({List<NotionUser>? results, String? nextCursor, bool? hasMore});
+  $Res call({List<NotionUser>? results, String? nextCursor, bool hasMore});
 }
 
 /// @nodoc
@@ -184,7 +185,7 @@ class __$NotionUserListCopyWithImpl<$Res>
   $Res call({
     Object? results = freezed,
     Object? nextCursor = freezed,
-    Object? hasMore = freezed,
+    Object? hasMore = null,
   }) {
     return _then(_NotionUserList(
       results: freezed == results
@@ -195,10 +196,10 @@ class __$NotionUserListCopyWithImpl<$Res>
           ? _self.nextCursor
           : nextCursor // ignore: cast_nullable_to_non_nullable
               as String?,
-      hasMore: freezed == hasMore
+      hasMore: null == hasMore
           ? _self.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
     ));
   }
 }
