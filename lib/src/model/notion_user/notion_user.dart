@@ -9,13 +9,13 @@ sealed class NotionUser with _$NotionUser {
     String? id,
     String? name,
     String? avatarUrl,
-    NotionPersonObject? person,
+    @Default(NotionPersonObject()) NotionPersonObject person,
   }) = NotionPerson;
   const factory NotionUser.bot({
     String? id,
     String? name,
     String? avatarUrl,
-    NotionBotObject? bot,
+    @Default(NotionBotObject()) NotionBotObject bot,
   }) = NotionBot;
   const factory NotionUser.user({
     String? id,

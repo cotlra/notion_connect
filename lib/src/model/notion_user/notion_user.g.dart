@@ -18,7 +18,7 @@ NotionPerson _$NotionPersonFromJson(Map<String, dynamic> json) =>
           person: $checkedConvert(
               'person',
               (v) => v == null
-                  ? null
+                  ? const NotionPersonObject()
                   : NotionPersonObject.fromJson(v as Map<String, dynamic>)),
           $type: $checkedConvert('type', (v) => v as String?),
         );
@@ -32,7 +32,7 @@ Map<String, dynamic> _$NotionPersonToJson(NotionPerson instance) =>
       if (instance.id case final value?) 'id': value,
       if (instance.name case final value?) 'name': value,
       if (instance.avatarUrl case final value?) 'avatar_url': value,
-      if (instance.person?.toJson() case final value?) 'person': value,
+      'person': instance.person.toJson(),
       'type': instance.$type,
     };
 
@@ -47,7 +47,7 @@ NotionBot _$NotionBotFromJson(Map<String, dynamic> json) => $checkedCreate(
           bot: $checkedConvert(
               'bot',
               (v) => v == null
-                  ? null
+                  ? const NotionBotObject()
                   : NotionBotObject.fromJson(v as Map<String, dynamic>)),
           $type: $checkedConvert('type', (v) => v as String?),
         );
@@ -60,7 +60,7 @@ Map<String, dynamic> _$NotionBotToJson(NotionBot instance) => <String, dynamic>{
       if (instance.id case final value?) 'id': value,
       if (instance.name case final value?) 'name': value,
       if (instance.avatarUrl case final value?) 'avatar_url': value,
-      if (instance.bot?.toJson() case final value?) 'bot': value,
+      'bot': instance.bot.toJson(),
       'type': instance.$type,
     };
 

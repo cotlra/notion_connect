@@ -107,7 +107,11 @@ class _$NotionUserCopyWithImpl<$Res> implements $NotionUserCopyWith<$Res> {
 @JsonSerializable()
 class NotionPerson implements NotionUser {
   const NotionPerson(
-      {this.id, this.name, this.avatarUrl, this.person, final String? $type})
+      {this.id,
+      this.name,
+      this.avatarUrl,
+      this.person = const NotionPersonObject(),
+      final String? $type})
       : $type = $type ?? 'person';
   factory NotionPerson.fromJson(Map<String, dynamic> json) =>
       _$NotionPersonFromJson(json);
@@ -118,7 +122,8 @@ class NotionPerson implements NotionUser {
   final String? name;
   @override
   final String? avatarUrl;
-  final NotionPersonObject? person;
+  @JsonKey()
+  final NotionPersonObject person;
 
   @JsonKey(name: 'type')
   final String $type;
@@ -169,12 +174,9 @@ abstract mixin class $NotionPersonCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? id,
-      String? name,
-      String? avatarUrl,
-      NotionPersonObject? person});
+      {String? id, String? name, String? avatarUrl, NotionPersonObject person});
 
-  $NotionPersonObjectCopyWith<$Res>? get person;
+  $NotionPersonObjectCopyWith<$Res> get person;
 }
 
 /// @nodoc
@@ -192,7 +194,7 @@ class _$NotionPersonCopyWithImpl<$Res> implements $NotionPersonCopyWith<$Res> {
     Object? id = freezed,
     Object? name = freezed,
     Object? avatarUrl = freezed,
-    Object? person = freezed,
+    Object? person = null,
   }) {
     return _then(NotionPerson(
       id: freezed == id
@@ -207,10 +209,10 @@ class _$NotionPersonCopyWithImpl<$Res> implements $NotionPersonCopyWith<$Res> {
           ? _self.avatarUrl
           : avatarUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      person: freezed == person
+      person: null == person
           ? _self.person
           : person // ignore: cast_nullable_to_non_nullable
-              as NotionPersonObject?,
+              as NotionPersonObject,
     ));
   }
 
@@ -218,12 +220,8 @@ class _$NotionPersonCopyWithImpl<$Res> implements $NotionPersonCopyWith<$Res> {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $NotionPersonObjectCopyWith<$Res>? get person {
-    if (_self.person == null) {
-      return null;
-    }
-
-    return $NotionPersonObjectCopyWith<$Res>(_self.person!, (value) {
+  $NotionPersonObjectCopyWith<$Res> get person {
+    return $NotionPersonObjectCopyWith<$Res>(_self.person, (value) {
       return _then(_self.copyWith(person: value));
     });
   }
@@ -233,7 +231,11 @@ class _$NotionPersonCopyWithImpl<$Res> implements $NotionPersonCopyWith<$Res> {
 @JsonSerializable()
 class NotionBot implements NotionUser {
   const NotionBot(
-      {this.id, this.name, this.avatarUrl, this.bot, final String? $type})
+      {this.id,
+      this.name,
+      this.avatarUrl,
+      this.bot = const NotionBotObject(),
+      final String? $type})
       : $type = $type ?? 'bot';
   factory NotionBot.fromJson(Map<String, dynamic> json) =>
       _$NotionBotFromJson(json);
@@ -244,7 +246,8 @@ class NotionBot implements NotionUser {
   final String? name;
   @override
   final String? avatarUrl;
-  final NotionBotObject? bot;
+  @JsonKey()
+  final NotionBotObject bot;
 
   @JsonKey(name: 'type')
   final String $type;
@@ -293,10 +296,9 @@ abstract mixin class $NotionBotCopyWith<$Res>
       _$NotionBotCopyWithImpl;
   @override
   @useResult
-  $Res call(
-      {String? id, String? name, String? avatarUrl, NotionBotObject? bot});
+  $Res call({String? id, String? name, String? avatarUrl, NotionBotObject bot});
 
-  $NotionBotObjectCopyWith<$Res>? get bot;
+  $NotionBotObjectCopyWith<$Res> get bot;
 }
 
 /// @nodoc
@@ -314,7 +316,7 @@ class _$NotionBotCopyWithImpl<$Res> implements $NotionBotCopyWith<$Res> {
     Object? id = freezed,
     Object? name = freezed,
     Object? avatarUrl = freezed,
-    Object? bot = freezed,
+    Object? bot = null,
   }) {
     return _then(NotionBot(
       id: freezed == id
@@ -329,10 +331,10 @@ class _$NotionBotCopyWithImpl<$Res> implements $NotionBotCopyWith<$Res> {
           ? _self.avatarUrl
           : avatarUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      bot: freezed == bot
+      bot: null == bot
           ? _self.bot
           : bot // ignore: cast_nullable_to_non_nullable
-              as NotionBotObject?,
+              as NotionBotObject,
     ));
   }
 
@@ -340,12 +342,8 @@ class _$NotionBotCopyWithImpl<$Res> implements $NotionBotCopyWith<$Res> {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $NotionBotObjectCopyWith<$Res>? get bot {
-    if (_self.bot == null) {
-      return null;
-    }
-
-    return $NotionBotObjectCopyWith<$Res>(_self.bot!, (value) {
+  $NotionBotObjectCopyWith<$Res> get bot {
+    return $NotionBotObjectCopyWith<$Res>(_self.bot, (value) {
       return _then(_self.copyWith(bot: value));
     });
   }
