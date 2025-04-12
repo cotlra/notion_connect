@@ -2,10 +2,8 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 
-import 'exception/notion_connect_exception.dart';
 import 'model/access_token/notion_access_token/notion_access_token.dart';
 import 'model/access_token/notion_access_token_state/notion_access_token_state.dart';
-import 'model/error/notion_error_data.dart';
 import 'model/list/notion_block_list/notion_block_list.dart';
 import 'model/list/notion_comment_list/notion_comment_list.dart';
 import 'model/list/notion_page_or_database_list/notion_page_or_database_list.dart';
@@ -82,20 +80,12 @@ class NotionApiClient {
     String? startCursor,
     int? pageSize,
   }) {
-    try {
-      return client.retrieveBlockChildren(
-        authorization: _getAuthorization(token),
-        blockId: blockId,
-        startCursor: startCursor,
-        pageSize: pageSize,
-      );
-    } on DioException catch (error, stackTrace) {
-      throw NotionConnectException(
-        data: NotionErrorData.fromJson(error.response! as Map<String, dynamic>),
-        e: error,
-        stackTrace: stackTrace,
-      );
-    }
+    return client.retrieveBlockChildren(
+      authorization: _getAuthorization(token),
+      blockId: blockId,
+      startCursor: startCursor,
+      pageSize: pageSize,
+    );
   }
 
   Future<NotionBlock> updateBlock({
@@ -287,24 +277,16 @@ class NotionApiClient {
     String? startCursor,
     int? pageSize,
   }) {
-    try {
-      return client.searchByTitle(
-        authorization: _getAuthorization(token),
-        data: {
-          if (query != null) 'query': query,
-          if (filter != null) 'filter': filter.toJson(),
-          if (sort != null) 'sort': sort.toJson(),
-          if (startCursor != null) 'start_cursor': startCursor,
-          if (pageSize != null) 'page_size': pageSize,
-        },
-      );
-    } on DioException catch (error, stackTrace) {
-      throw NotionConnectException(
-        data: NotionErrorData.fromJson(error.response! as Map<String, dynamic>),
-        e: error,
-        stackTrace: stackTrace,
-      );
-    }
+    return client.searchByTitle(
+      authorization: _getAuthorization(token),
+      data: {
+        if (query != null) 'query': query,
+        if (filter != null) 'filter': filter.toJson(),
+        if (sort != null) 'sort': sort.toJson(),
+        if (startCursor != null) 'start_cursor': startCursor,
+        if (pageSize != null) 'page_size': pageSize,
+      },
+    );
   }
 
   String _getAuthorization(String token) {
