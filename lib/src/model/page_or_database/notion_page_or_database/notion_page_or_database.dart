@@ -24,6 +24,19 @@ sealed class NotionPageOrDatabase {
   }
 
   Map<String, dynamic> toJson();
+
+  String? get id;
+  DateTime? get createdTime;
+  NotionUser? get createdBy;
+  DateTime? get lastEditedTime;
+  NotionUser? get lastEditedBy;
+  bool? get archived;
+  bool? get inTrash;
+  NotionIcon? get icon;
+  NotionFile? get cover;
+  NotionParent? get parent;
+  String? get url;
+  String? get publicUrl;
 }
 
 @freezed
