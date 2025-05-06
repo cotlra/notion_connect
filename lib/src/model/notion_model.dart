@@ -8,6 +8,7 @@ export 'list/notion_user_list/notion_user_list.dart';
 export 'notion_block/notion_block.dart';
 export 'notion_block/notion_block_child.dart';
 export 'notion_comment/notion_comment.dart';
+export 'notion_error/notion_error_data.dart';
 export 'notion_page_property_item/notion_page_property_item.dart';
 export 'notion_user/notion_user.dart';
 export 'page_or_database/notion_database_property/notion_database_property.dart';

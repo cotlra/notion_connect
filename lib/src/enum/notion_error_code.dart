@@ -1,0 +1,18 @@
+enum NotionErrorCode {
+  invalidJson,
+  invalidRequestUrl,
+  invalidRequest,
+  invalidGrant,
+  validationError,
+  missingVersion,
+  unauthorized,
+  restrictedResource,
+  objectNotFound,
+  conflictError,
+  rateLimited,
+  internalServerError,
+  badGateway,
+  serviceUnavailable,
+  databaseConnectionUnavailable,
+  gatewayTimeout,
+}
