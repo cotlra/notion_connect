@@ -1,6 +1,7 @@
 export 'notion_code_language.dart';
 export 'notion_color.dart';
 export 'notion_direction.dart';
+export 'notion_error_code.dart';
 export 'notion_number_format.dart';
 export 'notion_option_color.dart';
 export 'notion_rollup_function.dart';
