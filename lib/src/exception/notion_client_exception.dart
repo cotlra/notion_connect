@@ -10,7 +10,7 @@ class NotionClientException extends DioException {
       type: e.type,
       error: e.error,
       stackTrace: e.stackTrace,
-      message: '',
+      message: e.message,
     );
   }
   NotionClientException._({
