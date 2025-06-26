@@ -128,7 +128,7 @@ class Date extends DateTime {
   }
 
   DateTime toDateTime() {
-    return this as DateTime;
+    return DateTime(year, month, day);
   }
 }
 
