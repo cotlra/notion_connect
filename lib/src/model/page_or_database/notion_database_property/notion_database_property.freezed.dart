@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -13,108 +12,156 @@ part of 'notion_database_property.dart';
 // dart format off
 T _$identity<T>(T value) => value;
 NotionDatabaseProperty _$NotionDatabasePropertyFromJson(
-    Map<String, dynamic> json) {
-  switch (json['type']) {
-    case 'checkbox':
-      return NotionDatabaseCheckbox.fromJson(json);
-    case 'created_by':
-      return NotionDatabaseCreatedBy.fromJson(json);
-    case 'created_time':
-      return NotionDatabaseCreatedTime.fromJson(json);
-    case 'date':
-      return NotionDatabaseDate.fromJson(json);
-    case 'email':
-      return NotionDatabaseEmail.fromJson(json);
-    case 'files':
-      return NotionDatabaseFiles.fromJson(json);
-    case 'formula':
-      return NotionDatabaseFormula.fromJson(json);
-    case 'last_edited_by':
-      return NotionDatabaseLastEditedBy.fromJson(json);
-    case 'last_edited_time':
-      return NotionDatabaseLastEditedTime.fromJson(json);
-    case 'multi_select':
-      return NotionDatabaseMultiSelect.fromJson(json);
-    case 'number':
-      return NotionDatabaseNumber.fromJson(json);
-    case 'people':
-      return NotionDatabasePeople.fromJson(json);
-    case 'phone_number':
-      return NotionDatabasePhoneNumber.fromJson(json);
-    case 'relation':
-      return NotionDatabaseRelation.fromJson(json);
-    case 'rich_text':
-      return NotionDatabaseRichText.fromJson(json);
-    case 'rollup':
-      return NotionDatabaseRollup.fromJson(json);
-    case 'select':
-      return NotionDatabaseSelect.fromJson(json);
-    case 'status':
-      return NotionDatabaseStatus.fromJson(json);
-    case 'title':
-      return NotionDatabaseTitle.fromJson(json);
-    case 'url':
-      return NotionDatabaseUrl.fromJson(json);
-    case 'unique_id':
-      return NotionDatabaseUniqueId.fromJson(json);
-    case 'verification':
-      return NotionDatabaseVerification.fromJson(json);
-    case 'button':
-      return NotionDatabaseButton.fromJson(json);
-
-    default:
-      throw CheckedFromJsonException(json, 'type', 'NotionDatabaseProperty',
-          'Invalid union type "${json['type']}"!');
-  }
+  Map<String, dynamic> json
+) {
+        switch (json['type']) {
+                  case 'checkbox':
+          return NotionDatabaseCheckbox.fromJson(
+            json
+          );
+                case 'created_by':
+          return NotionDatabaseCreatedBy.fromJson(
+            json
+          );
+                case 'created_time':
+          return NotionDatabaseCreatedTime.fromJson(
+            json
+          );
+                case 'date':
+          return NotionDatabaseDate.fromJson(
+            json
+          );
+                case 'email':
+          return NotionDatabaseEmail.fromJson(
+            json
+          );
+                case 'files':
+          return NotionDatabaseFiles.fromJson(
+            json
+          );
+                case 'formula':
+          return NotionDatabaseFormula.fromJson(
+            json
+          );
+                case 'last_edited_by':
+          return NotionDatabaseLastEditedBy.fromJson(
+            json
+          );
+                case 'last_edited_time':
+          return NotionDatabaseLastEditedTime.fromJson(
+            json
+          );
+                case 'multi_select':
+          return NotionDatabaseMultiSelect.fromJson(
+            json
+          );
+                case 'number':
+          return NotionDatabaseNumber.fromJson(
+            json
+          );
+                case 'people':
+          return NotionDatabasePeople.fromJson(
+            json
+          );
+                case 'phone_number':
+          return NotionDatabasePhoneNumber.fromJson(
+            json
+          );
+                case 'relation':
+          return NotionDatabaseRelation.fromJson(
+            json
+          );
+                case 'rich_text':
+          return NotionDatabaseRichText.fromJson(
+            json
+          );
+                case 'rollup':
+          return NotionDatabaseRollup.fromJson(
+            json
+          );
+                case 'select':
+          return NotionDatabaseSelect.fromJson(
+            json
+          );
+                case 'status':
+          return NotionDatabaseStatus.fromJson(
+            json
+          );
+                case 'title':
+          return NotionDatabaseTitle.fromJson(
+            json
+          );
+                case 'url':
+          return NotionDatabaseUrl.fromJson(
+            json
+          );
+                case 'unique_id':
+          return NotionDatabaseUniqueId.fromJson(
+            json
+          );
+                case 'verification':
+          return NotionDatabaseVerification.fromJson(
+            json
+          );
+                case 'button':
+          return NotionDatabaseButton.fromJson(
+            json
+          );
+        
+          default:
+            throw CheckedFromJsonException(
+  json,
+  'type',
+  'NotionDatabaseProperty',
+  'Invalid union type "${json['type']}"!'
+);
+        }
+      
 }
 
 /// @nodoc
 mixin _$NotionDatabaseProperty {
-  String? get id;
-  String? get name;
-  String? get description;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabasePropertyCopyWith<NotionDatabaseProperty> get copyWith =>
-      _$NotionDatabasePropertyCopyWithImpl<NotionDatabaseProperty>(
-          this as NotionDatabaseProperty, _$identity);
+ String? get id; String? get name; String? get description;
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabasePropertyCopyWith<NotionDatabaseProperty> get copyWith => _$NotionDatabasePropertyCopyWithImpl<NotionDatabaseProperty>(this as NotionDatabaseProperty, _$identity);
 
   /// Serializes this NotionDatabaseProperty to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseProperty &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseProperty&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty(id: $id, name: $name, description: $description)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty(id: $id, name: $name, description: $description)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabasePropertyCopyWith(NotionDatabaseProperty value,
-          $Res Function(NotionDatabaseProperty) _then) =
-      _$NotionDatabasePropertyCopyWithImpl;
-  @useResult
-  $Res call({String? id, String? name, String? description});
-}
+abstract mixin class $NotionDatabasePropertyCopyWith<$Res>  {
+  factory $NotionDatabasePropertyCopyWith(NotionDatabaseProperty value, $Res Function(NotionDatabaseProperty) _then) = _$NotionDatabasePropertyCopyWithImpl;
+@useResult
+$Res call({
+ String? id, String? name, String? description
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabasePropertyCopyWithImpl<$Res>
     implements $NotionDatabasePropertyCopyWith<$Res> {
@@ -123,119 +170,340 @@ class _$NotionDatabasePropertyCopyWithImpl<$Res>
   final NotionDatabaseProperty _self;
   final $Res Function(NotionDatabaseProperty) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-  }) {
-    return _then(_self.copyWith(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseProperty].
+extension NotionDatabasePropertyPatterns on NotionDatabaseProperty {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionDatabaseCheckbox value)?  checkbox,TResult Function( NotionDatabaseCreatedBy value)?  createdBy,TResult Function( NotionDatabaseCreatedTime value)?  createdTime,TResult Function( NotionDatabaseDate value)?  date,TResult Function( NotionDatabaseEmail value)?  email,TResult Function( NotionDatabaseFiles value)?  files,TResult Function( NotionDatabaseFormula value)?  formula,TResult Function( NotionDatabaseLastEditedBy value)?  lastEditedBy,TResult Function( NotionDatabaseLastEditedTime value)?  lastEditedTime,TResult Function( NotionDatabaseMultiSelect value)?  multiSelect,TResult Function( NotionDatabaseNumber value)?  number,TResult Function( NotionDatabasePeople value)?  people,TResult Function( NotionDatabasePhoneNumber value)?  phoneNumber,TResult Function( NotionDatabaseRelation value)?  relation,TResult Function( NotionDatabaseRichText value)?  richText,TResult Function( NotionDatabaseRollup value)?  rollup,TResult Function( NotionDatabaseSelect value)?  select,TResult Function( NotionDatabaseStatus value)?  status,TResult Function( NotionDatabaseTitle value)?  title,TResult Function( NotionDatabaseUrl value)?  url,TResult Function( NotionDatabaseUniqueId value)?  uniqueId,TResult Function( NotionDatabaseVerification value)?  verification,TResult Function( NotionDatabaseButton value)?  button,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case NotionDatabaseCheckbox() when checkbox != null:
+return checkbox(_that);case NotionDatabaseCreatedBy() when createdBy != null:
+return createdBy(_that);case NotionDatabaseCreatedTime() when createdTime != null:
+return createdTime(_that);case NotionDatabaseDate() when date != null:
+return date(_that);case NotionDatabaseEmail() when email != null:
+return email(_that);case NotionDatabaseFiles() when files != null:
+return files(_that);case NotionDatabaseFormula() when formula != null:
+return formula(_that);case NotionDatabaseLastEditedBy() when lastEditedBy != null:
+return lastEditedBy(_that);case NotionDatabaseLastEditedTime() when lastEditedTime != null:
+return lastEditedTime(_that);case NotionDatabaseMultiSelect() when multiSelect != null:
+return multiSelect(_that);case NotionDatabaseNumber() when number != null:
+return number(_that);case NotionDatabasePeople() when people != null:
+return people(_that);case NotionDatabasePhoneNumber() when phoneNumber != null:
+return phoneNumber(_that);case NotionDatabaseRelation() when relation != null:
+return relation(_that);case NotionDatabaseRichText() when richText != null:
+return richText(_that);case NotionDatabaseRollup() when rollup != null:
+return rollup(_that);case NotionDatabaseSelect() when select != null:
+return select(_that);case NotionDatabaseStatus() when status != null:
+return status(_that);case NotionDatabaseTitle() when title != null:
+return title(_that);case NotionDatabaseUrl() when url != null:
+return url(_that);case NotionDatabaseUniqueId() when uniqueId != null:
+return uniqueId(_that);case NotionDatabaseVerification() when verification != null:
+return verification(_that);case NotionDatabaseButton() when button != null:
+return button(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionDatabaseCheckbox value)  checkbox,required TResult Function( NotionDatabaseCreatedBy value)  createdBy,required TResult Function( NotionDatabaseCreatedTime value)  createdTime,required TResult Function( NotionDatabaseDate value)  date,required TResult Function( NotionDatabaseEmail value)  email,required TResult Function( NotionDatabaseFiles value)  files,required TResult Function( NotionDatabaseFormula value)  formula,required TResult Function( NotionDatabaseLastEditedBy value)  lastEditedBy,required TResult Function( NotionDatabaseLastEditedTime value)  lastEditedTime,required TResult Function( NotionDatabaseMultiSelect value)  multiSelect,required TResult Function( NotionDatabaseNumber value)  number,required TResult Function( NotionDatabasePeople value)  people,required TResult Function( NotionDatabasePhoneNumber value)  phoneNumber,required TResult Function( NotionDatabaseRelation value)  relation,required TResult Function( NotionDatabaseRichText value)  richText,required TResult Function( NotionDatabaseRollup value)  rollup,required TResult Function( NotionDatabaseSelect value)  select,required TResult Function( NotionDatabaseStatus value)  status,required TResult Function( NotionDatabaseTitle value)  title,required TResult Function( NotionDatabaseUrl value)  url,required TResult Function( NotionDatabaseUniqueId value)  uniqueId,required TResult Function( NotionDatabaseVerification value)  verification,required TResult Function( NotionDatabaseButton value)  button,}){
+final _that = this;
+switch (_that) {
+case NotionDatabaseCheckbox():
+return checkbox(_that);case NotionDatabaseCreatedBy():
+return createdBy(_that);case NotionDatabaseCreatedTime():
+return createdTime(_that);case NotionDatabaseDate():
+return date(_that);case NotionDatabaseEmail():
+return email(_that);case NotionDatabaseFiles():
+return files(_that);case NotionDatabaseFormula():
+return formula(_that);case NotionDatabaseLastEditedBy():
+return lastEditedBy(_that);case NotionDatabaseLastEditedTime():
+return lastEditedTime(_that);case NotionDatabaseMultiSelect():
+return multiSelect(_that);case NotionDatabaseNumber():
+return number(_that);case NotionDatabasePeople():
+return people(_that);case NotionDatabasePhoneNumber():
+return phoneNumber(_that);case NotionDatabaseRelation():
+return relation(_that);case NotionDatabaseRichText():
+return richText(_that);case NotionDatabaseRollup():
+return rollup(_that);case NotionDatabaseSelect():
+return select(_that);case NotionDatabaseStatus():
+return status(_that);case NotionDatabaseTitle():
+return title(_that);case NotionDatabaseUrl():
+return url(_that);case NotionDatabaseUniqueId():
+return uniqueId(_that);case NotionDatabaseVerification():
+return verification(_that);case NotionDatabaseButton():
+return button(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionDatabaseCheckbox value)?  checkbox,TResult? Function( NotionDatabaseCreatedBy value)?  createdBy,TResult? Function( NotionDatabaseCreatedTime value)?  createdTime,TResult? Function( NotionDatabaseDate value)?  date,TResult? Function( NotionDatabaseEmail value)?  email,TResult? Function( NotionDatabaseFiles value)?  files,TResult? Function( NotionDatabaseFormula value)?  formula,TResult? Function( NotionDatabaseLastEditedBy value)?  lastEditedBy,TResult? Function( NotionDatabaseLastEditedTime value)?  lastEditedTime,TResult? Function( NotionDatabaseMultiSelect value)?  multiSelect,TResult? Function( NotionDatabaseNumber value)?  number,TResult? Function( NotionDatabasePeople value)?  people,TResult? Function( NotionDatabasePhoneNumber value)?  phoneNumber,TResult? Function( NotionDatabaseRelation value)?  relation,TResult? Function( NotionDatabaseRichText value)?  richText,TResult? Function( NotionDatabaseRollup value)?  rollup,TResult? Function( NotionDatabaseSelect value)?  select,TResult? Function( NotionDatabaseStatus value)?  status,TResult? Function( NotionDatabaseTitle value)?  title,TResult? Function( NotionDatabaseUrl value)?  url,TResult? Function( NotionDatabaseUniqueId value)?  uniqueId,TResult? Function( NotionDatabaseVerification value)?  verification,TResult? Function( NotionDatabaseButton value)?  button,}){
+final _that = this;
+switch (_that) {
+case NotionDatabaseCheckbox() when checkbox != null:
+return checkbox(_that);case NotionDatabaseCreatedBy() when createdBy != null:
+return createdBy(_that);case NotionDatabaseCreatedTime() when createdTime != null:
+return createdTime(_that);case NotionDatabaseDate() when date != null:
+return date(_that);case NotionDatabaseEmail() when email != null:
+return email(_that);case NotionDatabaseFiles() when files != null:
+return files(_that);case NotionDatabaseFormula() when formula != null:
+return formula(_that);case NotionDatabaseLastEditedBy() when lastEditedBy != null:
+return lastEditedBy(_that);case NotionDatabaseLastEditedTime() when lastEditedTime != null:
+return lastEditedTime(_that);case NotionDatabaseMultiSelect() when multiSelect != null:
+return multiSelect(_that);case NotionDatabaseNumber() when number != null:
+return number(_that);case NotionDatabasePeople() when people != null:
+return people(_that);case NotionDatabasePhoneNumber() when phoneNumber != null:
+return phoneNumber(_that);case NotionDatabaseRelation() when relation != null:
+return relation(_that);case NotionDatabaseRichText() when richText != null:
+return richText(_that);case NotionDatabaseRollup() when rollup != null:
+return rollup(_that);case NotionDatabaseSelect() when select != null:
+return select(_that);case NotionDatabaseStatus() when status != null:
+return status(_that);case NotionDatabaseTitle() when title != null:
+return title(_that);case NotionDatabaseUrl() when url != null:
+return url(_that);case NotionDatabaseUniqueId() when uniqueId != null:
+return uniqueId(_that);case NotionDatabaseVerification() when verification != null:
+return verification(_that);case NotionDatabaseButton() when button != null:
+return button(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? checkbox)?  checkbox,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? createdBy)?  createdBy,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? createdTime)?  createdTime,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? date)?  date,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? email)?  email,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? files)?  files,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseFormulaObject? formula)?  formula,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? lastEditedBy)?  lastEditedBy,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? lastEditedTime)?  lastEditedTime,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseSelectObject? multiSelect)?  multiSelect,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseNumberObject? number)?  number,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? people)?  people,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? phoneNumber)?  phoneNumber,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseRelationObject? relation)?  relation,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? richText)?  richText,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseRollupObject? rollup)?  rollup,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseSelectObject? select)?  select,TResult Function( String? id,  String? name,  String? description,  NotionDatabaseStatusObject? status)?  status,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? title)?  title,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? url)?  url,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? uniqueId)?  uniqueId,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? verification)?  verification,TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? button)?  button,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case NotionDatabaseCheckbox() when checkbox != null:
+return checkbox(_that.id,_that.name,_that.description,_that.checkbox);case NotionDatabaseCreatedBy() when createdBy != null:
+return createdBy(_that.id,_that.name,_that.description,_that.createdBy);case NotionDatabaseCreatedTime() when createdTime != null:
+return createdTime(_that.id,_that.name,_that.description,_that.createdTime);case NotionDatabaseDate() when date != null:
+return date(_that.id,_that.name,_that.description,_that.date);case NotionDatabaseEmail() when email != null:
+return email(_that.id,_that.name,_that.description,_that.email);case NotionDatabaseFiles() when files != null:
+return files(_that.id,_that.name,_that.description,_that.files);case NotionDatabaseFormula() when formula != null:
+return formula(_that.id,_that.name,_that.description,_that.formula);case NotionDatabaseLastEditedBy() when lastEditedBy != null:
+return lastEditedBy(_that.id,_that.name,_that.description,_that.lastEditedBy);case NotionDatabaseLastEditedTime() when lastEditedTime != null:
+return lastEditedTime(_that.id,_that.name,_that.description,_that.lastEditedTime);case NotionDatabaseMultiSelect() when multiSelect != null:
+return multiSelect(_that.id,_that.name,_that.description,_that.multiSelect);case NotionDatabaseNumber() when number != null:
+return number(_that.id,_that.name,_that.description,_that.number);case NotionDatabasePeople() when people != null:
+return people(_that.id,_that.name,_that.description,_that.people);case NotionDatabasePhoneNumber() when phoneNumber != null:
+return phoneNumber(_that.id,_that.name,_that.description,_that.phoneNumber);case NotionDatabaseRelation() when relation != null:
+return relation(_that.id,_that.name,_that.description,_that.relation);case NotionDatabaseRichText() when richText != null:
+return richText(_that.id,_that.name,_that.description,_that.richText);case NotionDatabaseRollup() when rollup != null:
+return rollup(_that.id,_that.name,_that.description,_that.rollup);case NotionDatabaseSelect() when select != null:
+return select(_that.id,_that.name,_that.description,_that.select);case NotionDatabaseStatus() when status != null:
+return status(_that.id,_that.name,_that.description,_that.status);case NotionDatabaseTitle() when title != null:
+return title(_that.id,_that.name,_that.description,_that.title);case NotionDatabaseUrl() when url != null:
+return url(_that.id,_that.name,_that.description,_that.url);case NotionDatabaseUniqueId() when uniqueId != null:
+return uniqueId(_that.id,_that.name,_that.description,_that.uniqueId);case NotionDatabaseVerification() when verification != null:
+return verification(_that.id,_that.name,_that.description,_that.verification);case NotionDatabaseButton() when button != null:
+return button(_that.id,_that.name,_that.description,_that.button);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? checkbox)  checkbox,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? createdBy)  createdBy,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? createdTime)  createdTime,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? date)  date,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? email)  email,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? files)  files,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseFormulaObject? formula)  formula,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? lastEditedBy)  lastEditedBy,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? lastEditedTime)  lastEditedTime,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseSelectObject? multiSelect)  multiSelect,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseNumberObject? number)  number,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? people)  people,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? phoneNumber)  phoneNumber,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseRelationObject? relation)  relation,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? richText)  richText,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseRollupObject? rollup)  rollup,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseSelectObject? select)  select,required TResult Function( String? id,  String? name,  String? description,  NotionDatabaseStatusObject? status)  status,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? title)  title,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? url)  url,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? uniqueId)  uniqueId,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? verification)  verification,required TResult Function( String? id,  String? name,  String? description,  Map<String, dynamic>? button)  button,}) {final _that = this;
+switch (_that) {
+case NotionDatabaseCheckbox():
+return checkbox(_that.id,_that.name,_that.description,_that.checkbox);case NotionDatabaseCreatedBy():
+return createdBy(_that.id,_that.name,_that.description,_that.createdBy);case NotionDatabaseCreatedTime():
+return createdTime(_that.id,_that.name,_that.description,_that.createdTime);case NotionDatabaseDate():
+return date(_that.id,_that.name,_that.description,_that.date);case NotionDatabaseEmail():
+return email(_that.id,_that.name,_that.description,_that.email);case NotionDatabaseFiles():
+return files(_that.id,_that.name,_that.description,_that.files);case NotionDatabaseFormula():
+return formula(_that.id,_that.name,_that.description,_that.formula);case NotionDatabaseLastEditedBy():
+return lastEditedBy(_that.id,_that.name,_that.description,_that.lastEditedBy);case NotionDatabaseLastEditedTime():
+return lastEditedTime(_that.id,_that.name,_that.description,_that.lastEditedTime);case NotionDatabaseMultiSelect():
+return multiSelect(_that.id,_that.name,_that.description,_that.multiSelect);case NotionDatabaseNumber():
+return number(_that.id,_that.name,_that.description,_that.number);case NotionDatabasePeople():
+return people(_that.id,_that.name,_that.description,_that.people);case NotionDatabasePhoneNumber():
+return phoneNumber(_that.id,_that.name,_that.description,_that.phoneNumber);case NotionDatabaseRelation():
+return relation(_that.id,_that.name,_that.description,_that.relation);case NotionDatabaseRichText():
+return richText(_that.id,_that.name,_that.description,_that.richText);case NotionDatabaseRollup():
+return rollup(_that.id,_that.name,_that.description,_that.rollup);case NotionDatabaseSelect():
+return select(_that.id,_that.name,_that.description,_that.select);case NotionDatabaseStatus():
+return status(_that.id,_that.name,_that.description,_that.status);case NotionDatabaseTitle():
+return title(_that.id,_that.name,_that.description,_that.title);case NotionDatabaseUrl():
+return url(_that.id,_that.name,_that.description,_that.url);case NotionDatabaseUniqueId():
+return uniqueId(_that.id,_that.name,_that.description,_that.uniqueId);case NotionDatabaseVerification():
+return verification(_that.id,_that.name,_that.description,_that.verification);case NotionDatabaseButton():
+return button(_that.id,_that.name,_that.description,_that.button);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? checkbox)?  checkbox,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? createdBy)?  createdBy,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? createdTime)?  createdTime,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? date)?  date,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? email)?  email,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? files)?  files,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseFormulaObject? formula)?  formula,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? lastEditedBy)?  lastEditedBy,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? lastEditedTime)?  lastEditedTime,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseSelectObject? multiSelect)?  multiSelect,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseNumberObject? number)?  number,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? people)?  people,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? phoneNumber)?  phoneNumber,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseRelationObject? relation)?  relation,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? richText)?  richText,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseRollupObject? rollup)?  rollup,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseSelectObject? select)?  select,TResult? Function( String? id,  String? name,  String? description,  NotionDatabaseStatusObject? status)?  status,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? title)?  title,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? url)?  url,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? uniqueId)?  uniqueId,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? verification)?  verification,TResult? Function( String? id,  String? name,  String? description,  Map<String, dynamic>? button)?  button,}) {final _that = this;
+switch (_that) {
+case NotionDatabaseCheckbox() when checkbox != null:
+return checkbox(_that.id,_that.name,_that.description,_that.checkbox);case NotionDatabaseCreatedBy() when createdBy != null:
+return createdBy(_that.id,_that.name,_that.description,_that.createdBy);case NotionDatabaseCreatedTime() when createdTime != null:
+return createdTime(_that.id,_that.name,_that.description,_that.createdTime);case NotionDatabaseDate() when date != null:
+return date(_that.id,_that.name,_that.description,_that.date);case NotionDatabaseEmail() when email != null:
+return email(_that.id,_that.name,_that.description,_that.email);case NotionDatabaseFiles() when files != null:
+return files(_that.id,_that.name,_that.description,_that.files);case NotionDatabaseFormula() when formula != null:
+return formula(_that.id,_that.name,_that.description,_that.formula);case NotionDatabaseLastEditedBy() when lastEditedBy != null:
+return lastEditedBy(_that.id,_that.name,_that.description,_that.lastEditedBy);case NotionDatabaseLastEditedTime() when lastEditedTime != null:
+return lastEditedTime(_that.id,_that.name,_that.description,_that.lastEditedTime);case NotionDatabaseMultiSelect() when multiSelect != null:
+return multiSelect(_that.id,_that.name,_that.description,_that.multiSelect);case NotionDatabaseNumber() when number != null:
+return number(_that.id,_that.name,_that.description,_that.number);case NotionDatabasePeople() when people != null:
+return people(_that.id,_that.name,_that.description,_that.people);case NotionDatabasePhoneNumber() when phoneNumber != null:
+return phoneNumber(_that.id,_that.name,_that.description,_that.phoneNumber);case NotionDatabaseRelation() when relation != null:
+return relation(_that.id,_that.name,_that.description,_that.relation);case NotionDatabaseRichText() when richText != null:
+return richText(_that.id,_that.name,_that.description,_that.richText);case NotionDatabaseRollup() when rollup != null:
+return rollup(_that.id,_that.name,_that.description,_that.rollup);case NotionDatabaseSelect() when select != null:
+return select(_that.id,_that.name,_that.description,_that.select);case NotionDatabaseStatus() when status != null:
+return status(_that.id,_that.name,_that.description,_that.status);case NotionDatabaseTitle() when title != null:
+return title(_that.id,_that.name,_that.description,_that.title);case NotionDatabaseUrl() when url != null:
+return url(_that.id,_that.name,_that.description,_that.url);case NotionDatabaseUniqueId() when uniqueId != null:
+return uniqueId(_that.id,_that.name,_that.description,_that.uniqueId);case NotionDatabaseVerification() when verification != null:
+return verification(_that.id,_that.name,_that.description,_that.verification);case NotionDatabaseButton() when button != null:
+return button(_that.id,_that.name,_that.description,_that.button);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseCheckbox implements NotionDatabaseProperty {
-  const NotionDatabaseCheckbox(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? checkbox = const <String, dynamic>{},
-      final String? $type})
-      : _checkbox = checkbox,
-        $type = $type ?? 'checkbox';
-  factory NotionDatabaseCheckbox.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseCheckboxFromJson(json);
+  const NotionDatabaseCheckbox({this.id, this.name, this.description, final  Map<String, dynamic>? checkbox = const <String, dynamic>{}, final  String? $type}): _checkbox = checkbox,$type = $type ?? 'checkbox';
+  factory NotionDatabaseCheckbox.fromJson(Map<String, dynamic> json) => _$NotionDatabaseCheckboxFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _checkbox;
-  @JsonKey()
-  Map<String, dynamic>? get checkbox {
-    final value = _checkbox;
-    if (value == null) return null;
-    if (_checkbox is EqualUnmodifiableMapView) return _checkbox;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _checkbox;
+@JsonKey() Map<String, dynamic>? get checkbox {
+  final value = _checkbox;
+  if (value == null) return null;
+  if (_checkbox is EqualUnmodifiableMapView) return _checkbox;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseCheckboxCopyWith<NotionDatabaseCheckbox> get copyWith =>
-      _$NotionDatabaseCheckboxCopyWithImpl<NotionDatabaseCheckbox>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseCheckboxToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseCheckbox &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._checkbox, _checkbox));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseCheckboxCopyWith<NotionDatabaseCheckbox> get copyWith => _$NotionDatabaseCheckboxCopyWithImpl<NotionDatabaseCheckbox>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_checkbox));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseCheckboxToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.checkbox(id: $id, name: $name, description: $description, checkbox: $checkbox)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseCheckbox&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._checkbox, _checkbox));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_checkbox));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.checkbox(id: $id, name: $name, description: $description, checkbox: $checkbox)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseCheckboxCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseCheckboxCopyWith(NotionDatabaseCheckbox value,
-          $Res Function(NotionDatabaseCheckbox) _then) =
-      _$NotionDatabaseCheckboxCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? checkbox});
-}
+abstract mixin class $NotionDatabaseCheckboxCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseCheckboxCopyWith(NotionDatabaseCheckbox value, $Res Function(NotionDatabaseCheckbox) _then) = _$NotionDatabaseCheckboxCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? checkbox
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseCheckboxCopyWithImpl<$Res>
     implements $NotionDatabaseCheckboxCopyWith<$Res> {
@@ -244,125 +512,85 @@ class _$NotionDatabaseCheckboxCopyWithImpl<$Res>
   final NotionDatabaseCheckbox _self;
   final $Res Function(NotionDatabaseCheckbox) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? checkbox = freezed,
-  }) {
-    return _then(NotionDatabaseCheckbox(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      checkbox: freezed == checkbox
-          ? _self._checkbox
-          : checkbox // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? checkbox = freezed,}) {
+  return _then(NotionDatabaseCheckbox(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,checkbox: freezed == checkbox ? _self._checkbox : checkbox // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseCreatedBy implements NotionDatabaseProperty {
-  const NotionDatabaseCreatedBy(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? createdBy = const <String, dynamic>{},
-      final String? $type})
-      : _createdBy = createdBy,
-        $type = $type ?? 'created_by';
-  factory NotionDatabaseCreatedBy.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseCreatedByFromJson(json);
+  const NotionDatabaseCreatedBy({this.id, this.name, this.description, final  Map<String, dynamic>? createdBy = const <String, dynamic>{}, final  String? $type}): _createdBy = createdBy,$type = $type ?? 'created_by';
+  factory NotionDatabaseCreatedBy.fromJson(Map<String, dynamic> json) => _$NotionDatabaseCreatedByFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _createdBy;
-  @JsonKey()
-  Map<String, dynamic>? get createdBy {
-    final value = _createdBy;
-    if (value == null) return null;
-    if (_createdBy is EqualUnmodifiableMapView) return _createdBy;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _createdBy;
+@JsonKey() Map<String, dynamic>? get createdBy {
+  final value = _createdBy;
+  if (value == null) return null;
+  if (_createdBy is EqualUnmodifiableMapView) return _createdBy;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseCreatedByCopyWith<NotionDatabaseCreatedBy> get copyWith =>
-      _$NotionDatabaseCreatedByCopyWithImpl<NotionDatabaseCreatedBy>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseCreatedByToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseCreatedBy &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality()
-                .equals(other._createdBy, _createdBy));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseCreatedByCopyWith<NotionDatabaseCreatedBy> get copyWith => _$NotionDatabaseCreatedByCopyWithImpl<NotionDatabaseCreatedBy>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_createdBy));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseCreatedByToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.createdBy(id: $id, name: $name, description: $description, createdBy: $createdBy)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseCreatedBy&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._createdBy, _createdBy));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_createdBy));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.createdBy(id: $id, name: $name, description: $description, createdBy: $createdBy)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseCreatedByCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseCreatedByCopyWith(NotionDatabaseCreatedBy value,
-          $Res Function(NotionDatabaseCreatedBy) _then) =
-      _$NotionDatabaseCreatedByCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? createdBy});
-}
+abstract mixin class $NotionDatabaseCreatedByCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseCreatedByCopyWith(NotionDatabaseCreatedBy value, $Res Function(NotionDatabaseCreatedBy) _then) = _$NotionDatabaseCreatedByCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? createdBy
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseCreatedByCopyWithImpl<$Res>
     implements $NotionDatabaseCreatedByCopyWith<$Res> {
@@ -371,125 +599,85 @@ class _$NotionDatabaseCreatedByCopyWithImpl<$Res>
   final NotionDatabaseCreatedBy _self;
   final $Res Function(NotionDatabaseCreatedBy) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? createdBy = freezed,
-  }) {
-    return _then(NotionDatabaseCreatedBy(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      createdBy: freezed == createdBy
-          ? _self._createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? createdBy = freezed,}) {
+  return _then(NotionDatabaseCreatedBy(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,createdBy: freezed == createdBy ? _self._createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseCreatedTime implements NotionDatabaseProperty {
-  const NotionDatabaseCreatedTime(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? createdTime = const <String, dynamic>{},
-      final String? $type})
-      : _createdTime = createdTime,
-        $type = $type ?? 'created_time';
-  factory NotionDatabaseCreatedTime.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseCreatedTimeFromJson(json);
+  const NotionDatabaseCreatedTime({this.id, this.name, this.description, final  Map<String, dynamic>? createdTime = const <String, dynamic>{}, final  String? $type}): _createdTime = createdTime,$type = $type ?? 'created_time';
+  factory NotionDatabaseCreatedTime.fromJson(Map<String, dynamic> json) => _$NotionDatabaseCreatedTimeFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _createdTime;
-  @JsonKey()
-  Map<String, dynamic>? get createdTime {
-    final value = _createdTime;
-    if (value == null) return null;
-    if (_createdTime is EqualUnmodifiableMapView) return _createdTime;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _createdTime;
+@JsonKey() Map<String, dynamic>? get createdTime {
+  final value = _createdTime;
+  if (value == null) return null;
+  if (_createdTime is EqualUnmodifiableMapView) return _createdTime;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseCreatedTimeCopyWith<NotionDatabaseCreatedTime> get copyWith =>
-      _$NotionDatabaseCreatedTimeCopyWithImpl<NotionDatabaseCreatedTime>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseCreatedTimeToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseCreatedTime &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality()
-                .equals(other._createdTime, _createdTime));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseCreatedTimeCopyWith<NotionDatabaseCreatedTime> get copyWith => _$NotionDatabaseCreatedTimeCopyWithImpl<NotionDatabaseCreatedTime>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_createdTime));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseCreatedTimeToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.createdTime(id: $id, name: $name, description: $description, createdTime: $createdTime)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseCreatedTime&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._createdTime, _createdTime));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_createdTime));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.createdTime(id: $id, name: $name, description: $description, createdTime: $createdTime)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseCreatedTimeCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseCreatedTimeCopyWith(NotionDatabaseCreatedTime value,
-          $Res Function(NotionDatabaseCreatedTime) _then) =
-      _$NotionDatabaseCreatedTimeCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? createdTime});
-}
+abstract mixin class $NotionDatabaseCreatedTimeCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseCreatedTimeCopyWith(NotionDatabaseCreatedTime value, $Res Function(NotionDatabaseCreatedTime) _then) = _$NotionDatabaseCreatedTimeCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? createdTime
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseCreatedTimeCopyWithImpl<$Res>
     implements $NotionDatabaseCreatedTimeCopyWith<$Res> {
@@ -498,123 +686,85 @@ class _$NotionDatabaseCreatedTimeCopyWithImpl<$Res>
   final NotionDatabaseCreatedTime _self;
   final $Res Function(NotionDatabaseCreatedTime) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? createdTime = freezed,
-  }) {
-    return _then(NotionDatabaseCreatedTime(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      createdTime: freezed == createdTime
-          ? _self._createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? createdTime = freezed,}) {
+  return _then(NotionDatabaseCreatedTime(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,createdTime: freezed == createdTime ? _self._createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseDate implements NotionDatabaseProperty {
-  const NotionDatabaseDate(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? date = const <String, dynamic>{},
-      final String? $type})
-      : _date = date,
-        $type = $type ?? 'date';
-  factory NotionDatabaseDate.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseDateFromJson(json);
+  const NotionDatabaseDate({this.id, this.name, this.description, final  Map<String, dynamic>? date = const <String, dynamic>{}, final  String? $type}): _date = date,$type = $type ?? 'date';
+  factory NotionDatabaseDate.fromJson(Map<String, dynamic> json) => _$NotionDatabaseDateFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _date;
-  @JsonKey()
-  Map<String, dynamic>? get date {
-    final value = _date;
-    if (value == null) return null;
-    if (_date is EqualUnmodifiableMapView) return _date;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _date;
+@JsonKey() Map<String, dynamic>? get date {
+  final value = _date;
+  if (value == null) return null;
+  if (_date is EqualUnmodifiableMapView) return _date;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseDateCopyWith<NotionDatabaseDate> get copyWith =>
-      _$NotionDatabaseDateCopyWithImpl<NotionDatabaseDate>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseDateToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseDate &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._date, _date));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseDateCopyWith<NotionDatabaseDate> get copyWith => _$NotionDatabaseDateCopyWithImpl<NotionDatabaseDate>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_date));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseDateToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.date(id: $id, name: $name, description: $description, date: $date)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseDate&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._date, _date));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_date));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.date(id: $id, name: $name, description: $description, date: $date)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseDateCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseDateCopyWith(
-          NotionDatabaseDate value, $Res Function(NotionDatabaseDate) _then) =
-      _$NotionDatabaseDateCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? date});
-}
+abstract mixin class $NotionDatabaseDateCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseDateCopyWith(NotionDatabaseDate value, $Res Function(NotionDatabaseDate) _then) = _$NotionDatabaseDateCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? date
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseDateCopyWithImpl<$Res>
     implements $NotionDatabaseDateCopyWith<$Res> {
@@ -623,123 +773,85 @@ class _$NotionDatabaseDateCopyWithImpl<$Res>
   final NotionDatabaseDate _self;
   final $Res Function(NotionDatabaseDate) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? date = freezed,
-  }) {
-    return _then(NotionDatabaseDate(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      date: freezed == date
-          ? _self._date
-          : date // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? date = freezed,}) {
+  return _then(NotionDatabaseDate(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,date: freezed == date ? _self._date : date // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseEmail implements NotionDatabaseProperty {
-  const NotionDatabaseEmail(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? email = const <String, dynamic>{},
-      final String? $type})
-      : _email = email,
-        $type = $type ?? 'email';
-  factory NotionDatabaseEmail.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseEmailFromJson(json);
+  const NotionDatabaseEmail({this.id, this.name, this.description, final  Map<String, dynamic>? email = const <String, dynamic>{}, final  String? $type}): _email = email,$type = $type ?? 'email';
+  factory NotionDatabaseEmail.fromJson(Map<String, dynamic> json) => _$NotionDatabaseEmailFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _email;
-  @JsonKey()
-  Map<String, dynamic>? get email {
-    final value = _email;
-    if (value == null) return null;
-    if (_email is EqualUnmodifiableMapView) return _email;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _email;
+@JsonKey() Map<String, dynamic>? get email {
+  final value = _email;
+  if (value == null) return null;
+  if (_email is EqualUnmodifiableMapView) return _email;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseEmailCopyWith<NotionDatabaseEmail> get copyWith =>
-      _$NotionDatabaseEmailCopyWithImpl<NotionDatabaseEmail>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseEmailToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseEmail &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._email, _email));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseEmailCopyWith<NotionDatabaseEmail> get copyWith => _$NotionDatabaseEmailCopyWithImpl<NotionDatabaseEmail>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_email));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseEmailToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.email(id: $id, name: $name, description: $description, email: $email)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseEmail&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._email, _email));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_email));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.email(id: $id, name: $name, description: $description, email: $email)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseEmailCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseEmailCopyWith(
-          NotionDatabaseEmail value, $Res Function(NotionDatabaseEmail) _then) =
-      _$NotionDatabaseEmailCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? email});
-}
+abstract mixin class $NotionDatabaseEmailCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseEmailCopyWith(NotionDatabaseEmail value, $Res Function(NotionDatabaseEmail) _then) = _$NotionDatabaseEmailCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? email
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseEmailCopyWithImpl<$Res>
     implements $NotionDatabaseEmailCopyWith<$Res> {
@@ -748,123 +860,85 @@ class _$NotionDatabaseEmailCopyWithImpl<$Res>
   final NotionDatabaseEmail _self;
   final $Res Function(NotionDatabaseEmail) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? email = freezed,
-  }) {
-    return _then(NotionDatabaseEmail(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      email: freezed == email
-          ? _self._email
-          : email // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? email = freezed,}) {
+  return _then(NotionDatabaseEmail(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,email: freezed == email ? _self._email : email // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseFiles implements NotionDatabaseProperty {
-  const NotionDatabaseFiles(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? files = const <String, dynamic>{},
-      final String? $type})
-      : _files = files,
-        $type = $type ?? 'files';
-  factory NotionDatabaseFiles.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseFilesFromJson(json);
+  const NotionDatabaseFiles({this.id, this.name, this.description, final  Map<String, dynamic>? files = const <String, dynamic>{}, final  String? $type}): _files = files,$type = $type ?? 'files';
+  factory NotionDatabaseFiles.fromJson(Map<String, dynamic> json) => _$NotionDatabaseFilesFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _files;
-  @JsonKey()
-  Map<String, dynamic>? get files {
-    final value = _files;
-    if (value == null) return null;
-    if (_files is EqualUnmodifiableMapView) return _files;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _files;
+@JsonKey() Map<String, dynamic>? get files {
+  final value = _files;
+  if (value == null) return null;
+  if (_files is EqualUnmodifiableMapView) return _files;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseFilesCopyWith<NotionDatabaseFiles> get copyWith =>
-      _$NotionDatabaseFilesCopyWithImpl<NotionDatabaseFiles>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseFilesToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseFiles &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._files, _files));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseFilesCopyWith<NotionDatabaseFiles> get copyWith => _$NotionDatabaseFilesCopyWithImpl<NotionDatabaseFiles>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_files));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseFilesToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.files(id: $id, name: $name, description: $description, files: $files)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseFiles&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._files, _files));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_files));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.files(id: $id, name: $name, description: $description, files: $files)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseFilesCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseFilesCopyWith(
-          NotionDatabaseFiles value, $Res Function(NotionDatabaseFiles) _then) =
-      _$NotionDatabaseFilesCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? files});
-}
+abstract mixin class $NotionDatabaseFilesCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseFilesCopyWith(NotionDatabaseFiles value, $Res Function(NotionDatabaseFiles) _then) = _$NotionDatabaseFilesCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? files
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseFilesCopyWithImpl<$Res>
     implements $NotionDatabaseFilesCopyWith<$Res> {
@@ -873,112 +947,77 @@ class _$NotionDatabaseFilesCopyWithImpl<$Res>
   final NotionDatabaseFiles _self;
   final $Res Function(NotionDatabaseFiles) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? files = freezed,
-  }) {
-    return _then(NotionDatabaseFiles(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      files: freezed == files
-          ? _self._files
-          : files // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? files = freezed,}) {
+  return _then(NotionDatabaseFiles(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,files: freezed == files ? _self._files : files // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseFormula implements NotionDatabaseProperty {
-  const NotionDatabaseFormula(
-      {this.id, this.name, this.description, this.formula, final String? $type})
-      : $type = $type ?? 'formula';
-  factory NotionDatabaseFormula.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseFormulaFromJson(json);
+  const NotionDatabaseFormula({this.id, this.name, this.description, this.formula, final  String? $type}): $type = $type ?? 'formula';
+  factory NotionDatabaseFormula.fromJson(Map<String, dynamic> json) => _$NotionDatabaseFormulaFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseFormulaObject? formula;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseFormulaObject? formula;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseFormulaCopyWith<NotionDatabaseFormula> get copyWith =>
-      _$NotionDatabaseFormulaCopyWithImpl<NotionDatabaseFormula>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseFormulaToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseFormulaCopyWith<NotionDatabaseFormula> get copyWith => _$NotionDatabaseFormulaCopyWithImpl<NotionDatabaseFormula>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseFormula &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.formula, formula) || other.formula == formula));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseFormulaToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, formula);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseFormula&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.formula, formula) || other.formula == formula));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.formula(id: $id, name: $name, description: $description, formula: $formula)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,formula);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.formula(id: $id, name: $name, description: $description, formula: $formula)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseFormulaCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseFormulaCopyWith(NotionDatabaseFormula value,
-          $Res Function(NotionDatabaseFormula) _then) =
-      _$NotionDatabaseFormulaCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseFormulaObject? formula});
+abstract mixin class $NotionDatabaseFormulaCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseFormulaCopyWith(NotionDatabaseFormula value, $Res Function(NotionDatabaseFormula) _then) = _$NotionDatabaseFormulaCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseFormulaObject? formula
+});
 
-  $NotionDatabaseFormulaObjectCopyWith<$Res>? get formula;
+
+$NotionDatabaseFormulaObjectCopyWith<$Res>? get formula;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseFormulaCopyWithImpl<$Res>
     implements $NotionDatabaseFormulaCopyWith<$Res> {
@@ -987,140 +1026,97 @@ class _$NotionDatabaseFormulaCopyWithImpl<$Res>
   final NotionDatabaseFormula _self;
   final $Res Function(NotionDatabaseFormula) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? formula = freezed,
-  }) {
-    return _then(NotionDatabaseFormula(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      formula: freezed == formula
-          ? _self.formula
-          : formula // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseFormulaObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? formula = freezed,}) {
+  return _then(NotionDatabaseFormula(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,formula: freezed == formula ? _self.formula : formula // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseFormulaObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseFormulaObjectCopyWith<$Res>? get formula {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseFormulaObjectCopyWith<$Res>? get formula {
     if (_self.formula == null) {
-      return null;
-    }
-
-    return $NotionDatabaseFormulaObjectCopyWith<$Res>(_self.formula!, (value) {
-      return _then(_self.copyWith(formula: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseFormulaObjectCopyWith<$Res>(_self.formula!, (value) {
+    return _then(_self.copyWith(formula: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseLastEditedBy implements NotionDatabaseProperty {
-  const NotionDatabaseLastEditedBy(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? lastEditedBy = const <String, dynamic>{},
-      final String? $type})
-      : _lastEditedBy = lastEditedBy,
-        $type = $type ?? 'last_edited_by';
-  factory NotionDatabaseLastEditedBy.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseLastEditedByFromJson(json);
+  const NotionDatabaseLastEditedBy({this.id, this.name, this.description, final  Map<String, dynamic>? lastEditedBy = const <String, dynamic>{}, final  String? $type}): _lastEditedBy = lastEditedBy,$type = $type ?? 'last_edited_by';
+  factory NotionDatabaseLastEditedBy.fromJson(Map<String, dynamic> json) => _$NotionDatabaseLastEditedByFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _lastEditedBy;
-  @JsonKey()
-  Map<String, dynamic>? get lastEditedBy {
-    final value = _lastEditedBy;
-    if (value == null) return null;
-    if (_lastEditedBy is EqualUnmodifiableMapView) return _lastEditedBy;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _lastEditedBy;
+@JsonKey() Map<String, dynamic>? get lastEditedBy {
+  final value = _lastEditedBy;
+  if (value == null) return null;
+  if (_lastEditedBy is EqualUnmodifiableMapView) return _lastEditedBy;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseLastEditedByCopyWith<NotionDatabaseLastEditedBy>
-      get copyWith =>
-          _$NotionDatabaseLastEditedByCopyWithImpl<NotionDatabaseLastEditedBy>(
-              this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseLastEditedByToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseLastEditedBy &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality()
-                .equals(other._lastEditedBy, _lastEditedBy));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseLastEditedByCopyWith<NotionDatabaseLastEditedBy> get copyWith => _$NotionDatabaseLastEditedByCopyWithImpl<NotionDatabaseLastEditedBy>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_lastEditedBy));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseLastEditedByToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.lastEditedBy(id: $id, name: $name, description: $description, lastEditedBy: $lastEditedBy)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseLastEditedBy&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._lastEditedBy, _lastEditedBy));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_lastEditedBy));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.lastEditedBy(id: $id, name: $name, description: $description, lastEditedBy: $lastEditedBy)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseLastEditedByCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseLastEditedByCopyWith(NotionDatabaseLastEditedBy value,
-          $Res Function(NotionDatabaseLastEditedBy) _then) =
-      _$NotionDatabaseLastEditedByCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? lastEditedBy});
-}
+abstract mixin class $NotionDatabaseLastEditedByCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseLastEditedByCopyWith(NotionDatabaseLastEditedBy value, $Res Function(NotionDatabaseLastEditedBy) _then) = _$NotionDatabaseLastEditedByCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? lastEditedBy
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseLastEditedByCopyWithImpl<$Res>
     implements $NotionDatabaseLastEditedByCopyWith<$Res> {
@@ -1129,126 +1125,85 @@ class _$NotionDatabaseLastEditedByCopyWithImpl<$Res>
   final NotionDatabaseLastEditedBy _self;
   final $Res Function(NotionDatabaseLastEditedBy) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? lastEditedBy = freezed,
-  }) {
-    return _then(NotionDatabaseLastEditedBy(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self._lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? lastEditedBy = freezed,}) {
+  return _then(NotionDatabaseLastEditedBy(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,lastEditedBy: freezed == lastEditedBy ? _self._lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseLastEditedTime implements NotionDatabaseProperty {
-  const NotionDatabaseLastEditedTime(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? lastEditedTime = const <String, dynamic>{},
-      final String? $type})
-      : _lastEditedTime = lastEditedTime,
-        $type = $type ?? 'last_edited_time';
-  factory NotionDatabaseLastEditedTime.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseLastEditedTimeFromJson(json);
+  const NotionDatabaseLastEditedTime({this.id, this.name, this.description, final  Map<String, dynamic>? lastEditedTime = const <String, dynamic>{}, final  String? $type}): _lastEditedTime = lastEditedTime,$type = $type ?? 'last_edited_time';
+  factory NotionDatabaseLastEditedTime.fromJson(Map<String, dynamic> json) => _$NotionDatabaseLastEditedTimeFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _lastEditedTime;
-  @JsonKey()
-  Map<String, dynamic>? get lastEditedTime {
-    final value = _lastEditedTime;
-    if (value == null) return null;
-    if (_lastEditedTime is EqualUnmodifiableMapView) return _lastEditedTime;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _lastEditedTime;
+@JsonKey() Map<String, dynamic>? get lastEditedTime {
+  final value = _lastEditedTime;
+  if (value == null) return null;
+  if (_lastEditedTime is EqualUnmodifiableMapView) return _lastEditedTime;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseLastEditedTimeCopyWith<NotionDatabaseLastEditedTime>
-      get copyWith => _$NotionDatabaseLastEditedTimeCopyWithImpl<
-          NotionDatabaseLastEditedTime>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseLastEditedTimeToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseLastEditedTime &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality()
-                .equals(other._lastEditedTime, _lastEditedTime));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseLastEditedTimeCopyWith<NotionDatabaseLastEditedTime> get copyWith => _$NotionDatabaseLastEditedTimeCopyWithImpl<NotionDatabaseLastEditedTime>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_lastEditedTime));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseLastEditedTimeToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.lastEditedTime(id: $id, name: $name, description: $description, lastEditedTime: $lastEditedTime)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseLastEditedTime&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._lastEditedTime, _lastEditedTime));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_lastEditedTime));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.lastEditedTime(id: $id, name: $name, description: $description, lastEditedTime: $lastEditedTime)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseLastEditedTimeCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseLastEditedTimeCopyWith(
-          NotionDatabaseLastEditedTime value,
-          $Res Function(NotionDatabaseLastEditedTime) _then) =
-      _$NotionDatabaseLastEditedTimeCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? lastEditedTime});
-}
+abstract mixin class $NotionDatabaseLastEditedTimeCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseLastEditedTimeCopyWith(NotionDatabaseLastEditedTime value, $Res Function(NotionDatabaseLastEditedTime) _then) = _$NotionDatabaseLastEditedTimeCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? lastEditedTime
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseLastEditedTimeCopyWithImpl<$Res>
     implements $NotionDatabaseLastEditedTimeCopyWith<$Res> {
@@ -1257,118 +1212,77 @@ class _$NotionDatabaseLastEditedTimeCopyWithImpl<$Res>
   final NotionDatabaseLastEditedTime _self;
   final $Res Function(NotionDatabaseLastEditedTime) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? lastEditedTime = freezed,
-  }) {
-    return _then(NotionDatabaseLastEditedTime(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self._lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? lastEditedTime = freezed,}) {
+  return _then(NotionDatabaseLastEditedTime(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,lastEditedTime: freezed == lastEditedTime ? _self._lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseMultiSelect implements NotionDatabaseProperty {
-  const NotionDatabaseMultiSelect(
-      {this.id,
-      this.name,
-      this.description,
-      this.multiSelect,
-      final String? $type})
-      : $type = $type ?? 'multi_select';
-  factory NotionDatabaseMultiSelect.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseMultiSelectFromJson(json);
+  const NotionDatabaseMultiSelect({this.id, this.name, this.description, this.multiSelect, final  String? $type}): $type = $type ?? 'multi_select';
+  factory NotionDatabaseMultiSelect.fromJson(Map<String, dynamic> json) => _$NotionDatabaseMultiSelectFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseSelectObject? multiSelect;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseSelectObject? multiSelect;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseMultiSelectCopyWith<NotionDatabaseMultiSelect> get copyWith =>
-      _$NotionDatabaseMultiSelectCopyWithImpl<NotionDatabaseMultiSelect>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseMultiSelectToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseMultiSelectCopyWith<NotionDatabaseMultiSelect> get copyWith => _$NotionDatabaseMultiSelectCopyWithImpl<NotionDatabaseMultiSelect>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseMultiSelect &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.multiSelect, multiSelect) ||
-                other.multiSelect == multiSelect));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseMultiSelectToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, name, description, multiSelect);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseMultiSelect&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.multiSelect, multiSelect) || other.multiSelect == multiSelect));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.multiSelect(id: $id, name: $name, description: $description, multiSelect: $multiSelect)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,multiSelect);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.multiSelect(id: $id, name: $name, description: $description, multiSelect: $multiSelect)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseMultiSelectCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseMultiSelectCopyWith(NotionDatabaseMultiSelect value,
-          $Res Function(NotionDatabaseMultiSelect) _then) =
-      _$NotionDatabaseMultiSelectCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseSelectObject? multiSelect});
+abstract mixin class $NotionDatabaseMultiSelectCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseMultiSelectCopyWith(NotionDatabaseMultiSelect value, $Res Function(NotionDatabaseMultiSelect) _then) = _$NotionDatabaseMultiSelectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseSelectObject? multiSelect
+});
 
-  $NotionDatabaseSelectObjectCopyWith<$Res>? get multiSelect;
+
+$NotionDatabaseSelectObjectCopyWith<$Res>? get multiSelect;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseMultiSelectCopyWithImpl<$Res>
     implements $NotionDatabaseMultiSelectCopyWith<$Res> {
@@ -1377,127 +1291,89 @@ class _$NotionDatabaseMultiSelectCopyWithImpl<$Res>
   final NotionDatabaseMultiSelect _self;
   final $Res Function(NotionDatabaseMultiSelect) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? multiSelect = freezed,
-  }) {
-    return _then(NotionDatabaseMultiSelect(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      multiSelect: freezed == multiSelect
-          ? _self.multiSelect
-          : multiSelect // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseSelectObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? multiSelect = freezed,}) {
+  return _then(NotionDatabaseMultiSelect(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,multiSelect: freezed == multiSelect ? _self.multiSelect : multiSelect // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseSelectObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseSelectObjectCopyWith<$Res>? get multiSelect {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseSelectObjectCopyWith<$Res>? get multiSelect {
     if (_self.multiSelect == null) {
-      return null;
-    }
-
-    return $NotionDatabaseSelectObjectCopyWith<$Res>(_self.multiSelect!,
-        (value) {
-      return _then(_self.copyWith(multiSelect: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseSelectObjectCopyWith<$Res>(_self.multiSelect!, (value) {
+    return _then(_self.copyWith(multiSelect: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseNumber implements NotionDatabaseProperty {
-  const NotionDatabaseNumber(
-      {this.id, this.name, this.description, this.number, final String? $type})
-      : $type = $type ?? 'number';
-  factory NotionDatabaseNumber.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseNumberFromJson(json);
+  const NotionDatabaseNumber({this.id, this.name, this.description, this.number, final  String? $type}): $type = $type ?? 'number';
+  factory NotionDatabaseNumber.fromJson(Map<String, dynamic> json) => _$NotionDatabaseNumberFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseNumberObject? number;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseNumberObject? number;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseNumberCopyWith<NotionDatabaseNumber> get copyWith =>
-      _$NotionDatabaseNumberCopyWithImpl<NotionDatabaseNumber>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseNumberToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseNumberCopyWith<NotionDatabaseNumber> get copyWith => _$NotionDatabaseNumberCopyWithImpl<NotionDatabaseNumber>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseNumber &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.number, number) || other.number == number));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseNumberToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, number);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseNumber&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.number, number) || other.number == number));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.number(id: $id, name: $name, description: $description, number: $number)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,number);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.number(id: $id, name: $name, description: $description, number: $number)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseNumberCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseNumberCopyWith(NotionDatabaseNumber value,
-          $Res Function(NotionDatabaseNumber) _then) =
-      _$NotionDatabaseNumberCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseNumberObject? number});
+abstract mixin class $NotionDatabaseNumberCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseNumberCopyWith(NotionDatabaseNumber value, $Res Function(NotionDatabaseNumber) _then) = _$NotionDatabaseNumberCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseNumberObject? number
+});
 
-  $NotionDatabaseNumberObjectCopyWith<$Res>? get number;
+
+$NotionDatabaseNumberObjectCopyWith<$Res>? get number;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseNumberCopyWithImpl<$Res>
     implements $NotionDatabaseNumberCopyWith<$Res> {
@@ -1506,138 +1382,97 @@ class _$NotionDatabaseNumberCopyWithImpl<$Res>
   final NotionDatabaseNumber _self;
   final $Res Function(NotionDatabaseNumber) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? number = freezed,
-  }) {
-    return _then(NotionDatabaseNumber(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      number: freezed == number
-          ? _self.number
-          : number // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseNumberObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? number = freezed,}) {
+  return _then(NotionDatabaseNumber(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,number: freezed == number ? _self.number : number // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseNumberObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseNumberObjectCopyWith<$Res>? get number {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseNumberObjectCopyWith<$Res>? get number {
     if (_self.number == null) {
-      return null;
-    }
-
-    return $NotionDatabaseNumberObjectCopyWith<$Res>(_self.number!, (value) {
-      return _then(_self.copyWith(number: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseNumberObjectCopyWith<$Res>(_self.number!, (value) {
+    return _then(_self.copyWith(number: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabasePeople implements NotionDatabaseProperty {
-  const NotionDatabasePeople(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? people = const <String, dynamic>{},
-      final String? $type})
-      : _people = people,
-        $type = $type ?? 'people';
-  factory NotionDatabasePeople.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabasePeopleFromJson(json);
+  const NotionDatabasePeople({this.id, this.name, this.description, final  Map<String, dynamic>? people = const <String, dynamic>{}, final  String? $type}): _people = people,$type = $type ?? 'people';
+  factory NotionDatabasePeople.fromJson(Map<String, dynamic> json) => _$NotionDatabasePeopleFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _people;
-  @JsonKey()
-  Map<String, dynamic>? get people {
-    final value = _people;
-    if (value == null) return null;
-    if (_people is EqualUnmodifiableMapView) return _people;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _people;
+@JsonKey() Map<String, dynamic>? get people {
+  final value = _people;
+  if (value == null) return null;
+  if (_people is EqualUnmodifiableMapView) return _people;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabasePeopleCopyWith<NotionDatabasePeople> get copyWith =>
-      _$NotionDatabasePeopleCopyWithImpl<NotionDatabasePeople>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabasePeopleToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabasePeople &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._people, _people));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabasePeopleCopyWith<NotionDatabasePeople> get copyWith => _$NotionDatabasePeopleCopyWithImpl<NotionDatabasePeople>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_people));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabasePeopleToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.people(id: $id, name: $name, description: $description, people: $people)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabasePeople&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._people, _people));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_people));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.people(id: $id, name: $name, description: $description, people: $people)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabasePeopleCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabasePeopleCopyWith(NotionDatabasePeople value,
-          $Res Function(NotionDatabasePeople) _then) =
-      _$NotionDatabasePeopleCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? people});
-}
+abstract mixin class $NotionDatabasePeopleCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabasePeopleCopyWith(NotionDatabasePeople value, $Res Function(NotionDatabasePeople) _then) = _$NotionDatabasePeopleCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? people
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabasePeopleCopyWithImpl<$Res>
     implements $NotionDatabasePeopleCopyWith<$Res> {
@@ -1646,125 +1481,85 @@ class _$NotionDatabasePeopleCopyWithImpl<$Res>
   final NotionDatabasePeople _self;
   final $Res Function(NotionDatabasePeople) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? people = freezed,
-  }) {
-    return _then(NotionDatabasePeople(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      people: freezed == people
-          ? _self._people
-          : people // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? people = freezed,}) {
+  return _then(NotionDatabasePeople(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,people: freezed == people ? _self._people : people // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabasePhoneNumber implements NotionDatabaseProperty {
-  const NotionDatabasePhoneNumber(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? phoneNumber = const <String, dynamic>{},
-      final String? $type})
-      : _phoneNumber = phoneNumber,
-        $type = $type ?? 'phone_number';
-  factory NotionDatabasePhoneNumber.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabasePhoneNumberFromJson(json);
+  const NotionDatabasePhoneNumber({this.id, this.name, this.description, final  Map<String, dynamic>? phoneNumber = const <String, dynamic>{}, final  String? $type}): _phoneNumber = phoneNumber,$type = $type ?? 'phone_number';
+  factory NotionDatabasePhoneNumber.fromJson(Map<String, dynamic> json) => _$NotionDatabasePhoneNumberFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _phoneNumber;
-  @JsonKey()
-  Map<String, dynamic>? get phoneNumber {
-    final value = _phoneNumber;
-    if (value == null) return null;
-    if (_phoneNumber is EqualUnmodifiableMapView) return _phoneNumber;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _phoneNumber;
+@JsonKey() Map<String, dynamic>? get phoneNumber {
+  final value = _phoneNumber;
+  if (value == null) return null;
+  if (_phoneNumber is EqualUnmodifiableMapView) return _phoneNumber;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabasePhoneNumberCopyWith<NotionDatabasePhoneNumber> get copyWith =>
-      _$NotionDatabasePhoneNumberCopyWithImpl<NotionDatabasePhoneNumber>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabasePhoneNumberToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabasePhoneNumber &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality()
-                .equals(other._phoneNumber, _phoneNumber));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabasePhoneNumberCopyWith<NotionDatabasePhoneNumber> get copyWith => _$NotionDatabasePhoneNumberCopyWithImpl<NotionDatabasePhoneNumber>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_phoneNumber));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabasePhoneNumberToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.phoneNumber(id: $id, name: $name, description: $description, phoneNumber: $phoneNumber)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabasePhoneNumber&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._phoneNumber, _phoneNumber));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_phoneNumber));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.phoneNumber(id: $id, name: $name, description: $description, phoneNumber: $phoneNumber)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabasePhoneNumberCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabasePhoneNumberCopyWith(NotionDatabasePhoneNumber value,
-          $Res Function(NotionDatabasePhoneNumber) _then) =
-      _$NotionDatabasePhoneNumberCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? phoneNumber});
-}
+abstract mixin class $NotionDatabasePhoneNumberCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabasePhoneNumberCopyWith(NotionDatabasePhoneNumber value, $Res Function(NotionDatabasePhoneNumber) _then) = _$NotionDatabasePhoneNumberCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? phoneNumber
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabasePhoneNumberCopyWithImpl<$Res>
     implements $NotionDatabasePhoneNumberCopyWith<$Res> {
@@ -1773,117 +1568,77 @@ class _$NotionDatabasePhoneNumberCopyWithImpl<$Res>
   final NotionDatabasePhoneNumber _self;
   final $Res Function(NotionDatabasePhoneNumber) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? phoneNumber = freezed,
-  }) {
-    return _then(NotionDatabasePhoneNumber(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      phoneNumber: freezed == phoneNumber
-          ? _self._phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? phoneNumber = freezed,}) {
+  return _then(NotionDatabasePhoneNumber(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,phoneNumber: freezed == phoneNumber ? _self._phoneNumber : phoneNumber // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseRelation implements NotionDatabaseProperty {
-  const NotionDatabaseRelation(
-      {this.id,
-      this.name,
-      this.description,
-      this.relation,
-      final String? $type})
-      : $type = $type ?? 'relation';
-  factory NotionDatabaseRelation.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseRelationFromJson(json);
+  const NotionDatabaseRelation({this.id, this.name, this.description, this.relation, final  String? $type}): $type = $type ?? 'relation';
+  factory NotionDatabaseRelation.fromJson(Map<String, dynamic> json) => _$NotionDatabaseRelationFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseRelationObject? relation;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseRelationObject? relation;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRelationCopyWith<NotionDatabaseRelation> get copyWith =>
-      _$NotionDatabaseRelationCopyWithImpl<NotionDatabaseRelation>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseRelationToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseRelationCopyWith<NotionDatabaseRelation> get copyWith => _$NotionDatabaseRelationCopyWithImpl<NotionDatabaseRelation>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseRelation &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.relation, relation) ||
-                other.relation == relation));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseRelationToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, relation);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseRelation&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.relation, relation) || other.relation == relation));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.relation(id: $id, name: $name, description: $description, relation: $relation)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,relation);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.relation(id: $id, name: $name, description: $description, relation: $relation)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseRelationCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseRelationCopyWith(NotionDatabaseRelation value,
-          $Res Function(NotionDatabaseRelation) _then) =
-      _$NotionDatabaseRelationCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseRelationObject? relation});
+abstract mixin class $NotionDatabaseRelationCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseRelationCopyWith(NotionDatabaseRelation value, $Res Function(NotionDatabaseRelation) _then) = _$NotionDatabaseRelationCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseRelationObject? relation
+});
 
-  $NotionDatabaseRelationObjectCopyWith<$Res>? get relation;
+
+$NotionDatabaseRelationObjectCopyWith<$Res>? get relation;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseRelationCopyWithImpl<$Res>
     implements $NotionDatabaseRelationCopyWith<$Res> {
@@ -1892,139 +1647,97 @@ class _$NotionDatabaseRelationCopyWithImpl<$Res>
   final NotionDatabaseRelation _self;
   final $Res Function(NotionDatabaseRelation) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? relation = freezed,
-  }) {
-    return _then(NotionDatabaseRelation(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      relation: freezed == relation
-          ? _self.relation
-          : relation // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseRelationObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? relation = freezed,}) {
+  return _then(NotionDatabaseRelation(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,relation: freezed == relation ? _self.relation : relation // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseRelationObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRelationObjectCopyWith<$Res>? get relation {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseRelationObjectCopyWith<$Res>? get relation {
     if (_self.relation == null) {
-      return null;
-    }
-
-    return $NotionDatabaseRelationObjectCopyWith<$Res>(_self.relation!,
-        (value) {
-      return _then(_self.copyWith(relation: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseRelationObjectCopyWith<$Res>(_self.relation!, (value) {
+    return _then(_self.copyWith(relation: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseRichText implements NotionDatabaseProperty {
-  const NotionDatabaseRichText(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? richText = const <String, dynamic>{},
-      final String? $type})
-      : _richText = richText,
-        $type = $type ?? 'rich_text';
-  factory NotionDatabaseRichText.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseRichTextFromJson(json);
+  const NotionDatabaseRichText({this.id, this.name, this.description, final  Map<String, dynamic>? richText = const <String, dynamic>{}, final  String? $type}): _richText = richText,$type = $type ?? 'rich_text';
+  factory NotionDatabaseRichText.fromJson(Map<String, dynamic> json) => _$NotionDatabaseRichTextFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _richText;
-  @JsonKey()
-  Map<String, dynamic>? get richText {
-    final value = _richText;
-    if (value == null) return null;
-    if (_richText is EqualUnmodifiableMapView) return _richText;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _richText;
+@JsonKey() Map<String, dynamic>? get richText {
+  final value = _richText;
+  if (value == null) return null;
+  if (_richText is EqualUnmodifiableMapView) return _richText;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRichTextCopyWith<NotionDatabaseRichText> get copyWith =>
-      _$NotionDatabaseRichTextCopyWithImpl<NotionDatabaseRichText>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseRichTextToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseRichText &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._richText, _richText));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseRichTextCopyWith<NotionDatabaseRichText> get copyWith => _$NotionDatabaseRichTextCopyWithImpl<NotionDatabaseRichText>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_richText));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseRichTextToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.richText(id: $id, name: $name, description: $description, richText: $richText)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseRichText&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._richText, _richText));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_richText));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.richText(id: $id, name: $name, description: $description, richText: $richText)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseRichTextCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseRichTextCopyWith(NotionDatabaseRichText value,
-          $Res Function(NotionDatabaseRichText) _then) =
-      _$NotionDatabaseRichTextCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? richText});
-}
+abstract mixin class $NotionDatabaseRichTextCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseRichTextCopyWith(NotionDatabaseRichText value, $Res Function(NotionDatabaseRichText) _then) = _$NotionDatabaseRichTextCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? richText
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseRichTextCopyWithImpl<$Res>
     implements $NotionDatabaseRichTextCopyWith<$Res> {
@@ -2033,112 +1746,77 @@ class _$NotionDatabaseRichTextCopyWithImpl<$Res>
   final NotionDatabaseRichText _self;
   final $Res Function(NotionDatabaseRichText) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? richText = freezed,
-  }) {
-    return _then(NotionDatabaseRichText(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      richText: freezed == richText
-          ? _self._richText
-          : richText // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? richText = freezed,}) {
+  return _then(NotionDatabaseRichText(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,richText: freezed == richText ? _self._richText : richText // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseRollup implements NotionDatabaseProperty {
-  const NotionDatabaseRollup(
-      {this.id, this.name, this.description, this.rollup, final String? $type})
-      : $type = $type ?? 'rollup';
-  factory NotionDatabaseRollup.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseRollupFromJson(json);
+  const NotionDatabaseRollup({this.id, this.name, this.description, this.rollup, final  String? $type}): $type = $type ?? 'rollup';
+  factory NotionDatabaseRollup.fromJson(Map<String, dynamic> json) => _$NotionDatabaseRollupFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseRollupObject? rollup;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseRollupObject? rollup;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRollupCopyWith<NotionDatabaseRollup> get copyWith =>
-      _$NotionDatabaseRollupCopyWithImpl<NotionDatabaseRollup>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseRollupToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseRollupCopyWith<NotionDatabaseRollup> get copyWith => _$NotionDatabaseRollupCopyWithImpl<NotionDatabaseRollup>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseRollup &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.rollup, rollup) || other.rollup == rollup));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseRollupToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, rollup);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseRollup&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.rollup, rollup) || other.rollup == rollup));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.rollup(id: $id, name: $name, description: $description, rollup: $rollup)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,rollup);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.rollup(id: $id, name: $name, description: $description, rollup: $rollup)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseRollupCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseRollupCopyWith(NotionDatabaseRollup value,
-          $Res Function(NotionDatabaseRollup) _then) =
-      _$NotionDatabaseRollupCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseRollupObject? rollup});
+abstract mixin class $NotionDatabaseRollupCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseRollupCopyWith(NotionDatabaseRollup value, $Res Function(NotionDatabaseRollup) _then) = _$NotionDatabaseRollupCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseRollupObject? rollup
+});
 
-  $NotionDatabaseRollupObjectCopyWith<$Res>? get rollup;
+
+$NotionDatabaseRollupObjectCopyWith<$Res>? get rollup;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseRollupCopyWithImpl<$Res>
     implements $NotionDatabaseRollupCopyWith<$Res> {
@@ -2147,126 +1825,89 @@ class _$NotionDatabaseRollupCopyWithImpl<$Res>
   final NotionDatabaseRollup _self;
   final $Res Function(NotionDatabaseRollup) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? rollup = freezed,
-  }) {
-    return _then(NotionDatabaseRollup(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rollup: freezed == rollup
-          ? _self.rollup
-          : rollup // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseRollupObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? rollup = freezed,}) {
+  return _then(NotionDatabaseRollup(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,rollup: freezed == rollup ? _self.rollup : rollup // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseRollupObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRollupObjectCopyWith<$Res>? get rollup {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseRollupObjectCopyWith<$Res>? get rollup {
     if (_self.rollup == null) {
-      return null;
-    }
-
-    return $NotionDatabaseRollupObjectCopyWith<$Res>(_self.rollup!, (value) {
-      return _then(_self.copyWith(rollup: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseRollupObjectCopyWith<$Res>(_self.rollup!, (value) {
+    return _then(_self.copyWith(rollup: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseSelect implements NotionDatabaseProperty {
-  const NotionDatabaseSelect(
-      {this.id, this.name, this.description, this.select, final String? $type})
-      : $type = $type ?? 'select';
-  factory NotionDatabaseSelect.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseSelectFromJson(json);
+  const NotionDatabaseSelect({this.id, this.name, this.description, this.select, final  String? $type}): $type = $type ?? 'select';
+  factory NotionDatabaseSelect.fromJson(Map<String, dynamic> json) => _$NotionDatabaseSelectFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseSelectObject? select;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseSelectObject? select;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseSelectCopyWith<NotionDatabaseSelect> get copyWith =>
-      _$NotionDatabaseSelectCopyWithImpl<NotionDatabaseSelect>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseSelectToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseSelectCopyWith<NotionDatabaseSelect> get copyWith => _$NotionDatabaseSelectCopyWithImpl<NotionDatabaseSelect>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseSelect &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.select, select) || other.select == select));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseSelectToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, select);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseSelect&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.select, select) || other.select == select));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.select(id: $id, name: $name, description: $description, select: $select)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,select);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.select(id: $id, name: $name, description: $description, select: $select)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseSelectCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseSelectCopyWith(NotionDatabaseSelect value,
-          $Res Function(NotionDatabaseSelect) _then) =
-      _$NotionDatabaseSelectCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseSelectObject? select});
+abstract mixin class $NotionDatabaseSelectCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseSelectCopyWith(NotionDatabaseSelect value, $Res Function(NotionDatabaseSelect) _then) = _$NotionDatabaseSelectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseSelectObject? select
+});
 
-  $NotionDatabaseSelectObjectCopyWith<$Res>? get select;
+
+$NotionDatabaseSelectObjectCopyWith<$Res>? get select;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseSelectCopyWithImpl<$Res>
     implements $NotionDatabaseSelectCopyWith<$Res> {
@@ -2275,126 +1916,89 @@ class _$NotionDatabaseSelectCopyWithImpl<$Res>
   final NotionDatabaseSelect _self;
   final $Res Function(NotionDatabaseSelect) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? select = freezed,
-  }) {
-    return _then(NotionDatabaseSelect(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      select: freezed == select
-          ? _self.select
-          : select // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseSelectObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? select = freezed,}) {
+  return _then(NotionDatabaseSelect(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,select: freezed == select ? _self.select : select // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseSelectObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseSelectObjectCopyWith<$Res>? get select {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseSelectObjectCopyWith<$Res>? get select {
     if (_self.select == null) {
-      return null;
-    }
-
-    return $NotionDatabaseSelectObjectCopyWith<$Res>(_self.select!, (value) {
-      return _then(_self.copyWith(select: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseSelectObjectCopyWith<$Res>(_self.select!, (value) {
+    return _then(_self.copyWith(select: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseStatus implements NotionDatabaseProperty {
-  const NotionDatabaseStatus(
-      {this.id, this.name, this.description, this.status, final String? $type})
-      : $type = $type ?? 'status';
-  factory NotionDatabaseStatus.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseStatusFromJson(json);
+  const NotionDatabaseStatus({this.id, this.name, this.description, this.status, final  String? $type}): $type = $type ?? 'status';
+  factory NotionDatabaseStatus.fromJson(Map<String, dynamic> json) => _$NotionDatabaseStatusFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final NotionDatabaseStatusObject? status;
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  NotionDatabaseStatusObject? status;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseStatusCopyWith<NotionDatabaseStatus> get copyWith =>
-      _$NotionDatabaseStatusCopyWithImpl<NotionDatabaseStatus>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseStatusToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseStatusCopyWith<NotionDatabaseStatus> get copyWith => _$NotionDatabaseStatusCopyWithImpl<NotionDatabaseStatus>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseStatus &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.status, status) || other.status == status));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseStatusToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, status);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseStatus&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.status, status) || other.status == status));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.status(id: $id, name: $name, description: $description, status: $status)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,status);
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.status(id: $id, name: $name, description: $description, status: $status)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseStatusCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseStatusCopyWith(NotionDatabaseStatus value,
-          $Res Function(NotionDatabaseStatus) _then) =
-      _$NotionDatabaseStatusCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      NotionDatabaseStatusObject? status});
+abstract mixin class $NotionDatabaseStatusCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseStatusCopyWith(NotionDatabaseStatus value, $Res Function(NotionDatabaseStatus) _then) = _$NotionDatabaseStatusCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, NotionDatabaseStatusObject? status
+});
 
-  $NotionDatabaseStatusObjectCopyWith<$Res>? get status;
+
+$NotionDatabaseStatusObjectCopyWith<$Res>? get status;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseStatusCopyWithImpl<$Res>
     implements $NotionDatabaseStatusCopyWith<$Res> {
@@ -2403,137 +2007,97 @@ class _$NotionDatabaseStatusCopyWithImpl<$Res>
   final NotionDatabaseStatus _self;
   final $Res Function(NotionDatabaseStatus) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? status = freezed,
-  }) {
-    return _then(NotionDatabaseStatus(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      status: freezed == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as NotionDatabaseStatusObject?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? status = freezed,}) {
+  return _then(NotionDatabaseStatus(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,status: freezed == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as NotionDatabaseStatusObject?,
+  ));
+}
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseStatusObjectCopyWith<$Res>? get status {
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionDatabaseStatusObjectCopyWith<$Res>? get status {
     if (_self.status == null) {
-      return null;
-    }
-
-    return $NotionDatabaseStatusObjectCopyWith<$Res>(_self.status!, (value) {
-      return _then(_self.copyWith(status: value));
-    });
+    return null;
   }
+
+  return $NotionDatabaseStatusObjectCopyWith<$Res>(_self.status!, (value) {
+    return _then(_self.copyWith(status: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseTitle implements NotionDatabaseProperty {
-  const NotionDatabaseTitle(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? title = const <String, dynamic>{},
-      final String? $type})
-      : _title = title,
-        $type = $type ?? 'title';
-  factory NotionDatabaseTitle.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseTitleFromJson(json);
+  const NotionDatabaseTitle({this.id, this.name, this.description, final  Map<String, dynamic>? title = const <String, dynamic>{}, final  String? $type}): _title = title,$type = $type ?? 'title';
+  factory NotionDatabaseTitle.fromJson(Map<String, dynamic> json) => _$NotionDatabaseTitleFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _title;
-  @JsonKey()
-  Map<String, dynamic>? get title {
-    final value = _title;
-    if (value == null) return null;
-    if (_title is EqualUnmodifiableMapView) return _title;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _title;
+@JsonKey() Map<String, dynamic>? get title {
+  final value = _title;
+  if (value == null) return null;
+  if (_title is EqualUnmodifiableMapView) return _title;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseTitleCopyWith<NotionDatabaseTitle> get copyWith =>
-      _$NotionDatabaseTitleCopyWithImpl<NotionDatabaseTitle>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseTitleToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseTitle &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._title, _title));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseTitleCopyWith<NotionDatabaseTitle> get copyWith => _$NotionDatabaseTitleCopyWithImpl<NotionDatabaseTitle>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_title));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseTitleToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.title(id: $id, name: $name, description: $description, title: $title)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseTitle&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._title, _title));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_title));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.title(id: $id, name: $name, description: $description, title: $title)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseTitleCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseTitleCopyWith(
-          NotionDatabaseTitle value, $Res Function(NotionDatabaseTitle) _then) =
-      _$NotionDatabaseTitleCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? title});
-}
+abstract mixin class $NotionDatabaseTitleCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseTitleCopyWith(NotionDatabaseTitle value, $Res Function(NotionDatabaseTitle) _then) = _$NotionDatabaseTitleCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? title
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseTitleCopyWithImpl<$Res>
     implements $NotionDatabaseTitleCopyWith<$Res> {
@@ -2542,123 +2106,85 @@ class _$NotionDatabaseTitleCopyWithImpl<$Res>
   final NotionDatabaseTitle _self;
   final $Res Function(NotionDatabaseTitle) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? title = freezed,
-  }) {
-    return _then(NotionDatabaseTitle(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      title: freezed == title
-          ? _self._title
-          : title // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? title = freezed,}) {
+  return _then(NotionDatabaseTitle(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,title: freezed == title ? _self._title : title // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseUrl implements NotionDatabaseProperty {
-  const NotionDatabaseUrl(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? url = const <String, dynamic>{},
-      final String? $type})
-      : _url = url,
-        $type = $type ?? 'url';
-  factory NotionDatabaseUrl.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseUrlFromJson(json);
+  const NotionDatabaseUrl({this.id, this.name, this.description, final  Map<String, dynamic>? url = const <String, dynamic>{}, final  String? $type}): _url = url,$type = $type ?? 'url';
+  factory NotionDatabaseUrl.fromJson(Map<String, dynamic> json) => _$NotionDatabaseUrlFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _url;
-  @JsonKey()
-  Map<String, dynamic>? get url {
-    final value = _url;
-    if (value == null) return null;
-    if (_url is EqualUnmodifiableMapView) return _url;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _url;
+@JsonKey() Map<String, dynamic>? get url {
+  final value = _url;
+  if (value == null) return null;
+  if (_url is EqualUnmodifiableMapView) return _url;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseUrlCopyWith<NotionDatabaseUrl> get copyWith =>
-      _$NotionDatabaseUrlCopyWithImpl<NotionDatabaseUrl>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseUrlToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseUrl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._url, _url));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseUrlCopyWith<NotionDatabaseUrl> get copyWith => _$NotionDatabaseUrlCopyWithImpl<NotionDatabaseUrl>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_url));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseUrlToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.url(id: $id, name: $name, description: $description, url: $url)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseUrl&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._url, _url));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_url));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.url(id: $id, name: $name, description: $description, url: $url)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseUrlCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseUrlCopyWith(
-          NotionDatabaseUrl value, $Res Function(NotionDatabaseUrl) _then) =
-      _$NotionDatabaseUrlCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? url});
-}
+abstract mixin class $NotionDatabaseUrlCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseUrlCopyWith(NotionDatabaseUrl value, $Res Function(NotionDatabaseUrl) _then) = _$NotionDatabaseUrlCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? url
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseUrlCopyWithImpl<$Res>
     implements $NotionDatabaseUrlCopyWith<$Res> {
@@ -2667,124 +2193,85 @@ class _$NotionDatabaseUrlCopyWithImpl<$Res>
   final NotionDatabaseUrl _self;
   final $Res Function(NotionDatabaseUrl) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? url = freezed,
-  }) {
-    return _then(NotionDatabaseUrl(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      url: freezed == url
-          ? _self._url
-          : url // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? url = freezed,}) {
+  return _then(NotionDatabaseUrl(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,url: freezed == url ? _self._url : url // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseUniqueId implements NotionDatabaseProperty {
-  const NotionDatabaseUniqueId(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? uniqueId = const <String, dynamic>{},
-      final String? $type})
-      : _uniqueId = uniqueId,
-        $type = $type ?? 'unique_id';
-  factory NotionDatabaseUniqueId.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseUniqueIdFromJson(json);
+  const NotionDatabaseUniqueId({this.id, this.name, this.description, final  Map<String, dynamic>? uniqueId = const <String, dynamic>{}, final  String? $type}): _uniqueId = uniqueId,$type = $type ?? 'unique_id';
+  factory NotionDatabaseUniqueId.fromJson(Map<String, dynamic> json) => _$NotionDatabaseUniqueIdFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _uniqueId;
-  @JsonKey()
-  Map<String, dynamic>? get uniqueId {
-    final value = _uniqueId;
-    if (value == null) return null;
-    if (_uniqueId is EqualUnmodifiableMapView) return _uniqueId;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _uniqueId;
+@JsonKey() Map<String, dynamic>? get uniqueId {
+  final value = _uniqueId;
+  if (value == null) return null;
+  if (_uniqueId is EqualUnmodifiableMapView) return _uniqueId;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseUniqueIdCopyWith<NotionDatabaseUniqueId> get copyWith =>
-      _$NotionDatabaseUniqueIdCopyWithImpl<NotionDatabaseUniqueId>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseUniqueIdToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseUniqueId &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._uniqueId, _uniqueId));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseUniqueIdCopyWith<NotionDatabaseUniqueId> get copyWith => _$NotionDatabaseUniqueIdCopyWithImpl<NotionDatabaseUniqueId>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_uniqueId));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseUniqueIdToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.uniqueId(id: $id, name: $name, description: $description, uniqueId: $uniqueId)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseUniqueId&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._uniqueId, _uniqueId));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_uniqueId));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.uniqueId(id: $id, name: $name, description: $description, uniqueId: $uniqueId)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseUniqueIdCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseUniqueIdCopyWith(NotionDatabaseUniqueId value,
-          $Res Function(NotionDatabaseUniqueId) _then) =
-      _$NotionDatabaseUniqueIdCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? uniqueId});
-}
+abstract mixin class $NotionDatabaseUniqueIdCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseUniqueIdCopyWith(NotionDatabaseUniqueId value, $Res Function(NotionDatabaseUniqueId) _then) = _$NotionDatabaseUniqueIdCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? uniqueId
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseUniqueIdCopyWithImpl<$Res>
     implements $NotionDatabaseUniqueIdCopyWith<$Res> {
@@ -2793,126 +2280,85 @@ class _$NotionDatabaseUniqueIdCopyWithImpl<$Res>
   final NotionDatabaseUniqueId _self;
   final $Res Function(NotionDatabaseUniqueId) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? uniqueId = freezed,
-  }) {
-    return _then(NotionDatabaseUniqueId(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      uniqueId: freezed == uniqueId
-          ? _self._uniqueId
-          : uniqueId // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? uniqueId = freezed,}) {
+  return _then(NotionDatabaseUniqueId(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,uniqueId: freezed == uniqueId ? _self._uniqueId : uniqueId // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseVerification implements NotionDatabaseProperty {
-  const NotionDatabaseVerification(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? verification = const <String, dynamic>{},
-      final String? $type})
-      : _verification = verification,
-        $type = $type ?? 'verification';
-  factory NotionDatabaseVerification.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseVerificationFromJson(json);
+  const NotionDatabaseVerification({this.id, this.name, this.description, final  Map<String, dynamic>? verification = const <String, dynamic>{}, final  String? $type}): _verification = verification,$type = $type ?? 'verification';
+  factory NotionDatabaseVerification.fromJson(Map<String, dynamic> json) => _$NotionDatabaseVerificationFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _verification;
-  @JsonKey()
-  Map<String, dynamic>? get verification {
-    final value = _verification;
-    if (value == null) return null;
-    if (_verification is EqualUnmodifiableMapView) return _verification;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _verification;
+@JsonKey() Map<String, dynamic>? get verification {
+  final value = _verification;
+  if (value == null) return null;
+  if (_verification is EqualUnmodifiableMapView) return _verification;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseVerificationCopyWith<NotionDatabaseVerification>
-      get copyWith =>
-          _$NotionDatabaseVerificationCopyWithImpl<NotionDatabaseVerification>(
-              this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseVerificationToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseVerification &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality()
-                .equals(other._verification, _verification));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseVerificationCopyWith<NotionDatabaseVerification> get copyWith => _$NotionDatabaseVerificationCopyWithImpl<NotionDatabaseVerification>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_verification));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseVerificationToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.verification(id: $id, name: $name, description: $description, verification: $verification)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseVerification&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._verification, _verification));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_verification));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.verification(id: $id, name: $name, description: $description, verification: $verification)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseVerificationCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseVerificationCopyWith(NotionDatabaseVerification value,
-          $Res Function(NotionDatabaseVerification) _then) =
-      _$NotionDatabaseVerificationCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? verification});
-}
+abstract mixin class $NotionDatabaseVerificationCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseVerificationCopyWith(NotionDatabaseVerification value, $Res Function(NotionDatabaseVerification) _then) = _$NotionDatabaseVerificationCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? verification
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseVerificationCopyWithImpl<$Res>
     implements $NotionDatabaseVerificationCopyWith<$Res> {
@@ -2921,124 +2367,85 @@ class _$NotionDatabaseVerificationCopyWithImpl<$Res>
   final NotionDatabaseVerification _self;
   final $Res Function(NotionDatabaseVerification) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? verification = freezed,
-  }) {
-    return _then(NotionDatabaseVerification(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      verification: freezed == verification
-          ? _self._verification
-          : verification // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? verification = freezed,}) {
+  return _then(NotionDatabaseVerification(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,verification: freezed == verification ? _self._verification : verification // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionDatabaseButton implements NotionDatabaseProperty {
-  const NotionDatabaseButton(
-      {this.id,
-      this.name,
-      this.description,
-      final Map<String, dynamic>? button = const <String, dynamic>{},
-      final String? $type})
-      : _button = button,
-        $type = $type ?? 'button';
-  factory NotionDatabaseButton.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseButtonFromJson(json);
+  const NotionDatabaseButton({this.id, this.name, this.description, final  Map<String, dynamic>? button = const <String, dynamic>{}, final  String? $type}): _button = button,$type = $type ?? 'button';
+  factory NotionDatabaseButton.fromJson(Map<String, dynamic> json) => _$NotionDatabaseButtonFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final String? name;
-  @override
-  final String? description;
-  final Map<String, dynamic>? _button;
-  @JsonKey()
-  Map<String, dynamic>? get button {
-    final value = _button;
-    if (value == null) return null;
-    if (_button is EqualUnmodifiableMapView) return _button;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+@override final  String? id;
+@override final  String? name;
+@override final  String? description;
+ final  Map<String, dynamic>? _button;
+@JsonKey() Map<String, dynamic>? get button {
+  final value = _button;
+  if (value == null) return null;
+  if (_button is EqualUnmodifiableMapView) return _button;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  @JsonKey(name: 'type')
-  final String $type;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseButtonCopyWith<NotionDatabaseButton> get copyWith =>
-      _$NotionDatabaseButtonCopyWithImpl<NotionDatabaseButton>(
-          this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseButtonToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseButton &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            const DeepCollectionEquality().equals(other._button, _button));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseButtonCopyWith<NotionDatabaseButton> get copyWith => _$NotionDatabaseButtonCopyWithImpl<NotionDatabaseButton>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description,
-      const DeepCollectionEquality().hash(_button));
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseButtonToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseProperty.button(id: $id, name: $name, description: $description, button: $button)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseButton&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._button, _button));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,const DeepCollectionEquality().hash(_button));
+
+@override
+String toString() {
+  return 'NotionDatabaseProperty.button(id: $id, name: $name, description: $description, button: $button)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseButtonCopyWith<$Res>
-    implements $NotionDatabasePropertyCopyWith<$Res> {
-  factory $NotionDatabaseButtonCopyWith(NotionDatabaseButton value,
-          $Res Function(NotionDatabaseButton) _then) =
-      _$NotionDatabaseButtonCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      String? name,
-      String? description,
-      Map<String, dynamic>? button});
-}
+abstract mixin class $NotionDatabaseButtonCopyWith<$Res> implements $NotionDatabasePropertyCopyWith<$Res> {
+  factory $NotionDatabaseButtonCopyWith(NotionDatabaseButton value, $Res Function(NotionDatabaseButton) _then) = _$NotionDatabaseButtonCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String? name, String? description, Map<String, dynamic>? button
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseButtonCopyWithImpl<$Res>
     implements $NotionDatabaseButtonCopyWith<$Res> {
@@ -3047,82 +2454,65 @@ class _$NotionDatabaseButtonCopyWithImpl<$Res>
   final NotionDatabaseButton _self;
   final $Res Function(NotionDatabaseButton) _then;
 
-  /// Create a copy of NotionDatabaseProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? button = freezed,
-  }) {
-    return _then(NotionDatabaseButton(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      name: freezed == name
-          ? _self.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      button: freezed == button
-          ? _self._button
-          : button // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? description = freezed,Object? button = freezed,}) {
+  return _then(NotionDatabaseButton(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,button: freezed == button ? _self._button : button // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
 }
+
+
+}
+
 
 /// @nodoc
 mixin _$NotionDatabaseFormulaObject {
-  String? get expression;
 
-  /// Create a copy of NotionDatabaseFormulaObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseFormulaObjectCopyWith<NotionDatabaseFormulaObject>
-      get copyWith => _$NotionDatabaseFormulaObjectCopyWithImpl<
-              NotionDatabaseFormulaObject>(
-          this as NotionDatabaseFormulaObject, _$identity);
+ String? get expression;
+/// Create a copy of NotionDatabaseFormulaObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseFormulaObjectCopyWith<NotionDatabaseFormulaObject> get copyWith => _$NotionDatabaseFormulaObjectCopyWithImpl<NotionDatabaseFormulaObject>(this as NotionDatabaseFormulaObject, _$identity);
 
   /// Serializes this NotionDatabaseFormulaObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseFormulaObject &&
-            (identical(other.expression, expression) ||
-                other.expression == expression));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, expression);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseFormulaObject&&(identical(other.expression, expression) || other.expression == expression));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseFormulaObject(expression: $expression)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,expression);
+
+@override
+String toString() {
+  return 'NotionDatabaseFormulaObject(expression: $expression)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseFormulaObjectCopyWith<$Res> {
-  factory $NotionDatabaseFormulaObjectCopyWith(
-          NotionDatabaseFormulaObject value,
-          $Res Function(NotionDatabaseFormulaObject) _then) =
-      _$NotionDatabaseFormulaObjectCopyWithImpl;
-  @useResult
-  $Res call({String? expression});
-}
+abstract mixin class $NotionDatabaseFormulaObjectCopyWith<$Res>  {
+  factory $NotionDatabaseFormulaObjectCopyWith(NotionDatabaseFormulaObject value, $Res Function(NotionDatabaseFormulaObject) _then) = _$NotionDatabaseFormulaObjectCopyWithImpl;
+@useResult
+$Res call({
+ String? expression
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseFormulaObjectCopyWithImpl<$Res>
     implements $NotionDatabaseFormulaObjectCopyWith<$Res> {
@@ -3131,79 +2521,197 @@ class _$NotionDatabaseFormulaObjectCopyWithImpl<$Res>
   final NotionDatabaseFormulaObject _self;
   final $Res Function(NotionDatabaseFormulaObject) _then;
 
-  /// Create a copy of NotionDatabaseFormulaObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? expression = freezed,
-  }) {
-    return _then(_self.copyWith(
-      expression: freezed == expression
-          ? _self.expression
-          : expression // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionDatabaseFormulaObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? expression = freezed,}) {
+  return _then(_self.copyWith(
+expression: freezed == expression ? _self.expression : expression // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseFormulaObject].
+extension NotionDatabaseFormulaObjectPatterns on NotionDatabaseFormulaObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionDatabaseFormulaObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseFormulaObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionDatabaseFormulaObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseFormulaObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionDatabaseFormulaObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseFormulaObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? expression)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionDatabaseFormulaObject() when $default != null:
+return $default(_that.expression);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? expression)  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseFormulaObject():
+return $default(_that.expression);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? expression)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseFormulaObject() when $default != null:
+return $default(_that.expression);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionDatabaseFormulaObject implements NotionDatabaseFormulaObject {
   const _NotionDatabaseFormulaObject({this.expression});
-  factory _NotionDatabaseFormulaObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseFormulaObjectFromJson(json);
+  factory _NotionDatabaseFormulaObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseFormulaObjectFromJson(json);
 
-  @override
-  final String? expression;
+@override final  String? expression;
 
-  /// Create a copy of NotionDatabaseFormulaObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionDatabaseFormulaObjectCopyWith<_NotionDatabaseFormulaObject>
-      get copyWith => __$NotionDatabaseFormulaObjectCopyWithImpl<
-          _NotionDatabaseFormulaObject>(this, _$identity);
+/// Create a copy of NotionDatabaseFormulaObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionDatabaseFormulaObjectCopyWith<_NotionDatabaseFormulaObject> get copyWith => __$NotionDatabaseFormulaObjectCopyWithImpl<_NotionDatabaseFormulaObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseFormulaObjectToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseFormulaObjectToJson(this, );
+}
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionDatabaseFormulaObject &&
-            (identical(other.expression, expression) ||
-                other.expression == expression));
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabaseFormulaObject&&(identical(other.expression, expression) || other.expression == expression));
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, expression);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,expression);
 
-  @override
-  String toString() {
-    return 'NotionDatabaseFormulaObject(expression: $expression)';
-  }
+@override
+String toString() {
+  return 'NotionDatabaseFormulaObject(expression: $expression)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionDatabaseFormulaObjectCopyWith<$Res>
-    implements $NotionDatabaseFormulaObjectCopyWith<$Res> {
-  factory _$NotionDatabaseFormulaObjectCopyWith(
-          _NotionDatabaseFormulaObject value,
-          $Res Function(_NotionDatabaseFormulaObject) _then) =
-      __$NotionDatabaseFormulaObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({String? expression});
-}
+abstract mixin class _$NotionDatabaseFormulaObjectCopyWith<$Res> implements $NotionDatabaseFormulaObjectCopyWith<$Res> {
+  factory _$NotionDatabaseFormulaObjectCopyWith(_NotionDatabaseFormulaObject value, $Res Function(_NotionDatabaseFormulaObject) _then) = __$NotionDatabaseFormulaObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? expression
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionDatabaseFormulaObjectCopyWithImpl<$Res>
     implements _$NotionDatabaseFormulaObjectCopyWith<$Res> {
@@ -3212,65 +2720,62 @@ class __$NotionDatabaseFormulaObjectCopyWithImpl<$Res>
   final _NotionDatabaseFormulaObject _self;
   final $Res Function(_NotionDatabaseFormulaObject) _then;
 
-  /// Create a copy of NotionDatabaseFormulaObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? expression = freezed,
-  }) {
-    return _then(_NotionDatabaseFormulaObject(
-      expression: freezed == expression
-          ? _self.expression
-          : expression // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionDatabaseFormulaObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? expression = freezed,}) {
+  return _then(_NotionDatabaseFormulaObject(
+expression: freezed == expression ? _self.expression : expression // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
+
+
+}
+
 
 /// @nodoc
 mixin _$NotionDatabaseNumberObject {
-  NotionNumberFormat? get format;
 
-  /// Create a copy of NotionDatabaseNumberObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseNumberObjectCopyWith<NotionDatabaseNumberObject>
-      get copyWith =>
-          _$NotionDatabaseNumberObjectCopyWithImpl<NotionDatabaseNumberObject>(
-              this as NotionDatabaseNumberObject, _$identity);
+ NotionNumberFormat? get format;
+/// Create a copy of NotionDatabaseNumberObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseNumberObjectCopyWith<NotionDatabaseNumberObject> get copyWith => _$NotionDatabaseNumberObjectCopyWithImpl<NotionDatabaseNumberObject>(this as NotionDatabaseNumberObject, _$identity);
 
   /// Serializes this NotionDatabaseNumberObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseNumberObject &&
-            (identical(other.format, format) || other.format == format));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, format);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseNumberObject&&(identical(other.format, format) || other.format == format));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseNumberObject(format: $format)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,format);
+
+@override
+String toString() {
+  return 'NotionDatabaseNumberObject(format: $format)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseNumberObjectCopyWith<$Res> {
-  factory $NotionDatabaseNumberObjectCopyWith(NotionDatabaseNumberObject value,
-          $Res Function(NotionDatabaseNumberObject) _then) =
-      _$NotionDatabaseNumberObjectCopyWithImpl;
-  @useResult
-  $Res call({NotionNumberFormat? format});
-}
+abstract mixin class $NotionDatabaseNumberObjectCopyWith<$Res>  {
+  factory $NotionDatabaseNumberObjectCopyWith(NotionDatabaseNumberObject value, $Res Function(NotionDatabaseNumberObject) _then) = _$NotionDatabaseNumberObjectCopyWithImpl;
+@useResult
+$Res call({
+ NotionNumberFormat? format
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseNumberObjectCopyWithImpl<$Res>
     implements $NotionDatabaseNumberObjectCopyWith<$Res> {
@@ -3279,78 +2784,197 @@ class _$NotionDatabaseNumberObjectCopyWithImpl<$Res>
   final NotionDatabaseNumberObject _self;
   final $Res Function(NotionDatabaseNumberObject) _then;
 
-  /// Create a copy of NotionDatabaseNumberObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? format = freezed,
-  }) {
-    return _then(_self.copyWith(
-      format: freezed == format
-          ? _self.format
-          : format // ignore: cast_nullable_to_non_nullable
-              as NotionNumberFormat?,
-    ));
-  }
+/// Create a copy of NotionDatabaseNumberObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? format = freezed,}) {
+  return _then(_self.copyWith(
+format: freezed == format ? _self.format : format // ignore: cast_nullable_to_non_nullable
+as NotionNumberFormat?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseNumberObject].
+extension NotionDatabaseNumberObjectPatterns on NotionDatabaseNumberObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionDatabaseNumberObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseNumberObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionDatabaseNumberObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseNumberObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionDatabaseNumberObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseNumberObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( NotionNumberFormat? format)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionDatabaseNumberObject() when $default != null:
+return $default(_that.format);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( NotionNumberFormat? format)  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseNumberObject():
+return $default(_that.format);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( NotionNumberFormat? format)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseNumberObject() when $default != null:
+return $default(_that.format);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionDatabaseNumberObject implements NotionDatabaseNumberObject {
   const _NotionDatabaseNumberObject({this.format});
-  factory _NotionDatabaseNumberObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseNumberObjectFromJson(json);
+  factory _NotionDatabaseNumberObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseNumberObjectFromJson(json);
 
-  @override
-  final NotionNumberFormat? format;
+@override final  NotionNumberFormat? format;
 
-  /// Create a copy of NotionDatabaseNumberObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionDatabaseNumberObjectCopyWith<_NotionDatabaseNumberObject>
-      get copyWith => __$NotionDatabaseNumberObjectCopyWithImpl<
-          _NotionDatabaseNumberObject>(this, _$identity);
+/// Create a copy of NotionDatabaseNumberObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionDatabaseNumberObjectCopyWith<_NotionDatabaseNumberObject> get copyWith => __$NotionDatabaseNumberObjectCopyWithImpl<_NotionDatabaseNumberObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseNumberObjectToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseNumberObjectToJson(this, );
+}
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionDatabaseNumberObject &&
-            (identical(other.format, format) || other.format == format));
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabaseNumberObject&&(identical(other.format, format) || other.format == format));
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, format);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,format);
 
-  @override
-  String toString() {
-    return 'NotionDatabaseNumberObject(format: $format)';
-  }
+@override
+String toString() {
+  return 'NotionDatabaseNumberObject(format: $format)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionDatabaseNumberObjectCopyWith<$Res>
-    implements $NotionDatabaseNumberObjectCopyWith<$Res> {
-  factory _$NotionDatabaseNumberObjectCopyWith(
-          _NotionDatabaseNumberObject value,
-          $Res Function(_NotionDatabaseNumberObject) _then) =
-      __$NotionDatabaseNumberObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({NotionNumberFormat? format});
-}
+abstract mixin class _$NotionDatabaseNumberObjectCopyWith<$Res> implements $NotionDatabaseNumberObjectCopyWith<$Res> {
+  factory _$NotionDatabaseNumberObjectCopyWith(_NotionDatabaseNumberObject value, $Res Function(_NotionDatabaseNumberObject) _then) = __$NotionDatabaseNumberObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ NotionNumberFormat? format
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionDatabaseNumberObjectCopyWithImpl<$Res>
     implements _$NotionDatabaseNumberObjectCopyWith<$Res> {
@@ -3359,84 +2983,85 @@ class __$NotionDatabaseNumberObjectCopyWithImpl<$Res>
   final _NotionDatabaseNumberObject _self;
   final $Res Function(_NotionDatabaseNumberObject) _then;
 
-  /// Create a copy of NotionDatabaseNumberObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? format = freezed,
-  }) {
-    return _then(_NotionDatabaseNumberObject(
-      format: freezed == format
-          ? _self.format
-          : format // ignore: cast_nullable_to_non_nullable
-              as NotionNumberFormat?,
-    ));
-  }
+/// Create a copy of NotionDatabaseNumberObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? format = freezed,}) {
+  return _then(_NotionDatabaseNumberObject(
+format: freezed == format ? _self.format : format // ignore: cast_nullable_to_non_nullable
+as NotionNumberFormat?,
+  ));
+}
+
+
 }
 
 NotionDatabaseRelationObject _$NotionDatabaseRelationObjectFromJson(
-    Map<String, dynamic> json) {
-  switch (json['type']) {
-    case 'single_property':
-      return NotionDatabaseSinglePropertyRelationObject.fromJson(json);
-    case 'dual_property':
-      return NotionDatabaseDualPropertyRelationObject.fromJson(json);
-
-    default:
-      throw CheckedFromJsonException(
-          json,
-          'type',
-          'NotionDatabaseRelationObject',
-          'Invalid union type "${json['type']}"!');
-  }
+  Map<String, dynamic> json
+) {
+        switch (json['type']) {
+                  case 'single_property':
+          return NotionDatabaseSinglePropertyRelationObject.fromJson(
+            json
+          );
+                case 'dual_property':
+          return NotionDatabaseDualPropertyRelationObject.fromJson(
+            json
+          );
+        
+          default:
+            throw CheckedFromJsonException(
+  json,
+  'type',
+  'NotionDatabaseRelationObject',
+  'Invalid union type "${json['type']}"!'
+);
+        }
+      
 }
 
 /// @nodoc
 mixin _$NotionDatabaseRelationObject {
-  String? get databaseId;
 
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRelationObjectCopyWith<NotionDatabaseRelationObject>
-      get copyWith => _$NotionDatabaseRelationObjectCopyWithImpl<
-              NotionDatabaseRelationObject>(
-          this as NotionDatabaseRelationObject, _$identity);
+ String? get databaseId;
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseRelationObjectCopyWith<NotionDatabaseRelationObject> get copyWith => _$NotionDatabaseRelationObjectCopyWithImpl<NotionDatabaseRelationObject>(this as NotionDatabaseRelationObject, _$identity);
 
   /// Serializes this NotionDatabaseRelationObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseRelationObject &&
-            (identical(other.databaseId, databaseId) ||
-                other.databaseId == databaseId));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, databaseId);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseRelationObject&&(identical(other.databaseId, databaseId) || other.databaseId == databaseId));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseRelationObject(databaseId: $databaseId)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,databaseId);
+
+@override
+String toString() {
+  return 'NotionDatabaseRelationObject(databaseId: $databaseId)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseRelationObjectCopyWith<$Res> {
-  factory $NotionDatabaseRelationObjectCopyWith(
-          NotionDatabaseRelationObject value,
-          $Res Function(NotionDatabaseRelationObject) _then) =
-      _$NotionDatabaseRelationObjectCopyWithImpl;
-  @useResult
-  $Res call({String? databaseId});
-}
+abstract mixin class $NotionDatabaseRelationObjectCopyWith<$Res>  {
+  factory $NotionDatabaseRelationObjectCopyWith(NotionDatabaseRelationObject value, $Res Function(NotionDatabaseRelationObject) _then) = _$NotionDatabaseRelationObjectCopyWithImpl;
+@useResult
+$Res call({
+ String? databaseId
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseRelationObjectCopyWithImpl<$Res>
     implements $NotionDatabaseRelationObjectCopyWith<$Res> {
@@ -3445,294 +3070,362 @@ class _$NotionDatabaseRelationObjectCopyWithImpl<$Res>
   final NotionDatabaseRelationObject _self;
   final $Res Function(NotionDatabaseRelationObject) _then;
 
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? databaseId = freezed,
-  }) {
-    return _then(_self.copyWith(
-      databaseId: freezed == databaseId
-          ? _self.databaseId
-          : databaseId // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? databaseId = freezed,}) {
+  return _then(_self.copyWith(
+databaseId: freezed == databaseId ? _self.databaseId : databaseId // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseRelationObject].
+extension NotionDatabaseRelationObjectPatterns on NotionDatabaseRelationObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionDatabaseSinglePropertyRelationObject value)?  singleProperty,TResult Function( NotionDatabaseDualPropertyRelationObject value)?  dualProperty,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case NotionDatabaseSinglePropertyRelationObject() when singleProperty != null:
+return singleProperty(_that);case NotionDatabaseDualPropertyRelationObject() when dualProperty != null:
+return dualProperty(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionDatabaseSinglePropertyRelationObject value)  singleProperty,required TResult Function( NotionDatabaseDualPropertyRelationObject value)  dualProperty,}){
+final _that = this;
+switch (_that) {
+case NotionDatabaseSinglePropertyRelationObject():
+return singleProperty(_that);case NotionDatabaseDualPropertyRelationObject():
+return dualProperty(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionDatabaseSinglePropertyRelationObject value)?  singleProperty,TResult? Function( NotionDatabaseDualPropertyRelationObject value)?  dualProperty,}){
+final _that = this;
+switch (_that) {
+case NotionDatabaseSinglePropertyRelationObject() when singleProperty != null:
+return singleProperty(_that);case NotionDatabaseDualPropertyRelationObject() when dualProperty != null:
+return dualProperty(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String? databaseId,  Map<String, dynamic>? singleProperty)?  singleProperty,TResult Function( String? databaseId,  NotionRelationDualProperty? dualProperty)?  dualProperty,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case NotionDatabaseSinglePropertyRelationObject() when singleProperty != null:
+return singleProperty(_that.databaseId,_that.singleProperty);case NotionDatabaseDualPropertyRelationObject() when dualProperty != null:
+return dualProperty(_that.databaseId,_that.dualProperty);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String? databaseId,  Map<String, dynamic>? singleProperty)  singleProperty,required TResult Function( String? databaseId,  NotionRelationDualProperty? dualProperty)  dualProperty,}) {final _that = this;
+switch (_that) {
+case NotionDatabaseSinglePropertyRelationObject():
+return singleProperty(_that.databaseId,_that.singleProperty);case NotionDatabaseDualPropertyRelationObject():
+return dualProperty(_that.databaseId,_that.dualProperty);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String? databaseId,  Map<String, dynamic>? singleProperty)?  singleProperty,TResult? Function( String? databaseId,  NotionRelationDualProperty? dualProperty)?  dualProperty,}) {final _that = this;
+switch (_that) {
+case NotionDatabaseSinglePropertyRelationObject() when singleProperty != null:
+return singleProperty(_that.databaseId,_that.singleProperty);case NotionDatabaseDualPropertyRelationObject() when dualProperty != null:
+return dualProperty(_that.databaseId,_that.dualProperty);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class NotionDatabaseSinglePropertyRelationObject
-    implements NotionDatabaseRelationObject {
-  const NotionDatabaseSinglePropertyRelationObject(
-      {this.databaseId,
-      final Map<String, dynamic>? singleProperty,
-      final String? $type})
-      : _singleProperty = singleProperty,
-        $type = $type ?? 'single_property';
-  factory NotionDatabaseSinglePropertyRelationObject.fromJson(
-          Map<String, dynamic> json) =>
-      _$NotionDatabaseSinglePropertyRelationObjectFromJson(json);
 
-  @override
-  final String? databaseId;
-  final Map<String, dynamic>? _singleProperty;
-  Map<String, dynamic>? get singleProperty {
-    final value = _singleProperty;
-    if (value == null) return null;
-    if (_singleProperty is EqualUnmodifiableMapView) return _singleProperty;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
+class NotionDatabaseSinglePropertyRelationObject implements NotionDatabaseRelationObject {
+  const NotionDatabaseSinglePropertyRelationObject({this.databaseId, final  Map<String, dynamic>? singleProperty, final  String? $type}): _singleProperty = singleProperty,$type = $type ?? 'single_property';
+  factory NotionDatabaseSinglePropertyRelationObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseSinglePropertyRelationObjectFromJson(json);
 
-  @JsonKey(name: 'type')
-  final String $type;
+@override final  String? databaseId;
+ final  Map<String, dynamic>? _singleProperty;
+ Map<String, dynamic>? get singleProperty {
+  final value = _singleProperty;
+  if (value == null) return null;
+  if (_singleProperty is EqualUnmodifiableMapView) return _singleProperty;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
+}
 
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseSinglePropertyRelationObjectCopyWith<
-          NotionDatabaseSinglePropertyRelationObject>
-      get copyWith => _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl<
-          NotionDatabaseSinglePropertyRelationObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseSinglePropertyRelationObjectToJson(
-      this,
-    );
-  }
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseSinglePropertyRelationObject &&
-            (identical(other.databaseId, databaseId) ||
-                other.databaseId == databaseId) &&
-            const DeepCollectionEquality()
-                .equals(other._singleProperty, _singleProperty));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, databaseId,
-      const DeepCollectionEquality().hash(_singleProperty));
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseSinglePropertyRelationObjectCopyWith<NotionDatabaseSinglePropertyRelationObject> get copyWith => _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl<NotionDatabaseSinglePropertyRelationObject>(this, _$identity);
 
-  @override
-  String toString() {
-    return 'NotionDatabaseRelationObject.singleProperty(databaseId: $databaseId, singleProperty: $singleProperty)';
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseSinglePropertyRelationObjectToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseSinglePropertyRelationObject&&(identical(other.databaseId, databaseId) || other.databaseId == databaseId)&&const DeepCollectionEquality().equals(other._singleProperty, _singleProperty));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,databaseId,const DeepCollectionEquality().hash(_singleProperty));
+
+@override
+String toString() {
+  return 'NotionDatabaseRelationObject.singleProperty(databaseId: $databaseId, singleProperty: $singleProperty)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseSinglePropertyRelationObjectCopyWith<$Res>
-    implements $NotionDatabaseRelationObjectCopyWith<$Res> {
-  factory $NotionDatabaseSinglePropertyRelationObjectCopyWith(
-          NotionDatabaseSinglePropertyRelationObject value,
-          $Res Function(NotionDatabaseSinglePropertyRelationObject) _then) =
-      _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({String? databaseId, Map<String, dynamic>? singleProperty});
-}
+abstract mixin class $NotionDatabaseSinglePropertyRelationObjectCopyWith<$Res> implements $NotionDatabaseRelationObjectCopyWith<$Res> {
+  factory $NotionDatabaseSinglePropertyRelationObjectCopyWith(NotionDatabaseSinglePropertyRelationObject value, $Res Function(NotionDatabaseSinglePropertyRelationObject) _then) = _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? databaseId, Map<String, dynamic>? singleProperty
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl<$Res>
     implements $NotionDatabaseSinglePropertyRelationObjectCopyWith<$Res> {
-  _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl(
-      this._self, this._then);
+  _$NotionDatabaseSinglePropertyRelationObjectCopyWithImpl(this._self, this._then);
 
   final NotionDatabaseSinglePropertyRelationObject _self;
   final $Res Function(NotionDatabaseSinglePropertyRelationObject) _then;
 
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? databaseId = freezed,
-    Object? singleProperty = freezed,
-  }) {
-    return _then(NotionDatabaseSinglePropertyRelationObject(
-      databaseId: freezed == databaseId
-          ? _self.databaseId
-          : databaseId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      singleProperty: freezed == singleProperty
-          ? _self._singleProperty
-          : singleProperty // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? databaseId = freezed,Object? singleProperty = freezed,}) {
+  return _then(NotionDatabaseSinglePropertyRelationObject(
+databaseId: freezed == databaseId ? _self.databaseId : databaseId // ignore: cast_nullable_to_non_nullable
+as String?,singleProperty: freezed == singleProperty ? _self._singleProperty : singleProperty // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,
+  ));
+}
+
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class NotionDatabaseDualPropertyRelationObject
-    implements NotionDatabaseRelationObject {
-  const NotionDatabaseDualPropertyRelationObject(
-      {this.databaseId, this.dualProperty, final String? $type})
-      : $type = $type ?? 'dual_property';
-  factory NotionDatabaseDualPropertyRelationObject.fromJson(
-          Map<String, dynamic> json) =>
-      _$NotionDatabaseDualPropertyRelationObjectFromJson(json);
 
-  @override
-  final String? databaseId;
-  final NotionRelationDualProperty? dualProperty;
+class NotionDatabaseDualPropertyRelationObject implements NotionDatabaseRelationObject {
+  const NotionDatabaseDualPropertyRelationObject({this.databaseId, this.dualProperty, final  String? $type}): $type = $type ?? 'dual_property';
+  factory NotionDatabaseDualPropertyRelationObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseDualPropertyRelationObjectFromJson(json);
 
-  @JsonKey(name: 'type')
-  final String $type;
+@override final  String? databaseId;
+ final  NotionRelationDualProperty? dualProperty;
 
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseDualPropertyRelationObjectCopyWith<
-          NotionDatabaseDualPropertyRelationObject>
-      get copyWith => _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl<
-          NotionDatabaseDualPropertyRelationObject>(this, _$identity);
+@JsonKey(name: 'type')
+final String $type;
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseDualPropertyRelationObjectToJson(
-      this,
-    );
-  }
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseDualPropertyRelationObject &&
-            (identical(other.databaseId, databaseId) ||
-                other.databaseId == databaseId) &&
-            (identical(other.dualProperty, dualProperty) ||
-                other.dualProperty == dualProperty));
-  }
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseDualPropertyRelationObjectCopyWith<NotionDatabaseDualPropertyRelationObject> get copyWith => _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl<NotionDatabaseDualPropertyRelationObject>(this, _$identity);
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, databaseId, dualProperty);
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseDualPropertyRelationObjectToJson(this, );
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseRelationObject.dualProperty(databaseId: $databaseId, dualProperty: $dualProperty)';
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseDualPropertyRelationObject&&(identical(other.databaseId, databaseId) || other.databaseId == databaseId)&&(identical(other.dualProperty, dualProperty) || other.dualProperty == dualProperty));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,databaseId,dualProperty);
+
+@override
+String toString() {
+  return 'NotionDatabaseRelationObject.dualProperty(databaseId: $databaseId, dualProperty: $dualProperty)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseDualPropertyRelationObjectCopyWith<$Res>
-    implements $NotionDatabaseRelationObjectCopyWith<$Res> {
-  factory $NotionDatabaseDualPropertyRelationObjectCopyWith(
-          NotionDatabaseDualPropertyRelationObject value,
-          $Res Function(NotionDatabaseDualPropertyRelationObject) _then) =
-      _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({String? databaseId, NotionRelationDualProperty? dualProperty});
+abstract mixin class $NotionDatabaseDualPropertyRelationObjectCopyWith<$Res> implements $NotionDatabaseRelationObjectCopyWith<$Res> {
+  factory $NotionDatabaseDualPropertyRelationObjectCopyWith(NotionDatabaseDualPropertyRelationObject value, $Res Function(NotionDatabaseDualPropertyRelationObject) _then) = _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? databaseId, NotionRelationDualProperty? dualProperty
+});
 
-  $NotionRelationDualPropertyCopyWith<$Res>? get dualProperty;
+
+$NotionRelationDualPropertyCopyWith<$Res>? get dualProperty;
+
 }
-
 /// @nodoc
 class _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl<$Res>
     implements $NotionDatabaseDualPropertyRelationObjectCopyWith<$Res> {
-  _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl(
-      this._self, this._then);
+  _$NotionDatabaseDualPropertyRelationObjectCopyWithImpl(this._self, this._then);
 
   final NotionDatabaseDualPropertyRelationObject _self;
   final $Res Function(NotionDatabaseDualPropertyRelationObject) _then;
 
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? databaseId = freezed,
-    Object? dualProperty = freezed,
-  }) {
-    return _then(NotionDatabaseDualPropertyRelationObject(
-      databaseId: freezed == databaseId
-          ? _self.databaseId
-          : databaseId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      dualProperty: freezed == dualProperty
-          ? _self.dualProperty
-          : dualProperty // ignore: cast_nullable_to_non_nullable
-              as NotionRelationDualProperty?,
-    ));
-  }
-
-  /// Create a copy of NotionDatabaseRelationObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionRelationDualPropertyCopyWith<$Res>? get dualProperty {
-    if (_self.dualProperty == null) {
-      return null;
-    }
-
-    return $NotionRelationDualPropertyCopyWith<$Res>(_self.dualProperty!,
-        (value) {
-      return _then(_self.copyWith(dualProperty: value));
-    });
-  }
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? databaseId = freezed,Object? dualProperty = freezed,}) {
+  return _then(NotionDatabaseDualPropertyRelationObject(
+databaseId: freezed == databaseId ? _self.databaseId : databaseId // ignore: cast_nullable_to_non_nullable
+as String?,dualProperty: freezed == dualProperty ? _self.dualProperty : dualProperty // ignore: cast_nullable_to_non_nullable
+as NotionRelationDualProperty?,
+  ));
 }
+
+/// Create a copy of NotionDatabaseRelationObject
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionRelationDualPropertyCopyWith<$Res>? get dualProperty {
+    if (_self.dualProperty == null) {
+    return null;
+  }
+
+  return $NotionRelationDualPropertyCopyWith<$Res>(_self.dualProperty!, (value) {
+    return _then(_self.copyWith(dualProperty: value));
+  });
+}
+}
+
 
 /// @nodoc
 mixin _$NotionRelationDualProperty {
-  String? get syncedPropertyId;
-  String? get syncedPropertyName;
 
-  /// Create a copy of NotionRelationDualProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionRelationDualPropertyCopyWith<NotionRelationDualProperty>
-      get copyWith =>
-          _$NotionRelationDualPropertyCopyWithImpl<NotionRelationDualProperty>(
-              this as NotionRelationDualProperty, _$identity);
+ String? get syncedPropertyId; String? get syncedPropertyName;
+/// Create a copy of NotionRelationDualProperty
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionRelationDualPropertyCopyWith<NotionRelationDualProperty> get copyWith => _$NotionRelationDualPropertyCopyWithImpl<NotionRelationDualProperty>(this as NotionRelationDualProperty, _$identity);
 
   /// Serializes this NotionRelationDualProperty to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionRelationDualProperty &&
-            (identical(other.syncedPropertyId, syncedPropertyId) ||
-                other.syncedPropertyId == syncedPropertyId) &&
-            (identical(other.syncedPropertyName, syncedPropertyName) ||
-                other.syncedPropertyName == syncedPropertyName));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, syncedPropertyId, syncedPropertyName);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionRelationDualProperty&&(identical(other.syncedPropertyId, syncedPropertyId) || other.syncedPropertyId == syncedPropertyId)&&(identical(other.syncedPropertyName, syncedPropertyName) || other.syncedPropertyName == syncedPropertyName));
+}
 
-  @override
-  String toString() {
-    return 'NotionRelationDualProperty(syncedPropertyId: $syncedPropertyId, syncedPropertyName: $syncedPropertyName)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,syncedPropertyId,syncedPropertyName);
+
+@override
+String toString() {
+  return 'NotionRelationDualProperty(syncedPropertyId: $syncedPropertyId, syncedPropertyName: $syncedPropertyName)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionRelationDualPropertyCopyWith<$Res> {
-  factory $NotionRelationDualPropertyCopyWith(NotionRelationDualProperty value,
-          $Res Function(NotionRelationDualProperty) _then) =
-      _$NotionRelationDualPropertyCopyWithImpl;
-  @useResult
-  $Res call({String? syncedPropertyId, String? syncedPropertyName});
-}
+abstract mixin class $NotionRelationDualPropertyCopyWith<$Res>  {
+  factory $NotionRelationDualPropertyCopyWith(NotionRelationDualProperty value, $Res Function(NotionRelationDualProperty) _then) = _$NotionRelationDualPropertyCopyWithImpl;
+@useResult
+$Res call({
+ String? syncedPropertyId, String? syncedPropertyName
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionRelationDualPropertyCopyWithImpl<$Res>
     implements $NotionRelationDualPropertyCopyWith<$Res> {
@@ -3741,90 +3434,199 @@ class _$NotionRelationDualPropertyCopyWithImpl<$Res>
   final NotionRelationDualProperty _self;
   final $Res Function(NotionRelationDualProperty) _then;
 
-  /// Create a copy of NotionRelationDualProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? syncedPropertyId = freezed,
-    Object? syncedPropertyName = freezed,
-  }) {
-    return _then(_self.copyWith(
-      syncedPropertyId: freezed == syncedPropertyId
-          ? _self.syncedPropertyId
-          : syncedPropertyId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      syncedPropertyName: freezed == syncedPropertyName
-          ? _self.syncedPropertyName
-          : syncedPropertyName // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionRelationDualProperty
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? syncedPropertyId = freezed,Object? syncedPropertyName = freezed,}) {
+  return _then(_self.copyWith(
+syncedPropertyId: freezed == syncedPropertyId ? _self.syncedPropertyId : syncedPropertyId // ignore: cast_nullable_to_non_nullable
+as String?,syncedPropertyName: freezed == syncedPropertyName ? _self.syncedPropertyName : syncedPropertyName // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionRelationDualProperty].
+extension NotionRelationDualPropertyPatterns on NotionRelationDualProperty {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionRelationDualProperty value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionRelationDualProperty() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionRelationDualProperty value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionRelationDualProperty():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionRelationDualProperty value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionRelationDualProperty() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? syncedPropertyId,  String? syncedPropertyName)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionRelationDualProperty() when $default != null:
+return $default(_that.syncedPropertyId,_that.syncedPropertyName);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? syncedPropertyId,  String? syncedPropertyName)  $default,) {final _that = this;
+switch (_that) {
+case _NotionRelationDualProperty():
+return $default(_that.syncedPropertyId,_that.syncedPropertyName);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? syncedPropertyId,  String? syncedPropertyName)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionRelationDualProperty() when $default != null:
+return $default(_that.syncedPropertyId,_that.syncedPropertyName);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionRelationDualProperty implements NotionRelationDualProperty {
-  const _NotionRelationDualProperty(
-      {this.syncedPropertyId, this.syncedPropertyName});
-  factory _NotionRelationDualProperty.fromJson(Map<String, dynamic> json) =>
-      _$NotionRelationDualPropertyFromJson(json);
+  const _NotionRelationDualProperty({this.syncedPropertyId, this.syncedPropertyName});
+  factory _NotionRelationDualProperty.fromJson(Map<String, dynamic> json) => _$NotionRelationDualPropertyFromJson(json);
 
-  @override
-  final String? syncedPropertyId;
-  @override
-  final String? syncedPropertyName;
+@override final  String? syncedPropertyId;
+@override final  String? syncedPropertyName;
 
-  /// Create a copy of NotionRelationDualProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionRelationDualPropertyCopyWith<_NotionRelationDualProperty>
-      get copyWith => __$NotionRelationDualPropertyCopyWithImpl<
-          _NotionRelationDualProperty>(this, _$identity);
+/// Create a copy of NotionRelationDualProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionRelationDualPropertyCopyWith<_NotionRelationDualProperty> get copyWith => __$NotionRelationDualPropertyCopyWithImpl<_NotionRelationDualProperty>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionRelationDualPropertyToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionRelationDualPropertyToJson(this, );
+}
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionRelationDualProperty &&
-            (identical(other.syncedPropertyId, syncedPropertyId) ||
-                other.syncedPropertyId == syncedPropertyId) &&
-            (identical(other.syncedPropertyName, syncedPropertyName) ||
-                other.syncedPropertyName == syncedPropertyName));
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionRelationDualProperty&&(identical(other.syncedPropertyId, syncedPropertyId) || other.syncedPropertyId == syncedPropertyId)&&(identical(other.syncedPropertyName, syncedPropertyName) || other.syncedPropertyName == syncedPropertyName));
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, syncedPropertyId, syncedPropertyName);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,syncedPropertyId,syncedPropertyName);
 
-  @override
-  String toString() {
-    return 'NotionRelationDualProperty(syncedPropertyId: $syncedPropertyId, syncedPropertyName: $syncedPropertyName)';
-  }
+@override
+String toString() {
+  return 'NotionRelationDualProperty(syncedPropertyId: $syncedPropertyId, syncedPropertyName: $syncedPropertyName)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionRelationDualPropertyCopyWith<$Res>
-    implements $NotionRelationDualPropertyCopyWith<$Res> {
-  factory _$NotionRelationDualPropertyCopyWith(
-          _NotionRelationDualProperty value,
-          $Res Function(_NotionRelationDualProperty) _then) =
-      __$NotionRelationDualPropertyCopyWithImpl;
-  @override
-  @useResult
-  $Res call({String? syncedPropertyId, String? syncedPropertyName});
-}
+abstract mixin class _$NotionRelationDualPropertyCopyWith<$Res> implements $NotionRelationDualPropertyCopyWith<$Res> {
+  factory _$NotionRelationDualPropertyCopyWith(_NotionRelationDualProperty value, $Res Function(_NotionRelationDualProperty) _then) = __$NotionRelationDualPropertyCopyWithImpl;
+@override @useResult
+$Res call({
+ String? syncedPropertyId, String? syncedPropertyName
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionRelationDualPropertyCopyWithImpl<$Res>
     implements _$NotionRelationDualPropertyCopyWith<$Res> {
@@ -3833,89 +3635,63 @@ class __$NotionRelationDualPropertyCopyWithImpl<$Res>
   final _NotionRelationDualProperty _self;
   final $Res Function(_NotionRelationDualProperty) _then;
 
-  /// Create a copy of NotionRelationDualProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? syncedPropertyId = freezed,
-    Object? syncedPropertyName = freezed,
-  }) {
-    return _then(_NotionRelationDualProperty(
-      syncedPropertyId: freezed == syncedPropertyId
-          ? _self.syncedPropertyId
-          : syncedPropertyId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      syncedPropertyName: freezed == syncedPropertyName
-          ? _self.syncedPropertyName
-          : syncedPropertyName // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionRelationDualProperty
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? syncedPropertyId = freezed,Object? syncedPropertyName = freezed,}) {
+  return _then(_NotionRelationDualProperty(
+syncedPropertyId: freezed == syncedPropertyId ? _self.syncedPropertyId : syncedPropertyId // ignore: cast_nullable_to_non_nullable
+as String?,syncedPropertyName: freezed == syncedPropertyName ? _self.syncedPropertyName : syncedPropertyName // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
+
+
+}
+
 
 /// @nodoc
 mixin _$NotionDatabaseRollupObject {
-  NotionRollupFunction? get function;
-  String? get relationPropertyId;
-  String? get relationPropertyName;
-  String? get rollupPropertyId;
-  String? get rollupPropertyName;
 
-  /// Create a copy of NotionDatabaseRollupObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseRollupObjectCopyWith<NotionDatabaseRollupObject>
-      get copyWith =>
-          _$NotionDatabaseRollupObjectCopyWithImpl<NotionDatabaseRollupObject>(
-              this as NotionDatabaseRollupObject, _$identity);
+ NotionRollupFunction? get function; String? get relationPropertyId; String? get relationPropertyName; String? get rollupPropertyId; String? get rollupPropertyName;
+/// Create a copy of NotionDatabaseRollupObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseRollupObjectCopyWith<NotionDatabaseRollupObject> get copyWith => _$NotionDatabaseRollupObjectCopyWithImpl<NotionDatabaseRollupObject>(this as NotionDatabaseRollupObject, _$identity);
 
   /// Serializes this NotionDatabaseRollupObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseRollupObject &&
-            (identical(other.function, function) ||
-                other.function == function) &&
-            (identical(other.relationPropertyId, relationPropertyId) ||
-                other.relationPropertyId == relationPropertyId) &&
-            (identical(other.relationPropertyName, relationPropertyName) ||
-                other.relationPropertyName == relationPropertyName) &&
-            (identical(other.rollupPropertyId, rollupPropertyId) ||
-                other.rollupPropertyId == rollupPropertyId) &&
-            (identical(other.rollupPropertyName, rollupPropertyName) ||
-                other.rollupPropertyName == rollupPropertyName));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, function, relationPropertyId,
-      relationPropertyName, rollupPropertyId, rollupPropertyName);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseRollupObject&&(identical(other.function, function) || other.function == function)&&(identical(other.relationPropertyId, relationPropertyId) || other.relationPropertyId == relationPropertyId)&&(identical(other.relationPropertyName, relationPropertyName) || other.relationPropertyName == relationPropertyName)&&(identical(other.rollupPropertyId, rollupPropertyId) || other.rollupPropertyId == rollupPropertyId)&&(identical(other.rollupPropertyName, rollupPropertyName) || other.rollupPropertyName == rollupPropertyName));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseRollupObject(function: $function, relationPropertyId: $relationPropertyId, relationPropertyName: $relationPropertyName, rollupPropertyId: $rollupPropertyId, rollupPropertyName: $rollupPropertyName)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,function,relationPropertyId,relationPropertyName,rollupPropertyId,rollupPropertyName);
+
+@override
+String toString() {
+  return 'NotionDatabaseRollupObject(function: $function, relationPropertyId: $relationPropertyId, relationPropertyName: $relationPropertyName, rollupPropertyId: $rollupPropertyId, rollupPropertyName: $rollupPropertyName)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseRollupObjectCopyWith<$Res> {
-  factory $NotionDatabaseRollupObjectCopyWith(NotionDatabaseRollupObject value,
-          $Res Function(NotionDatabaseRollupObject) _then) =
-      _$NotionDatabaseRollupObjectCopyWithImpl;
-  @useResult
-  $Res call(
-      {NotionRollupFunction? function,
-      String? relationPropertyId,
-      String? relationPropertyName,
-      String? rollupPropertyId,
-      String? rollupPropertyName});
-}
+abstract mixin class $NotionDatabaseRollupObjectCopyWith<$Res>  {
+  factory $NotionDatabaseRollupObjectCopyWith(NotionDatabaseRollupObject value, $Res Function(NotionDatabaseRollupObject) _then) = _$NotionDatabaseRollupObjectCopyWithImpl;
+@useResult
+$Res call({
+ NotionRollupFunction? function, String? relationPropertyId, String? relationPropertyName, String? rollupPropertyId, String? rollupPropertyName
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseRollupObjectCopyWithImpl<$Res>
     implements $NotionDatabaseRollupObjectCopyWith<$Res> {
@@ -3924,126 +3700,205 @@ class _$NotionDatabaseRollupObjectCopyWithImpl<$Res>
   final NotionDatabaseRollupObject _self;
   final $Res Function(NotionDatabaseRollupObject) _then;
 
-  /// Create a copy of NotionDatabaseRollupObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? function = freezed,
-    Object? relationPropertyId = freezed,
-    Object? relationPropertyName = freezed,
-    Object? rollupPropertyId = freezed,
-    Object? rollupPropertyName = freezed,
-  }) {
-    return _then(_self.copyWith(
-      function: freezed == function
-          ? _self.function
-          : function // ignore: cast_nullable_to_non_nullable
-              as NotionRollupFunction?,
-      relationPropertyId: freezed == relationPropertyId
-          ? _self.relationPropertyId
-          : relationPropertyId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      relationPropertyName: freezed == relationPropertyName
-          ? _self.relationPropertyName
-          : relationPropertyName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rollupPropertyId: freezed == rollupPropertyId
-          ? _self.rollupPropertyId
-          : rollupPropertyId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rollupPropertyName: freezed == rollupPropertyName
-          ? _self.rollupPropertyName
-          : rollupPropertyName // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionDatabaseRollupObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? function = freezed,Object? relationPropertyId = freezed,Object? relationPropertyName = freezed,Object? rollupPropertyId = freezed,Object? rollupPropertyName = freezed,}) {
+  return _then(_self.copyWith(
+function: freezed == function ? _self.function : function // ignore: cast_nullable_to_non_nullable
+as NotionRollupFunction?,relationPropertyId: freezed == relationPropertyId ? _self.relationPropertyId : relationPropertyId // ignore: cast_nullable_to_non_nullable
+as String?,relationPropertyName: freezed == relationPropertyName ? _self.relationPropertyName : relationPropertyName // ignore: cast_nullable_to_non_nullable
+as String?,rollupPropertyId: freezed == rollupPropertyId ? _self.rollupPropertyId : rollupPropertyId // ignore: cast_nullable_to_non_nullable
+as String?,rollupPropertyName: freezed == rollupPropertyName ? _self.rollupPropertyName : rollupPropertyName // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseRollupObject].
+extension NotionDatabaseRollupObjectPatterns on NotionDatabaseRollupObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionDatabaseRollupObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseRollupObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionDatabaseRollupObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseRollupObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionDatabaseRollupObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseRollupObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( NotionRollupFunction? function,  String? relationPropertyId,  String? relationPropertyName,  String? rollupPropertyId,  String? rollupPropertyName)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionDatabaseRollupObject() when $default != null:
+return $default(_that.function,_that.relationPropertyId,_that.relationPropertyName,_that.rollupPropertyId,_that.rollupPropertyName);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( NotionRollupFunction? function,  String? relationPropertyId,  String? relationPropertyName,  String? rollupPropertyId,  String? rollupPropertyName)  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseRollupObject():
+return $default(_that.function,_that.relationPropertyId,_that.relationPropertyName,_that.rollupPropertyId,_that.rollupPropertyName);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( NotionRollupFunction? function,  String? relationPropertyId,  String? relationPropertyName,  String? rollupPropertyId,  String? rollupPropertyName)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseRollupObject() when $default != null:
+return $default(_that.function,_that.relationPropertyId,_that.relationPropertyName,_that.rollupPropertyId,_that.rollupPropertyName);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionDatabaseRollupObject implements NotionDatabaseRollupObject {
-  const _NotionDatabaseRollupObject(
-      {this.function,
-      this.relationPropertyId,
-      this.relationPropertyName,
-      this.rollupPropertyId,
-      this.rollupPropertyName});
-  factory _NotionDatabaseRollupObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseRollupObjectFromJson(json);
+  const _NotionDatabaseRollupObject({this.function, this.relationPropertyId, this.relationPropertyName, this.rollupPropertyId, this.rollupPropertyName});
+  factory _NotionDatabaseRollupObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseRollupObjectFromJson(json);
 
-  @override
-  final NotionRollupFunction? function;
-  @override
-  final String? relationPropertyId;
-  @override
-  final String? relationPropertyName;
-  @override
-  final String? rollupPropertyId;
-  @override
-  final String? rollupPropertyName;
+@override final  NotionRollupFunction? function;
+@override final  String? relationPropertyId;
+@override final  String? relationPropertyName;
+@override final  String? rollupPropertyId;
+@override final  String? rollupPropertyName;
 
-  /// Create a copy of NotionDatabaseRollupObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionDatabaseRollupObjectCopyWith<_NotionDatabaseRollupObject>
-      get copyWith => __$NotionDatabaseRollupObjectCopyWithImpl<
-          _NotionDatabaseRollupObject>(this, _$identity);
+/// Create a copy of NotionDatabaseRollupObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionDatabaseRollupObjectCopyWith<_NotionDatabaseRollupObject> get copyWith => __$NotionDatabaseRollupObjectCopyWithImpl<_NotionDatabaseRollupObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseRollupObjectToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseRollupObjectToJson(this, );
+}
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionDatabaseRollupObject &&
-            (identical(other.function, function) ||
-                other.function == function) &&
-            (identical(other.relationPropertyId, relationPropertyId) ||
-                other.relationPropertyId == relationPropertyId) &&
-            (identical(other.relationPropertyName, relationPropertyName) ||
-                other.relationPropertyName == relationPropertyName) &&
-            (identical(other.rollupPropertyId, rollupPropertyId) ||
-                other.rollupPropertyId == rollupPropertyId) &&
-            (identical(other.rollupPropertyName, rollupPropertyName) ||
-                other.rollupPropertyName == rollupPropertyName));
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabaseRollupObject&&(identical(other.function, function) || other.function == function)&&(identical(other.relationPropertyId, relationPropertyId) || other.relationPropertyId == relationPropertyId)&&(identical(other.relationPropertyName, relationPropertyName) || other.relationPropertyName == relationPropertyName)&&(identical(other.rollupPropertyId, rollupPropertyId) || other.rollupPropertyId == rollupPropertyId)&&(identical(other.rollupPropertyName, rollupPropertyName) || other.rollupPropertyName == rollupPropertyName));
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, function, relationPropertyId,
-      relationPropertyName, rollupPropertyId, rollupPropertyName);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,function,relationPropertyId,relationPropertyName,rollupPropertyId,rollupPropertyName);
 
-  @override
-  String toString() {
-    return 'NotionDatabaseRollupObject(function: $function, relationPropertyId: $relationPropertyId, relationPropertyName: $relationPropertyName, rollupPropertyId: $rollupPropertyId, rollupPropertyName: $rollupPropertyName)';
-  }
+@override
+String toString() {
+  return 'NotionDatabaseRollupObject(function: $function, relationPropertyId: $relationPropertyId, relationPropertyName: $relationPropertyName, rollupPropertyId: $rollupPropertyId, rollupPropertyName: $rollupPropertyName)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionDatabaseRollupObjectCopyWith<$Res>
-    implements $NotionDatabaseRollupObjectCopyWith<$Res> {
-  factory _$NotionDatabaseRollupObjectCopyWith(
-          _NotionDatabaseRollupObject value,
-          $Res Function(_NotionDatabaseRollupObject) _then) =
-      __$NotionDatabaseRollupObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {NotionRollupFunction? function,
-      String? relationPropertyId,
-      String? relationPropertyName,
-      String? rollupPropertyId,
-      String? rollupPropertyName});
-}
+abstract mixin class _$NotionDatabaseRollupObjectCopyWith<$Res> implements $NotionDatabaseRollupObjectCopyWith<$Res> {
+  factory _$NotionDatabaseRollupObjectCopyWith(_NotionDatabaseRollupObject value, $Res Function(_NotionDatabaseRollupObject) _then) = __$NotionDatabaseRollupObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ NotionRollupFunction? function, String? relationPropertyId, String? relationPropertyName, String? rollupPropertyId, String? rollupPropertyName
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionDatabaseRollupObjectCopyWithImpl<$Res>
     implements _$NotionDatabaseRollupObjectCopyWith<$Res> {
@@ -4052,86 +3907,66 @@ class __$NotionDatabaseRollupObjectCopyWithImpl<$Res>
   final _NotionDatabaseRollupObject _self;
   final $Res Function(_NotionDatabaseRollupObject) _then;
 
-  /// Create a copy of NotionDatabaseRollupObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? function = freezed,
-    Object? relationPropertyId = freezed,
-    Object? relationPropertyName = freezed,
-    Object? rollupPropertyId = freezed,
-    Object? rollupPropertyName = freezed,
-  }) {
-    return _then(_NotionDatabaseRollupObject(
-      function: freezed == function
-          ? _self.function
-          : function // ignore: cast_nullable_to_non_nullable
-              as NotionRollupFunction?,
-      relationPropertyId: freezed == relationPropertyId
-          ? _self.relationPropertyId
-          : relationPropertyId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      relationPropertyName: freezed == relationPropertyName
-          ? _self.relationPropertyName
-          : relationPropertyName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rollupPropertyId: freezed == rollupPropertyId
-          ? _self.rollupPropertyId
-          : rollupPropertyId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rollupPropertyName: freezed == rollupPropertyName
-          ? _self.rollupPropertyName
-          : rollupPropertyName // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionDatabaseRollupObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? function = freezed,Object? relationPropertyId = freezed,Object? relationPropertyName = freezed,Object? rollupPropertyId = freezed,Object? rollupPropertyName = freezed,}) {
+  return _then(_NotionDatabaseRollupObject(
+function: freezed == function ? _self.function : function // ignore: cast_nullable_to_non_nullable
+as NotionRollupFunction?,relationPropertyId: freezed == relationPropertyId ? _self.relationPropertyId : relationPropertyId // ignore: cast_nullable_to_non_nullable
+as String?,relationPropertyName: freezed == relationPropertyName ? _self.relationPropertyName : relationPropertyName // ignore: cast_nullable_to_non_nullable
+as String?,rollupPropertyId: freezed == rollupPropertyId ? _self.rollupPropertyId : rollupPropertyId // ignore: cast_nullable_to_non_nullable
+as String?,rollupPropertyName: freezed == rollupPropertyName ? _self.rollupPropertyName : rollupPropertyName // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
+
+
+}
+
 
 /// @nodoc
 mixin _$NotionDatabaseSelectObject {
-  List<NotionOption>? get options;
 
-  /// Create a copy of NotionDatabaseSelectObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseSelectObjectCopyWith<NotionDatabaseSelectObject>
-      get copyWith =>
-          _$NotionDatabaseSelectObjectCopyWithImpl<NotionDatabaseSelectObject>(
-              this as NotionDatabaseSelectObject, _$identity);
+ List<NotionOption>? get options;
+/// Create a copy of NotionDatabaseSelectObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseSelectObjectCopyWith<NotionDatabaseSelectObject> get copyWith => _$NotionDatabaseSelectObjectCopyWithImpl<NotionDatabaseSelectObject>(this as NotionDatabaseSelectObject, _$identity);
 
   /// Serializes this NotionDatabaseSelectObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseSelectObject &&
-            const DeepCollectionEquality().equals(other.options, options));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(options));
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseSelectObject&&const DeepCollectionEquality().equals(other.options, options));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseSelectObject(options: $options)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(options));
+
+@override
+String toString() {
+  return 'NotionDatabaseSelectObject(options: $options)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseSelectObjectCopyWith<$Res> {
-  factory $NotionDatabaseSelectObjectCopyWith(NotionDatabaseSelectObject value,
-          $Res Function(NotionDatabaseSelectObject) _then) =
-      _$NotionDatabaseSelectObjectCopyWithImpl;
-  @useResult
-  $Res call({List<NotionOption>? options});
-}
+abstract mixin class $NotionDatabaseSelectObjectCopyWith<$Res>  {
+  factory $NotionDatabaseSelectObjectCopyWith(NotionDatabaseSelectObject value, $Res Function(NotionDatabaseSelectObject) _then) = _$NotionDatabaseSelectObjectCopyWithImpl;
+@useResult
+$Res call({
+ List<NotionOption>? options
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseSelectObjectCopyWithImpl<$Res>
     implements $NotionDatabaseSelectObjectCopyWith<$Res> {
@@ -4140,87 +3975,205 @@ class _$NotionDatabaseSelectObjectCopyWithImpl<$Res>
   final NotionDatabaseSelectObject _self;
   final $Res Function(NotionDatabaseSelectObject) _then;
 
-  /// Create a copy of NotionDatabaseSelectObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? options = freezed,
-  }) {
-    return _then(_self.copyWith(
-      options: freezed == options
-          ? _self.options
-          : options // ignore: cast_nullable_to_non_nullable
-              as List<NotionOption>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseSelectObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? options = freezed,}) {
+  return _then(_self.copyWith(
+options: freezed == options ? _self.options : options // ignore: cast_nullable_to_non_nullable
+as List<NotionOption>?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseSelectObject].
+extension NotionDatabaseSelectObjectPatterns on NotionDatabaseSelectObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionDatabaseSelectObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseSelectObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionDatabaseSelectObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseSelectObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionDatabaseSelectObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseSelectObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<NotionOption>? options)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionDatabaseSelectObject() when $default != null:
+return $default(_that.options);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<NotionOption>? options)  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseSelectObject():
+return $default(_that.options);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<NotionOption>? options)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseSelectObject() when $default != null:
+return $default(_that.options);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionDatabaseSelectObject implements NotionDatabaseSelectObject {
-  const _NotionDatabaseSelectObject({final List<NotionOption>? options})
-      : _options = options;
-  factory _NotionDatabaseSelectObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseSelectObjectFromJson(json);
+  const _NotionDatabaseSelectObject({final  List<NotionOption>? options}): _options = options;
+  factory _NotionDatabaseSelectObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseSelectObjectFromJson(json);
 
-  final List<NotionOption>? _options;
-  @override
-  List<NotionOption>? get options {
-    final value = _options;
-    if (value == null) return null;
-    if (_options is EqualUnmodifiableListView) return _options;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+ final  List<NotionOption>? _options;
+@override List<NotionOption>? get options {
+  final value = _options;
+  if (value == null) return null;
+  if (_options is EqualUnmodifiableListView) return _options;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
+}
 
-  /// Create a copy of NotionDatabaseSelectObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionDatabaseSelectObjectCopyWith<_NotionDatabaseSelectObject>
-      get copyWith => __$NotionDatabaseSelectObjectCopyWithImpl<
-          _NotionDatabaseSelectObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseSelectObjectToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseSelectObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionDatabaseSelectObjectCopyWith<_NotionDatabaseSelectObject> get copyWith => __$NotionDatabaseSelectObjectCopyWithImpl<_NotionDatabaseSelectObject>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionDatabaseSelectObject &&
-            const DeepCollectionEquality().equals(other._options, _options));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseSelectObjectToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_options));
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabaseSelectObject&&const DeepCollectionEquality().equals(other._options, _options));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseSelectObject(options: $options)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_options));
+
+@override
+String toString() {
+  return 'NotionDatabaseSelectObject(options: $options)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionDatabaseSelectObjectCopyWith<$Res>
-    implements $NotionDatabaseSelectObjectCopyWith<$Res> {
-  factory _$NotionDatabaseSelectObjectCopyWith(
-          _NotionDatabaseSelectObject value,
-          $Res Function(_NotionDatabaseSelectObject) _then) =
-      __$NotionDatabaseSelectObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({List<NotionOption>? options});
-}
+abstract mixin class _$NotionDatabaseSelectObjectCopyWith<$Res> implements $NotionDatabaseSelectObjectCopyWith<$Res> {
+  factory _$NotionDatabaseSelectObjectCopyWith(_NotionDatabaseSelectObject value, $Res Function(_NotionDatabaseSelectObject) _then) = __$NotionDatabaseSelectObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ List<NotionOption>? options
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionDatabaseSelectObjectCopyWithImpl<$Res>
     implements _$NotionDatabaseSelectObjectCopyWith<$Res> {
@@ -4229,70 +4182,62 @@ class __$NotionDatabaseSelectObjectCopyWithImpl<$Res>
   final _NotionDatabaseSelectObject _self;
   final $Res Function(_NotionDatabaseSelectObject) _then;
 
-  /// Create a copy of NotionDatabaseSelectObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? options = freezed,
-  }) {
-    return _then(_NotionDatabaseSelectObject(
-      options: freezed == options
-          ? _self._options
-          : options // ignore: cast_nullable_to_non_nullable
-              as List<NotionOption>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseSelectObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? options = freezed,}) {
+  return _then(_NotionDatabaseSelectObject(
+options: freezed == options ? _self._options : options // ignore: cast_nullable_to_non_nullable
+as List<NotionOption>?,
+  ));
 }
+
+
+}
+
 
 /// @nodoc
 mixin _$NotionDatabaseStatusObject {
-  List<NotionOption>? get options;
-  List<NotionGroup>? get groups;
 
-  /// Create a copy of NotionDatabaseStatusObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionDatabaseStatusObjectCopyWith<NotionDatabaseStatusObject>
-      get copyWith =>
-          _$NotionDatabaseStatusObjectCopyWithImpl<NotionDatabaseStatusObject>(
-              this as NotionDatabaseStatusObject, _$identity);
+ List<NotionOption>? get options; List<NotionGroup>? get groups;
+/// Create a copy of NotionDatabaseStatusObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionDatabaseStatusObjectCopyWith<NotionDatabaseStatusObject> get copyWith => _$NotionDatabaseStatusObjectCopyWithImpl<NotionDatabaseStatusObject>(this as NotionDatabaseStatusObject, _$identity);
 
   /// Serializes this NotionDatabaseStatusObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionDatabaseStatusObject &&
-            const DeepCollectionEquality().equals(other.options, options) &&
-            const DeepCollectionEquality().equals(other.groups, groups));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(options),
-      const DeepCollectionEquality().hash(groups));
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabaseStatusObject&&const DeepCollectionEquality().equals(other.options, options)&&const DeepCollectionEquality().equals(other.groups, groups));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseStatusObject(options: $options, groups: $groups)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(options),const DeepCollectionEquality().hash(groups));
+
+@override
+String toString() {
+  return 'NotionDatabaseStatusObject(options: $options, groups: $groups)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionDatabaseStatusObjectCopyWith<$Res> {
-  factory $NotionDatabaseStatusObjectCopyWith(NotionDatabaseStatusObject value,
-          $Res Function(NotionDatabaseStatusObject) _then) =
-      _$NotionDatabaseStatusObjectCopyWithImpl;
-  @useResult
-  $Res call({List<NotionOption>? options, List<NotionGroup>? groups});
-}
+abstract mixin class $NotionDatabaseStatusObjectCopyWith<$Res>  {
+  factory $NotionDatabaseStatusObjectCopyWith(NotionDatabaseStatusObject value, $Res Function(NotionDatabaseStatusObject) _then) = _$NotionDatabaseStatusObjectCopyWithImpl;
+@useResult
+$Res call({
+ List<NotionOption>? options, List<NotionGroup>? groups
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionDatabaseStatusObjectCopyWithImpl<$Res>
     implements $NotionDatabaseStatusObjectCopyWith<$Res> {
@@ -4301,107 +4246,215 @@ class _$NotionDatabaseStatusObjectCopyWithImpl<$Res>
   final NotionDatabaseStatusObject _self;
   final $Res Function(NotionDatabaseStatusObject) _then;
 
-  /// Create a copy of NotionDatabaseStatusObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? options = freezed,
-    Object? groups = freezed,
-  }) {
-    return _then(_self.copyWith(
-      options: freezed == options
-          ? _self.options
-          : options // ignore: cast_nullable_to_non_nullable
-              as List<NotionOption>?,
-      groups: freezed == groups
-          ? _self.groups
-          : groups // ignore: cast_nullable_to_non_nullable
-              as List<NotionGroup>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseStatusObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? options = freezed,Object? groups = freezed,}) {
+  return _then(_self.copyWith(
+options: freezed == options ? _self.options : options // ignore: cast_nullable_to_non_nullable
+as List<NotionOption>?,groups: freezed == groups ? _self.groups : groups // ignore: cast_nullable_to_non_nullable
+as List<NotionGroup>?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionDatabaseStatusObject].
+extension NotionDatabaseStatusObjectPatterns on NotionDatabaseStatusObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionDatabaseStatusObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseStatusObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionDatabaseStatusObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseStatusObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionDatabaseStatusObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionDatabaseStatusObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<NotionOption>? options,  List<NotionGroup>? groups)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionDatabaseStatusObject() when $default != null:
+return $default(_that.options,_that.groups);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<NotionOption>? options,  List<NotionGroup>? groups)  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseStatusObject():
+return $default(_that.options,_that.groups);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<NotionOption>? options,  List<NotionGroup>? groups)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionDatabaseStatusObject() when $default != null:
+return $default(_that.options,_that.groups);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionDatabaseStatusObject implements NotionDatabaseStatusObject {
-  const _NotionDatabaseStatusObject(
-      {final List<NotionOption>? options, final List<NotionGroup>? groups})
-      : _options = options,
-        _groups = groups;
-  factory _NotionDatabaseStatusObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionDatabaseStatusObjectFromJson(json);
+  const _NotionDatabaseStatusObject({final  List<NotionOption>? options, final  List<NotionGroup>? groups}): _options = options,_groups = groups;
+  factory _NotionDatabaseStatusObject.fromJson(Map<String, dynamic> json) => _$NotionDatabaseStatusObjectFromJson(json);
 
-  final List<NotionOption>? _options;
-  @override
-  List<NotionOption>? get options {
-    final value = _options;
-    if (value == null) return null;
-    if (_options is EqualUnmodifiableListView) return _options;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+ final  List<NotionOption>? _options;
+@override List<NotionOption>? get options {
+  final value = _options;
+  if (value == null) return null;
+  if (_options is EqualUnmodifiableListView) return _options;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
+}
 
-  final List<NotionGroup>? _groups;
-  @override
-  List<NotionGroup>? get groups {
-    final value = _groups;
-    if (value == null) return null;
-    if (_groups is EqualUnmodifiableListView) return _groups;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+ final  List<NotionGroup>? _groups;
+@override List<NotionGroup>? get groups {
+  final value = _groups;
+  if (value == null) return null;
+  if (_groups is EqualUnmodifiableListView) return _groups;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
+}
 
-  /// Create a copy of NotionDatabaseStatusObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionDatabaseStatusObjectCopyWith<_NotionDatabaseStatusObject>
-      get copyWith => __$NotionDatabaseStatusObjectCopyWithImpl<
-          _NotionDatabaseStatusObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionDatabaseStatusObjectToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionDatabaseStatusObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionDatabaseStatusObjectCopyWith<_NotionDatabaseStatusObject> get copyWith => __$NotionDatabaseStatusObjectCopyWithImpl<_NotionDatabaseStatusObject>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionDatabaseStatusObject &&
-            const DeepCollectionEquality().equals(other._options, _options) &&
-            const DeepCollectionEquality().equals(other._groups, _groups));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionDatabaseStatusObjectToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(_options),
-      const DeepCollectionEquality().hash(_groups));
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabaseStatusObject&&const DeepCollectionEquality().equals(other._options, _options)&&const DeepCollectionEquality().equals(other._groups, _groups));
+}
 
-  @override
-  String toString() {
-    return 'NotionDatabaseStatusObject(options: $options, groups: $groups)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_options),const DeepCollectionEquality().hash(_groups));
+
+@override
+String toString() {
+  return 'NotionDatabaseStatusObject(options: $options, groups: $groups)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionDatabaseStatusObjectCopyWith<$Res>
-    implements $NotionDatabaseStatusObjectCopyWith<$Res> {
-  factory _$NotionDatabaseStatusObjectCopyWith(
-          _NotionDatabaseStatusObject value,
-          $Res Function(_NotionDatabaseStatusObject) _then) =
-      __$NotionDatabaseStatusObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({List<NotionOption>? options, List<NotionGroup>? groups});
-}
+abstract mixin class _$NotionDatabaseStatusObjectCopyWith<$Res> implements $NotionDatabaseStatusObjectCopyWith<$Res> {
+  factory _$NotionDatabaseStatusObjectCopyWith(_NotionDatabaseStatusObject value, $Res Function(_NotionDatabaseStatusObject) _then) = __$NotionDatabaseStatusObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ List<NotionOption>? options, List<NotionGroup>? groups
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionDatabaseStatusObjectCopyWithImpl<$Res>
     implements _$NotionDatabaseStatusObjectCopyWith<$Res> {
@@ -4410,25 +4463,17 @@ class __$NotionDatabaseStatusObjectCopyWithImpl<$Res>
   final _NotionDatabaseStatusObject _self;
   final $Res Function(_NotionDatabaseStatusObject) _then;
 
-  /// Create a copy of NotionDatabaseStatusObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? options = freezed,
-    Object? groups = freezed,
-  }) {
-    return _then(_NotionDatabaseStatusObject(
-      options: freezed == options
-          ? _self._options
-          : options // ignore: cast_nullable_to_non_nullable
-              as List<NotionOption>?,
-      groups: freezed == groups
-          ? _self._groups
-          : groups // ignore: cast_nullable_to_non_nullable
-              as List<NotionGroup>?,
-    ));
-  }
+/// Create a copy of NotionDatabaseStatusObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? options = freezed,Object? groups = freezed,}) {
+  return _then(_NotionDatabaseStatusObject(
+options: freezed == options ? _self._options : options // ignore: cast_nullable_to_non_nullable
+as List<NotionOption>?,groups: freezed == groups ? _self._groups : groups // ignore: cast_nullable_to_non_nullable
+as List<NotionGroup>?,
+  ));
+}
+
+
 }
 
 // dart format on

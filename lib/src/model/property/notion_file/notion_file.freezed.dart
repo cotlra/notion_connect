@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -12,102 +11,245 @@ part of 'notion_file.dart';
 
 // dart format off
 T _$identity<T>(T value) => value;
-NotionFile _$NotionFileFromJson(Map<String, dynamic> json) {
-  switch (json['type']) {
-    case 'internal':
-      return NotionInternalFile.fromJson(json);
-    case 'external':
-      return NotionExternalFile.fromJson(json);
-
-    default:
-      throw CheckedFromJsonException(
-          json, 'type', 'NotionFile', 'Invalid union type "${json['type']}"!');
-  }
+NotionFile _$NotionFileFromJson(
+  Map<String, dynamic> json
+) {
+        switch (json['type']) {
+                  case 'internal':
+          return NotionInternalFile.fromJson(
+            json
+          );
+                case 'external':
+          return NotionExternalFile.fromJson(
+            json
+          );
+        
+          default:
+            throw CheckedFromJsonException(
+  json,
+  'type',
+  'NotionFile',
+  'Invalid union type "${json['type']}"!'
+);
+        }
+      
 }
 
 /// @nodoc
 mixin _$NotionFile {
+
+
+
   /// Serializes this NotionFile to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is NotionFile);
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => runtimeType.hashCode;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionFile);
+}
 
-  @override
-  String toString() {
-    return 'NotionFile()';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => runtimeType.hashCode;
+
+@override
+String toString() {
+  return 'NotionFile()';
+}
+
+
 }
 
 /// @nodoc
-class $NotionFileCopyWith<$Res> {
-  $NotionFileCopyWith(NotionFile _, $Res Function(NotionFile) __);
+class $NotionFileCopyWith<$Res>  {
+$NotionFileCopyWith(NotionFile _, $Res Function(NotionFile) __);
+}
+
+
+/// Adds pattern-matching-related methods to [NotionFile].
+extension NotionFilePatterns on NotionFile {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionInternalFile value)?  internal,TResult Function( NotionExternalFile value)?  external,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case NotionInternalFile() when internal != null:
+return internal(_that);case NotionExternalFile() when external != null:
+return external(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionInternalFile value)  internal,required TResult Function( NotionExternalFile value)  external,}){
+final _that = this;
+switch (_that) {
+case NotionInternalFile():
+return internal(_that);case NotionExternalFile():
+return external(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionInternalFile value)?  internal,TResult? Function( NotionExternalFile value)?  external,}){
+final _that = this;
+switch (_that) {
+case NotionInternalFile() when internal != null:
+return internal(_that);case NotionExternalFile() when external != null:
+return external(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( NotionInternalFileObject? file)?  internal,TResult Function( NotionExternalFileObject? external)?  external,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case NotionInternalFile() when internal != null:
+return internal(_that.file);case NotionExternalFile() when external != null:
+return external(_that.external);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( NotionInternalFileObject? file)  internal,required TResult Function( NotionExternalFileObject? external)  external,}) {final _that = this;
+switch (_that) {
+case NotionInternalFile():
+return internal(_that.file);case NotionExternalFile():
+return external(_that.external);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( NotionInternalFileObject? file)?  internal,TResult? Function( NotionExternalFileObject? external)?  external,}) {final _that = this;
+switch (_that) {
+case NotionInternalFile() when internal != null:
+return internal(_that.file);case NotionExternalFile() when external != null:
+return external(_that.external);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionInternalFile implements NotionFile {
-  const NotionInternalFile({this.file, final String? $type})
-      : $type = $type ?? 'internal';
-  factory NotionInternalFile.fromJson(Map<String, dynamic> json) =>
-      _$NotionInternalFileFromJson(json);
+  const NotionInternalFile({this.file, final  String? $type}): $type = $type ?? 'internal';
+  factory NotionInternalFile.fromJson(Map<String, dynamic> json) => _$NotionInternalFileFromJson(json);
 
-  final NotionInternalFileObject? file;
+ final  NotionInternalFileObject? file;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionFile
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionInternalFileCopyWith<NotionInternalFile> get copyWith =>
-      _$NotionInternalFileCopyWithImpl<NotionInternalFile>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionInternalFileToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionFile
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionInternalFileCopyWith<NotionInternalFile> get copyWith => _$NotionInternalFileCopyWithImpl<NotionInternalFile>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionInternalFile &&
-            (identical(other.file, file) || other.file == file));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionInternalFileToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, file);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionInternalFile&&(identical(other.file, file) || other.file == file));
+}
 
-  @override
-  String toString() {
-    return 'NotionFile.internal(file: $file)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,file);
+
+@override
+String toString() {
+  return 'NotionFile.internal(file: $file)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionInternalFileCopyWith<$Res>
-    implements $NotionFileCopyWith<$Res> {
-  factory $NotionInternalFileCopyWith(
-          NotionInternalFile value, $Res Function(NotionInternalFile) _then) =
-      _$NotionInternalFileCopyWithImpl;
-  @useResult
-  $Res call({NotionInternalFileObject? file});
+abstract mixin class $NotionInternalFileCopyWith<$Res> implements $NotionFileCopyWith<$Res> {
+  factory $NotionInternalFileCopyWith(NotionInternalFile value, $Res Function(NotionInternalFile) _then) = _$NotionInternalFileCopyWithImpl;
+@useResult
+$Res call({
+ NotionInternalFileObject? file
+});
 
-  $NotionInternalFileObjectCopyWith<$Res>? get file;
+
+$NotionInternalFileObjectCopyWith<$Res>? get file;
+
 }
-
 /// @nodoc
 class _$NotionInternalFileCopyWithImpl<$Res>
     implements $NotionInternalFileCopyWith<$Res> {
@@ -116,93 +258,83 @@ class _$NotionInternalFileCopyWithImpl<$Res>
   final NotionInternalFile _self;
   final $Res Function(NotionInternalFile) _then;
 
-  /// Create a copy of NotionFile
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? file = freezed,
-  }) {
-    return _then(NotionInternalFile(
-      file: freezed == file
-          ? _self.file
-          : file // ignore: cast_nullable_to_non_nullable
-              as NotionInternalFileObject?,
-    ));
-  }
+/// Create a copy of NotionFile
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? file = freezed,}) {
+  return _then(NotionInternalFile(
+file: freezed == file ? _self.file : file // ignore: cast_nullable_to_non_nullable
+as NotionInternalFileObject?,
+  ));
+}
 
-  /// Create a copy of NotionFile
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionInternalFileObjectCopyWith<$Res>? get file {
+/// Create a copy of NotionFile
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionInternalFileObjectCopyWith<$Res>? get file {
     if (_self.file == null) {
-      return null;
-    }
-
-    return $NotionInternalFileObjectCopyWith<$Res>(_self.file!, (value) {
-      return _then(_self.copyWith(file: value));
-    });
+    return null;
   }
+
+  return $NotionInternalFileObjectCopyWith<$Res>(_self.file!, (value) {
+    return _then(_self.copyWith(file: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionExternalFile implements NotionFile {
-  const NotionExternalFile({this.external, final String? $type})
-      : $type = $type ?? 'external';
-  factory NotionExternalFile.fromJson(Map<String, dynamic> json) =>
-      _$NotionExternalFileFromJson(json);
+  const NotionExternalFile({this.external, final  String? $type}): $type = $type ?? 'external';
+  factory NotionExternalFile.fromJson(Map<String, dynamic> json) => _$NotionExternalFileFromJson(json);
 
-  final NotionExternalFileObject? external;
+ final  NotionExternalFileObject? external;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionFile
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionExternalFileCopyWith<NotionExternalFile> get copyWith =>
-      _$NotionExternalFileCopyWithImpl<NotionExternalFile>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionExternalFileToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionFile
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionExternalFileCopyWith<NotionExternalFile> get copyWith => _$NotionExternalFileCopyWithImpl<NotionExternalFile>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionExternalFile &&
-            (identical(other.external, external) ||
-                other.external == external));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionExternalFileToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, external);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionExternalFile&&(identical(other.external, external) || other.external == external));
+}
 
-  @override
-  String toString() {
-    return 'NotionFile.external(external: $external)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,external);
+
+@override
+String toString() {
+  return 'NotionFile.external(external: $external)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionExternalFileCopyWith<$Res>
-    implements $NotionFileCopyWith<$Res> {
-  factory $NotionExternalFileCopyWith(
-          NotionExternalFile value, $Res Function(NotionExternalFile) _then) =
-      _$NotionExternalFileCopyWithImpl;
-  @useResult
-  $Res call({NotionExternalFileObject? external});
+abstract mixin class $NotionExternalFileCopyWith<$Res> implements $NotionFileCopyWith<$Res> {
+  factory $NotionExternalFileCopyWith(NotionExternalFile value, $Res Function(NotionExternalFile) _then) = _$NotionExternalFileCopyWithImpl;
+@useResult
+$Res call({
+ NotionExternalFileObject? external
+});
 
-  $NotionExternalFileObjectCopyWith<$Res>? get external;
+
+$NotionExternalFileObjectCopyWith<$Res>? get external;
+
 }
-
 /// @nodoc
 class _$NotionExternalFileCopyWithImpl<$Res>
     implements $NotionExternalFileCopyWith<$Res> {
@@ -211,77 +343,74 @@ class _$NotionExternalFileCopyWithImpl<$Res>
   final NotionExternalFile _self;
   final $Res Function(NotionExternalFile) _then;
 
-  /// Create a copy of NotionFile
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? external = freezed,
-  }) {
-    return _then(NotionExternalFile(
-      external: freezed == external
-          ? _self.external
-          : external // ignore: cast_nullable_to_non_nullable
-              as NotionExternalFileObject?,
-    ));
-  }
-
-  /// Create a copy of NotionFile
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionExternalFileObjectCopyWith<$Res>? get external {
-    if (_self.external == null) {
-      return null;
-    }
-
-    return $NotionExternalFileObjectCopyWith<$Res>(_self.external!, (value) {
-      return _then(_self.copyWith(external: value));
-    });
-  }
+/// Create a copy of NotionFile
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? external = freezed,}) {
+  return _then(NotionExternalFile(
+external: freezed == external ? _self.external : external // ignore: cast_nullable_to_non_nullable
+as NotionExternalFileObject?,
+  ));
 }
+
+/// Create a copy of NotionFile
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionExternalFileObjectCopyWith<$Res>? get external {
+    if (_self.external == null) {
+    return null;
+  }
+
+  return $NotionExternalFileObjectCopyWith<$Res>(_self.external!, (value) {
+    return _then(_self.copyWith(external: value));
+  });
+}
+}
+
 
 /// @nodoc
 mixin _$NotionExternalFileObject {
-  String? get url;
 
-  /// Create a copy of NotionExternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionExternalFileObjectCopyWith<NotionExternalFileObject> get copyWith =>
-      _$NotionExternalFileObjectCopyWithImpl<NotionExternalFileObject>(
-          this as NotionExternalFileObject, _$identity);
+ String? get url;
+/// Create a copy of NotionExternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionExternalFileObjectCopyWith<NotionExternalFileObject> get copyWith => _$NotionExternalFileObjectCopyWithImpl<NotionExternalFileObject>(this as NotionExternalFileObject, _$identity);
 
   /// Serializes this NotionExternalFileObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionExternalFileObject &&
-            (identical(other.url, url) || other.url == url));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, url);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionExternalFileObject&&(identical(other.url, url) || other.url == url));
+}
 
-  @override
-  String toString() {
-    return 'NotionExternalFileObject(url: $url)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,url);
+
+@override
+String toString() {
+  return 'NotionExternalFileObject(url: $url)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionExternalFileObjectCopyWith<$Res> {
-  factory $NotionExternalFileObjectCopyWith(NotionExternalFileObject value,
-          $Res Function(NotionExternalFileObject) _then) =
-      _$NotionExternalFileObjectCopyWithImpl;
-  @useResult
-  $Res call({String? url});
-}
+abstract mixin class $NotionExternalFileObjectCopyWith<$Res>  {
+  factory $NotionExternalFileObjectCopyWith(NotionExternalFileObject value, $Res Function(NotionExternalFileObject) _then) = _$NotionExternalFileObjectCopyWithImpl;
+@useResult
+$Res call({
+ String? url
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionExternalFileObjectCopyWithImpl<$Res>
     implements $NotionExternalFileObjectCopyWith<$Res> {
@@ -290,77 +419,197 @@ class _$NotionExternalFileObjectCopyWithImpl<$Res>
   final NotionExternalFileObject _self;
   final $Res Function(NotionExternalFileObject) _then;
 
-  /// Create a copy of NotionExternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? url = freezed,
-  }) {
-    return _then(_self.copyWith(
-      url: freezed == url
-          ? _self.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionExternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? url = freezed,}) {
+  return _then(_self.copyWith(
+url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionExternalFileObject].
+extension NotionExternalFileObjectPatterns on NotionExternalFileObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionExternalFileObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionExternalFileObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionExternalFileObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionExternalFileObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionExternalFileObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionExternalFileObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? url)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionExternalFileObject() when $default != null:
+return $default(_that.url);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? url)  $default,) {final _that = this;
+switch (_that) {
+case _NotionExternalFileObject():
+return $default(_that.url);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? url)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionExternalFileObject() when $default != null:
+return $default(_that.url);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionExternalFileObject implements NotionExternalFileObject {
   const _NotionExternalFileObject({this.url});
-  factory _NotionExternalFileObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionExternalFileObjectFromJson(json);
+  factory _NotionExternalFileObject.fromJson(Map<String, dynamic> json) => _$NotionExternalFileObjectFromJson(json);
 
-  @override
-  final String? url;
+@override final  String? url;
 
-  /// Create a copy of NotionExternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionExternalFileObjectCopyWith<_NotionExternalFileObject> get copyWith =>
-      __$NotionExternalFileObjectCopyWithImpl<_NotionExternalFileObject>(
-          this, _$identity);
+/// Create a copy of NotionExternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionExternalFileObjectCopyWith<_NotionExternalFileObject> get copyWith => __$NotionExternalFileObjectCopyWithImpl<_NotionExternalFileObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionExternalFileObjectToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionExternalFileObjectToJson(this, );
+}
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionExternalFileObject &&
-            (identical(other.url, url) || other.url == url));
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionExternalFileObject&&(identical(other.url, url) || other.url == url));
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, url);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,url);
 
-  @override
-  String toString() {
-    return 'NotionExternalFileObject(url: $url)';
-  }
+@override
+String toString() {
+  return 'NotionExternalFileObject(url: $url)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionExternalFileObjectCopyWith<$Res>
-    implements $NotionExternalFileObjectCopyWith<$Res> {
-  factory _$NotionExternalFileObjectCopyWith(_NotionExternalFileObject value,
-          $Res Function(_NotionExternalFileObject) _then) =
-      __$NotionExternalFileObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({String? url});
-}
+abstract mixin class _$NotionExternalFileObjectCopyWith<$Res> implements $NotionExternalFileObjectCopyWith<$Res> {
+  factory _$NotionExternalFileObjectCopyWith(_NotionExternalFileObject value, $Res Function(_NotionExternalFileObject) _then) = __$NotionExternalFileObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? url
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionExternalFileObjectCopyWithImpl<$Res>
     implements _$NotionExternalFileObjectCopyWith<$Res> {
@@ -369,67 +618,62 @@ class __$NotionExternalFileObjectCopyWithImpl<$Res>
   final _NotionExternalFileObject _self;
   final $Res Function(_NotionExternalFileObject) _then;
 
-  /// Create a copy of NotionExternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? url = freezed,
-  }) {
-    return _then(_NotionExternalFileObject(
-      url: freezed == url
-          ? _self.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionExternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? url = freezed,}) {
+  return _then(_NotionExternalFileObject(
+url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
+
+
+}
+
 
 /// @nodoc
 mixin _$NotionInternalFileObject {
-  String? get url;
-  String? get expiryTime;
 
-  /// Create a copy of NotionInternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionInternalFileObjectCopyWith<NotionInternalFileObject> get copyWith =>
-      _$NotionInternalFileObjectCopyWithImpl<NotionInternalFileObject>(
-          this as NotionInternalFileObject, _$identity);
+ String? get url; String? get expiryTime;
+/// Create a copy of NotionInternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionInternalFileObjectCopyWith<NotionInternalFileObject> get copyWith => _$NotionInternalFileObjectCopyWithImpl<NotionInternalFileObject>(this as NotionInternalFileObject, _$identity);
 
   /// Serializes this NotionInternalFileObject to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionInternalFileObject &&
-            (identical(other.url, url) || other.url == url) &&
-            (identical(other.expiryTime, expiryTime) ||
-                other.expiryTime == expiryTime));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, url, expiryTime);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionInternalFileObject&&(identical(other.url, url) || other.url == url)&&(identical(other.expiryTime, expiryTime) || other.expiryTime == expiryTime));
+}
 
-  @override
-  String toString() {
-    return 'NotionInternalFileObject(url: $url, expiryTime: $expiryTime)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,url,expiryTime);
+
+@override
+String toString() {
+  return 'NotionInternalFileObject(url: $url, expiryTime: $expiryTime)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionInternalFileObjectCopyWith<$Res> {
-  factory $NotionInternalFileObjectCopyWith(NotionInternalFileObject value,
-          $Res Function(NotionInternalFileObject) _then) =
-      _$NotionInternalFileObjectCopyWithImpl;
-  @useResult
-  $Res call({String? url, String? expiryTime});
-}
+abstract mixin class $NotionInternalFileObjectCopyWith<$Res>  {
+  factory $NotionInternalFileObjectCopyWith(NotionInternalFileObject value, $Res Function(NotionInternalFileObject) _then) = _$NotionInternalFileObjectCopyWithImpl;
+@useResult
+$Res call({
+ String? url, String? expiryTime
+});
 
+
+
+
+}
 /// @nodoc
 class _$NotionInternalFileObjectCopyWithImpl<$Res>
     implements $NotionInternalFileObjectCopyWith<$Res> {
@@ -438,86 +682,199 @@ class _$NotionInternalFileObjectCopyWithImpl<$Res>
   final NotionInternalFileObject _self;
   final $Res Function(NotionInternalFileObject) _then;
 
-  /// Create a copy of NotionInternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? url = freezed,
-    Object? expiryTime = freezed,
-  }) {
-    return _then(_self.copyWith(
-      url: freezed == url
-          ? _self.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-      expiryTime: freezed == expiryTime
-          ? _self.expiryTime
-          : expiryTime // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionInternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? url = freezed,Object? expiryTime = freezed,}) {
+  return _then(_self.copyWith(
+url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,expiryTime: freezed == expiryTime ? _self.expiryTime : expiryTime // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [NotionInternalFileObject].
+extension NotionInternalFileObjectPatterns on NotionInternalFileObject {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionInternalFileObject value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _NotionInternalFileObject() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionInternalFileObject value)  $default,){
+final _that = this;
+switch (_that) {
+case _NotionInternalFileObject():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionInternalFileObject value)?  $default,){
+final _that = this;
+switch (_that) {
+case _NotionInternalFileObject() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? url,  String? expiryTime)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _NotionInternalFileObject() when $default != null:
+return $default(_that.url,_that.expiryTime);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? url,  String? expiryTime)  $default,) {final _that = this;
+switch (_that) {
+case _NotionInternalFileObject():
+return $default(_that.url,_that.expiryTime);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? url,  String? expiryTime)?  $default,) {final _that = this;
+switch (_that) {
+case _NotionInternalFileObject() when $default != null:
+return $default(_that.url,_that.expiryTime);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class _NotionInternalFileObject implements NotionInternalFileObject {
   const _NotionInternalFileObject({this.url, this.expiryTime});
-  factory _NotionInternalFileObject.fromJson(Map<String, dynamic> json) =>
-      _$NotionInternalFileObjectFromJson(json);
+  factory _NotionInternalFileObject.fromJson(Map<String, dynamic> json) => _$NotionInternalFileObjectFromJson(json);
 
-  @override
-  final String? url;
-  @override
-  final String? expiryTime;
+@override final  String? url;
+@override final  String? expiryTime;
 
-  /// Create a copy of NotionInternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$NotionInternalFileObjectCopyWith<_NotionInternalFileObject> get copyWith =>
-      __$NotionInternalFileObjectCopyWithImpl<_NotionInternalFileObject>(
-          this, _$identity);
+/// Create a copy of NotionInternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$NotionInternalFileObjectCopyWith<_NotionInternalFileObject> get copyWith => __$NotionInternalFileObjectCopyWithImpl<_NotionInternalFileObject>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionInternalFileObjectToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionInternalFileObjectToJson(this, );
+}
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _NotionInternalFileObject &&
-            (identical(other.url, url) || other.url == url) &&
-            (identical(other.expiryTime, expiryTime) ||
-                other.expiryTime == expiryTime));
-  }
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionInternalFileObject&&(identical(other.url, url) || other.url == url)&&(identical(other.expiryTime, expiryTime) || other.expiryTime == expiryTime));
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, url, expiryTime);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,url,expiryTime);
 
-  @override
-  String toString() {
-    return 'NotionInternalFileObject(url: $url, expiryTime: $expiryTime)';
-  }
+@override
+String toString() {
+  return 'NotionInternalFileObject(url: $url, expiryTime: $expiryTime)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class _$NotionInternalFileObjectCopyWith<$Res>
-    implements $NotionInternalFileObjectCopyWith<$Res> {
-  factory _$NotionInternalFileObjectCopyWith(_NotionInternalFileObject value,
-          $Res Function(_NotionInternalFileObject) _then) =
-      __$NotionInternalFileObjectCopyWithImpl;
-  @override
-  @useResult
-  $Res call({String? url, String? expiryTime});
-}
+abstract mixin class _$NotionInternalFileObjectCopyWith<$Res> implements $NotionInternalFileObjectCopyWith<$Res> {
+  factory _$NotionInternalFileObjectCopyWith(_NotionInternalFileObject value, $Res Function(_NotionInternalFileObject) _then) = __$NotionInternalFileObjectCopyWithImpl;
+@override @useResult
+$Res call({
+ String? url, String? expiryTime
+});
 
+
+
+
+}
 /// @nodoc
 class __$NotionInternalFileObjectCopyWithImpl<$Res>
     implements _$NotionInternalFileObjectCopyWith<$Res> {
@@ -526,25 +883,17 @@ class __$NotionInternalFileObjectCopyWithImpl<$Res>
   final _NotionInternalFileObject _self;
   final $Res Function(_NotionInternalFileObject) _then;
 
-  /// Create a copy of NotionInternalFileObject
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? url = freezed,
-    Object? expiryTime = freezed,
-  }) {
-    return _then(_NotionInternalFileObject(
-      url: freezed == url
-          ? _self.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-      expiryTime: freezed == expiryTime
-          ? _self.expiryTime
-          : expiryTime // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Create a copy of NotionInternalFileObject
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? url = freezed,Object? expiryTime = freezed,}) {
+  return _then(_NotionInternalFileObject(
+url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,expiryTime: freezed == expiryTime ? _self.expiryTime : expiryTime // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
 }
 
 // dart format on

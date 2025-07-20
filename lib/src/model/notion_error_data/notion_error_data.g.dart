@@ -7,29 +7,25 @@ part of 'notion_error_data.dart';
 // **************************************************************************
 
 _NotionErrorData _$NotionErrorDataFromJson(Map<String, dynamic> json) =>
-    $checkedCreate(
-      '_NotionErrorData',
-      json,
-      ($checkedConvert) {
-        final val = _NotionErrorData(
-          status: $checkedConvert('status', (v) => (v as num?)?.toInt()),
-          code: $checkedConvert(
-              'code', (v) => $enumDecodeNullable(_$NotionErrorCodeEnumMap, v)),
-          message: $checkedConvert('message', (v) => v as String?),
-          requestId: $checkedConvert('request_id', (v) => v as String?),
-        );
-        return val;
-      },
-      fieldKeyMap: const {'requestId': 'request_id'},
-    );
+    $checkedCreate('_NotionErrorData', json, ($checkedConvert) {
+      final val = _NotionErrorData(
+        status: $checkedConvert('status', (v) => (v as num?)?.toInt()),
+        code: $checkedConvert(
+          'code',
+          (v) => $enumDecodeNullable(_$NotionErrorCodeEnumMap, v),
+        ),
+        message: $checkedConvert('message', (v) => v as String?),
+        requestId: $checkedConvert('request_id', (v) => v as String?),
+      );
+      return val;
+    }, fieldKeyMap: const {'requestId': 'request_id'});
 
 Map<String, dynamic> _$NotionErrorDataToJson(_NotionErrorData instance) =>
     <String, dynamic>{
-      if (instance.status case final value?) 'status': value,
-      if (_$NotionErrorCodeEnumMap[instance.code] case final value?)
-        'code': value,
-      if (instance.message case final value?) 'message': value,
-      if (instance.requestId case final value?) 'request_id': value,
+      'status': ?instance.status,
+      'code': ?_$NotionErrorCodeEnumMap[instance.code],
+      'message': ?instance.message,
+      'request_id': ?instance.requestId,
     };
 
 const _$NotionErrorCodeEnumMap = {

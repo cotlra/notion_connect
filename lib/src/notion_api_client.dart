@@ -36,17 +36,13 @@ class NotionApiClient {
     );
   }
 
-  Future<NotionAccessTokenState> introspectAToken({
-    required String token,
-  }) {
+  Future<NotionAccessTokenState> introspectAToken({required String token}) {
     return _runWithErrorHandling(
       () => client.introspectToken(data: {'token': token}),
     );
   }
 
-  Future<String> revokeToken({
-    required String token,
-  }) {
+  Future<String> revokeToken({required String token}) {
     return _runWithErrorHandling(
       () => client.revokeToken(data: {'token': token}),
     );
@@ -273,9 +269,7 @@ class NotionApiClient {
     );
   }
 
-  Future<NotionUser> retrieveMyTokensBotUser({
-    required String token,
-  }) {
+  Future<NotionUser> retrieveMyTokensBotUser({required String token}) {
     return _runWithErrorHandling(
       () => client.retrieveMyTokensBotUser(
         authorization: _getAuthorization(token),

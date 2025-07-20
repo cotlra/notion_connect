@@ -7,7 +7,7 @@ part 'notion_condition.g.dart';
 // ignore: one_member_abstracts
 sealed class NotionCondition {
   const NotionCondition();
-  // 子クラストで実装
+  // 子クラスで実装
   // ignore: avoid_unused_constructor_parameters
   factory NotionCondition.fromJson(Map<String, dynamic> json) {
     throw UnimplementedError();

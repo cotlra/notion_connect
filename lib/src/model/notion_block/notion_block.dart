@@ -362,7 +362,8 @@ sealed class NotionBlock with _$NotionBlock {
   }) = NotionBlockTableRow;
 
   @Deprecated(
-      'Template blocks will no longer be supported as of March 27, 2023.',)
+    'Template blocks will no longer be supported as of March 27, 2023.',
+  )
   const factory NotionBlock.template({
     String? id,
     NotionParent? parent,

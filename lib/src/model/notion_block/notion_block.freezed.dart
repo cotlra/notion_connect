@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -12,390 +11,619 @@ part of 'notion_block.dart';
 
 // dart format off
 T _$identity<T>(T value) => value;
-NotionBlock _$NotionBlockFromJson(Map<String, dynamic> json) {
-  switch (json['type']) {
-    case 'bookmark':
-      return NotionBlockBookmark.fromJson(json);
-    case 'breadcrumb':
-      return NotionBlockBreadcrumb.fromJson(json);
-    case 'bulleted_list_item':
-      return NotionBlockBulletedListItem.fromJson(json);
-    case 'callout':
-      return NotionBlockCallout.fromJson(json);
-    case 'child_database':
-      return NotionBlockChildDatabase.fromJson(json);
-    case 'child_page':
-      return NotionBlockChildPage.fromJson(json);
-    case 'code':
-      return NotionBlockCode.fromJson(json);
-    case 'column':
-      return NotionBlockColumn.fromJson(json);
-    case 'column_list':
-      return NotionBlockColumnList.fromJson(json);
-    case 'divider':
-      return NotionBlockDivider.fromJson(json);
-    case 'embed':
-      return NotionBlockEmbed.fromJson(json);
-    case 'equation':
-      return NotionBlockEquation.fromJson(json);
-    case 'file':
-      return NotionBlockFile.fromJson(json);
-    case 'heading_1':
-      return NotionBlockHeading1.fromJson(json);
-    case 'heading_2':
-      return NotionBlockHeading2.fromJson(json);
-    case 'heading_3':
-      return NotionBlockHeading3.fromJson(json);
-    case 'image':
-      return NotionBlockImage.fromJson(json);
-    case 'link_preview':
-      return NotionBlockLinkPreview.fromJson(json);
-    case 'mention':
-      return NotionBlockMention.fromJson(json);
-    case 'numbered_list_item':
-      return NotionBlockNumberedListItem.fromJson(json);
-    case 'paragraph':
-      return NotionBlockParagraph.fromJson(json);
-    case 'pdf':
-      return NotionBlockPdf.fromJson(json);
-    case 'quote':
-      return NotionBlockQuote.fromJson(json);
-    case 'synced_block':
-      return NotionBlockSyncedBlock.fromJson(json);
-    case 'table':
-      return NotionBlockTable.fromJson(json);
-    case 'table_of_contents':
-      return NotionBlockTableOfContents.fromJson(json);
-    case 'table_row':
-      return NotionBlockTableRow.fromJson(json);
-    case 'template':
-      return NotionBlockTemplate.fromJson(json);
-    case 'to_do':
-      return NotionBlockToDo.fromJson(json);
-    case 'toggle':
-      return NotionBlockToggle.fromJson(json);
-    case 'video':
-      return NotionBlockVideo.fromJson(json);
-
-    default:
-      throw CheckedFromJsonException(
-          json, 'type', 'NotionBlock', 'Invalid union type "${json['type']}"!');
-  }
+NotionBlock _$NotionBlockFromJson(
+  Map<String, dynamic> json
+) {
+        switch (json['type']) {
+                  case 'bookmark':
+          return NotionBlockBookmark.fromJson(
+            json
+          );
+                case 'breadcrumb':
+          return NotionBlockBreadcrumb.fromJson(
+            json
+          );
+                case 'bulleted_list_item':
+          return NotionBlockBulletedListItem.fromJson(
+            json
+          );
+                case 'callout':
+          return NotionBlockCallout.fromJson(
+            json
+          );
+                case 'child_database':
+          return NotionBlockChildDatabase.fromJson(
+            json
+          );
+                case 'child_page':
+          return NotionBlockChildPage.fromJson(
+            json
+          );
+                case 'code':
+          return NotionBlockCode.fromJson(
+            json
+          );
+                case 'column':
+          return NotionBlockColumn.fromJson(
+            json
+          );
+                case 'column_list':
+          return NotionBlockColumnList.fromJson(
+            json
+          );
+                case 'divider':
+          return NotionBlockDivider.fromJson(
+            json
+          );
+                case 'embed':
+          return NotionBlockEmbed.fromJson(
+            json
+          );
+                case 'equation':
+          return NotionBlockEquation.fromJson(
+            json
+          );
+                case 'file':
+          return NotionBlockFile.fromJson(
+            json
+          );
+                case 'heading_1':
+          return NotionBlockHeading1.fromJson(
+            json
+          );
+                case 'heading_2':
+          return NotionBlockHeading2.fromJson(
+            json
+          );
+                case 'heading_3':
+          return NotionBlockHeading3.fromJson(
+            json
+          );
+                case 'image':
+          return NotionBlockImage.fromJson(
+            json
+          );
+                case 'link_preview':
+          return NotionBlockLinkPreview.fromJson(
+            json
+          );
+                case 'mention':
+          return NotionBlockMention.fromJson(
+            json
+          );
+                case 'numbered_list_item':
+          return NotionBlockNumberedListItem.fromJson(
+            json
+          );
+                case 'paragraph':
+          return NotionBlockParagraph.fromJson(
+            json
+          );
+                case 'pdf':
+          return NotionBlockPdf.fromJson(
+            json
+          );
+                case 'quote':
+          return NotionBlockQuote.fromJson(
+            json
+          );
+                case 'synced_block':
+          return NotionBlockSyncedBlock.fromJson(
+            json
+          );
+                case 'table':
+          return NotionBlockTable.fromJson(
+            json
+          );
+                case 'table_of_contents':
+          return NotionBlockTableOfContents.fromJson(
+            json
+          );
+                case 'table_row':
+          return NotionBlockTableRow.fromJson(
+            json
+          );
+                case 'template':
+          return NotionBlockTemplate.fromJson(
+            json
+          );
+                case 'to_do':
+          return NotionBlockToDo.fromJson(
+            json
+          );
+                case 'toggle':
+          return NotionBlockToggle.fromJson(
+            json
+          );
+                case 'video':
+          return NotionBlockVideo.fromJson(
+            json
+          );
+        
+          default:
+            throw CheckedFromJsonException(
+  json,
+  'type',
+  'NotionBlock',
+  'Invalid union type "${json['type']}"!'
+);
+        }
+      
 }
 
 /// @nodoc
 mixin _$NotionBlock {
-  String? get id;
-  NotionParent? get parent;
-  DateTime? get createdTime;
-  NotionUser? get createdBy;
-  DateTime? get lastEditedTime;
-  NotionUser? get lastEditedBy;
-  bool? get archived;
-  bool? get inTrash;
-  bool? get hasChildren;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockCopyWith<NotionBlock> get copyWith =>
-      _$NotionBlockCopyWithImpl<NotionBlock>(this as NotionBlock, _$identity);
+ String? get id; NotionParent? get parent; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; bool? get archived; bool? get inTrash; bool? get hasChildren;
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockCopyWith<NotionBlock> get copyWith => _$NotionBlockCopyWithImpl<NotionBlock>(this as NotionBlock, _$identity);
 
   /// Serializes this NotionBlock to a JSON map.
   Map<String, dynamic> toJson();
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlock &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren));
-  }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, parent, createdTime,
-      createdBy, lastEditedTime, lastEditedBy, archived, inTrash, hasChildren);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlock&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren);
+
+@override
+String toString() {
+  return 'NotionBlock(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockCopyWith(
-          NotionBlock value, $Res Function(NotionBlock) _then) =
-      _$NotionBlockCopyWithImpl;
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren});
+abstract mixin class $NotionBlockCopyWith<$Res>  {
+  factory $NotionBlockCopyWith(NotionBlock value, $Res Function(NotionBlock) _then) = _$NotionBlockCopyWithImpl;
+@useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren
+});
 
-  $NotionParentCopyWith<$Res>? get parent;
-  $NotionUserCopyWith<$Res>? get createdBy;
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
+
+$NotionParentCopyWith<$Res>? get parent;$NotionUserCopyWith<$Res>? get createdBy;$NotionUserCopyWith<$Res>? get lastEditedBy;
+
 }
-
 /// @nodoc
-class _$NotionBlockCopyWithImpl<$Res> implements $NotionBlockCopyWith<$Res> {
+class _$NotionBlockCopyWithImpl<$Res>
+    implements $NotionBlockCopyWith<$Res> {
   _$NotionBlockCopyWithImpl(this._self, this._then);
 
   final NotionBlock _self;
   final $Res Function(NotionBlock) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-  }) {
-    return _then(_self.copyWith(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ));
-  }
-
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,
+  ));
+}
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
+
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}
+}
+
+
+/// Adds pattern-matching-related methods to [NotionBlock].
+extension NotionBlockPatterns on NotionBlock {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionBlockBookmark value)?  bookmark,TResult Function( NotionBlockBreadcrumb value)?  breadcrumb,TResult Function( NotionBlockBulletedListItem value)?  bulletedListItem,TResult Function( NotionBlockCallout value)?  callout,TResult Function( NotionBlockChildDatabase value)?  childDatabase,TResult Function( NotionBlockChildPage value)?  childPage,TResult Function( NotionBlockCode value)?  code,TResult Function( NotionBlockColumn value)?  column,TResult Function( NotionBlockColumnList value)?  columnList,TResult Function( NotionBlockDivider value)?  divider,TResult Function( NotionBlockEmbed value)?  embed,TResult Function( NotionBlockEquation value)?  equation,TResult Function( NotionBlockFile value)?  file,TResult Function( NotionBlockHeading1 value)?  heading1,TResult Function( NotionBlockHeading2 value)?  heading2,TResult Function( NotionBlockHeading3 value)?  heading3,TResult Function( NotionBlockImage value)?  image,TResult Function( NotionBlockLinkPreview value)?  linkPreview,TResult Function( NotionBlockMention value)?  mention,TResult Function( NotionBlockNumberedListItem value)?  numberedListItem,TResult Function( NotionBlockParagraph value)?  paragraph,TResult Function( NotionBlockPdf value)?  pdf,TResult Function( NotionBlockQuote value)?  quote,TResult Function( NotionBlockSyncedBlock value)?  syncedBlock,TResult Function( NotionBlockTable value)?  table,TResult Function( NotionBlockTableOfContents value)?  tableOfContents,TResult Function( NotionBlockTableRow value)?  tableRow,TResult Function( NotionBlockTemplate value)?  template,TResult Function( NotionBlockToDo value)?  toDo,TResult Function( NotionBlockToggle value)?  toggle,TResult Function( NotionBlockVideo value)?  video,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case NotionBlockBookmark() when bookmark != null:
+return bookmark(_that);case NotionBlockBreadcrumb() when breadcrumb != null:
+return breadcrumb(_that);case NotionBlockBulletedListItem() when bulletedListItem != null:
+return bulletedListItem(_that);case NotionBlockCallout() when callout != null:
+return callout(_that);case NotionBlockChildDatabase() when childDatabase != null:
+return childDatabase(_that);case NotionBlockChildPage() when childPage != null:
+return childPage(_that);case NotionBlockCode() when code != null:
+return code(_that);case NotionBlockColumn() when column != null:
+return column(_that);case NotionBlockColumnList() when columnList != null:
+return columnList(_that);case NotionBlockDivider() when divider != null:
+return divider(_that);case NotionBlockEmbed() when embed != null:
+return embed(_that);case NotionBlockEquation() when equation != null:
+return equation(_that);case NotionBlockFile() when file != null:
+return file(_that);case NotionBlockHeading1() when heading1 != null:
+return heading1(_that);case NotionBlockHeading2() when heading2 != null:
+return heading2(_that);case NotionBlockHeading3() when heading3 != null:
+return heading3(_that);case NotionBlockImage() when image != null:
+return image(_that);case NotionBlockLinkPreview() when linkPreview != null:
+return linkPreview(_that);case NotionBlockMention() when mention != null:
+return mention(_that);case NotionBlockNumberedListItem() when numberedListItem != null:
+return numberedListItem(_that);case NotionBlockParagraph() when paragraph != null:
+return paragraph(_that);case NotionBlockPdf() when pdf != null:
+return pdf(_that);case NotionBlockQuote() when quote != null:
+return quote(_that);case NotionBlockSyncedBlock() when syncedBlock != null:
+return syncedBlock(_that);case NotionBlockTable() when table != null:
+return table(_that);case NotionBlockTableOfContents() when tableOfContents != null:
+return tableOfContents(_that);case NotionBlockTableRow() when tableRow != null:
+return tableRow(_that);case NotionBlockTemplate() when template != null:
+return template(_that);case NotionBlockToDo() when toDo != null:
+return toDo(_that);case NotionBlockToggle() when toggle != null:
+return toggle(_that);case NotionBlockVideo() when video != null:
+return video(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionBlockBookmark value)  bookmark,required TResult Function( NotionBlockBreadcrumb value)  breadcrumb,required TResult Function( NotionBlockBulletedListItem value)  bulletedListItem,required TResult Function( NotionBlockCallout value)  callout,required TResult Function( NotionBlockChildDatabase value)  childDatabase,required TResult Function( NotionBlockChildPage value)  childPage,required TResult Function( NotionBlockCode value)  code,required TResult Function( NotionBlockColumn value)  column,required TResult Function( NotionBlockColumnList value)  columnList,required TResult Function( NotionBlockDivider value)  divider,required TResult Function( NotionBlockEmbed value)  embed,required TResult Function( NotionBlockEquation value)  equation,required TResult Function( NotionBlockFile value)  file,required TResult Function( NotionBlockHeading1 value)  heading1,required TResult Function( NotionBlockHeading2 value)  heading2,required TResult Function( NotionBlockHeading3 value)  heading3,required TResult Function( NotionBlockImage value)  image,required TResult Function( NotionBlockLinkPreview value)  linkPreview,required TResult Function( NotionBlockMention value)  mention,required TResult Function( NotionBlockNumberedListItem value)  numberedListItem,required TResult Function( NotionBlockParagraph value)  paragraph,required TResult Function( NotionBlockPdf value)  pdf,required TResult Function( NotionBlockQuote value)  quote,required TResult Function( NotionBlockSyncedBlock value)  syncedBlock,required TResult Function( NotionBlockTable value)  table,required TResult Function( NotionBlockTableOfContents value)  tableOfContents,required TResult Function( NotionBlockTableRow value)  tableRow,required TResult Function( NotionBlockTemplate value)  template,required TResult Function( NotionBlockToDo value)  toDo,required TResult Function( NotionBlockToggle value)  toggle,required TResult Function( NotionBlockVideo value)  video,}){
+final _that = this;
+switch (_that) {
+case NotionBlockBookmark():
+return bookmark(_that);case NotionBlockBreadcrumb():
+return breadcrumb(_that);case NotionBlockBulletedListItem():
+return bulletedListItem(_that);case NotionBlockCallout():
+return callout(_that);case NotionBlockChildDatabase():
+return childDatabase(_that);case NotionBlockChildPage():
+return childPage(_that);case NotionBlockCode():
+return code(_that);case NotionBlockColumn():
+return column(_that);case NotionBlockColumnList():
+return columnList(_that);case NotionBlockDivider():
+return divider(_that);case NotionBlockEmbed():
+return embed(_that);case NotionBlockEquation():
+return equation(_that);case NotionBlockFile():
+return file(_that);case NotionBlockHeading1():
+return heading1(_that);case NotionBlockHeading2():
+return heading2(_that);case NotionBlockHeading3():
+return heading3(_that);case NotionBlockImage():
+return image(_that);case NotionBlockLinkPreview():
+return linkPreview(_that);case NotionBlockMention():
+return mention(_that);case NotionBlockNumberedListItem():
+return numberedListItem(_that);case NotionBlockParagraph():
+return paragraph(_that);case NotionBlockPdf():
+return pdf(_that);case NotionBlockQuote():
+return quote(_that);case NotionBlockSyncedBlock():
+return syncedBlock(_that);case NotionBlockTable():
+return table(_that);case NotionBlockTableOfContents():
+return tableOfContents(_that);case NotionBlockTableRow():
+return tableRow(_that);case NotionBlockTemplate():
+return template(_that);case NotionBlockToDo():
+return toDo(_that);case NotionBlockToggle():
+return toggle(_that);case NotionBlockVideo():
+return video(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionBlockBookmark value)?  bookmark,TResult? Function( NotionBlockBreadcrumb value)?  breadcrumb,TResult? Function( NotionBlockBulletedListItem value)?  bulletedListItem,TResult? Function( NotionBlockCallout value)?  callout,TResult? Function( NotionBlockChildDatabase value)?  childDatabase,TResult? Function( NotionBlockChildPage value)?  childPage,TResult? Function( NotionBlockCode value)?  code,TResult? Function( NotionBlockColumn value)?  column,TResult? Function( NotionBlockColumnList value)?  columnList,TResult? Function( NotionBlockDivider value)?  divider,TResult? Function( NotionBlockEmbed value)?  embed,TResult? Function( NotionBlockEquation value)?  equation,TResult? Function( NotionBlockFile value)?  file,TResult? Function( NotionBlockHeading1 value)?  heading1,TResult? Function( NotionBlockHeading2 value)?  heading2,TResult? Function( NotionBlockHeading3 value)?  heading3,TResult? Function( NotionBlockImage value)?  image,TResult? Function( NotionBlockLinkPreview value)?  linkPreview,TResult? Function( NotionBlockMention value)?  mention,TResult? Function( NotionBlockNumberedListItem value)?  numberedListItem,TResult? Function( NotionBlockParagraph value)?  paragraph,TResult? Function( NotionBlockPdf value)?  pdf,TResult? Function( NotionBlockQuote value)?  quote,TResult? Function( NotionBlockSyncedBlock value)?  syncedBlock,TResult? Function( NotionBlockTable value)?  table,TResult? Function( NotionBlockTableOfContents value)?  tableOfContents,TResult? Function( NotionBlockTableRow value)?  tableRow,TResult? Function( NotionBlockTemplate value)?  template,TResult? Function( NotionBlockToDo value)?  toDo,TResult? Function( NotionBlockToggle value)?  toggle,TResult? Function( NotionBlockVideo value)?  video,}){
+final _that = this;
+switch (_that) {
+case NotionBlockBookmark() when bookmark != null:
+return bookmark(_that);case NotionBlockBreadcrumb() when breadcrumb != null:
+return breadcrumb(_that);case NotionBlockBulletedListItem() when bulletedListItem != null:
+return bulletedListItem(_that);case NotionBlockCallout() when callout != null:
+return callout(_that);case NotionBlockChildDatabase() when childDatabase != null:
+return childDatabase(_that);case NotionBlockChildPage() when childPage != null:
+return childPage(_that);case NotionBlockCode() when code != null:
+return code(_that);case NotionBlockColumn() when column != null:
+return column(_that);case NotionBlockColumnList() when columnList != null:
+return columnList(_that);case NotionBlockDivider() when divider != null:
+return divider(_that);case NotionBlockEmbed() when embed != null:
+return embed(_that);case NotionBlockEquation() when equation != null:
+return equation(_that);case NotionBlockFile() when file != null:
+return file(_that);case NotionBlockHeading1() when heading1 != null:
+return heading1(_that);case NotionBlockHeading2() when heading2 != null:
+return heading2(_that);case NotionBlockHeading3() when heading3 != null:
+return heading3(_that);case NotionBlockImage() when image != null:
+return image(_that);case NotionBlockLinkPreview() when linkPreview != null:
+return linkPreview(_that);case NotionBlockMention() when mention != null:
+return mention(_that);case NotionBlockNumberedListItem() when numberedListItem != null:
+return numberedListItem(_that);case NotionBlockParagraph() when paragraph != null:
+return paragraph(_that);case NotionBlockPdf() when pdf != null:
+return pdf(_that);case NotionBlockQuote() when quote != null:
+return quote(_that);case NotionBlockSyncedBlock() when syncedBlock != null:
+return syncedBlock(_that);case NotionBlockTable() when table != null:
+return table(_that);case NotionBlockTableOfContents() when tableOfContents != null:
+return tableOfContents(_that);case NotionBlockTableRow() when tableRow != null:
+return tableRow(_that);case NotionBlockTemplate() when template != null:
+return template(_that);case NotionBlockToDo() when toDo != null:
+return toDo(_that);case NotionBlockToggle() when toggle != null:
+return toggle(_that);case NotionBlockVideo() when video != null:
+return video(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionBookmarkObject? bookmark)?  bookmark,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  breadcrumb,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionBulletListItemObject? bulletedListItem)?  bulletedListItem,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionCalloutObject? callout)?  callout,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionChildDatabaseObject? childDatabase)?  childDatabase,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionChildPageObject? childPage)?  childPage,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionCodeObject? code)?  code,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  column,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  columnList,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  divider,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionEmbedObject? embed)?  embed,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionEquationObject? equation)?  equation,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFileWithInfo? file)?  file,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_1')  NotionHeadingObject? heading1)?  heading1,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_2')  NotionHeadingObject? heading2)?  heading2,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_3')  NotionHeadingObject? heading3)?  heading3,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? image)?  image,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionLinkPreviewObject? linkPreview)?  linkPreview,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionMentionObject? mention)?  mention,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionNumberedListItemObject? numberedListItem)?  numberedListItem,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionParagraphObject? paragraph)?  paragraph,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? pdf)?  pdf,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionQuoteObject? quote)?  quote,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionSyncedBlockObject? syncedBlock)?  syncedBlock,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableObject? table)?  table,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableOfContentsObject? tableOfContents)?  tableOfContents,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableRowObject? tableRow)?  tableRow,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTemplateObject? template)?  template,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionToDoObject? toDo)?  toDo,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionToggleObject? toggle)?  toggle,TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? video)?  video,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case NotionBlockBookmark() when bookmark != null:
+return bookmark(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.bookmark);case NotionBlockBreadcrumb() when breadcrumb != null:
+return breadcrumb(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockBulletedListItem() when bulletedListItem != null:
+return bulletedListItem(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.bulletedListItem);case NotionBlockCallout() when callout != null:
+return callout(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.callout);case NotionBlockChildDatabase() when childDatabase != null:
+return childDatabase(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.childDatabase);case NotionBlockChildPage() when childPage != null:
+return childPage(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.childPage);case NotionBlockCode() when code != null:
+return code(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.code);case NotionBlockColumn() when column != null:
+return column(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockColumnList() when columnList != null:
+return columnList(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockDivider() when divider != null:
+return divider(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockEmbed() when embed != null:
+return embed(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.embed);case NotionBlockEquation() when equation != null:
+return equation(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.equation);case NotionBlockFile() when file != null:
+return file(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.file);case NotionBlockHeading1() when heading1 != null:
+return heading1(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading1);case NotionBlockHeading2() when heading2 != null:
+return heading2(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading2);case NotionBlockHeading3() when heading3 != null:
+return heading3(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading3);case NotionBlockImage() when image != null:
+return image(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.image);case NotionBlockLinkPreview() when linkPreview != null:
+return linkPreview(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.linkPreview);case NotionBlockMention() when mention != null:
+return mention(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.mention);case NotionBlockNumberedListItem() when numberedListItem != null:
+return numberedListItem(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.numberedListItem);case NotionBlockParagraph() when paragraph != null:
+return paragraph(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.paragraph);case NotionBlockPdf() when pdf != null:
+return pdf(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.pdf);case NotionBlockQuote() when quote != null:
+return quote(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.quote);case NotionBlockSyncedBlock() when syncedBlock != null:
+return syncedBlock(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.syncedBlock);case NotionBlockTable() when table != null:
+return table(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.table);case NotionBlockTableOfContents() when tableOfContents != null:
+return tableOfContents(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.tableOfContents);case NotionBlockTableRow() when tableRow != null:
+return tableRow(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.tableRow);case NotionBlockTemplate() when template != null:
+return template(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.template);case NotionBlockToDo() when toDo != null:
+return toDo(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.toDo);case NotionBlockToggle() when toggle != null:
+return toggle(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.toggle);case NotionBlockVideo() when video != null:
+return video(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.video);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionBookmarkObject? bookmark)  bookmark,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)  breadcrumb,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionBulletListItemObject? bulletedListItem)  bulletedListItem,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionCalloutObject? callout)  callout,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionChildDatabaseObject? childDatabase)  childDatabase,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionChildPageObject? childPage)  childPage,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionCodeObject? code)  code,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)  column,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)  columnList,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)  divider,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionEmbedObject? embed)  embed,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionEquationObject? equation)  equation,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFileWithInfo? file)  file,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_1')  NotionHeadingObject? heading1)  heading1,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_2')  NotionHeadingObject? heading2)  heading2,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_3')  NotionHeadingObject? heading3)  heading3,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? image)  image,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionLinkPreviewObject? linkPreview)  linkPreview,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionMentionObject? mention)  mention,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionNumberedListItemObject? numberedListItem)  numberedListItem,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionParagraphObject? paragraph)  paragraph,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? pdf)  pdf,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionQuoteObject? quote)  quote,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionSyncedBlockObject? syncedBlock)  syncedBlock,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableObject? table)  table,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableOfContentsObject? tableOfContents)  tableOfContents,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableRowObject? tableRow)  tableRow,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTemplateObject? template)  template,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionToDoObject? toDo)  toDo,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionToggleObject? toggle)  toggle,required TResult Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? video)  video,}) {final _that = this;
+switch (_that) {
+case NotionBlockBookmark():
+return bookmark(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.bookmark);case NotionBlockBreadcrumb():
+return breadcrumb(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockBulletedListItem():
+return bulletedListItem(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.bulletedListItem);case NotionBlockCallout():
+return callout(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.callout);case NotionBlockChildDatabase():
+return childDatabase(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.childDatabase);case NotionBlockChildPage():
+return childPage(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.childPage);case NotionBlockCode():
+return code(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.code);case NotionBlockColumn():
+return column(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockColumnList():
+return columnList(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockDivider():
+return divider(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockEmbed():
+return embed(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.embed);case NotionBlockEquation():
+return equation(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.equation);case NotionBlockFile():
+return file(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.file);case NotionBlockHeading1():
+return heading1(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading1);case NotionBlockHeading2():
+return heading2(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading2);case NotionBlockHeading3():
+return heading3(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading3);case NotionBlockImage():
+return image(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.image);case NotionBlockLinkPreview():
+return linkPreview(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.linkPreview);case NotionBlockMention():
+return mention(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.mention);case NotionBlockNumberedListItem():
+return numberedListItem(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.numberedListItem);case NotionBlockParagraph():
+return paragraph(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.paragraph);case NotionBlockPdf():
+return pdf(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.pdf);case NotionBlockQuote():
+return quote(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.quote);case NotionBlockSyncedBlock():
+return syncedBlock(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.syncedBlock);case NotionBlockTable():
+return table(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.table);case NotionBlockTableOfContents():
+return tableOfContents(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.tableOfContents);case NotionBlockTableRow():
+return tableRow(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.tableRow);case NotionBlockTemplate():
+return template(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.template);case NotionBlockToDo():
+return toDo(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.toDo);case NotionBlockToggle():
+return toggle(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.toggle);case NotionBlockVideo():
+return video(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.video);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionBookmarkObject? bookmark)?  bookmark,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  breadcrumb,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionBulletListItemObject? bulletedListItem)?  bulletedListItem,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionCalloutObject? callout)?  callout,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionChildDatabaseObject? childDatabase)?  childDatabase,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionChildPageObject? childPage)?  childPage,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionCodeObject? code)?  code,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  column,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  columnList,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren)?  divider,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionEmbedObject? embed)?  embed,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionEquationObject? equation)?  equation,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFileWithInfo? file)?  file,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_1')  NotionHeadingObject? heading1)?  heading1,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_2')  NotionHeadingObject? heading2)?  heading2,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren, @JsonKey(name: 'heading_3')  NotionHeadingObject? heading3)?  heading3,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? image)?  image,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionLinkPreviewObject? linkPreview)?  linkPreview,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionMentionObject? mention)?  mention,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionNumberedListItemObject? numberedListItem)?  numberedListItem,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionParagraphObject? paragraph)?  paragraph,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? pdf)?  pdf,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionQuoteObject? quote)?  quote,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionSyncedBlockObject? syncedBlock)?  syncedBlock,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableObject? table)?  table,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableOfContentsObject? tableOfContents)?  tableOfContents,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTableRowObject? tableRow)?  tableRow,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionTemplateObject? template)?  template,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionToDoObject? toDo)?  toDo,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionToggleObject? toggle)?  toggle,TResult? Function( String? id,  NotionParent? parent,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  bool? hasChildren,  NotionFile? video)?  video,}) {final _that = this;
+switch (_that) {
+case NotionBlockBookmark() when bookmark != null:
+return bookmark(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.bookmark);case NotionBlockBreadcrumb() when breadcrumb != null:
+return breadcrumb(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockBulletedListItem() when bulletedListItem != null:
+return bulletedListItem(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.bulletedListItem);case NotionBlockCallout() when callout != null:
+return callout(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.callout);case NotionBlockChildDatabase() when childDatabase != null:
+return childDatabase(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.childDatabase);case NotionBlockChildPage() when childPage != null:
+return childPage(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.childPage);case NotionBlockCode() when code != null:
+return code(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.code);case NotionBlockColumn() when column != null:
+return column(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockColumnList() when columnList != null:
+return columnList(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockDivider() when divider != null:
+return divider(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren);case NotionBlockEmbed() when embed != null:
+return embed(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.embed);case NotionBlockEquation() when equation != null:
+return equation(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.equation);case NotionBlockFile() when file != null:
+return file(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.file);case NotionBlockHeading1() when heading1 != null:
+return heading1(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading1);case NotionBlockHeading2() when heading2 != null:
+return heading2(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading2);case NotionBlockHeading3() when heading3 != null:
+return heading3(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.heading3);case NotionBlockImage() when image != null:
+return image(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.image);case NotionBlockLinkPreview() when linkPreview != null:
+return linkPreview(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.linkPreview);case NotionBlockMention() when mention != null:
+return mention(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.mention);case NotionBlockNumberedListItem() when numberedListItem != null:
+return numberedListItem(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.numberedListItem);case NotionBlockParagraph() when paragraph != null:
+return paragraph(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.paragraph);case NotionBlockPdf() when pdf != null:
+return pdf(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.pdf);case NotionBlockQuote() when quote != null:
+return quote(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.quote);case NotionBlockSyncedBlock() when syncedBlock != null:
+return syncedBlock(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.syncedBlock);case NotionBlockTable() when table != null:
+return table(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.table);case NotionBlockTableOfContents() when tableOfContents != null:
+return tableOfContents(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.tableOfContents);case NotionBlockTableRow() when tableRow != null:
+return tableRow(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.tableRow);case NotionBlockTemplate() when template != null:
+return template(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.template);case NotionBlockToDo() when toDo != null:
+return toDo(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.toDo);case NotionBlockToggle() when toggle != null:
+return toggle(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.toggle);case NotionBlockVideo() when video != null:
+return video(_that.id,_that.parent,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.hasChildren,_that.video);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockBookmark implements NotionBlock {
-  const NotionBlockBookmark(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.bookmark,
-      final String? $type})
-      : $type = $type ?? 'bookmark';
-  factory NotionBlockBookmark.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockBookmarkFromJson(json);
+  const NotionBlockBookmark({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.bookmark, final  String? $type}): $type = $type ?? 'bookmark';
+  factory NotionBlockBookmark.fromJson(Map<String, dynamic> json) => _$NotionBlockBookmarkFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionBookmarkObject? bookmark;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionBookmarkObject? bookmark;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockBookmarkCopyWith<NotionBlockBookmark> get copyWith =>
-      _$NotionBlockBookmarkCopyWithImpl<NotionBlockBookmark>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockBookmarkToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockBookmarkCopyWith<NotionBlockBookmark> get copyWith => _$NotionBlockBookmarkCopyWithImpl<NotionBlockBookmark>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockBookmark &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.bookmark, bookmark) ||
-                other.bookmark == bookmark));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockBookmarkToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      bookmark);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockBookmark&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.bookmark, bookmark) || other.bookmark == bookmark));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.bookmark(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, bookmark: $bookmark)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,bookmark);
+
+@override
+String toString() {
+  return 'NotionBlock.bookmark(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, bookmark: $bookmark)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockBookmarkCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockBookmarkCopyWith(
-          NotionBlockBookmark value, $Res Function(NotionBlockBookmark) _then) =
-      _$NotionBlockBookmarkCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionBookmarkObject? bookmark});
+abstract mixin class $NotionBlockBookmarkCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockBookmarkCopyWith(NotionBlockBookmark value, $Res Function(NotionBlockBookmark) _then) = _$NotionBlockBookmarkCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionBookmarkObject? bookmark
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionBookmarkObjectCopyWith<$Res>? get bookmark;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionBookmarkObjectCopyWith<$Res>? get bookmark;
+
 }
-
 /// @nodoc
 class _$NotionBlockBookmarkCopyWithImpl<$Res>
     implements $NotionBlockBookmarkCopyWith<$Res> {
@@ -404,239 +632,136 @@ class _$NotionBlockBookmarkCopyWithImpl<$Res>
   final NotionBlockBookmark _self;
   final $Res Function(NotionBlockBookmark) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? bookmark = freezed,
-  }) {
-    return _then(NotionBlockBookmark(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      bookmark: freezed == bookmark
-          ? _self.bookmark
-          : bookmark // ignore: cast_nullable_to_non_nullable
-              as NotionBookmarkObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? bookmark = freezed,}) {
+  return _then(NotionBlockBookmark(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,bookmark: freezed == bookmark ? _self.bookmark : bookmark // ignore: cast_nullable_to_non_nullable
+as NotionBookmarkObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionBookmarkObjectCopyWith<$Res>? get bookmark {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionBookmarkObjectCopyWith<$Res>? get bookmark {
     if (_self.bookmark == null) {
-      return null;
-    }
-
-    return $NotionBookmarkObjectCopyWith<$Res>(_self.bookmark!, (value) {
-      return _then(_self.copyWith(bookmark: value));
-    });
+    return null;
   }
+
+  return $NotionBookmarkObjectCopyWith<$Res>(_self.bookmark!, (value) {
+    return _then(_self.copyWith(bookmark: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockBreadcrumb implements NotionBlock {
-  const NotionBlockBreadcrumb(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      final String? $type})
-      : $type = $type ?? 'breadcrumb';
-  factory NotionBlockBreadcrumb.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockBreadcrumbFromJson(json);
+  const NotionBlockBreadcrumb({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, final  String? $type}): $type = $type ?? 'breadcrumb';
+  factory NotionBlockBreadcrumb.fromJson(Map<String, dynamic> json) => _$NotionBlockBreadcrumbFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockBreadcrumbCopyWith<NotionBlockBreadcrumb> get copyWith =>
-      _$NotionBlockBreadcrumbCopyWithImpl<NotionBlockBreadcrumb>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockBreadcrumbToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockBreadcrumbCopyWith<NotionBlockBreadcrumb> get copyWith => _$NotionBlockBreadcrumbCopyWithImpl<NotionBlockBreadcrumb>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockBreadcrumb &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockBreadcrumbToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, parent, createdTime,
-      createdBy, lastEditedTime, lastEditedBy, archived, inTrash, hasChildren);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockBreadcrumb&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.breadcrumb(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren);
+
+@override
+String toString() {
+  return 'NotionBlock.breadcrumb(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockBreadcrumbCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockBreadcrumbCopyWith(NotionBlockBreadcrumb value,
-          $Res Function(NotionBlockBreadcrumb) _then) =
-      _$NotionBlockBreadcrumbCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren});
+abstract mixin class $NotionBlockBreadcrumbCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockBreadcrumbCopyWith(NotionBlockBreadcrumb value, $Res Function(NotionBlockBreadcrumb) _then) = _$NotionBlockBreadcrumbCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;
+
 }
-
 /// @nodoc
 class _$NotionBlockBreadcrumbCopyWithImpl<$Res>
     implements $NotionBlockBreadcrumbCopyWith<$Res> {
@@ -645,237 +770,124 @@ class _$NotionBlockBreadcrumbCopyWithImpl<$Res>
   final NotionBlockBreadcrumb _self;
   final $Res Function(NotionBlockBreadcrumb) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-  }) {
-    return _then(NotionBlockBreadcrumb(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,}) {
+  return _then(NotionBlockBreadcrumb(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
+
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockBulletedListItem implements NotionBlock {
-  const NotionBlockBulletedListItem(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.bulletedListItem,
-      final String? $type})
-      : $type = $type ?? 'bulleted_list_item';
-  factory NotionBlockBulletedListItem.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockBulletedListItemFromJson(json);
+  const NotionBlockBulletedListItem({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.bulletedListItem, final  String? $type}): $type = $type ?? 'bulleted_list_item';
+  factory NotionBlockBulletedListItem.fromJson(Map<String, dynamic> json) => _$NotionBlockBulletedListItemFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionBulletListItemObject? bulletedListItem;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionBulletListItemObject? bulletedListItem;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockBulletedListItemCopyWith<NotionBlockBulletedListItem>
-      get copyWith => _$NotionBlockBulletedListItemCopyWithImpl<
-          NotionBlockBulletedListItem>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockBulletedListItemToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockBulletedListItemCopyWith<NotionBlockBulletedListItem> get copyWith => _$NotionBlockBulletedListItemCopyWithImpl<NotionBlockBulletedListItem>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockBulletedListItem &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.bulletedListItem, bulletedListItem) ||
-                other.bulletedListItem == bulletedListItem));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockBulletedListItemToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      bulletedListItem);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockBulletedListItem&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.bulletedListItem, bulletedListItem) || other.bulletedListItem == bulletedListItem));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.bulletedListItem(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, bulletedListItem: $bulletedListItem)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,bulletedListItem);
+
+@override
+String toString() {
+  return 'NotionBlock.bulletedListItem(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, bulletedListItem: $bulletedListItem)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockBulletedListItemCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockBulletedListItemCopyWith(
-          NotionBlockBulletedListItem value,
-          $Res Function(NotionBlockBulletedListItem) _then) =
-      _$NotionBlockBulletedListItemCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionBulletListItemObject? bulletedListItem});
+abstract mixin class $NotionBlockBulletedListItemCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockBulletedListItemCopyWith(NotionBlockBulletedListItem value, $Res Function(NotionBlockBulletedListItem) _then) = _$NotionBlockBulletedListItemCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionBulletListItemObject? bulletedListItem
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionBulletListItemObjectCopyWith<$Res>? get bulletedListItem;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionBulletListItemObjectCopyWith<$Res>? get bulletedListItem;
+
 }
-
 /// @nodoc
 class _$NotionBlockBulletedListItemCopyWithImpl<$Res>
     implements $NotionBlockBulletedListItemCopyWith<$Res> {
@@ -884,254 +896,137 @@ class _$NotionBlockBulletedListItemCopyWithImpl<$Res>
   final NotionBlockBulletedListItem _self;
   final $Res Function(NotionBlockBulletedListItem) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? bulletedListItem = freezed,
-  }) {
-    return _then(NotionBlockBulletedListItem(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      bulletedListItem: freezed == bulletedListItem
-          ? _self.bulletedListItem
-          : bulletedListItem // ignore: cast_nullable_to_non_nullable
-              as NotionBulletListItemObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? bulletedListItem = freezed,}) {
+  return _then(NotionBlockBulletedListItem(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,bulletedListItem: freezed == bulletedListItem ? _self.bulletedListItem : bulletedListItem // ignore: cast_nullable_to_non_nullable
+as NotionBulletListItemObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionBulletListItemObjectCopyWith<$Res>? get bulletedListItem {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionBulletListItemObjectCopyWith<$Res>? get bulletedListItem {
     if (_self.bulletedListItem == null) {
-      return null;
-    }
-
-    return $NotionBulletListItemObjectCopyWith<$Res>(_self.bulletedListItem!,
-        (value) {
-      return _then(_self.copyWith(bulletedListItem: value));
-    });
+    return null;
   }
+
+  return $NotionBulletListItemObjectCopyWith<$Res>(_self.bulletedListItem!, (value) {
+    return _then(_self.copyWith(bulletedListItem: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockCallout implements NotionBlock {
-  const NotionBlockCallout(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.callout,
-      final String? $type})
-      : $type = $type ?? 'callout';
-  factory NotionBlockCallout.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockCalloutFromJson(json);
+  const NotionBlockCallout({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.callout, final  String? $type}): $type = $type ?? 'callout';
+  factory NotionBlockCallout.fromJson(Map<String, dynamic> json) => _$NotionBlockCalloutFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionCalloutObject? callout;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionCalloutObject? callout;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockCalloutCopyWith<NotionBlockCallout> get copyWith =>
-      _$NotionBlockCalloutCopyWithImpl<NotionBlockCallout>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockCalloutToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockCalloutCopyWith<NotionBlockCallout> get copyWith => _$NotionBlockCalloutCopyWithImpl<NotionBlockCallout>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockCallout &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.callout, callout) || other.callout == callout));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockCalloutToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      callout);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockCallout&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.callout, callout) || other.callout == callout));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.callout(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, callout: $callout)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,callout);
+
+@override
+String toString() {
+  return 'NotionBlock.callout(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, callout: $callout)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockCalloutCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockCalloutCopyWith(
-          NotionBlockCallout value, $Res Function(NotionBlockCallout) _then) =
-      _$NotionBlockCalloutCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionCalloutObject? callout});
+abstract mixin class $NotionBlockCalloutCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockCalloutCopyWith(NotionBlockCallout value, $Res Function(NotionBlockCallout) _then) = _$NotionBlockCalloutCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionCalloutObject? callout
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionCalloutObjectCopyWith<$Res>? get callout;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionCalloutObjectCopyWith<$Res>? get callout;
+
 }
-
 /// @nodoc
 class _$NotionBlockCalloutCopyWithImpl<$Res>
     implements $NotionBlockCalloutCopyWith<$Res> {
@@ -1140,255 +1035,137 @@ class _$NotionBlockCalloutCopyWithImpl<$Res>
   final NotionBlockCallout _self;
   final $Res Function(NotionBlockCallout) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? callout = freezed,
-  }) {
-    return _then(NotionBlockCallout(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      callout: freezed == callout
-          ? _self.callout
-          : callout // ignore: cast_nullable_to_non_nullable
-              as NotionCalloutObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? callout = freezed,}) {
+  return _then(NotionBlockCallout(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,callout: freezed == callout ? _self.callout : callout // ignore: cast_nullable_to_non_nullable
+as NotionCalloutObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionCalloutObjectCopyWith<$Res>? get callout {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionCalloutObjectCopyWith<$Res>? get callout {
     if (_self.callout == null) {
-      return null;
-    }
-
-    return $NotionCalloutObjectCopyWith<$Res>(_self.callout!, (value) {
-      return _then(_self.copyWith(callout: value));
-    });
+    return null;
   }
+
+  return $NotionCalloutObjectCopyWith<$Res>(_self.callout!, (value) {
+    return _then(_self.copyWith(callout: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockChildDatabase implements NotionBlock {
-  const NotionBlockChildDatabase(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.childDatabase,
-      final String? $type})
-      : $type = $type ?? 'child_database';
-  factory NotionBlockChildDatabase.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockChildDatabaseFromJson(json);
+  const NotionBlockChildDatabase({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.childDatabase, final  String? $type}): $type = $type ?? 'child_database';
+  factory NotionBlockChildDatabase.fromJson(Map<String, dynamic> json) => _$NotionBlockChildDatabaseFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionChildDatabaseObject? childDatabase;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionChildDatabaseObject? childDatabase;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockChildDatabaseCopyWith<NotionBlockChildDatabase> get copyWith =>
-      _$NotionBlockChildDatabaseCopyWithImpl<NotionBlockChildDatabase>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockChildDatabaseToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockChildDatabaseCopyWith<NotionBlockChildDatabase> get copyWith => _$NotionBlockChildDatabaseCopyWithImpl<NotionBlockChildDatabase>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockChildDatabase &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.childDatabase, childDatabase) ||
-                other.childDatabase == childDatabase));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockChildDatabaseToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      childDatabase);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockChildDatabase&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.childDatabase, childDatabase) || other.childDatabase == childDatabase));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.childDatabase(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, childDatabase: $childDatabase)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,childDatabase);
+
+@override
+String toString() {
+  return 'NotionBlock.childDatabase(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, childDatabase: $childDatabase)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockChildDatabaseCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockChildDatabaseCopyWith(NotionBlockChildDatabase value,
-          $Res Function(NotionBlockChildDatabase) _then) =
-      _$NotionBlockChildDatabaseCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionChildDatabaseObject? childDatabase});
+abstract mixin class $NotionBlockChildDatabaseCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockChildDatabaseCopyWith(NotionBlockChildDatabase value, $Res Function(NotionBlockChildDatabase) _then) = _$NotionBlockChildDatabaseCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionChildDatabaseObject? childDatabase
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionChildDatabaseObjectCopyWith<$Res>? get childDatabase;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionChildDatabaseObjectCopyWith<$Res>? get childDatabase;
+
 }
-
 /// @nodoc
 class _$NotionBlockChildDatabaseCopyWithImpl<$Res>
     implements $NotionBlockChildDatabaseCopyWith<$Res> {
@@ -1397,256 +1174,137 @@ class _$NotionBlockChildDatabaseCopyWithImpl<$Res>
   final NotionBlockChildDatabase _self;
   final $Res Function(NotionBlockChildDatabase) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? childDatabase = freezed,
-  }) {
-    return _then(NotionBlockChildDatabase(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      childDatabase: freezed == childDatabase
-          ? _self.childDatabase
-          : childDatabase // ignore: cast_nullable_to_non_nullable
-              as NotionChildDatabaseObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? childDatabase = freezed,}) {
+  return _then(NotionBlockChildDatabase(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,childDatabase: freezed == childDatabase ? _self.childDatabase : childDatabase // ignore: cast_nullable_to_non_nullable
+as NotionChildDatabaseObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionChildDatabaseObjectCopyWith<$Res>? get childDatabase {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionChildDatabaseObjectCopyWith<$Res>? get childDatabase {
     if (_self.childDatabase == null) {
-      return null;
-    }
-
-    return $NotionChildDatabaseObjectCopyWith<$Res>(_self.childDatabase!,
-        (value) {
-      return _then(_self.copyWith(childDatabase: value));
-    });
+    return null;
   }
+
+  return $NotionChildDatabaseObjectCopyWith<$Res>(_self.childDatabase!, (value) {
+    return _then(_self.copyWith(childDatabase: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockChildPage implements NotionBlock {
-  const NotionBlockChildPage(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.childPage,
-      final String? $type})
-      : $type = $type ?? 'child_page';
-  factory NotionBlockChildPage.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockChildPageFromJson(json);
+  const NotionBlockChildPage({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.childPage, final  String? $type}): $type = $type ?? 'child_page';
+  factory NotionBlockChildPage.fromJson(Map<String, dynamic> json) => _$NotionBlockChildPageFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionChildPageObject? childPage;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionChildPageObject? childPage;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockChildPageCopyWith<NotionBlockChildPage> get copyWith =>
-      _$NotionBlockChildPageCopyWithImpl<NotionBlockChildPage>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockChildPageToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockChildPageCopyWith<NotionBlockChildPage> get copyWith => _$NotionBlockChildPageCopyWithImpl<NotionBlockChildPage>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockChildPage &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.childPage, childPage) ||
-                other.childPage == childPage));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockChildPageToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      childPage);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockChildPage&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.childPage, childPage) || other.childPage == childPage));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.childPage(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, childPage: $childPage)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,childPage);
+
+@override
+String toString() {
+  return 'NotionBlock.childPage(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, childPage: $childPage)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockChildPageCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockChildPageCopyWith(NotionBlockChildPage value,
-          $Res Function(NotionBlockChildPage) _then) =
-      _$NotionBlockChildPageCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionChildPageObject? childPage});
+abstract mixin class $NotionBlockChildPageCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockChildPageCopyWith(NotionBlockChildPage value, $Res Function(NotionBlockChildPage) _then) = _$NotionBlockChildPageCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionChildPageObject? childPage
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionChildPageObjectCopyWith<$Res>? get childPage;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionChildPageObjectCopyWith<$Res>? get childPage;
+
 }
-
 /// @nodoc
 class _$NotionBlockChildPageCopyWithImpl<$Res>
     implements $NotionBlockChildPageCopyWith<$Res> {
@@ -1655,253 +1313,137 @@ class _$NotionBlockChildPageCopyWithImpl<$Res>
   final NotionBlockChildPage _self;
   final $Res Function(NotionBlockChildPage) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? childPage = freezed,
-  }) {
-    return _then(NotionBlockChildPage(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      childPage: freezed == childPage
-          ? _self.childPage
-          : childPage // ignore: cast_nullable_to_non_nullable
-              as NotionChildPageObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? childPage = freezed,}) {
+  return _then(NotionBlockChildPage(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,childPage: freezed == childPage ? _self.childPage : childPage // ignore: cast_nullable_to_non_nullable
+as NotionChildPageObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionChildPageObjectCopyWith<$Res>? get childPage {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionChildPageObjectCopyWith<$Res>? get childPage {
     if (_self.childPage == null) {
-      return null;
-    }
-
-    return $NotionChildPageObjectCopyWith<$Res>(_self.childPage!, (value) {
-      return _then(_self.copyWith(childPage: value));
-    });
+    return null;
   }
+
+  return $NotionChildPageObjectCopyWith<$Res>(_self.childPage!, (value) {
+    return _then(_self.copyWith(childPage: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockCode implements NotionBlock {
-  const NotionBlockCode(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.code,
-      final String? $type})
-      : $type = $type ?? 'code';
-  factory NotionBlockCode.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockCodeFromJson(json);
+  const NotionBlockCode({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.code, final  String? $type}): $type = $type ?? 'code';
+  factory NotionBlockCode.fromJson(Map<String, dynamic> json) => _$NotionBlockCodeFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionCodeObject? code;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionCodeObject? code;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockCodeCopyWith<NotionBlockCode> get copyWith =>
-      _$NotionBlockCodeCopyWithImpl<NotionBlockCode>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockCodeToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockCodeCopyWith<NotionBlockCode> get copyWith => _$NotionBlockCodeCopyWithImpl<NotionBlockCode>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockCode &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.code, code) || other.code == code));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockCodeToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      code);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockCode&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.code, code) || other.code == code));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.code(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, code: $code)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,code);
+
+@override
+String toString() {
+  return 'NotionBlock.code(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, code: $code)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockCodeCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockCodeCopyWith(
-          NotionBlockCode value, $Res Function(NotionBlockCode) _then) =
-      _$NotionBlockCodeCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionCodeObject? code});
+abstract mixin class $NotionBlockCodeCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockCodeCopyWith(NotionBlockCode value, $Res Function(NotionBlockCode) _then) = _$NotionBlockCodeCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionCodeObject? code
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionCodeObjectCopyWith<$Res>? get code;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionCodeObjectCopyWith<$Res>? get code;
+
 }
-
 /// @nodoc
 class _$NotionBlockCodeCopyWithImpl<$Res>
     implements $NotionBlockCodeCopyWith<$Res> {
@@ -1910,238 +1452,136 @@ class _$NotionBlockCodeCopyWithImpl<$Res>
   final NotionBlockCode _self;
   final $Res Function(NotionBlockCode) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? code = freezed,
-  }) {
-    return _then(NotionBlockCode(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      code: freezed == code
-          ? _self.code
-          : code // ignore: cast_nullable_to_non_nullable
-              as NotionCodeObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? code = freezed,}) {
+  return _then(NotionBlockCode(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,code: freezed == code ? _self.code : code // ignore: cast_nullable_to_non_nullable
+as NotionCodeObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionCodeObjectCopyWith<$Res>? get code {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionCodeObjectCopyWith<$Res>? get code {
     if (_self.code == null) {
-      return null;
-    }
-
-    return $NotionCodeObjectCopyWith<$Res>(_self.code!, (value) {
-      return _then(_self.copyWith(code: value));
-    });
+    return null;
   }
+
+  return $NotionCodeObjectCopyWith<$Res>(_self.code!, (value) {
+    return _then(_self.copyWith(code: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockColumn implements NotionBlock {
-  const NotionBlockColumn(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      final String? $type})
-      : $type = $type ?? 'column';
-  factory NotionBlockColumn.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockColumnFromJson(json);
+  const NotionBlockColumn({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, final  String? $type}): $type = $type ?? 'column';
+  factory NotionBlockColumn.fromJson(Map<String, dynamic> json) => _$NotionBlockColumnFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockColumnCopyWith<NotionBlockColumn> get copyWith =>
-      _$NotionBlockColumnCopyWithImpl<NotionBlockColumn>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockColumnToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockColumnCopyWith<NotionBlockColumn> get copyWith => _$NotionBlockColumnCopyWithImpl<NotionBlockColumn>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockColumn &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockColumnToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, parent, createdTime,
-      createdBy, lastEditedTime, lastEditedBy, archived, inTrash, hasChildren);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockColumn&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.column(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren);
+
+@override
+String toString() {
+  return 'NotionBlock.column(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockColumnCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockColumnCopyWith(
-          NotionBlockColumn value, $Res Function(NotionBlockColumn) _then) =
-      _$NotionBlockColumnCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren});
+abstract mixin class $NotionBlockColumnCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockColumnCopyWith(NotionBlockColumn value, $Res Function(NotionBlockColumn) _then) = _$NotionBlockColumnCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;
+
 }
-
 /// @nodoc
 class _$NotionBlockColumnCopyWithImpl<$Res>
     implements $NotionBlockColumnCopyWith<$Res> {
@@ -2150,220 +1590,123 @@ class _$NotionBlockColumnCopyWithImpl<$Res>
   final NotionBlockColumn _self;
   final $Res Function(NotionBlockColumn) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-  }) {
-    return _then(NotionBlockColumn(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,}) {
+  return _then(NotionBlockColumn(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
+
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockColumnList implements NotionBlock {
-  const NotionBlockColumnList(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      final String? $type})
-      : $type = $type ?? 'column_list';
-  factory NotionBlockColumnList.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockColumnListFromJson(json);
+  const NotionBlockColumnList({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, final  String? $type}): $type = $type ?? 'column_list';
+  factory NotionBlockColumnList.fromJson(Map<String, dynamic> json) => _$NotionBlockColumnListFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockColumnListCopyWith<NotionBlockColumnList> get copyWith =>
-      _$NotionBlockColumnListCopyWithImpl<NotionBlockColumnList>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockColumnListToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockColumnListCopyWith<NotionBlockColumnList> get copyWith => _$NotionBlockColumnListCopyWithImpl<NotionBlockColumnList>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockColumnList &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockColumnListToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, parent, createdTime,
-      createdBy, lastEditedTime, lastEditedBy, archived, inTrash, hasChildren);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockColumnList&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.columnList(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren);
+
+@override
+String toString() {
+  return 'NotionBlock.columnList(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockColumnListCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockColumnListCopyWith(NotionBlockColumnList value,
-          $Res Function(NotionBlockColumnList) _then) =
-      _$NotionBlockColumnListCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren});
+abstract mixin class $NotionBlockColumnListCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockColumnListCopyWith(NotionBlockColumnList value, $Res Function(NotionBlockColumnList) _then) = _$NotionBlockColumnListCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;
+
 }
-
 /// @nodoc
 class _$NotionBlockColumnListCopyWithImpl<$Res>
     implements $NotionBlockColumnListCopyWith<$Res> {
@@ -2372,219 +1715,123 @@ class _$NotionBlockColumnListCopyWithImpl<$Res>
   final NotionBlockColumnList _self;
   final $Res Function(NotionBlockColumnList) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-  }) {
-    return _then(NotionBlockColumnList(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,}) {
+  return _then(NotionBlockColumnList(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
+
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockDivider implements NotionBlock {
-  const NotionBlockDivider(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      final String? $type})
-      : $type = $type ?? 'divider';
-  factory NotionBlockDivider.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockDividerFromJson(json);
+  const NotionBlockDivider({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, final  String? $type}): $type = $type ?? 'divider';
+  factory NotionBlockDivider.fromJson(Map<String, dynamic> json) => _$NotionBlockDividerFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockDividerCopyWith<NotionBlockDivider> get copyWith =>
-      _$NotionBlockDividerCopyWithImpl<NotionBlockDivider>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockDividerToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockDividerCopyWith<NotionBlockDivider> get copyWith => _$NotionBlockDividerCopyWithImpl<NotionBlockDivider>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockDivider &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockDividerToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, parent, createdTime,
-      createdBy, lastEditedTime, lastEditedBy, archived, inTrash, hasChildren);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockDivider&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.divider(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren);
+
+@override
+String toString() {
+  return 'NotionBlock.divider(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockDividerCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockDividerCopyWith(
-          NotionBlockDivider value, $Res Function(NotionBlockDivider) _then) =
-      _$NotionBlockDividerCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren});
+abstract mixin class $NotionBlockDividerCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockDividerCopyWith(NotionBlockDivider value, $Res Function(NotionBlockDivider) _then) = _$NotionBlockDividerCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;
+
 }
-
 /// @nodoc
 class _$NotionBlockDividerCopyWithImpl<$Res>
     implements $NotionBlockDividerCopyWith<$Res> {
@@ -2593,234 +1840,124 @@ class _$NotionBlockDividerCopyWithImpl<$Res>
   final NotionBlockDivider _self;
   final $Res Function(NotionBlockDivider) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-  }) {
-    return _then(NotionBlockDivider(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,}) {
+  return _then(NotionBlockDivider(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
+
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockEmbed implements NotionBlock {
-  const NotionBlockEmbed(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.embed,
-      final String? $type})
-      : $type = $type ?? 'embed';
-  factory NotionBlockEmbed.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockEmbedFromJson(json);
+  const NotionBlockEmbed({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.embed, final  String? $type}): $type = $type ?? 'embed';
+  factory NotionBlockEmbed.fromJson(Map<String, dynamic> json) => _$NotionBlockEmbedFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionEmbedObject? embed;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionEmbedObject? embed;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockEmbedCopyWith<NotionBlockEmbed> get copyWith =>
-      _$NotionBlockEmbedCopyWithImpl<NotionBlockEmbed>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockEmbedToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockEmbedCopyWith<NotionBlockEmbed> get copyWith => _$NotionBlockEmbedCopyWithImpl<NotionBlockEmbed>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockEmbed &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.embed, embed) || other.embed == embed));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockEmbedToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      embed);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockEmbed&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.embed, embed) || other.embed == embed));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.embed(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, embed: $embed)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,embed);
+
+@override
+String toString() {
+  return 'NotionBlock.embed(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, embed: $embed)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockEmbedCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockEmbedCopyWith(
-          NotionBlockEmbed value, $Res Function(NotionBlockEmbed) _then) =
-      _$NotionBlockEmbedCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionEmbedObject? embed});
+abstract mixin class $NotionBlockEmbedCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockEmbedCopyWith(NotionBlockEmbed value, $Res Function(NotionBlockEmbed) _then) = _$NotionBlockEmbedCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionEmbedObject? embed
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionEmbedObjectCopyWith<$Res>? get embed;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionEmbedObjectCopyWith<$Res>? get embed;
+
 }
-
 /// @nodoc
 class _$NotionBlockEmbedCopyWithImpl<$Res>
     implements $NotionBlockEmbedCopyWith<$Res> {
@@ -2829,254 +1966,137 @@ class _$NotionBlockEmbedCopyWithImpl<$Res>
   final NotionBlockEmbed _self;
   final $Res Function(NotionBlockEmbed) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? embed = freezed,
-  }) {
-    return _then(NotionBlockEmbed(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      embed: freezed == embed
-          ? _self.embed
-          : embed // ignore: cast_nullable_to_non_nullable
-              as NotionEmbedObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? embed = freezed,}) {
+  return _then(NotionBlockEmbed(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,embed: freezed == embed ? _self.embed : embed // ignore: cast_nullable_to_non_nullable
+as NotionEmbedObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionEmbedObjectCopyWith<$Res>? get embed {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionEmbedObjectCopyWith<$Res>? get embed {
     if (_self.embed == null) {
-      return null;
-    }
-
-    return $NotionEmbedObjectCopyWith<$Res>(_self.embed!, (value) {
-      return _then(_self.copyWith(embed: value));
-    });
+    return null;
   }
+
+  return $NotionEmbedObjectCopyWith<$Res>(_self.embed!, (value) {
+    return _then(_self.copyWith(embed: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockEquation implements NotionBlock {
-  const NotionBlockEquation(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.equation,
-      final String? $type})
-      : $type = $type ?? 'equation';
-  factory NotionBlockEquation.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockEquationFromJson(json);
+  const NotionBlockEquation({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.equation, final  String? $type}): $type = $type ?? 'equation';
+  factory NotionBlockEquation.fromJson(Map<String, dynamic> json) => _$NotionBlockEquationFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionEquationObject? equation;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionEquationObject? equation;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockEquationCopyWith<NotionBlockEquation> get copyWith =>
-      _$NotionBlockEquationCopyWithImpl<NotionBlockEquation>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockEquationToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockEquationCopyWith<NotionBlockEquation> get copyWith => _$NotionBlockEquationCopyWithImpl<NotionBlockEquation>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockEquation &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.equation, equation) ||
-                other.equation == equation));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockEquationToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      equation);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockEquation&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.equation, equation) || other.equation == equation));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.equation(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, equation: $equation)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,equation);
+
+@override
+String toString() {
+  return 'NotionBlock.equation(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, equation: $equation)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockEquationCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockEquationCopyWith(
-          NotionBlockEquation value, $Res Function(NotionBlockEquation) _then) =
-      _$NotionBlockEquationCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionEquationObject? equation});
+abstract mixin class $NotionBlockEquationCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockEquationCopyWith(NotionBlockEquation value, $Res Function(NotionBlockEquation) _then) = _$NotionBlockEquationCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionEquationObject? equation
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionEquationObjectCopyWith<$Res>? get equation;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionEquationObjectCopyWith<$Res>? get equation;
+
 }
-
 /// @nodoc
 class _$NotionBlockEquationCopyWithImpl<$Res>
     implements $NotionBlockEquationCopyWith<$Res> {
@@ -3085,253 +2105,137 @@ class _$NotionBlockEquationCopyWithImpl<$Res>
   final NotionBlockEquation _self;
   final $Res Function(NotionBlockEquation) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? equation = freezed,
-  }) {
-    return _then(NotionBlockEquation(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      equation: freezed == equation
-          ? _self.equation
-          : equation // ignore: cast_nullable_to_non_nullable
-              as NotionEquationObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? equation = freezed,}) {
+  return _then(NotionBlockEquation(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,equation: freezed == equation ? _self.equation : equation // ignore: cast_nullable_to_non_nullable
+as NotionEquationObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionEquationObjectCopyWith<$Res>? get equation {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionEquationObjectCopyWith<$Res>? get equation {
     if (_self.equation == null) {
-      return null;
-    }
-
-    return $NotionEquationObjectCopyWith<$Res>(_self.equation!, (value) {
-      return _then(_self.copyWith(equation: value));
-    });
+    return null;
   }
+
+  return $NotionEquationObjectCopyWith<$Res>(_self.equation!, (value) {
+    return _then(_self.copyWith(equation: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockFile implements NotionBlock {
-  const NotionBlockFile(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.file,
-      final String? $type})
-      : $type = $type ?? 'file';
-  factory NotionBlockFile.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockFileFromJson(json);
+  const NotionBlockFile({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.file, final  String? $type}): $type = $type ?? 'file';
+  factory NotionBlockFile.fromJson(Map<String, dynamic> json) => _$NotionBlockFileFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionFileWithInfo? file;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionFileWithInfo? file;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockFileCopyWith<NotionBlockFile> get copyWith =>
-      _$NotionBlockFileCopyWithImpl<NotionBlockFile>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockFileToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockFileCopyWith<NotionBlockFile> get copyWith => _$NotionBlockFileCopyWithImpl<NotionBlockFile>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockFile &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.file, file) || other.file == file));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockFileToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      file);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockFile&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.file, file) || other.file == file));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.file(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, file: $file)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,file);
+
+@override
+String toString() {
+  return 'NotionBlock.file(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, file: $file)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockFileCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockFileCopyWith(
-          NotionBlockFile value, $Res Function(NotionBlockFile) _then) =
-      _$NotionBlockFileCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionFileWithInfo? file});
+abstract mixin class $NotionBlockFileCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockFileCopyWith(NotionBlockFile value, $Res Function(NotionBlockFile) _then) = _$NotionBlockFileCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionFileWithInfo? file
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionFileWithInfoCopyWith<$Res>? get file;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionFileWithInfoCopyWith<$Res>? get file;
+
 }
-
 /// @nodoc
 class _$NotionBlockFileCopyWithImpl<$Res>
     implements $NotionBlockFileCopyWith<$Res> {
@@ -3340,255 +2244,137 @@ class _$NotionBlockFileCopyWithImpl<$Res>
   final NotionBlockFile _self;
   final $Res Function(NotionBlockFile) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? file = freezed,
-  }) {
-    return _then(NotionBlockFile(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      file: freezed == file
-          ? _self.file
-          : file // ignore: cast_nullable_to_non_nullable
-              as NotionFileWithInfo?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? file = freezed,}) {
+  return _then(NotionBlockFile(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,file: freezed == file ? _self.file : file // ignore: cast_nullable_to_non_nullable
+as NotionFileWithInfo?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionFileWithInfoCopyWith<$Res>? get file {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionFileWithInfoCopyWith<$Res>? get file {
     if (_self.file == null) {
-      return null;
-    }
-
-    return $NotionFileWithInfoCopyWith<$Res>(_self.file!, (value) {
-      return _then(_self.copyWith(file: value));
-    });
+    return null;
   }
+
+  return $NotionFileWithInfoCopyWith<$Res>(_self.file!, (value) {
+    return _then(_self.copyWith(file: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockHeading1 implements NotionBlock {
-  const NotionBlockHeading1(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      @JsonKey(name: 'heading_1') this.heading1,
-      final String? $type})
-      : $type = $type ?? 'heading_1';
-  factory NotionBlockHeading1.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockHeading1FromJson(json);
+  const NotionBlockHeading1({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, @JsonKey(name: 'heading_1') this.heading1, final  String? $type}): $type = $type ?? 'heading_1';
+  factory NotionBlockHeading1.fromJson(Map<String, dynamic> json) => _$NotionBlockHeading1FromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  @JsonKey(name: 'heading_1')
-  final NotionHeadingObject? heading1;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+@JsonKey(name: 'heading_1') final  NotionHeadingObject? heading1;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockHeading1CopyWith<NotionBlockHeading1> get copyWith =>
-      _$NotionBlockHeading1CopyWithImpl<NotionBlockHeading1>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockHeading1ToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockHeading1CopyWith<NotionBlockHeading1> get copyWith => _$NotionBlockHeading1CopyWithImpl<NotionBlockHeading1>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockHeading1 &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.heading1, heading1) ||
-                other.heading1 == heading1));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockHeading1ToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      heading1);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockHeading1&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.heading1, heading1) || other.heading1 == heading1));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.heading1(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, heading1: $heading1)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,heading1);
+
+@override
+String toString() {
+  return 'NotionBlock.heading1(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, heading1: $heading1)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockHeading1CopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockHeading1CopyWith(
-          NotionBlockHeading1 value, $Res Function(NotionBlockHeading1) _then) =
-      _$NotionBlockHeading1CopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      @JsonKey(name: 'heading_1') NotionHeadingObject? heading1});
+abstract mixin class $NotionBlockHeading1CopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockHeading1CopyWith(NotionBlockHeading1 value, $Res Function(NotionBlockHeading1) _then) = _$NotionBlockHeading1CopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren,@JsonKey(name: 'heading_1') NotionHeadingObject? heading1
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionHeadingObjectCopyWith<$Res>? get heading1;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionHeadingObjectCopyWith<$Res>? get heading1;
+
 }
-
 /// @nodoc
 class _$NotionBlockHeading1CopyWithImpl<$Res>
     implements $NotionBlockHeading1CopyWith<$Res> {
@@ -3597,255 +2383,137 @@ class _$NotionBlockHeading1CopyWithImpl<$Res>
   final NotionBlockHeading1 _self;
   final $Res Function(NotionBlockHeading1) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? heading1 = freezed,
-  }) {
-    return _then(NotionBlockHeading1(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      heading1: freezed == heading1
-          ? _self.heading1
-          : heading1 // ignore: cast_nullable_to_non_nullable
-              as NotionHeadingObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? heading1 = freezed,}) {
+  return _then(NotionBlockHeading1(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,heading1: freezed == heading1 ? _self.heading1 : heading1 // ignore: cast_nullable_to_non_nullable
+as NotionHeadingObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionHeadingObjectCopyWith<$Res>? get heading1 {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionHeadingObjectCopyWith<$Res>? get heading1 {
     if (_self.heading1 == null) {
-      return null;
-    }
-
-    return $NotionHeadingObjectCopyWith<$Res>(_self.heading1!, (value) {
-      return _then(_self.copyWith(heading1: value));
-    });
+    return null;
   }
+
+  return $NotionHeadingObjectCopyWith<$Res>(_self.heading1!, (value) {
+    return _then(_self.copyWith(heading1: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockHeading2 implements NotionBlock {
-  const NotionBlockHeading2(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      @JsonKey(name: 'heading_2') this.heading2,
-      final String? $type})
-      : $type = $type ?? 'heading_2';
-  factory NotionBlockHeading2.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockHeading2FromJson(json);
+  const NotionBlockHeading2({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, @JsonKey(name: 'heading_2') this.heading2, final  String? $type}): $type = $type ?? 'heading_2';
+  factory NotionBlockHeading2.fromJson(Map<String, dynamic> json) => _$NotionBlockHeading2FromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  @JsonKey(name: 'heading_2')
-  final NotionHeadingObject? heading2;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+@JsonKey(name: 'heading_2') final  NotionHeadingObject? heading2;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockHeading2CopyWith<NotionBlockHeading2> get copyWith =>
-      _$NotionBlockHeading2CopyWithImpl<NotionBlockHeading2>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockHeading2ToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockHeading2CopyWith<NotionBlockHeading2> get copyWith => _$NotionBlockHeading2CopyWithImpl<NotionBlockHeading2>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockHeading2 &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.heading2, heading2) ||
-                other.heading2 == heading2));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockHeading2ToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      heading2);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockHeading2&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.heading2, heading2) || other.heading2 == heading2));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.heading2(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, heading2: $heading2)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,heading2);
+
+@override
+String toString() {
+  return 'NotionBlock.heading2(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, heading2: $heading2)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockHeading2CopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockHeading2CopyWith(
-          NotionBlockHeading2 value, $Res Function(NotionBlockHeading2) _then) =
-      _$NotionBlockHeading2CopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      @JsonKey(name: 'heading_2') NotionHeadingObject? heading2});
+abstract mixin class $NotionBlockHeading2CopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockHeading2CopyWith(NotionBlockHeading2 value, $Res Function(NotionBlockHeading2) _then) = _$NotionBlockHeading2CopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren,@JsonKey(name: 'heading_2') NotionHeadingObject? heading2
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionHeadingObjectCopyWith<$Res>? get heading2;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionHeadingObjectCopyWith<$Res>? get heading2;
+
 }
-
 /// @nodoc
 class _$NotionBlockHeading2CopyWithImpl<$Res>
     implements $NotionBlockHeading2CopyWith<$Res> {
@@ -3854,255 +2522,137 @@ class _$NotionBlockHeading2CopyWithImpl<$Res>
   final NotionBlockHeading2 _self;
   final $Res Function(NotionBlockHeading2) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? heading2 = freezed,
-  }) {
-    return _then(NotionBlockHeading2(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      heading2: freezed == heading2
-          ? _self.heading2
-          : heading2 // ignore: cast_nullable_to_non_nullable
-              as NotionHeadingObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? heading2 = freezed,}) {
+  return _then(NotionBlockHeading2(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,heading2: freezed == heading2 ? _self.heading2 : heading2 // ignore: cast_nullable_to_non_nullable
+as NotionHeadingObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionHeadingObjectCopyWith<$Res>? get heading2 {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionHeadingObjectCopyWith<$Res>? get heading2 {
     if (_self.heading2 == null) {
-      return null;
-    }
-
-    return $NotionHeadingObjectCopyWith<$Res>(_self.heading2!, (value) {
-      return _then(_self.copyWith(heading2: value));
-    });
+    return null;
   }
+
+  return $NotionHeadingObjectCopyWith<$Res>(_self.heading2!, (value) {
+    return _then(_self.copyWith(heading2: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockHeading3 implements NotionBlock {
-  const NotionBlockHeading3(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      @JsonKey(name: 'heading_3') this.heading3,
-      final String? $type})
-      : $type = $type ?? 'heading_3';
-  factory NotionBlockHeading3.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockHeading3FromJson(json);
+  const NotionBlockHeading3({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, @JsonKey(name: 'heading_3') this.heading3, final  String? $type}): $type = $type ?? 'heading_3';
+  factory NotionBlockHeading3.fromJson(Map<String, dynamic> json) => _$NotionBlockHeading3FromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  @JsonKey(name: 'heading_3')
-  final NotionHeadingObject? heading3;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+@JsonKey(name: 'heading_3') final  NotionHeadingObject? heading3;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockHeading3CopyWith<NotionBlockHeading3> get copyWith =>
-      _$NotionBlockHeading3CopyWithImpl<NotionBlockHeading3>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockHeading3ToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockHeading3CopyWith<NotionBlockHeading3> get copyWith => _$NotionBlockHeading3CopyWithImpl<NotionBlockHeading3>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockHeading3 &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.heading3, heading3) ||
-                other.heading3 == heading3));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockHeading3ToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      heading3);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockHeading3&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.heading3, heading3) || other.heading3 == heading3));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.heading3(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, heading3: $heading3)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,heading3);
+
+@override
+String toString() {
+  return 'NotionBlock.heading3(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, heading3: $heading3)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockHeading3CopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockHeading3CopyWith(
-          NotionBlockHeading3 value, $Res Function(NotionBlockHeading3) _then) =
-      _$NotionBlockHeading3CopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      @JsonKey(name: 'heading_3') NotionHeadingObject? heading3});
+abstract mixin class $NotionBlockHeading3CopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockHeading3CopyWith(NotionBlockHeading3 value, $Res Function(NotionBlockHeading3) _then) = _$NotionBlockHeading3CopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren,@JsonKey(name: 'heading_3') NotionHeadingObject? heading3
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionHeadingObjectCopyWith<$Res>? get heading3;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionHeadingObjectCopyWith<$Res>? get heading3;
+
 }
-
 /// @nodoc
 class _$NotionBlockHeading3CopyWithImpl<$Res>
     implements $NotionBlockHeading3CopyWith<$Res> {
@@ -4111,253 +2661,137 @@ class _$NotionBlockHeading3CopyWithImpl<$Res>
   final NotionBlockHeading3 _self;
   final $Res Function(NotionBlockHeading3) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? heading3 = freezed,
-  }) {
-    return _then(NotionBlockHeading3(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      heading3: freezed == heading3
-          ? _self.heading3
-          : heading3 // ignore: cast_nullable_to_non_nullable
-              as NotionHeadingObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? heading3 = freezed,}) {
+  return _then(NotionBlockHeading3(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,heading3: freezed == heading3 ? _self.heading3 : heading3 // ignore: cast_nullable_to_non_nullable
+as NotionHeadingObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionHeadingObjectCopyWith<$Res>? get heading3 {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionHeadingObjectCopyWith<$Res>? get heading3 {
     if (_self.heading3 == null) {
-      return null;
-    }
-
-    return $NotionHeadingObjectCopyWith<$Res>(_self.heading3!, (value) {
-      return _then(_self.copyWith(heading3: value));
-    });
+    return null;
   }
+
+  return $NotionHeadingObjectCopyWith<$Res>(_self.heading3!, (value) {
+    return _then(_self.copyWith(heading3: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockImage implements NotionBlock {
-  const NotionBlockImage(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.image,
-      final String? $type})
-      : $type = $type ?? 'image';
-  factory NotionBlockImage.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockImageFromJson(json);
+  const NotionBlockImage({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.image, final  String? $type}): $type = $type ?? 'image';
+  factory NotionBlockImage.fromJson(Map<String, dynamic> json) => _$NotionBlockImageFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionFile? image;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionFile? image;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockImageCopyWith<NotionBlockImage> get copyWith =>
-      _$NotionBlockImageCopyWithImpl<NotionBlockImage>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockImageToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockImageCopyWith<NotionBlockImage> get copyWith => _$NotionBlockImageCopyWithImpl<NotionBlockImage>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockImage &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.image, image) || other.image == image));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockImageToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      image);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockImage&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.image, image) || other.image == image));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.image(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, image: $image)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,image);
+
+@override
+String toString() {
+  return 'NotionBlock.image(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, image: $image)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockImageCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockImageCopyWith(
-          NotionBlockImage value, $Res Function(NotionBlockImage) _then) =
-      _$NotionBlockImageCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionFile? image});
+abstract mixin class $NotionBlockImageCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockImageCopyWith(NotionBlockImage value, $Res Function(NotionBlockImage) _then) = _$NotionBlockImageCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionFile? image
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionFileCopyWith<$Res>? get image;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionFileCopyWith<$Res>? get image;
+
 }
-
 /// @nodoc
 class _$NotionBlockImageCopyWithImpl<$Res>
     implements $NotionBlockImageCopyWith<$Res> {
@@ -4366,255 +2800,137 @@ class _$NotionBlockImageCopyWithImpl<$Res>
   final NotionBlockImage _self;
   final $Res Function(NotionBlockImage) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? image = freezed,
-  }) {
-    return _then(NotionBlockImage(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      image: freezed == image
-          ? _self.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as NotionFile?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? image = freezed,}) {
+  return _then(NotionBlockImage(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,image: freezed == image ? _self.image : image // ignore: cast_nullable_to_non_nullable
+as NotionFile?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionFileCopyWith<$Res>? get image {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionFileCopyWith<$Res>? get image {
     if (_self.image == null) {
-      return null;
-    }
-
-    return $NotionFileCopyWith<$Res>(_self.image!, (value) {
-      return _then(_self.copyWith(image: value));
-    });
+    return null;
   }
+
+  return $NotionFileCopyWith<$Res>(_self.image!, (value) {
+    return _then(_self.copyWith(image: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockLinkPreview implements NotionBlock {
-  const NotionBlockLinkPreview(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.linkPreview,
-      final String? $type})
-      : $type = $type ?? 'link_preview';
-  factory NotionBlockLinkPreview.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockLinkPreviewFromJson(json);
+  const NotionBlockLinkPreview({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.linkPreview, final  String? $type}): $type = $type ?? 'link_preview';
+  factory NotionBlockLinkPreview.fromJson(Map<String, dynamic> json) => _$NotionBlockLinkPreviewFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionLinkPreviewObject? linkPreview;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionLinkPreviewObject? linkPreview;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockLinkPreviewCopyWith<NotionBlockLinkPreview> get copyWith =>
-      _$NotionBlockLinkPreviewCopyWithImpl<NotionBlockLinkPreview>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockLinkPreviewToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockLinkPreviewCopyWith<NotionBlockLinkPreview> get copyWith => _$NotionBlockLinkPreviewCopyWithImpl<NotionBlockLinkPreview>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockLinkPreview &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.linkPreview, linkPreview) ||
-                other.linkPreview == linkPreview));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockLinkPreviewToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      linkPreview);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockLinkPreview&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.linkPreview, linkPreview) || other.linkPreview == linkPreview));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.linkPreview(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, linkPreview: $linkPreview)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,linkPreview);
+
+@override
+String toString() {
+  return 'NotionBlock.linkPreview(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, linkPreview: $linkPreview)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockLinkPreviewCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockLinkPreviewCopyWith(NotionBlockLinkPreview value,
-          $Res Function(NotionBlockLinkPreview) _then) =
-      _$NotionBlockLinkPreviewCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionLinkPreviewObject? linkPreview});
+abstract mixin class $NotionBlockLinkPreviewCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockLinkPreviewCopyWith(NotionBlockLinkPreview value, $Res Function(NotionBlockLinkPreview) _then) = _$NotionBlockLinkPreviewCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionLinkPreviewObject? linkPreview
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionLinkPreviewObjectCopyWith<$Res>? get linkPreview;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionLinkPreviewObjectCopyWith<$Res>? get linkPreview;
+
 }
-
 /// @nodoc
 class _$NotionBlockLinkPreviewCopyWithImpl<$Res>
     implements $NotionBlockLinkPreviewCopyWith<$Res> {
@@ -4623,253 +2939,137 @@ class _$NotionBlockLinkPreviewCopyWithImpl<$Res>
   final NotionBlockLinkPreview _self;
   final $Res Function(NotionBlockLinkPreview) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? linkPreview = freezed,
-  }) {
-    return _then(NotionBlockLinkPreview(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      linkPreview: freezed == linkPreview
-          ? _self.linkPreview
-          : linkPreview // ignore: cast_nullable_to_non_nullable
-              as NotionLinkPreviewObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? linkPreview = freezed,}) {
+  return _then(NotionBlockLinkPreview(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,linkPreview: freezed == linkPreview ? _self.linkPreview : linkPreview // ignore: cast_nullable_to_non_nullable
+as NotionLinkPreviewObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionLinkPreviewObjectCopyWith<$Res>? get linkPreview {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionLinkPreviewObjectCopyWith<$Res>? get linkPreview {
     if (_self.linkPreview == null) {
-      return null;
-    }
-
-    return $NotionLinkPreviewObjectCopyWith<$Res>(_self.linkPreview!, (value) {
-      return _then(_self.copyWith(linkPreview: value));
-    });
+    return null;
   }
+
+  return $NotionLinkPreviewObjectCopyWith<$Res>(_self.linkPreview!, (value) {
+    return _then(_self.copyWith(linkPreview: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockMention implements NotionBlock {
-  const NotionBlockMention(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.mention,
-      final String? $type})
-      : $type = $type ?? 'mention';
-  factory NotionBlockMention.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockMentionFromJson(json);
+  const NotionBlockMention({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.mention, final  String? $type}): $type = $type ?? 'mention';
+  factory NotionBlockMention.fromJson(Map<String, dynamic> json) => _$NotionBlockMentionFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionMentionObject? mention;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionMentionObject? mention;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockMentionCopyWith<NotionBlockMention> get copyWith =>
-      _$NotionBlockMentionCopyWithImpl<NotionBlockMention>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockMentionToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockMentionCopyWith<NotionBlockMention> get copyWith => _$NotionBlockMentionCopyWithImpl<NotionBlockMention>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockMention &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.mention, mention) || other.mention == mention));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockMentionToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      mention);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockMention&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.mention, mention) || other.mention == mention));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.mention(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, mention: $mention)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,mention);
+
+@override
+String toString() {
+  return 'NotionBlock.mention(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, mention: $mention)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockMentionCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockMentionCopyWith(
-          NotionBlockMention value, $Res Function(NotionBlockMention) _then) =
-      _$NotionBlockMentionCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionMentionObject? mention});
+abstract mixin class $NotionBlockMentionCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockMentionCopyWith(NotionBlockMention value, $Res Function(NotionBlockMention) _then) = _$NotionBlockMentionCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionMentionObject? mention
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionMentionObjectCopyWith<$Res>? get mention;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionMentionObjectCopyWith<$Res>? get mention;
+
 }
-
 /// @nodoc
 class _$NotionBlockMentionCopyWithImpl<$Res>
     implements $NotionBlockMentionCopyWith<$Res> {
@@ -4878,256 +3078,137 @@ class _$NotionBlockMentionCopyWithImpl<$Res>
   final NotionBlockMention _self;
   final $Res Function(NotionBlockMention) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? mention = freezed,
-  }) {
-    return _then(NotionBlockMention(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      mention: freezed == mention
-          ? _self.mention
-          : mention // ignore: cast_nullable_to_non_nullable
-              as NotionMentionObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? mention = freezed,}) {
+  return _then(NotionBlockMention(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,mention: freezed == mention ? _self.mention : mention // ignore: cast_nullable_to_non_nullable
+as NotionMentionObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionMentionObjectCopyWith<$Res>? get mention {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionMentionObjectCopyWith<$Res>? get mention {
     if (_self.mention == null) {
-      return null;
-    }
-
-    return $NotionMentionObjectCopyWith<$Res>(_self.mention!, (value) {
-      return _then(_self.copyWith(mention: value));
-    });
+    return null;
   }
+
+  return $NotionMentionObjectCopyWith<$Res>(_self.mention!, (value) {
+    return _then(_self.copyWith(mention: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockNumberedListItem implements NotionBlock {
-  const NotionBlockNumberedListItem(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.numberedListItem,
-      final String? $type})
-      : $type = $type ?? 'numbered_list_item';
-  factory NotionBlockNumberedListItem.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockNumberedListItemFromJson(json);
+  const NotionBlockNumberedListItem({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.numberedListItem, final  String? $type}): $type = $type ?? 'numbered_list_item';
+  factory NotionBlockNumberedListItem.fromJson(Map<String, dynamic> json) => _$NotionBlockNumberedListItemFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionNumberedListItemObject? numberedListItem;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionNumberedListItemObject? numberedListItem;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockNumberedListItemCopyWith<NotionBlockNumberedListItem>
-      get copyWith => _$NotionBlockNumberedListItemCopyWithImpl<
-          NotionBlockNumberedListItem>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockNumberedListItemToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockNumberedListItemCopyWith<NotionBlockNumberedListItem> get copyWith => _$NotionBlockNumberedListItemCopyWithImpl<NotionBlockNumberedListItem>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockNumberedListItem &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.numberedListItem, numberedListItem) ||
-                other.numberedListItem == numberedListItem));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockNumberedListItemToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      numberedListItem);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockNumberedListItem&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.numberedListItem, numberedListItem) || other.numberedListItem == numberedListItem));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.numberedListItem(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, numberedListItem: $numberedListItem)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,numberedListItem);
+
+@override
+String toString() {
+  return 'NotionBlock.numberedListItem(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, numberedListItem: $numberedListItem)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockNumberedListItemCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockNumberedListItemCopyWith(
-          NotionBlockNumberedListItem value,
-          $Res Function(NotionBlockNumberedListItem) _then) =
-      _$NotionBlockNumberedListItemCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionNumberedListItemObject? numberedListItem});
+abstract mixin class $NotionBlockNumberedListItemCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockNumberedListItemCopyWith(NotionBlockNumberedListItem value, $Res Function(NotionBlockNumberedListItem) _then) = _$NotionBlockNumberedListItemCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionNumberedListItemObject? numberedListItem
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionNumberedListItemObjectCopyWith<$Res>? get numberedListItem;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionNumberedListItemObjectCopyWith<$Res>? get numberedListItem;
+
 }
-
 /// @nodoc
 class _$NotionBlockNumberedListItemCopyWithImpl<$Res>
     implements $NotionBlockNumberedListItemCopyWith<$Res> {
@@ -5136,256 +3217,137 @@ class _$NotionBlockNumberedListItemCopyWithImpl<$Res>
   final NotionBlockNumberedListItem _self;
   final $Res Function(NotionBlockNumberedListItem) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? numberedListItem = freezed,
-  }) {
-    return _then(NotionBlockNumberedListItem(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      numberedListItem: freezed == numberedListItem
-          ? _self.numberedListItem
-          : numberedListItem // ignore: cast_nullable_to_non_nullable
-              as NotionNumberedListItemObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? numberedListItem = freezed,}) {
+  return _then(NotionBlockNumberedListItem(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,numberedListItem: freezed == numberedListItem ? _self.numberedListItem : numberedListItem // ignore: cast_nullable_to_non_nullable
+as NotionNumberedListItemObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionNumberedListItemObjectCopyWith<$Res>? get numberedListItem {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionNumberedListItemObjectCopyWith<$Res>? get numberedListItem {
     if (_self.numberedListItem == null) {
-      return null;
-    }
-
-    return $NotionNumberedListItemObjectCopyWith<$Res>(_self.numberedListItem!,
-        (value) {
-      return _then(_self.copyWith(numberedListItem: value));
-    });
+    return null;
   }
+
+  return $NotionNumberedListItemObjectCopyWith<$Res>(_self.numberedListItem!, (value) {
+    return _then(_self.copyWith(numberedListItem: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockParagraph implements NotionBlock {
-  const NotionBlockParagraph(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.paragraph,
-      final String? $type})
-      : $type = $type ?? 'paragraph';
-  factory NotionBlockParagraph.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockParagraphFromJson(json);
+  const NotionBlockParagraph({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.paragraph, final  String? $type}): $type = $type ?? 'paragraph';
+  factory NotionBlockParagraph.fromJson(Map<String, dynamic> json) => _$NotionBlockParagraphFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionParagraphObject? paragraph;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionParagraphObject? paragraph;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockParagraphCopyWith<NotionBlockParagraph> get copyWith =>
-      _$NotionBlockParagraphCopyWithImpl<NotionBlockParagraph>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockParagraphToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockParagraphCopyWith<NotionBlockParagraph> get copyWith => _$NotionBlockParagraphCopyWithImpl<NotionBlockParagraph>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockParagraph &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.paragraph, paragraph) ||
-                other.paragraph == paragraph));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockParagraphToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      paragraph);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockParagraph&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.paragraph, paragraph) || other.paragraph == paragraph));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.paragraph(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, paragraph: $paragraph)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,paragraph);
+
+@override
+String toString() {
+  return 'NotionBlock.paragraph(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, paragraph: $paragraph)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockParagraphCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockParagraphCopyWith(NotionBlockParagraph value,
-          $Res Function(NotionBlockParagraph) _then) =
-      _$NotionBlockParagraphCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionParagraphObject? paragraph});
+abstract mixin class $NotionBlockParagraphCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockParagraphCopyWith(NotionBlockParagraph value, $Res Function(NotionBlockParagraph) _then) = _$NotionBlockParagraphCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionParagraphObject? paragraph
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionParagraphObjectCopyWith<$Res>? get paragraph;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionParagraphObjectCopyWith<$Res>? get paragraph;
+
 }
-
 /// @nodoc
 class _$NotionBlockParagraphCopyWithImpl<$Res>
     implements $NotionBlockParagraphCopyWith<$Res> {
@@ -5394,253 +3356,137 @@ class _$NotionBlockParagraphCopyWithImpl<$Res>
   final NotionBlockParagraph _self;
   final $Res Function(NotionBlockParagraph) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? paragraph = freezed,
-  }) {
-    return _then(NotionBlockParagraph(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      paragraph: freezed == paragraph
-          ? _self.paragraph
-          : paragraph // ignore: cast_nullable_to_non_nullable
-              as NotionParagraphObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? paragraph = freezed,}) {
+  return _then(NotionBlockParagraph(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,paragraph: freezed == paragraph ? _self.paragraph : paragraph // ignore: cast_nullable_to_non_nullable
+as NotionParagraphObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParagraphObjectCopyWith<$Res>? get paragraph {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParagraphObjectCopyWith<$Res>? get paragraph {
     if (_self.paragraph == null) {
-      return null;
-    }
-
-    return $NotionParagraphObjectCopyWith<$Res>(_self.paragraph!, (value) {
-      return _then(_self.copyWith(paragraph: value));
-    });
+    return null;
   }
+
+  return $NotionParagraphObjectCopyWith<$Res>(_self.paragraph!, (value) {
+    return _then(_self.copyWith(paragraph: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockPdf implements NotionBlock {
-  const NotionBlockPdf(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.pdf,
-      final String? $type})
-      : $type = $type ?? 'pdf';
-  factory NotionBlockPdf.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockPdfFromJson(json);
+  const NotionBlockPdf({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.pdf, final  String? $type}): $type = $type ?? 'pdf';
+  factory NotionBlockPdf.fromJson(Map<String, dynamic> json) => _$NotionBlockPdfFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionFile? pdf;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionFile? pdf;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockPdfCopyWith<NotionBlockPdf> get copyWith =>
-      _$NotionBlockPdfCopyWithImpl<NotionBlockPdf>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockPdfToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockPdfCopyWith<NotionBlockPdf> get copyWith => _$NotionBlockPdfCopyWithImpl<NotionBlockPdf>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockPdf &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.pdf, pdf) || other.pdf == pdf));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockPdfToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      pdf);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockPdf&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.pdf, pdf) || other.pdf == pdf));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.pdf(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, pdf: $pdf)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,pdf);
+
+@override
+String toString() {
+  return 'NotionBlock.pdf(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, pdf: $pdf)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockPdfCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockPdfCopyWith(
-          NotionBlockPdf value, $Res Function(NotionBlockPdf) _then) =
-      _$NotionBlockPdfCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionFile? pdf});
+abstract mixin class $NotionBlockPdfCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockPdfCopyWith(NotionBlockPdf value, $Res Function(NotionBlockPdf) _then) = _$NotionBlockPdfCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionFile? pdf
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionFileCopyWith<$Res>? get pdf;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionFileCopyWith<$Res>? get pdf;
+
 }
-
 /// @nodoc
 class _$NotionBlockPdfCopyWithImpl<$Res>
     implements $NotionBlockPdfCopyWith<$Res> {
@@ -5649,253 +3495,137 @@ class _$NotionBlockPdfCopyWithImpl<$Res>
   final NotionBlockPdf _self;
   final $Res Function(NotionBlockPdf) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? pdf = freezed,
-  }) {
-    return _then(NotionBlockPdf(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      pdf: freezed == pdf
-          ? _self.pdf
-          : pdf // ignore: cast_nullable_to_non_nullable
-              as NotionFile?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? pdf = freezed,}) {
+  return _then(NotionBlockPdf(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,pdf: freezed == pdf ? _self.pdf : pdf // ignore: cast_nullable_to_non_nullable
+as NotionFile?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionFileCopyWith<$Res>? get pdf {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionFileCopyWith<$Res>? get pdf {
     if (_self.pdf == null) {
-      return null;
-    }
-
-    return $NotionFileCopyWith<$Res>(_self.pdf!, (value) {
-      return _then(_self.copyWith(pdf: value));
-    });
+    return null;
   }
+
+  return $NotionFileCopyWith<$Res>(_self.pdf!, (value) {
+    return _then(_self.copyWith(pdf: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockQuote implements NotionBlock {
-  const NotionBlockQuote(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.quote,
-      final String? $type})
-      : $type = $type ?? 'quote';
-  factory NotionBlockQuote.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockQuoteFromJson(json);
+  const NotionBlockQuote({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.quote, final  String? $type}): $type = $type ?? 'quote';
+  factory NotionBlockQuote.fromJson(Map<String, dynamic> json) => _$NotionBlockQuoteFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionQuoteObject? quote;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionQuoteObject? quote;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockQuoteCopyWith<NotionBlockQuote> get copyWith =>
-      _$NotionBlockQuoteCopyWithImpl<NotionBlockQuote>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockQuoteToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockQuoteCopyWith<NotionBlockQuote> get copyWith => _$NotionBlockQuoteCopyWithImpl<NotionBlockQuote>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockQuote &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.quote, quote) || other.quote == quote));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockQuoteToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      quote);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockQuote&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.quote, quote) || other.quote == quote));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.quote(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, quote: $quote)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,quote);
+
+@override
+String toString() {
+  return 'NotionBlock.quote(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, quote: $quote)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockQuoteCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockQuoteCopyWith(
-          NotionBlockQuote value, $Res Function(NotionBlockQuote) _then) =
-      _$NotionBlockQuoteCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionQuoteObject? quote});
+abstract mixin class $NotionBlockQuoteCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockQuoteCopyWith(NotionBlockQuote value, $Res Function(NotionBlockQuote) _then) = _$NotionBlockQuoteCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionQuoteObject? quote
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionQuoteObjectCopyWith<$Res>? get quote;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionQuoteObjectCopyWith<$Res>? get quote;
+
 }
-
 /// @nodoc
 class _$NotionBlockQuoteCopyWithImpl<$Res>
     implements $NotionBlockQuoteCopyWith<$Res> {
@@ -5904,255 +3634,137 @@ class _$NotionBlockQuoteCopyWithImpl<$Res>
   final NotionBlockQuote _self;
   final $Res Function(NotionBlockQuote) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? quote = freezed,
-  }) {
-    return _then(NotionBlockQuote(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      quote: freezed == quote
-          ? _self.quote
-          : quote // ignore: cast_nullable_to_non_nullable
-              as NotionQuoteObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? quote = freezed,}) {
+  return _then(NotionBlockQuote(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,quote: freezed == quote ? _self.quote : quote // ignore: cast_nullable_to_non_nullable
+as NotionQuoteObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionQuoteObjectCopyWith<$Res>? get quote {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionQuoteObjectCopyWith<$Res>? get quote {
     if (_self.quote == null) {
-      return null;
-    }
-
-    return $NotionQuoteObjectCopyWith<$Res>(_self.quote!, (value) {
-      return _then(_self.copyWith(quote: value));
-    });
+    return null;
   }
+
+  return $NotionQuoteObjectCopyWith<$Res>(_self.quote!, (value) {
+    return _then(_self.copyWith(quote: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockSyncedBlock implements NotionBlock {
-  const NotionBlockSyncedBlock(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.syncedBlock,
-      final String? $type})
-      : $type = $type ?? 'synced_block';
-  factory NotionBlockSyncedBlock.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockSyncedBlockFromJson(json);
+  const NotionBlockSyncedBlock({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.syncedBlock, final  String? $type}): $type = $type ?? 'synced_block';
+  factory NotionBlockSyncedBlock.fromJson(Map<String, dynamic> json) => _$NotionBlockSyncedBlockFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionSyncedBlockObject? syncedBlock;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionSyncedBlockObject? syncedBlock;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockSyncedBlockCopyWith<NotionBlockSyncedBlock> get copyWith =>
-      _$NotionBlockSyncedBlockCopyWithImpl<NotionBlockSyncedBlock>(
-          this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockSyncedBlockToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockSyncedBlockCopyWith<NotionBlockSyncedBlock> get copyWith => _$NotionBlockSyncedBlockCopyWithImpl<NotionBlockSyncedBlock>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockSyncedBlock &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.syncedBlock, syncedBlock) ||
-                other.syncedBlock == syncedBlock));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockSyncedBlockToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      syncedBlock);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockSyncedBlock&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.syncedBlock, syncedBlock) || other.syncedBlock == syncedBlock));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.syncedBlock(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, syncedBlock: $syncedBlock)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,syncedBlock);
+
+@override
+String toString() {
+  return 'NotionBlock.syncedBlock(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, syncedBlock: $syncedBlock)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockSyncedBlockCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockSyncedBlockCopyWith(NotionBlockSyncedBlock value,
-          $Res Function(NotionBlockSyncedBlock) _then) =
-      _$NotionBlockSyncedBlockCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionSyncedBlockObject? syncedBlock});
+abstract mixin class $NotionBlockSyncedBlockCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockSyncedBlockCopyWith(NotionBlockSyncedBlock value, $Res Function(NotionBlockSyncedBlock) _then) = _$NotionBlockSyncedBlockCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionSyncedBlockObject? syncedBlock
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionSyncedBlockObjectCopyWith<$Res>? get syncedBlock;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionSyncedBlockObjectCopyWith<$Res>? get syncedBlock;
+
 }
-
 /// @nodoc
 class _$NotionBlockSyncedBlockCopyWithImpl<$Res>
     implements $NotionBlockSyncedBlockCopyWith<$Res> {
@@ -6161,253 +3773,137 @@ class _$NotionBlockSyncedBlockCopyWithImpl<$Res>
   final NotionBlockSyncedBlock _self;
   final $Res Function(NotionBlockSyncedBlock) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? syncedBlock = freezed,
-  }) {
-    return _then(NotionBlockSyncedBlock(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      syncedBlock: freezed == syncedBlock
-          ? _self.syncedBlock
-          : syncedBlock // ignore: cast_nullable_to_non_nullable
-              as NotionSyncedBlockObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? syncedBlock = freezed,}) {
+  return _then(NotionBlockSyncedBlock(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,syncedBlock: freezed == syncedBlock ? _self.syncedBlock : syncedBlock // ignore: cast_nullable_to_non_nullable
+as NotionSyncedBlockObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionSyncedBlockObjectCopyWith<$Res>? get syncedBlock {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionSyncedBlockObjectCopyWith<$Res>? get syncedBlock {
     if (_self.syncedBlock == null) {
-      return null;
-    }
-
-    return $NotionSyncedBlockObjectCopyWith<$Res>(_self.syncedBlock!, (value) {
-      return _then(_self.copyWith(syncedBlock: value));
-    });
+    return null;
   }
+
+  return $NotionSyncedBlockObjectCopyWith<$Res>(_self.syncedBlock!, (value) {
+    return _then(_self.copyWith(syncedBlock: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockTable implements NotionBlock {
-  const NotionBlockTable(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.table,
-      final String? $type})
-      : $type = $type ?? 'table';
-  factory NotionBlockTable.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockTableFromJson(json);
+  const NotionBlockTable({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.table, final  String? $type}): $type = $type ?? 'table';
+  factory NotionBlockTable.fromJson(Map<String, dynamic> json) => _$NotionBlockTableFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionTableObject? table;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionTableObject? table;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockTableCopyWith<NotionBlockTable> get copyWith =>
-      _$NotionBlockTableCopyWithImpl<NotionBlockTable>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockTableToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockTableCopyWith<NotionBlockTable> get copyWith => _$NotionBlockTableCopyWithImpl<NotionBlockTable>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockTable &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.table, table) || other.table == table));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockTableToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      table);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockTable&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.table, table) || other.table == table));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.table(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, table: $table)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,table);
+
+@override
+String toString() {
+  return 'NotionBlock.table(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, table: $table)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockTableCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockTableCopyWith(
-          NotionBlockTable value, $Res Function(NotionBlockTable) _then) =
-      _$NotionBlockTableCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionTableObject? table});
+abstract mixin class $NotionBlockTableCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockTableCopyWith(NotionBlockTable value, $Res Function(NotionBlockTable) _then) = _$NotionBlockTableCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionTableObject? table
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionTableObjectCopyWith<$Res>? get table;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionTableObjectCopyWith<$Res>? get table;
+
 }
-
 /// @nodoc
 class _$NotionBlockTableCopyWithImpl<$Res>
     implements $NotionBlockTableCopyWith<$Res> {
@@ -6416,256 +3912,137 @@ class _$NotionBlockTableCopyWithImpl<$Res>
   final NotionBlockTable _self;
   final $Res Function(NotionBlockTable) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? table = freezed,
-  }) {
-    return _then(NotionBlockTable(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      table: freezed == table
-          ? _self.table
-          : table // ignore: cast_nullable_to_non_nullable
-              as NotionTableObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? table = freezed,}) {
+  return _then(NotionBlockTable(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,table: freezed == table ? _self.table : table // ignore: cast_nullable_to_non_nullable
+as NotionTableObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionTableObjectCopyWith<$Res>? get table {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionTableObjectCopyWith<$Res>? get table {
     if (_self.table == null) {
-      return null;
-    }
-
-    return $NotionTableObjectCopyWith<$Res>(_self.table!, (value) {
-      return _then(_self.copyWith(table: value));
-    });
+    return null;
   }
+
+  return $NotionTableObjectCopyWith<$Res>(_self.table!, (value) {
+    return _then(_self.copyWith(table: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockTableOfContents implements NotionBlock {
-  const NotionBlockTableOfContents(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.tableOfContents,
-      final String? $type})
-      : $type = $type ?? 'table_of_contents';
-  factory NotionBlockTableOfContents.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockTableOfContentsFromJson(json);
+  const NotionBlockTableOfContents({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.tableOfContents, final  String? $type}): $type = $type ?? 'table_of_contents';
+  factory NotionBlockTableOfContents.fromJson(Map<String, dynamic> json) => _$NotionBlockTableOfContentsFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionTableOfContentsObject? tableOfContents;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionTableOfContentsObject? tableOfContents;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockTableOfContentsCopyWith<NotionBlockTableOfContents>
-      get copyWith =>
-          _$NotionBlockTableOfContentsCopyWithImpl<NotionBlockTableOfContents>(
-              this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockTableOfContentsToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockTableOfContentsCopyWith<NotionBlockTableOfContents> get copyWith => _$NotionBlockTableOfContentsCopyWithImpl<NotionBlockTableOfContents>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockTableOfContents &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.tableOfContents, tableOfContents) ||
-                other.tableOfContents == tableOfContents));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockTableOfContentsToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      tableOfContents);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockTableOfContents&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.tableOfContents, tableOfContents) || other.tableOfContents == tableOfContents));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.tableOfContents(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, tableOfContents: $tableOfContents)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,tableOfContents);
+
+@override
+String toString() {
+  return 'NotionBlock.tableOfContents(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, tableOfContents: $tableOfContents)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockTableOfContentsCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockTableOfContentsCopyWith(NotionBlockTableOfContents value,
-          $Res Function(NotionBlockTableOfContents) _then) =
-      _$NotionBlockTableOfContentsCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionTableOfContentsObject? tableOfContents});
+abstract mixin class $NotionBlockTableOfContentsCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockTableOfContentsCopyWith(NotionBlockTableOfContents value, $Res Function(NotionBlockTableOfContents) _then) = _$NotionBlockTableOfContentsCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionTableOfContentsObject? tableOfContents
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionTableOfContentsObjectCopyWith<$Res>? get tableOfContents;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionTableOfContentsObjectCopyWith<$Res>? get tableOfContents;
+
 }
-
 /// @nodoc
 class _$NotionBlockTableOfContentsCopyWithImpl<$Res>
     implements $NotionBlockTableOfContentsCopyWith<$Res> {
@@ -6674,255 +4051,137 @@ class _$NotionBlockTableOfContentsCopyWithImpl<$Res>
   final NotionBlockTableOfContents _self;
   final $Res Function(NotionBlockTableOfContents) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? tableOfContents = freezed,
-  }) {
-    return _then(NotionBlockTableOfContents(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      tableOfContents: freezed == tableOfContents
-          ? _self.tableOfContents
-          : tableOfContents // ignore: cast_nullable_to_non_nullable
-              as NotionTableOfContentsObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? tableOfContents = freezed,}) {
+  return _then(NotionBlockTableOfContents(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,tableOfContents: freezed == tableOfContents ? _self.tableOfContents : tableOfContents // ignore: cast_nullable_to_non_nullable
+as NotionTableOfContentsObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionTableOfContentsObjectCopyWith<$Res>? get tableOfContents {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionTableOfContentsObjectCopyWith<$Res>? get tableOfContents {
     if (_self.tableOfContents == null) {
-      return null;
-    }
-
-    return $NotionTableOfContentsObjectCopyWith<$Res>(_self.tableOfContents!,
-        (value) {
-      return _then(_self.copyWith(tableOfContents: value));
-    });
+    return null;
   }
+
+  return $NotionTableOfContentsObjectCopyWith<$Res>(_self.tableOfContents!, (value) {
+    return _then(_self.copyWith(tableOfContents: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockTableRow implements NotionBlock {
-  const NotionBlockTableRow(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.tableRow,
-      final String? $type})
-      : $type = $type ?? 'table_row';
-  factory NotionBlockTableRow.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockTableRowFromJson(json);
+  const NotionBlockTableRow({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.tableRow, final  String? $type}): $type = $type ?? 'table_row';
+  factory NotionBlockTableRow.fromJson(Map<String, dynamic> json) => _$NotionBlockTableRowFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionTableRowObject? tableRow;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionTableRowObject? tableRow;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockTableRowCopyWith<NotionBlockTableRow> get copyWith =>
-      _$NotionBlockTableRowCopyWithImpl<NotionBlockTableRow>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockTableRowToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockTableRowCopyWith<NotionBlockTableRow> get copyWith => _$NotionBlockTableRowCopyWithImpl<NotionBlockTableRow>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockTableRow &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.tableRow, tableRow) ||
-                other.tableRow == tableRow));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockTableRowToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      tableRow);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockTableRow&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.tableRow, tableRow) || other.tableRow == tableRow));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.tableRow(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, tableRow: $tableRow)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,tableRow);
+
+@override
+String toString() {
+  return 'NotionBlock.tableRow(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, tableRow: $tableRow)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockTableRowCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockTableRowCopyWith(
-          NotionBlockTableRow value, $Res Function(NotionBlockTableRow) _then) =
-      _$NotionBlockTableRowCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionTableRowObject? tableRow});
+abstract mixin class $NotionBlockTableRowCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockTableRowCopyWith(NotionBlockTableRow value, $Res Function(NotionBlockTableRow) _then) = _$NotionBlockTableRowCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionTableRowObject? tableRow
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionTableRowObjectCopyWith<$Res>? get tableRow;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionTableRowObjectCopyWith<$Res>? get tableRow;
+
 }
-
 /// @nodoc
 class _$NotionBlockTableRowCopyWithImpl<$Res>
     implements $NotionBlockTableRowCopyWith<$Res> {
@@ -6931,255 +4190,137 @@ class _$NotionBlockTableRowCopyWithImpl<$Res>
   final NotionBlockTableRow _self;
   final $Res Function(NotionBlockTableRow) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? tableRow = freezed,
-  }) {
-    return _then(NotionBlockTableRow(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      tableRow: freezed == tableRow
-          ? _self.tableRow
-          : tableRow // ignore: cast_nullable_to_non_nullable
-              as NotionTableRowObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? tableRow = freezed,}) {
+  return _then(NotionBlockTableRow(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,tableRow: freezed == tableRow ? _self.tableRow : tableRow // ignore: cast_nullable_to_non_nullable
+as NotionTableRowObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionTableRowObjectCopyWith<$Res>? get tableRow {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionTableRowObjectCopyWith<$Res>? get tableRow {
     if (_self.tableRow == null) {
-      return null;
-    }
-
-    return $NotionTableRowObjectCopyWith<$Res>(_self.tableRow!, (value) {
-      return _then(_self.copyWith(tableRow: value));
-    });
+    return null;
   }
+
+  return $NotionTableRowObjectCopyWith<$Res>(_self.tableRow!, (value) {
+    return _then(_self.copyWith(tableRow: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
 @Deprecated('Template blocks will no longer be supported as of March 27, 2023.')
 class NotionBlockTemplate implements NotionBlock {
-  const NotionBlockTemplate(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.template,
-      final String? $type})
-      : $type = $type ?? 'template';
-  factory NotionBlockTemplate.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockTemplateFromJson(json);
+  const NotionBlockTemplate({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.template, final  String? $type}): $type = $type ?? 'template';
+  factory NotionBlockTemplate.fromJson(Map<String, dynamic> json) => _$NotionBlockTemplateFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionTemplateObject? template;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionTemplateObject? template;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockTemplateCopyWith<NotionBlockTemplate> get copyWith =>
-      _$NotionBlockTemplateCopyWithImpl<NotionBlockTemplate>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockTemplateToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockTemplateCopyWith<NotionBlockTemplate> get copyWith => _$NotionBlockTemplateCopyWithImpl<NotionBlockTemplate>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockTemplate &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.template, template) ||
-                other.template == template));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockTemplateToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      template);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockTemplate&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.template, template) || other.template == template));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.template(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, template: $template)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,template);
+
+@override
+String toString() {
+  return 'NotionBlock.template(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, template: $template)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockTemplateCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockTemplateCopyWith(
-          NotionBlockTemplate value, $Res Function(NotionBlockTemplate) _then) =
-      _$NotionBlockTemplateCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionTemplateObject? template});
+abstract mixin class $NotionBlockTemplateCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockTemplateCopyWith(NotionBlockTemplate value, $Res Function(NotionBlockTemplate) _then) = _$NotionBlockTemplateCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionTemplateObject? template
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionTemplateObjectCopyWith<$Res>? get template;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionTemplateObjectCopyWith<$Res>? get template;
+
 }
-
 /// @nodoc
 class _$NotionBlockTemplateCopyWithImpl<$Res>
     implements $NotionBlockTemplateCopyWith<$Res> {
@@ -7188,253 +4329,137 @@ class _$NotionBlockTemplateCopyWithImpl<$Res>
   final NotionBlockTemplate _self;
   final $Res Function(NotionBlockTemplate) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? template = freezed,
-  }) {
-    return _then(NotionBlockTemplate(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      template: freezed == template
-          ? _self.template
-          : template // ignore: cast_nullable_to_non_nullable
-              as NotionTemplateObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? template = freezed,}) {
+  return _then(NotionBlockTemplate(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,template: freezed == template ? _self.template : template // ignore: cast_nullable_to_non_nullable
+as NotionTemplateObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionTemplateObjectCopyWith<$Res>? get template {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionTemplateObjectCopyWith<$Res>? get template {
     if (_self.template == null) {
-      return null;
-    }
-
-    return $NotionTemplateObjectCopyWith<$Res>(_self.template!, (value) {
-      return _then(_self.copyWith(template: value));
-    });
+    return null;
   }
+
+  return $NotionTemplateObjectCopyWith<$Res>(_self.template!, (value) {
+    return _then(_self.copyWith(template: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockToDo implements NotionBlock {
-  const NotionBlockToDo(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.toDo,
-      final String? $type})
-      : $type = $type ?? 'to_do';
-  factory NotionBlockToDo.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockToDoFromJson(json);
+  const NotionBlockToDo({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.toDo, final  String? $type}): $type = $type ?? 'to_do';
+  factory NotionBlockToDo.fromJson(Map<String, dynamic> json) => _$NotionBlockToDoFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionToDoObject? toDo;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionToDoObject? toDo;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockToDoCopyWith<NotionBlockToDo> get copyWith =>
-      _$NotionBlockToDoCopyWithImpl<NotionBlockToDo>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockToDoToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockToDoCopyWith<NotionBlockToDo> get copyWith => _$NotionBlockToDoCopyWithImpl<NotionBlockToDo>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockToDo &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.toDo, toDo) || other.toDo == toDo));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockToDoToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      toDo);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockToDo&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.toDo, toDo) || other.toDo == toDo));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.toDo(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, toDo: $toDo)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,toDo);
+
+@override
+String toString() {
+  return 'NotionBlock.toDo(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, toDo: $toDo)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockToDoCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockToDoCopyWith(
-          NotionBlockToDo value, $Res Function(NotionBlockToDo) _then) =
-      _$NotionBlockToDoCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionToDoObject? toDo});
+abstract mixin class $NotionBlockToDoCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockToDoCopyWith(NotionBlockToDo value, $Res Function(NotionBlockToDo) _then) = _$NotionBlockToDoCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionToDoObject? toDo
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionToDoObjectCopyWith<$Res>? get toDo;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionToDoObjectCopyWith<$Res>? get toDo;
+
 }
-
 /// @nodoc
 class _$NotionBlockToDoCopyWithImpl<$Res>
     implements $NotionBlockToDoCopyWith<$Res> {
@@ -7443,253 +4468,137 @@ class _$NotionBlockToDoCopyWithImpl<$Res>
   final NotionBlockToDo _self;
   final $Res Function(NotionBlockToDo) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? toDo = freezed,
-  }) {
-    return _then(NotionBlockToDo(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      toDo: freezed == toDo
-          ? _self.toDo
-          : toDo // ignore: cast_nullable_to_non_nullable
-              as NotionToDoObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? toDo = freezed,}) {
+  return _then(NotionBlockToDo(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,toDo: freezed == toDo ? _self.toDo : toDo // ignore: cast_nullable_to_non_nullable
+as NotionToDoObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionToDoObjectCopyWith<$Res>? get toDo {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionToDoObjectCopyWith<$Res>? get toDo {
     if (_self.toDo == null) {
-      return null;
-    }
-
-    return $NotionToDoObjectCopyWith<$Res>(_self.toDo!, (value) {
-      return _then(_self.copyWith(toDo: value));
-    });
+    return null;
   }
+
+  return $NotionToDoObjectCopyWith<$Res>(_self.toDo!, (value) {
+    return _then(_self.copyWith(toDo: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockToggle implements NotionBlock {
-  const NotionBlockToggle(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.toggle,
-      final String? $type})
-      : $type = $type ?? 'toggle';
-  factory NotionBlockToggle.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockToggleFromJson(json);
+  const NotionBlockToggle({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.toggle, final  String? $type}): $type = $type ?? 'toggle';
+  factory NotionBlockToggle.fromJson(Map<String, dynamic> json) => _$NotionBlockToggleFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionToggleObject? toggle;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionToggleObject? toggle;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockToggleCopyWith<NotionBlockToggle> get copyWith =>
-      _$NotionBlockToggleCopyWithImpl<NotionBlockToggle>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockToggleToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockToggleCopyWith<NotionBlockToggle> get copyWith => _$NotionBlockToggleCopyWithImpl<NotionBlockToggle>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockToggle &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.toggle, toggle) || other.toggle == toggle));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockToggleToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      toggle);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockToggle&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.toggle, toggle) || other.toggle == toggle));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.toggle(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, toggle: $toggle)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,toggle);
+
+@override
+String toString() {
+  return 'NotionBlock.toggle(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, toggle: $toggle)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockToggleCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockToggleCopyWith(
-          NotionBlockToggle value, $Res Function(NotionBlockToggle) _then) =
-      _$NotionBlockToggleCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionToggleObject? toggle});
+abstract mixin class $NotionBlockToggleCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockToggleCopyWith(NotionBlockToggle value, $Res Function(NotionBlockToggle) _then) = _$NotionBlockToggleCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionToggleObject? toggle
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionToggleObjectCopyWith<$Res>? get toggle;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionToggleObjectCopyWith<$Res>? get toggle;
+
 }
-
 /// @nodoc
 class _$NotionBlockToggleCopyWithImpl<$Res>
     implements $NotionBlockToggleCopyWith<$Res> {
@@ -7698,253 +4607,137 @@ class _$NotionBlockToggleCopyWithImpl<$Res>
   final NotionBlockToggle _self;
   final $Res Function(NotionBlockToggle) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? toggle = freezed,
-  }) {
-    return _then(NotionBlockToggle(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      toggle: freezed == toggle
-          ? _self.toggle
-          : toggle // ignore: cast_nullable_to_non_nullable
-              as NotionToggleObject?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? toggle = freezed,}) {
+  return _then(NotionBlockToggle(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,toggle: freezed == toggle ? _self.toggle : toggle // ignore: cast_nullable_to_non_nullable
+as NotionToggleObject?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionToggleObjectCopyWith<$Res>? get toggle {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionToggleObjectCopyWith<$Res>? get toggle {
     if (_self.toggle == null) {
-      return null;
-    }
-
-    return $NotionToggleObjectCopyWith<$Res>(_self.toggle!, (value) {
-      return _then(_self.copyWith(toggle: value));
-    });
+    return null;
   }
+
+  return $NotionToggleObjectCopyWith<$Res>(_self.toggle!, (value) {
+    return _then(_self.copyWith(toggle: value));
+  });
+}
 }
 
 /// @nodoc
 @JsonSerializable()
+
 class NotionBlockVideo implements NotionBlock {
-  const NotionBlockVideo(
-      {this.id,
-      this.parent,
-      this.createdTime,
-      this.createdBy,
-      this.lastEditedTime,
-      this.lastEditedBy,
-      this.archived,
-      this.inTrash,
-      this.hasChildren,
-      this.video,
-      final String? $type})
-      : $type = $type ?? 'video';
-  factory NotionBlockVideo.fromJson(Map<String, dynamic> json) =>
-      _$NotionBlockVideoFromJson(json);
+  const NotionBlockVideo({this.id, this.parent, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.hasChildren, this.video, final  String? $type}): $type = $type ?? 'video';
+  factory NotionBlockVideo.fromJson(Map<String, dynamic> json) => _$NotionBlockVideoFromJson(json);
 
-  @override
-  final String? id;
-  @override
-  final NotionParent? parent;
-  @override
-  final DateTime? createdTime;
-  @override
-  final NotionUser? createdBy;
-  @override
-  final DateTime? lastEditedTime;
-  @override
-  final NotionUser? lastEditedBy;
-  @override
-  final bool? archived;
-  @override
-  final bool? inTrash;
-  @override
-  final bool? hasChildren;
-  final NotionFile? video;
+@override final  String? id;
+@override final  NotionParent? parent;
+@override final  DateTime? createdTime;
+@override final  NotionUser? createdBy;
+@override final  DateTime? lastEditedTime;
+@override final  NotionUser? lastEditedBy;
+@override final  bool? archived;
+@override final  bool? inTrash;
+@override final  bool? hasChildren;
+ final  NotionFile? video;
 
-  @JsonKey(name: 'type')
-  final String $type;
+@JsonKey(name: 'type')
+final String $type;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $NotionBlockVideoCopyWith<NotionBlockVideo> get copyWith =>
-      _$NotionBlockVideoCopyWithImpl<NotionBlockVideo>(this, _$identity);
 
-  @override
-  Map<String, dynamic> toJson() {
-    return _$NotionBlockVideoToJson(
-      this,
-    );
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionBlockVideoCopyWith<NotionBlockVideo> get copyWith => _$NotionBlockVideoCopyWithImpl<NotionBlockVideo>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is NotionBlockVideo &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.parent, parent) || other.parent == parent) &&
-            (identical(other.createdTime, createdTime) ||
-                other.createdTime == createdTime) &&
-            (identical(other.createdBy, createdBy) ||
-                other.createdBy == createdBy) &&
-            (identical(other.lastEditedTime, lastEditedTime) ||
-                other.lastEditedTime == lastEditedTime) &&
-            (identical(other.lastEditedBy, lastEditedBy) ||
-                other.lastEditedBy == lastEditedBy) &&
-            (identical(other.archived, archived) ||
-                other.archived == archived) &&
-            (identical(other.inTrash, inTrash) || other.inTrash == inTrash) &&
-            (identical(other.hasChildren, hasChildren) ||
-                other.hasChildren == hasChildren) &&
-            (identical(other.video, video) || other.video == video));
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionBlockVideoToJson(this, );
+}
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      parent,
-      createdTime,
-      createdBy,
-      lastEditedTime,
-      lastEditedBy,
-      archived,
-      inTrash,
-      hasChildren,
-      video);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionBlockVideo&&(identical(other.id, id) || other.id == id)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.hasChildren, hasChildren) || other.hasChildren == hasChildren)&&(identical(other.video, video) || other.video == video));
+}
 
-  @override
-  String toString() {
-    return 'NotionBlock.video(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, video: $video)';
-  }
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,parent,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,hasChildren,video);
+
+@override
+String toString() {
+  return 'NotionBlock.video(id: $id, parent: $parent, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, hasChildren: $hasChildren, video: $video)';
+}
+
+
 }
 
 /// @nodoc
-abstract mixin class $NotionBlockVideoCopyWith<$Res>
-    implements $NotionBlockCopyWith<$Res> {
-  factory $NotionBlockVideoCopyWith(
-          NotionBlockVideo value, $Res Function(NotionBlockVideo) _then) =
-      _$NotionBlockVideoCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String? id,
-      NotionParent? parent,
-      DateTime? createdTime,
-      NotionUser? createdBy,
-      DateTime? lastEditedTime,
-      NotionUser? lastEditedBy,
-      bool? archived,
-      bool? inTrash,
-      bool? hasChildren,
-      NotionFile? video});
+abstract mixin class $NotionBlockVideoCopyWith<$Res> implements $NotionBlockCopyWith<$Res> {
+  factory $NotionBlockVideoCopyWith(NotionBlockVideo value, $Res Function(NotionBlockVideo) _then) = _$NotionBlockVideoCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, NotionParent? parent, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, bool? hasChildren, NotionFile? video
+});
 
-  @override
-  $NotionParentCopyWith<$Res>? get parent;
-  @override
-  $NotionUserCopyWith<$Res>? get createdBy;
-  @override
-  $NotionUserCopyWith<$Res>? get lastEditedBy;
-  $NotionFileCopyWith<$Res>? get video;
+
+@override $NotionParentCopyWith<$Res>? get parent;@override $NotionUserCopyWith<$Res>? get createdBy;@override $NotionUserCopyWith<$Res>? get lastEditedBy;$NotionFileCopyWith<$Res>? get video;
+
 }
-
 /// @nodoc
 class _$NotionBlockVideoCopyWithImpl<$Res>
     implements $NotionBlockVideoCopyWith<$Res> {
@@ -7953,121 +4746,73 @@ class _$NotionBlockVideoCopyWithImpl<$Res>
   final NotionBlockVideo _self;
   final $Res Function(NotionBlockVideo) _then;
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = freezed,
-    Object? parent = freezed,
-    Object? createdTime = freezed,
-    Object? createdBy = freezed,
-    Object? lastEditedTime = freezed,
-    Object? lastEditedBy = freezed,
-    Object? archived = freezed,
-    Object? inTrash = freezed,
-    Object? hasChildren = freezed,
-    Object? video = freezed,
-  }) {
-    return _then(NotionBlockVideo(
-      id: freezed == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      parent: freezed == parent
-          ? _self.parent
-          : parent // ignore: cast_nullable_to_non_nullable
-              as NotionParent?,
-      createdTime: freezed == createdTime
-          ? _self.createdTime
-          : createdTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      createdBy: freezed == createdBy
-          ? _self.createdBy
-          : createdBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      lastEditedTime: freezed == lastEditedTime
-          ? _self.lastEditedTime
-          : lastEditedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      lastEditedBy: freezed == lastEditedBy
-          ? _self.lastEditedBy
-          : lastEditedBy // ignore: cast_nullable_to_non_nullable
-              as NotionUser?,
-      archived: freezed == archived
-          ? _self.archived
-          : archived // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      inTrash: freezed == inTrash
-          ? _self.inTrash
-          : inTrash // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      hasChildren: freezed == hasChildren
-          ? _self.hasChildren
-          : hasChildren // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      video: freezed == video
-          ? _self.video
-          : video // ignore: cast_nullable_to_non_nullable
-              as NotionFile?,
-    ));
-  }
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? parent = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? hasChildren = freezed,Object? video = freezed,}) {
+  return _then(NotionBlockVideo(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,hasChildren: freezed == hasChildren ? _self.hasChildren : hasChildren // ignore: cast_nullable_to_non_nullable
+as bool?,video: freezed == video ? _self.video : video // ignore: cast_nullable_to_non_nullable
+as NotionFile?,
+  ));
+}
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionParentCopyWith<$Res>? get parent {
+/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
     if (_self.parent == null) {
-      return null;
-    }
-
-    return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-      return _then(_self.copyWith(parent: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get createdBy {
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
     if (_self.createdBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-      return _then(_self.copyWith(createdBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionUserCopyWith<$Res>? get lastEditedBy {
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
     if (_self.lastEditedBy == null) {
-      return null;
-    }
-
-    return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-      return _then(_self.copyWith(lastEditedBy: value));
-    });
+    return null;
   }
 
-  /// Create a copy of NotionBlock
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $NotionFileCopyWith<$Res>? get video {
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionBlock
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionFileCopyWith<$Res>? get video {
     if (_self.video == null) {
-      return null;
-    }
-
-    return $NotionFileCopyWith<$Res>(_self.video!, (value) {
-      return _then(_self.copyWith(video: value));
-    });
+    return null;
   }
+
+  return $NotionFileCopyWith<$Res>(_self.video!, (value) {
+    return _then(_self.copyWith(video: value));
+  });
+}
 }
 
 // dart format on

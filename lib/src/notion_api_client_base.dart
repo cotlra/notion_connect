@@ -1,23 +1,14 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
-import 'model/access_token/notion_access_token/notion_access_token.dart';
-import 'model/access_token/notion_access_token_state/notion_access_token_state.dart';
-import 'model/list/notion_block_list/notion_block_list.dart';
-import 'model/list/notion_comment_list/notion_comment_list.dart';
-import 'model/list/notion_page_or_database_list/notion_page_or_database_list.dart';
-import 'model/list/notion_user_list/notion_user_list.dart';
-import 'model/notion_block/notion_block.dart';
-import 'model/notion_comment/notion_comment.dart';
-import 'model/notion_page_property_item/notion_page_property_item.dart';
-import 'model/notion_user/notion_user.dart';
-import 'model/page_or_database/notion_page_or_database/notion_page_or_database.dart';
+import '../notion_connect.dart';
 
 part 'notion_api_client_base.g.dart';
 
 @RestApi(baseUrl: 'https://api.notion.com/v1')
 abstract class NotionApiClientBase {
-  factory NotionApiClientBase(Dio dio, {String baseUrl}) = _NotionApiClientBase;
+  factory NotionApiClientBase(Dio dio, {String? baseUrl}) =
+      _NotionApiClientBase;
 
   @POST('/oauth/token')
   Future<NotionAccessToken> createToken({
@@ -32,9 +23,7 @@ abstract class NotionApiClientBase {
   });
 
   @POST('/oauth/introspect')
-  Future<String> revokeToken({
-    @Body() required Map<String, dynamic> data,
-  });
+  Future<String> revokeToken({@Body() required Map<String, dynamic> data});
 
   @PATCH('/blocks/{block_id}/children')
   Future<NotionBlockList> appendBlockChildren({

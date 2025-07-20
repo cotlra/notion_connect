@@ -6,7 +6,7 @@ part of 'notion_api_client_base.dart';
 // RetrofitGenerator
 // **************************************************************************
 
-// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element,unnecessary_string_interpolations
+// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element,unnecessary_string_interpolations,unused_element_parameter
 
 class _NotionApiClientBase implements NotionApiClientBase {
   _NotionApiClientBase(this._dio, {this.baseUrl, this.errorLogger}) {
@@ -285,8 +285,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{r'Authorization': authorization};
     _headers.removeWhere((k, v) => v == null);
-    final _data = <String, dynamic>{};
-    _data.addAll(data.toJson());
+    final _data = data;
     final _options = _setStreamType<NotionPage>(
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(
@@ -391,8 +390,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{r'Authorization': authorization};
     _headers.removeWhere((k, v) => v == null);
-    final _data = <String, dynamic>{};
-    _data.addAll(data.toJson());
+    final _data = data;
     final _options = _setStreamType<NotionPage>(
       Options(method: 'PATCH', headers: _headers, extra: _extra)
           .compose(
@@ -423,8 +421,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{r'Authorization': authorization};
     _headers.removeWhere((k, v) => v == null);
-    final _data = <String, dynamic>{};
-    _data.addAll(data.toJson());
+    final _data = data;
     final _options = _setStreamType<NotionDatabase>(
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(
@@ -524,8 +521,7 @@ class _NotionApiClientBase implements NotionApiClientBase {
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{r'Authorization': authorization};
     _headers.removeWhere((k, v) => v == null);
-    final _data = <String, dynamic>{};
-    _data.addAll(data.toJson());
+    final _data = data;
     final _options = _setStreamType<NotionDatabase>(
       Options(method: 'PATCH', headers: _headers, extra: _extra)
           .compose(

@@ -20,9 +20,7 @@ sealed class NotionFilter {
 
 @freezed
 abstract class NotionAnd extends NotionFilter with _$NotionAnd {
-  const factory NotionAnd({
-    required List<NotionFilter> and,
-  }) = _NotionAnd;
+  const factory NotionAnd({required List<NotionFilter> and}) = _NotionAnd;
   const NotionAnd._();
 
   factory NotionAnd.fromJson(Map<String, dynamic> json) =>
@@ -31,9 +29,7 @@ abstract class NotionAnd extends NotionFilter with _$NotionAnd {
 
 @freezed
 abstract class NotionOr extends NotionFilter with _$NotionOr {
-  const factory NotionOr({
-    required List<NotionFilter> or,
-  }) = _NotionOr;
+  const factory NotionOr({required List<NotionFilter> or}) = _NotionOr;
   const NotionOr._();
 
   factory NotionOr.fromJson(Map<String, dynamic> json) =>
