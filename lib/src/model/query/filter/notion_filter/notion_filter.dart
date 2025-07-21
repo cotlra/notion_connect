@@ -5,122 +5,94 @@ import '../notion_condition/notion_condition.dart';
 part 'notion_filter.freezed.dart';
 part 'notion_filter.g.dart';
 
-// factoryコンストラクタ使用ため
-// ignore: one_member_abstracts
-sealed class NotionFilter {
-  const NotionFilter();
-  // 子クラストで実装
-  // ignore: avoid_unused_constructor_parameters
-  factory NotionFilter.fromJson(Map<String, dynamic> json) {
-    throw UnimplementedError();
-  }
-
-  Map<String, dynamic> toJson();
-}
-
 @freezed
-abstract class NotionAnd extends NotionFilter with _$NotionAnd {
-  const factory NotionAnd({required List<NotionFilter> and}) = _NotionAnd;
-  const NotionAnd._();
+sealed class NotionFilter with _$NotionFilter {
+  const factory NotionFilter.and({required List<NotionFilter> and}) = NotionAnd;
+  const factory NotionFilter.or({required List<NotionFilter> or}) = NotionOr;
 
-  factory NotionAnd.fromJson(Map<String, dynamic> json) =>
-      _$NotionAndFromJson(json);
-}
-
-@freezed
-abstract class NotionOr extends NotionFilter with _$NotionOr {
-  const factory NotionOr({required List<NotionFilter> or}) = _NotionOr;
-  const NotionOr._();
-
-  factory NotionOr.fromJson(Map<String, dynamic> json) =>
-      _$NotionOrFromJson(json);
-}
-
-@freezed
-sealed class NotionTypeFilter extends NotionFilter with _$NotionTypeFilter {
-  const factory NotionTypeFilter.checkbox({
+  const factory NotionFilter.checkbox({
     required String property,
     required NotionCheckboxCondition checkbox,
   }) = NotionCheckboxFilter;
-  const factory NotionTypeFilter.createdBy({
+  const factory NotionFilter.createdBy({
     required String property,
     required NotionPeopleCondition createdBy,
   }) = NotionCreatedByFilter;
-  const factory NotionTypeFilter.date({
+  const factory NotionFilter.date({
     required String property,
     required NotionDateCondition date,
   }) = NotionDateFilter;
-  const factory NotionTypeFilter.email({
+  const factory NotionFilter.email({
     required String property,
     required NotionRichTextCondition email,
   }) = NotionEmailFilter;
-  const factory NotionTypeFilter.files({
+  const factory NotionFilter.files({
     required String property,
     required NotionFilesCondition files,
   }) = NotionFilesFilter;
-  const factory NotionTypeFilter.formula({
+  const factory NotionFilter.formula({
     required String property,
     required NotionFormulaCondition formula,
   }) = NotionFormulaFilter;
-  const factory NotionTypeFilter.lastEditedBy({
+  const factory NotionFilter.lastEditedBy({
     required String property,
     required NotionPeopleCondition lastEditedBy,
   }) = NotionLastEditedByFilter;
-  const factory NotionTypeFilter.multiSelect({
+  const factory NotionFilter.multiSelect({
     required String property,
     required NotionMultiSelectCondition multiSelect,
   }) = NotionMultiSelectFilter;
-  const factory NotionTypeFilter.number({
+  const factory NotionFilter.number({
     required String property,
     required NotionNumberCondition formula,
   }) = NotionNumberFilter;
-  const factory NotionTypeFilter.people({
+  const factory NotionFilter.people({
     required String property,
     required NotionPeopleCondition people,
   }) = NotionPeopleFilter;
-  const factory NotionTypeFilter.phoneNumber({
+  const factory NotionFilter.phoneNumber({
     required String property,
     required NotionRichTextCondition phoneNumber,
   }) = NotionPhoneNumberFilter;
-  const factory NotionTypeFilter.relation({
+  const factory NotionFilter.relation({
     required String property,
     required NotionRelationCondition relation,
   }) = NotionRelationFilter;
-  const factory NotionTypeFilter.rollup({
+  const factory NotionFilter.rollup({
     required String property,
     required NotionRollupCondition rollup,
   }) = NotionRollupFilter;
-  const factory NotionTypeFilter.richText({
+  const factory NotionFilter.richText({
     required String property,
     required NotionRichTextCondition richText,
   }) = NotionRichTextFilter;
-  const factory NotionTypeFilter.select({
+  const factory NotionFilter.select({
     required String property,
     required NotionSelectCondition select,
   }) = NotionSelectFilter;
-  const factory NotionTypeFilter.status({
+  const factory NotionFilter.status({
     required String property,
     required NotionStatusCondition status,
   }) = NotionStatusFilter;
-  const factory NotionTypeFilter.title({
+  const factory NotionFilter.title({
     required String property,
     required NotionRichTextCondition title,
   }) = NotionTitleFilter;
-  const factory NotionTypeFilter.url({
+  const factory NotionFilter.url({
     required String property,
     required NotionRichTextCondition url,
   }) = NotionUrlFilter;
-  const factory NotionTypeFilter.timestamp({
+  const factory NotionFilter.timestamp({
     required String property,
     required NotionTimestampCondition timestamp,
   }) = NotionTimestampFilter;
   @FreezedUnionValue('ID')
-  const factory NotionTypeFilter.uniqueId({
+  const factory NotionFilter.uniqueId({
     required String property,
     required NotionUniqueIdCondition uniqueId,
   }) = NotionUniqueIdFilter;
-  const NotionTypeFilter._();
+  const NotionFilter._();
 
-  factory NotionTypeFilter.fromJson(Map<String, dynamic> json) =>
-      _$NotionTypeFilterFromJson(json);
+  factory NotionFilter.fromJson(Map<String, dynamic> json) =>
+      _$NotionFilterFromJson(json);
 }

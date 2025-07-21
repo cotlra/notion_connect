@@ -11,296 +11,6 @@ part of 'notion_page_or_database.dart';
 
 // dart format off
 T _$identity<T>(T value) => value;
-NotionPageOrDatabase _$NotionPageOrDatabaseFromJson(
-  Map<String, dynamic> json
-) {
-        switch (json['object']) {
-                  case 'page':
-          return NotionPage.fromJson(
-            json
-          );
-                case 'database':
-          return NotionDatabase.fromJson(
-            json
-          );
-        
-          default:
-            throw CheckedFromJsonException(
-  json,
-  'object',
-  'NotionPageOrDatabase',
-  'Invalid union type "${json['object']}"!'
-);
-        }
-      
-}
-
-/// @nodoc
-mixin _$NotionPageOrDatabase {
-
- String? get id; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; bool? get archived; bool? get inTrash; NotionIcon? get icon; NotionFile? get cover; Map<String, Object>? get properties; NotionParent? get parent; String? get url; String? get publicUrl;
-/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$NotionPageOrDatabaseCopyWith<NotionPageOrDatabase> get copyWith => _$NotionPageOrDatabaseCopyWithImpl<NotionPageOrDatabase>(this as NotionPageOrDatabase, _$identity);
-
-  /// Serializes this NotionPageOrDatabase to a JSON map.
-  Map<String, dynamic> toJson();
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionPageOrDatabase&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other.properties, properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,id,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,icon,cover,const DeepCollectionEquality().hash(properties),parent,url,publicUrl);
-
-@override
-String toString() {
-  return 'NotionPageOrDatabase(id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, publicUrl: $publicUrl)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class $NotionPageOrDatabaseCopyWith<$Res>  {
-  factory $NotionPageOrDatabaseCopyWith(NotionPageOrDatabase value, $Res Function(NotionPageOrDatabase) _then) = _$NotionPageOrDatabaseCopyWithImpl;
-@useResult
-$Res call({
- String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, NotionIcon? icon, NotionFile? cover, NotionParent? parent, String? url, String? publicUrl
-});
-
-
-$NotionUserCopyWith<$Res>? get createdBy;$NotionUserCopyWith<$Res>? get lastEditedBy;$NotionIconCopyWith<$Res>? get icon;$NotionFileCopyWith<$Res>? get cover;$NotionParentCopyWith<$Res>? get parent;
-
-}
-/// @nodoc
-class _$NotionPageOrDatabaseCopyWithImpl<$Res>
-    implements $NotionPageOrDatabaseCopyWith<$Res> {
-  _$NotionPageOrDatabaseCopyWithImpl(this._self, this._then);
-
-  final NotionPageOrDatabase _self;
-  final $Res Function(NotionPageOrDatabase) _then;
-
-/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? icon = freezed,Object? cover = freezed,Object? parent = freezed,Object? url = freezed,Object? publicUrl = freezed,}) {
-  return _then(_self.copyWith(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as String?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
-as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
-as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
-as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
-as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
-as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
-as bool?,icon: freezed == icon ? _self.icon : icon // ignore: cast_nullable_to_non_nullable
-as NotionIcon?,cover: freezed == cover ? _self.cover : cover // ignore: cast_nullable_to_non_nullable
-as NotionFile?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
-as NotionParent?,url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
-as String?,publicUrl: freezed == publicUrl ? _self.publicUrl : publicUrl // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
-}
-/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$NotionUserCopyWith<$Res>? get createdBy {
-    if (_self.createdBy == null) {
-    return null;
-  }
-
-  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
-    return _then(_self.copyWith(createdBy: value));
-  });
-}/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$NotionUserCopyWith<$Res>? get lastEditedBy {
-    if (_self.lastEditedBy == null) {
-    return null;
-  }
-
-  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
-    return _then(_self.copyWith(lastEditedBy: value));
-  });
-}/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$NotionIconCopyWith<$Res>? get icon {
-    if (_self.icon == null) {
-    return null;
-  }
-
-  return $NotionIconCopyWith<$Res>(_self.icon!, (value) {
-    return _then(_self.copyWith(icon: value));
-  });
-}/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$NotionFileCopyWith<$Res>? get cover {
-    if (_self.cover == null) {
-    return null;
-  }
-
-  return $NotionFileCopyWith<$Res>(_self.cover!, (value) {
-    return _then(_self.copyWith(cover: value));
-  });
-}/// Create a copy of NotionPageOrDatabase
-/// with the given fields replaced by the non-null parameter values.
-@override
-@pragma('vm:prefer-inline')
-$NotionParentCopyWith<$Res>? get parent {
-    if (_self.parent == null) {
-    return null;
-  }
-
-  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
-    return _then(_self.copyWith(parent: value));
-  });
-}
-}
-
-
-/// Adds pattern-matching-related methods to [NotionPageOrDatabase].
-extension NotionPageOrDatabasePatterns on NotionPageOrDatabase {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionPage value)?  page,TResult Function( NotionDatabase value)?  database,required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case NotionPage() when page != null:
-return page(_that);case NotionDatabase() when database != null:
-return database(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionPage value)  page,required TResult Function( NotionDatabase value)  database,}){
-final _that = this;
-switch (_that) {
-case NotionPage():
-return page(_that);case NotionDatabase():
-return database(_that);}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionPage value)?  page,TResult? Function( NotionDatabase value)?  database,}){
-final _that = this;
-switch (_that) {
-case NotionPage() when page != null:
-return page(_that);case NotionDatabase() when database != null:
-return database(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  page,TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  database,required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case NotionPage() when page != null:
-return page(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case NotionDatabase() when database != null:
-return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)  page,required TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)  database,}) {final _that = this;
-switch (_that) {
-case NotionPage():
-return page(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case NotionDatabase():
-return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  page,TResult? Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  database,}) {final _that = this;
-switch (_that) {
-case NotionPage() when page != null:
-return page(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case NotionDatabase() when database != null:
-return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
-  return null;
-
-}
-}
-
-}
-
-
-
 
 /// @nodoc
 mixin _$NotionPage {
@@ -1185,5 +895,295 @@ $NotionParentCopyWith<$Res>? get parent {
   });
 }
 }
+
+NotionPageOrDatabase _$NotionPageOrDatabaseFromJson(
+  Map<String, dynamic> json
+) {
+        switch (json['object']) {
+                  case 'page':
+          return NotionPage.fromJson(
+            json
+          );
+                case 'database':
+          return NotionDatabase.fromJson(
+            json
+          );
+        
+          default:
+            throw CheckedFromJsonException(
+  json,
+  'object',
+  'NotionPageOrDatabase',
+  'Invalid union type "${json['object']}"!'
+);
+        }
+      
+}
+
+/// @nodoc
+mixin _$NotionPageOrDatabase {
+
+ String? get id; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; bool? get archived; bool? get inTrash; NotionIcon? get icon; NotionFile? get cover; Map<String, Object>? get properties; NotionParent? get parent; String? get url; String? get publicUrl;
+/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionPageOrDatabaseCopyWith<NotionPageOrDatabase> get copyWith => _$NotionPageOrDatabaseCopyWithImpl<NotionPageOrDatabase>(this as NotionPageOrDatabase, _$identity);
+
+  /// Serializes this NotionPageOrDatabase to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionPageOrDatabase&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other.properties, properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,icon,cover,const DeepCollectionEquality().hash(properties),parent,url,publicUrl);
+
+@override
+String toString() {
+  return 'NotionPageOrDatabase(id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, publicUrl: $publicUrl)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $NotionPageOrDatabaseCopyWith<$Res>  {
+  factory $NotionPageOrDatabaseCopyWith(NotionPageOrDatabase value, $Res Function(NotionPageOrDatabase) _then) = _$NotionPageOrDatabaseCopyWithImpl;
+@useResult
+$Res call({
+ String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, NotionIcon? icon, NotionFile? cover, NotionParent? parent, String? url, String? publicUrl
+});
+
+
+$NotionUserCopyWith<$Res>? get createdBy;$NotionUserCopyWith<$Res>? get lastEditedBy;$NotionIconCopyWith<$Res>? get icon;$NotionFileCopyWith<$Res>? get cover;$NotionParentCopyWith<$Res>? get parent;
+
+}
+/// @nodoc
+class _$NotionPageOrDatabaseCopyWithImpl<$Res>
+    implements $NotionPageOrDatabaseCopyWith<$Res> {
+  _$NotionPageOrDatabaseCopyWithImpl(this._self, this._then);
+
+  final NotionPageOrDatabase _self;
+  final $Res Function(NotionPageOrDatabase) _then;
+
+/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? icon = freezed,Object? cover = freezed,Object? parent = freezed,Object? url = freezed,Object? publicUrl = freezed,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,lastEditedBy: freezed == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
+as NotionUser?,archived: freezed == archived ? _self.archived : archived // ignore: cast_nullable_to_non_nullable
+as bool?,inTrash: freezed == inTrash ? _self.inTrash : inTrash // ignore: cast_nullable_to_non_nullable
+as bool?,icon: freezed == icon ? _self.icon : icon // ignore: cast_nullable_to_non_nullable
+as NotionIcon?,cover: freezed == cover ? _self.cover : cover // ignore: cast_nullable_to_non_nullable
+as NotionFile?,parent: freezed == parent ? _self.parent : parent // ignore: cast_nullable_to_non_nullable
+as NotionParent?,url: freezed == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String?,publicUrl: freezed == publicUrl ? _self.publicUrl : publicUrl // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get createdBy {
+    if (_self.createdBy == null) {
+    return null;
+  }
+
+  return $NotionUserCopyWith<$Res>(_self.createdBy!, (value) {
+    return _then(_self.copyWith(createdBy: value));
+  });
+}/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionUserCopyWith<$Res>? get lastEditedBy {
+    if (_self.lastEditedBy == null) {
+    return null;
+  }
+
+  return $NotionUserCopyWith<$Res>(_self.lastEditedBy!, (value) {
+    return _then(_self.copyWith(lastEditedBy: value));
+  });
+}/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionIconCopyWith<$Res>? get icon {
+    if (_self.icon == null) {
+    return null;
+  }
+
+  return $NotionIconCopyWith<$Res>(_self.icon!, (value) {
+    return _then(_self.copyWith(icon: value));
+  });
+}/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionFileCopyWith<$Res>? get cover {
+    if (_self.cover == null) {
+    return null;
+  }
+
+  return $NotionFileCopyWith<$Res>(_self.cover!, (value) {
+    return _then(_self.copyWith(cover: value));
+  });
+}/// Create a copy of NotionPageOrDatabase
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$NotionParentCopyWith<$Res>? get parent {
+    if (_self.parent == null) {
+    return null;
+  }
+
+  return $NotionParentCopyWith<$Res>(_self.parent!, (value) {
+    return _then(_self.copyWith(parent: value));
+  });
+}
+}
+
+
+/// Adds pattern-matching-related methods to [NotionPageOrDatabase].
+extension NotionPageOrDatabasePatterns on NotionPageOrDatabase {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionPage value)?  page,TResult Function( NotionDatabase value)?  database,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case NotionPage() when page != null:
+return page(_that);case NotionDatabase() when database != null:
+return database(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionPage value)  page,required TResult Function( NotionDatabase value)  database,}){
+final _that = this;
+switch (_that) {
+case NotionPage():
+return page(_that);case NotionDatabase():
+return database(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionPage value)?  page,TResult? Function( NotionDatabase value)?  database,}){
+final _that = this;
+switch (_that) {
+case NotionPage() when page != null:
+return page(_that);case NotionDatabase() when database != null:
+return database(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  page,TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  database,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case NotionPage() when page != null:
+return page(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case NotionDatabase() when database != null:
+return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)  page,required TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)  database,}) {final _that = this;
+switch (_that) {
+case NotionPage():
+return page(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case NotionDatabase():
+return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  page,TResult? Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  database,}) {final _that = this;
+switch (_that) {
+case NotionPage() when page != null:
+return page(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case NotionDatabase() when database != null:
+return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
+  return null;
+
+}
+}
+
+}
+
+
 
 // dart format on

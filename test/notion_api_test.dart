@@ -134,11 +134,11 @@ void main() {
         databaseId: '1bfc4346ee4e8097806df9e5169d9a0a',
         filter: const NotionAnd(
           and: [
-            NotionTypeFilter.checkbox(
+            NotionFilter.checkbox(
               property: 'チェックボックス',
               checkbox: NotionCheckboxCondition.equals(equals: true),
             ),
-            NotionTypeFilter.richText(
+            NotionFilter.richText(
               property: '名前1',
               richText: NotionRichTextCondition.equals(equals: 'テスト'),
             ),
