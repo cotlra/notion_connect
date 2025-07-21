@@ -6,37 +6,42 @@ part of 'notion_filter.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_NotionAnd _$NotionAndFromJson(Map<String, dynamic> json) =>
-    $checkedCreate('_NotionAnd', json, ($checkedConvert) {
-      final val = _NotionAnd(
+NotionAnd _$NotionAndFromJson(Map<String, dynamic> json) =>
+    $checkedCreate('NotionAnd', json, ($checkedConvert) {
+      final val = NotionAnd(
         and: $checkedConvert(
           'and',
           (v) => (v as List<dynamic>)
               .map((e) => NotionFilter.fromJson(e as Map<String, dynamic>))
               .toList(),
         ),
+        $type: $checkedConvert('type', (v) => v as String?),
       );
       return val;
-    });
+    }, fieldKeyMap: const {r'$type': 'type'});
 
-Map<String, dynamic> _$NotionAndToJson(_NotionAnd instance) =>
-    <String, dynamic>{'and': instance.and.map((e) => e.toJson()).toList()};
+Map<String, dynamic> _$NotionAndToJson(NotionAnd instance) => <String, dynamic>{
+  'and': instance.and.map((e) => e.toJson()).toList(),
+  'type': instance.$type,
+};
 
-_NotionOr _$NotionOrFromJson(Map<String, dynamic> json) =>
-    $checkedCreate('_NotionOr', json, ($checkedConvert) {
-      final val = _NotionOr(
+NotionOr _$NotionOrFromJson(Map<String, dynamic> json) =>
+    $checkedCreate('NotionOr', json, ($checkedConvert) {
+      final val = NotionOr(
         or: $checkedConvert(
           'or',
           (v) => (v as List<dynamic>)
               .map((e) => NotionFilter.fromJson(e as Map<String, dynamic>))
               .toList(),
         ),
+        $type: $checkedConvert('type', (v) => v as String?),
       );
       return val;
-    });
+    }, fieldKeyMap: const {r'$type': 'type'});
 
-Map<String, dynamic> _$NotionOrToJson(_NotionOr instance) => <String, dynamic>{
+Map<String, dynamic> _$NotionOrToJson(NotionOr instance) => <String, dynamic>{
   'or': instance.or.map((e) => e.toJson()).toList(),
+  'type': instance.$type,
 };
 
 NotionCheckboxFilter _$NotionCheckboxFilterFromJson(

@@ -11,549 +11,19 @@ part of 'notion_filter.dart';
 
 // dart format off
 T _$identity<T>(T value) => value;
-
-/// @nodoc
-mixin _$NotionAnd {
-
- List<NotionFilter> get and;
-/// Create a copy of NotionAnd
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$NotionAndCopyWith<NotionAnd> get copyWith => _$NotionAndCopyWithImpl<NotionAnd>(this as NotionAnd, _$identity);
-
-  /// Serializes this NotionAnd to a JSON map.
-  Map<String, dynamic> toJson();
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionAnd&&const DeepCollectionEquality().equals(other.and, and));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(and));
-
-@override
-String toString() {
-  return 'NotionAnd(and: $and)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class $NotionAndCopyWith<$Res>  {
-  factory $NotionAndCopyWith(NotionAnd value, $Res Function(NotionAnd) _then) = _$NotionAndCopyWithImpl;
-@useResult
-$Res call({
- List<NotionFilter> and
-});
-
-
-
-
-}
-/// @nodoc
-class _$NotionAndCopyWithImpl<$Res>
-    implements $NotionAndCopyWith<$Res> {
-  _$NotionAndCopyWithImpl(this._self, this._then);
-
-  final NotionAnd _self;
-  final $Res Function(NotionAnd) _then;
-
-/// Create a copy of NotionAnd
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? and = null,}) {
-  return _then(_self.copyWith(
-and: null == and ? _self.and : and // ignore: cast_nullable_to_non_nullable
-as List<NotionFilter>,
-  ));
-}
-
-}
-
-
-/// Adds pattern-matching-related methods to [NotionAnd].
-extension NotionAndPatterns on NotionAnd {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionAnd value)?  $default,{required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case _NotionAnd() when $default != null:
-return $default(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionAnd value)  $default,){
-final _that = this;
-switch (_that) {
-case _NotionAnd():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionAnd value)?  $default,){
-final _that = this;
-switch (_that) {
-case _NotionAnd() when $default != null:
-return $default(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<NotionFilter> and)?  $default,{required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case _NotionAnd() when $default != null:
-return $default(_that.and);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<NotionFilter> and)  $default,) {final _that = this;
-switch (_that) {
-case _NotionAnd():
-return $default(_that.and);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<NotionFilter> and)?  $default,) {final _that = this;
-switch (_that) {
-case _NotionAnd() when $default != null:
-return $default(_that.and);case _:
-  return null;
-
-}
-}
-
-}
-
-/// @nodoc
-@JsonSerializable()
-
-class _NotionAnd extends NotionAnd {
-  const _NotionAnd({required final  List<NotionFilter> and}): _and = and,super._();
-  factory _NotionAnd.fromJson(Map<String, dynamic> json) => _$NotionAndFromJson(json);
-
- final  List<NotionFilter> _and;
-@override List<NotionFilter> get and {
-  if (_and is EqualUnmodifiableListView) return _and;
-  // ignore: implicit_dynamic_type
-  return EqualUnmodifiableListView(_and);
-}
-
-
-/// Create a copy of NotionAnd
-/// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-_$NotionAndCopyWith<_NotionAnd> get copyWith => __$NotionAndCopyWithImpl<_NotionAnd>(this, _$identity);
-
-@override
-Map<String, dynamic> toJson() {
-  return _$NotionAndToJson(this, );
-}
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionAnd&&const DeepCollectionEquality().equals(other._and, _and));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_and));
-
-@override
-String toString() {
-  return 'NotionAnd(and: $and)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class _$NotionAndCopyWith<$Res> implements $NotionAndCopyWith<$Res> {
-  factory _$NotionAndCopyWith(_NotionAnd value, $Res Function(_NotionAnd) _then) = __$NotionAndCopyWithImpl;
-@override @useResult
-$Res call({
- List<NotionFilter> and
-});
-
-
-
-
-}
-/// @nodoc
-class __$NotionAndCopyWithImpl<$Res>
-    implements _$NotionAndCopyWith<$Res> {
-  __$NotionAndCopyWithImpl(this._self, this._then);
-
-  final _NotionAnd _self;
-  final $Res Function(_NotionAnd) _then;
-
-/// Create a copy of NotionAnd
-/// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? and = null,}) {
-  return _then(_NotionAnd(
-and: null == and ? _self._and : and // ignore: cast_nullable_to_non_nullable
-as List<NotionFilter>,
-  ));
-}
-
-
-}
-
-
-/// @nodoc
-mixin _$NotionOr {
-
- List<NotionFilter> get or;
-/// Create a copy of NotionOr
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$NotionOrCopyWith<NotionOr> get copyWith => _$NotionOrCopyWithImpl<NotionOr>(this as NotionOr, _$identity);
-
-  /// Serializes this NotionOr to a JSON map.
-  Map<String, dynamic> toJson();
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionOr&&const DeepCollectionEquality().equals(other.or, or));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(or));
-
-@override
-String toString() {
-  return 'NotionOr(or: $or)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class $NotionOrCopyWith<$Res>  {
-  factory $NotionOrCopyWith(NotionOr value, $Res Function(NotionOr) _then) = _$NotionOrCopyWithImpl;
-@useResult
-$Res call({
- List<NotionFilter> or
-});
-
-
-
-
-}
-/// @nodoc
-class _$NotionOrCopyWithImpl<$Res>
-    implements $NotionOrCopyWith<$Res> {
-  _$NotionOrCopyWithImpl(this._self, this._then);
-
-  final NotionOr _self;
-  final $Res Function(NotionOr) _then;
-
-/// Create a copy of NotionOr
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? or = null,}) {
-  return _then(_self.copyWith(
-or: null == or ? _self.or : or // ignore: cast_nullable_to_non_nullable
-as List<NotionFilter>,
-  ));
-}
-
-}
-
-
-/// Adds pattern-matching-related methods to [NotionOr].
-extension NotionOrPatterns on NotionOr {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _NotionOr value)?  $default,{required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case _NotionOr() when $default != null:
-return $default(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _NotionOr value)  $default,){
-final _that = this;
-switch (_that) {
-case _NotionOr():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _NotionOr value)?  $default,){
-final _that = this;
-switch (_that) {
-case _NotionOr() when $default != null:
-return $default(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<NotionFilter> or)?  $default,{required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case _NotionOr() when $default != null:
-return $default(_that.or);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<NotionFilter> or)  $default,) {final _that = this;
-switch (_that) {
-case _NotionOr():
-return $default(_that.or);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<NotionFilter> or)?  $default,) {final _that = this;
-switch (_that) {
-case _NotionOr() when $default != null:
-return $default(_that.or);case _:
-  return null;
-
-}
-}
-
-}
-
-/// @nodoc
-@JsonSerializable()
-
-class _NotionOr extends NotionOr {
-  const _NotionOr({required final  List<NotionFilter> or}): _or = or,super._();
-  factory _NotionOr.fromJson(Map<String, dynamic> json) => _$NotionOrFromJson(json);
-
- final  List<NotionFilter> _or;
-@override List<NotionFilter> get or {
-  if (_or is EqualUnmodifiableListView) return _or;
-  // ignore: implicit_dynamic_type
-  return EqualUnmodifiableListView(_or);
-}
-
-
-/// Create a copy of NotionOr
-/// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-_$NotionOrCopyWith<_NotionOr> get copyWith => __$NotionOrCopyWithImpl<_NotionOr>(this, _$identity);
-
-@override
-Map<String, dynamic> toJson() {
-  return _$NotionOrToJson(this, );
-}
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionOr&&const DeepCollectionEquality().equals(other._or, _or));
-}
-
-@JsonKey(includeFromJson: false, includeToJson: false)
-@override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_or));
-
-@override
-String toString() {
-  return 'NotionOr(or: $or)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class _$NotionOrCopyWith<$Res> implements $NotionOrCopyWith<$Res> {
-  factory _$NotionOrCopyWith(_NotionOr value, $Res Function(_NotionOr) _then) = __$NotionOrCopyWithImpl;
-@override @useResult
-$Res call({
- List<NotionFilter> or
-});
-
-
-
-
-}
-/// @nodoc
-class __$NotionOrCopyWithImpl<$Res>
-    implements _$NotionOrCopyWith<$Res> {
-  __$NotionOrCopyWithImpl(this._self, this._then);
-
-  final _NotionOr _self;
-  final $Res Function(_NotionOr) _then;
-
-/// Create a copy of NotionOr
-/// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? or = null,}) {
-  return _then(_NotionOr(
-or: null == or ? _self._or : or // ignore: cast_nullable_to_non_nullable
-as List<NotionFilter>,
-  ));
-}
-
-
-}
-
-NotionTypeFilter _$NotionTypeFilterFromJson(
+NotionFilter _$NotionFilterFromJson(
   Map<String, dynamic> json
 ) {
         switch (json['type']) {
-                  case 'checkbox':
+                  case 'and':
+          return NotionAnd.fromJson(
+            json
+          );
+                case 'or':
+          return NotionOr.fromJson(
+            json
+          );
+                case 'checkbox':
           return NotionCheckboxFilter.fromJson(
             json
           );
@@ -638,7 +108,7 @@ NotionTypeFilter _$NotionTypeFilterFromJson(
             throw CheckedFromJsonException(
   json,
   'type',
-  'NotionTypeFilter',
+  'NotionFilter',
   'Invalid union type "${json['type']}"!'
 );
         }
@@ -646,70 +116,39 @@ NotionTypeFilter _$NotionTypeFilterFromJson(
 }
 
 /// @nodoc
-mixin _$NotionTypeFilter {
+mixin _$NotionFilter {
 
- String get property;
-/// Create a copy of NotionTypeFilter
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$NotionTypeFilterCopyWith<NotionTypeFilter> get copyWith => _$NotionTypeFilterCopyWithImpl<NotionTypeFilter>(this as NotionTypeFilter, _$identity);
 
-  /// Serializes this NotionTypeFilter to a JSON map.
+
+  /// Serializes this NotionFilter to a JSON map.
   Map<String, dynamic> toJson();
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionTypeFilter&&(identical(other.property, property) || other.property == property));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionFilter);
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,property);
+int get hashCode => runtimeType.hashCode;
 
 @override
 String toString() {
-  return 'NotionTypeFilter(property: $property)';
+  return 'NotionFilter()';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionTypeFilterCopyWith<$Res>  {
-  factory $NotionTypeFilterCopyWith(NotionTypeFilter value, $Res Function(NotionTypeFilter) _then) = _$NotionTypeFilterCopyWithImpl;
-@useResult
-$Res call({
- String property
-});
-
-
-
-
-}
-/// @nodoc
-class _$NotionTypeFilterCopyWithImpl<$Res>
-    implements $NotionTypeFilterCopyWith<$Res> {
-  _$NotionTypeFilterCopyWithImpl(this._self, this._then);
-
-  final NotionTypeFilter _self;
-  final $Res Function(NotionTypeFilter) _then;
-
-/// Create a copy of NotionTypeFilter
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? property = null,}) {
-  return _then(_self.copyWith(
-property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
-as String,
-  ));
-}
-
+class $NotionFilterCopyWith<$Res>  {
+$NotionFilterCopyWith(NotionFilter _, $Res Function(NotionFilter) __);
 }
 
 
-/// Adds pattern-matching-related methods to [NotionTypeFilter].
-extension NotionTypeFilterPatterns on NotionTypeFilter {
+/// Adds pattern-matching-related methods to [NotionFilter].
+extension NotionFilterPatterns on NotionFilter {
 /// A variant of `map` that fallback to returning `orElse`.
 ///
 /// It is equivalent to doing:
@@ -722,10 +161,12 @@ extension NotionTypeFilterPatterns on NotionTypeFilter {
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionCheckboxFilter value)?  checkbox,TResult Function( NotionCreatedByFilter value)?  createdBy,TResult Function( NotionDateFilter value)?  date,TResult Function( NotionEmailFilter value)?  email,TResult Function( NotionFilesFilter value)?  files,TResult Function( NotionFormulaFilter value)?  formula,TResult Function( NotionLastEditedByFilter value)?  lastEditedBy,TResult Function( NotionMultiSelectFilter value)?  multiSelect,TResult Function( NotionNumberFilter value)?  number,TResult Function( NotionPeopleFilter value)?  people,TResult Function( NotionPhoneNumberFilter value)?  phoneNumber,TResult Function( NotionRelationFilter value)?  relation,TResult Function( NotionRollupFilter value)?  rollup,TResult Function( NotionRichTextFilter value)?  richText,TResult Function( NotionSelectFilter value)?  select,TResult Function( NotionStatusFilter value)?  status,TResult Function( NotionTitleFilter value)?  title,TResult Function( NotionUrlFilter value)?  url,TResult Function( NotionTimestampFilter value)?  timestamp,TResult Function( NotionUniqueIdFilter value)?  uniqueId,required TResult orElse(),}){
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( NotionAnd value)?  and,TResult Function( NotionOr value)?  or,TResult Function( NotionCheckboxFilter value)?  checkbox,TResult Function( NotionCreatedByFilter value)?  createdBy,TResult Function( NotionDateFilter value)?  date,TResult Function( NotionEmailFilter value)?  email,TResult Function( NotionFilesFilter value)?  files,TResult Function( NotionFormulaFilter value)?  formula,TResult Function( NotionLastEditedByFilter value)?  lastEditedBy,TResult Function( NotionMultiSelectFilter value)?  multiSelect,TResult Function( NotionNumberFilter value)?  number,TResult Function( NotionPeopleFilter value)?  people,TResult Function( NotionPhoneNumberFilter value)?  phoneNumber,TResult Function( NotionRelationFilter value)?  relation,TResult Function( NotionRollupFilter value)?  rollup,TResult Function( NotionRichTextFilter value)?  richText,TResult Function( NotionSelectFilter value)?  select,TResult Function( NotionStatusFilter value)?  status,TResult Function( NotionTitleFilter value)?  title,TResult Function( NotionUrlFilter value)?  url,TResult Function( NotionTimestampFilter value)?  timestamp,TResult Function( NotionUniqueIdFilter value)?  uniqueId,required TResult orElse(),}){
 final _that = this;
 switch (_that) {
-case NotionCheckboxFilter() when checkbox != null:
+case NotionAnd() when and != null:
+return and(_that);case NotionOr() when or != null:
+return or(_that);case NotionCheckboxFilter() when checkbox != null:
 return checkbox(_that);case NotionCreatedByFilter() when createdBy != null:
 return createdBy(_that);case NotionDateFilter() when date != null:
 return date(_that);case NotionEmailFilter() when email != null:
@@ -763,10 +204,12 @@ return uniqueId(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionCheckboxFilter value)  checkbox,required TResult Function( NotionCreatedByFilter value)  createdBy,required TResult Function( NotionDateFilter value)  date,required TResult Function( NotionEmailFilter value)  email,required TResult Function( NotionFilesFilter value)  files,required TResult Function( NotionFormulaFilter value)  formula,required TResult Function( NotionLastEditedByFilter value)  lastEditedBy,required TResult Function( NotionMultiSelectFilter value)  multiSelect,required TResult Function( NotionNumberFilter value)  number,required TResult Function( NotionPeopleFilter value)  people,required TResult Function( NotionPhoneNumberFilter value)  phoneNumber,required TResult Function( NotionRelationFilter value)  relation,required TResult Function( NotionRollupFilter value)  rollup,required TResult Function( NotionRichTextFilter value)  richText,required TResult Function( NotionSelectFilter value)  select,required TResult Function( NotionStatusFilter value)  status,required TResult Function( NotionTitleFilter value)  title,required TResult Function( NotionUrlFilter value)  url,required TResult Function( NotionTimestampFilter value)  timestamp,required TResult Function( NotionUniqueIdFilter value)  uniqueId,}){
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( NotionAnd value)  and,required TResult Function( NotionOr value)  or,required TResult Function( NotionCheckboxFilter value)  checkbox,required TResult Function( NotionCreatedByFilter value)  createdBy,required TResult Function( NotionDateFilter value)  date,required TResult Function( NotionEmailFilter value)  email,required TResult Function( NotionFilesFilter value)  files,required TResult Function( NotionFormulaFilter value)  formula,required TResult Function( NotionLastEditedByFilter value)  lastEditedBy,required TResult Function( NotionMultiSelectFilter value)  multiSelect,required TResult Function( NotionNumberFilter value)  number,required TResult Function( NotionPeopleFilter value)  people,required TResult Function( NotionPhoneNumberFilter value)  phoneNumber,required TResult Function( NotionRelationFilter value)  relation,required TResult Function( NotionRollupFilter value)  rollup,required TResult Function( NotionRichTextFilter value)  richText,required TResult Function( NotionSelectFilter value)  select,required TResult Function( NotionStatusFilter value)  status,required TResult Function( NotionTitleFilter value)  title,required TResult Function( NotionUrlFilter value)  url,required TResult Function( NotionTimestampFilter value)  timestamp,required TResult Function( NotionUniqueIdFilter value)  uniqueId,}){
 final _that = this;
 switch (_that) {
-case NotionCheckboxFilter():
+case NotionAnd():
+return and(_that);case NotionOr():
+return or(_that);case NotionCheckboxFilter():
 return checkbox(_that);case NotionCreatedByFilter():
 return createdBy(_that);case NotionDateFilter():
 return date(_that);case NotionEmailFilter():
@@ -800,10 +243,12 @@ return uniqueId(_that);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionCheckboxFilter value)?  checkbox,TResult? Function( NotionCreatedByFilter value)?  createdBy,TResult? Function( NotionDateFilter value)?  date,TResult? Function( NotionEmailFilter value)?  email,TResult? Function( NotionFilesFilter value)?  files,TResult? Function( NotionFormulaFilter value)?  formula,TResult? Function( NotionLastEditedByFilter value)?  lastEditedBy,TResult? Function( NotionMultiSelectFilter value)?  multiSelect,TResult? Function( NotionNumberFilter value)?  number,TResult? Function( NotionPeopleFilter value)?  people,TResult? Function( NotionPhoneNumberFilter value)?  phoneNumber,TResult? Function( NotionRelationFilter value)?  relation,TResult? Function( NotionRollupFilter value)?  rollup,TResult? Function( NotionRichTextFilter value)?  richText,TResult? Function( NotionSelectFilter value)?  select,TResult? Function( NotionStatusFilter value)?  status,TResult? Function( NotionTitleFilter value)?  title,TResult? Function( NotionUrlFilter value)?  url,TResult? Function( NotionTimestampFilter value)?  timestamp,TResult? Function( NotionUniqueIdFilter value)?  uniqueId,}){
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( NotionAnd value)?  and,TResult? Function( NotionOr value)?  or,TResult? Function( NotionCheckboxFilter value)?  checkbox,TResult? Function( NotionCreatedByFilter value)?  createdBy,TResult? Function( NotionDateFilter value)?  date,TResult? Function( NotionEmailFilter value)?  email,TResult? Function( NotionFilesFilter value)?  files,TResult? Function( NotionFormulaFilter value)?  formula,TResult? Function( NotionLastEditedByFilter value)?  lastEditedBy,TResult? Function( NotionMultiSelectFilter value)?  multiSelect,TResult? Function( NotionNumberFilter value)?  number,TResult? Function( NotionPeopleFilter value)?  people,TResult? Function( NotionPhoneNumberFilter value)?  phoneNumber,TResult? Function( NotionRelationFilter value)?  relation,TResult? Function( NotionRollupFilter value)?  rollup,TResult? Function( NotionRichTextFilter value)?  richText,TResult? Function( NotionSelectFilter value)?  select,TResult? Function( NotionStatusFilter value)?  status,TResult? Function( NotionTitleFilter value)?  title,TResult? Function( NotionUrlFilter value)?  url,TResult? Function( NotionTimestampFilter value)?  timestamp,TResult? Function( NotionUniqueIdFilter value)?  uniqueId,}){
 final _that = this;
 switch (_that) {
-case NotionCheckboxFilter() when checkbox != null:
+case NotionAnd() when and != null:
+return and(_that);case NotionOr() when or != null:
+return or(_that);case NotionCheckboxFilter() when checkbox != null:
 return checkbox(_that);case NotionCreatedByFilter() when createdBy != null:
 return createdBy(_that);case NotionDateFilter() when date != null:
 return date(_that);case NotionEmailFilter() when email != null:
@@ -840,9 +285,11 @@ return uniqueId(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String property,  NotionCheckboxCondition checkbox)?  checkbox,TResult Function( String property,  NotionPeopleCondition createdBy)?  createdBy,TResult Function( String property,  NotionDateCondition date)?  date,TResult Function( String property,  NotionRichTextCondition email)?  email,TResult Function( String property,  NotionFilesCondition files)?  files,TResult Function( String property,  NotionFormulaCondition formula)?  formula,TResult Function( String property,  NotionPeopleCondition lastEditedBy)?  lastEditedBy,TResult Function( String property,  NotionMultiSelectCondition multiSelect)?  multiSelect,TResult Function( String property,  NotionNumberCondition formula)?  number,TResult Function( String property,  NotionPeopleCondition people)?  people,TResult Function( String property,  NotionRichTextCondition phoneNumber)?  phoneNumber,TResult Function( String property,  NotionRelationCondition relation)?  relation,TResult Function( String property,  NotionRollupCondition rollup)?  rollup,TResult Function( String property,  NotionRichTextCondition richText)?  richText,TResult Function( String property,  NotionSelectCondition select)?  select,TResult Function( String property,  NotionStatusCondition status)?  status,TResult Function( String property,  NotionRichTextCondition title)?  title,TResult Function( String property,  NotionRichTextCondition url)?  url,TResult Function( String property,  NotionTimestampCondition timestamp)?  timestamp,TResult Function( String property,  NotionUniqueIdCondition uniqueId)?  uniqueId,required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( List<NotionFilter> and)?  and,TResult Function( List<NotionFilter> or)?  or,TResult Function( String property,  NotionCheckboxCondition checkbox)?  checkbox,TResult Function( String property,  NotionPeopleCondition createdBy)?  createdBy,TResult Function( String property,  NotionDateCondition date)?  date,TResult Function( String property,  NotionRichTextCondition email)?  email,TResult Function( String property,  NotionFilesCondition files)?  files,TResult Function( String property,  NotionFormulaCondition formula)?  formula,TResult Function( String property,  NotionPeopleCondition lastEditedBy)?  lastEditedBy,TResult Function( String property,  NotionMultiSelectCondition multiSelect)?  multiSelect,TResult Function( String property,  NotionNumberCondition formula)?  number,TResult Function( String property,  NotionPeopleCondition people)?  people,TResult Function( String property,  NotionRichTextCondition phoneNumber)?  phoneNumber,TResult Function( String property,  NotionRelationCondition relation)?  relation,TResult Function( String property,  NotionRollupCondition rollup)?  rollup,TResult Function( String property,  NotionRichTextCondition richText)?  richText,TResult Function( String property,  NotionSelectCondition select)?  select,TResult Function( String property,  NotionStatusCondition status)?  status,TResult Function( String property,  NotionRichTextCondition title)?  title,TResult Function( String property,  NotionRichTextCondition url)?  url,TResult Function( String property,  NotionTimestampCondition timestamp)?  timestamp,TResult Function( String property,  NotionUniqueIdCondition uniqueId)?  uniqueId,required TResult orElse(),}) {final _that = this;
 switch (_that) {
-case NotionCheckboxFilter() when checkbox != null:
+case NotionAnd() when and != null:
+return and(_that.and);case NotionOr() when or != null:
+return or(_that.or);case NotionCheckboxFilter() when checkbox != null:
 return checkbox(_that.property,_that.checkbox);case NotionCreatedByFilter() when createdBy != null:
 return createdBy(_that.property,_that.createdBy);case NotionDateFilter() when date != null:
 return date(_that.property,_that.date);case NotionEmailFilter() when email != null:
@@ -880,9 +327,11 @@ return uniqueId(_that.property,_that.uniqueId);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String property,  NotionCheckboxCondition checkbox)  checkbox,required TResult Function( String property,  NotionPeopleCondition createdBy)  createdBy,required TResult Function( String property,  NotionDateCondition date)  date,required TResult Function( String property,  NotionRichTextCondition email)  email,required TResult Function( String property,  NotionFilesCondition files)  files,required TResult Function( String property,  NotionFormulaCondition formula)  formula,required TResult Function( String property,  NotionPeopleCondition lastEditedBy)  lastEditedBy,required TResult Function( String property,  NotionMultiSelectCondition multiSelect)  multiSelect,required TResult Function( String property,  NotionNumberCondition formula)  number,required TResult Function( String property,  NotionPeopleCondition people)  people,required TResult Function( String property,  NotionRichTextCondition phoneNumber)  phoneNumber,required TResult Function( String property,  NotionRelationCondition relation)  relation,required TResult Function( String property,  NotionRollupCondition rollup)  rollup,required TResult Function( String property,  NotionRichTextCondition richText)  richText,required TResult Function( String property,  NotionSelectCondition select)  select,required TResult Function( String property,  NotionStatusCondition status)  status,required TResult Function( String property,  NotionRichTextCondition title)  title,required TResult Function( String property,  NotionRichTextCondition url)  url,required TResult Function( String property,  NotionTimestampCondition timestamp)  timestamp,required TResult Function( String property,  NotionUniqueIdCondition uniqueId)  uniqueId,}) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( List<NotionFilter> and)  and,required TResult Function( List<NotionFilter> or)  or,required TResult Function( String property,  NotionCheckboxCondition checkbox)  checkbox,required TResult Function( String property,  NotionPeopleCondition createdBy)  createdBy,required TResult Function( String property,  NotionDateCondition date)  date,required TResult Function( String property,  NotionRichTextCondition email)  email,required TResult Function( String property,  NotionFilesCondition files)  files,required TResult Function( String property,  NotionFormulaCondition formula)  formula,required TResult Function( String property,  NotionPeopleCondition lastEditedBy)  lastEditedBy,required TResult Function( String property,  NotionMultiSelectCondition multiSelect)  multiSelect,required TResult Function( String property,  NotionNumberCondition formula)  number,required TResult Function( String property,  NotionPeopleCondition people)  people,required TResult Function( String property,  NotionRichTextCondition phoneNumber)  phoneNumber,required TResult Function( String property,  NotionRelationCondition relation)  relation,required TResult Function( String property,  NotionRollupCondition rollup)  rollup,required TResult Function( String property,  NotionRichTextCondition richText)  richText,required TResult Function( String property,  NotionSelectCondition select)  select,required TResult Function( String property,  NotionStatusCondition status)  status,required TResult Function( String property,  NotionRichTextCondition title)  title,required TResult Function( String property,  NotionRichTextCondition url)  url,required TResult Function( String property,  NotionTimestampCondition timestamp)  timestamp,required TResult Function( String property,  NotionUniqueIdCondition uniqueId)  uniqueId,}) {final _that = this;
 switch (_that) {
-case NotionCheckboxFilter():
+case NotionAnd():
+return and(_that.and);case NotionOr():
+return or(_that.or);case NotionCheckboxFilter():
 return checkbox(_that.property,_that.checkbox);case NotionCreatedByFilter():
 return createdBy(_that.property,_that.createdBy);case NotionDateFilter():
 return date(_that.property,_that.date);case NotionEmailFilter():
@@ -916,9 +365,11 @@ return uniqueId(_that.property,_that.uniqueId);}
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String property,  NotionCheckboxCondition checkbox)?  checkbox,TResult? Function( String property,  NotionPeopleCondition createdBy)?  createdBy,TResult? Function( String property,  NotionDateCondition date)?  date,TResult? Function( String property,  NotionRichTextCondition email)?  email,TResult? Function( String property,  NotionFilesCondition files)?  files,TResult? Function( String property,  NotionFormulaCondition formula)?  formula,TResult? Function( String property,  NotionPeopleCondition lastEditedBy)?  lastEditedBy,TResult? Function( String property,  NotionMultiSelectCondition multiSelect)?  multiSelect,TResult? Function( String property,  NotionNumberCondition formula)?  number,TResult? Function( String property,  NotionPeopleCondition people)?  people,TResult? Function( String property,  NotionRichTextCondition phoneNumber)?  phoneNumber,TResult? Function( String property,  NotionRelationCondition relation)?  relation,TResult? Function( String property,  NotionRollupCondition rollup)?  rollup,TResult? Function( String property,  NotionRichTextCondition richText)?  richText,TResult? Function( String property,  NotionSelectCondition select)?  select,TResult? Function( String property,  NotionStatusCondition status)?  status,TResult? Function( String property,  NotionRichTextCondition title)?  title,TResult? Function( String property,  NotionRichTextCondition url)?  url,TResult? Function( String property,  NotionTimestampCondition timestamp)?  timestamp,TResult? Function( String property,  NotionUniqueIdCondition uniqueId)?  uniqueId,}) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( List<NotionFilter> and)?  and,TResult? Function( List<NotionFilter> or)?  or,TResult? Function( String property,  NotionCheckboxCondition checkbox)?  checkbox,TResult? Function( String property,  NotionPeopleCondition createdBy)?  createdBy,TResult? Function( String property,  NotionDateCondition date)?  date,TResult? Function( String property,  NotionRichTextCondition email)?  email,TResult? Function( String property,  NotionFilesCondition files)?  files,TResult? Function( String property,  NotionFormulaCondition formula)?  formula,TResult? Function( String property,  NotionPeopleCondition lastEditedBy)?  lastEditedBy,TResult? Function( String property,  NotionMultiSelectCondition multiSelect)?  multiSelect,TResult? Function( String property,  NotionNumberCondition formula)?  number,TResult? Function( String property,  NotionPeopleCondition people)?  people,TResult? Function( String property,  NotionRichTextCondition phoneNumber)?  phoneNumber,TResult? Function( String property,  NotionRelationCondition relation)?  relation,TResult? Function( String property,  NotionRollupCondition rollup)?  rollup,TResult? Function( String property,  NotionRichTextCondition richText)?  richText,TResult? Function( String property,  NotionSelectCondition select)?  select,TResult? Function( String property,  NotionStatusCondition status)?  status,TResult? Function( String property,  NotionRichTextCondition title)?  title,TResult? Function( String property,  NotionRichTextCondition url)?  url,TResult? Function( String property,  NotionTimestampCondition timestamp)?  timestamp,TResult? Function( String property,  NotionUniqueIdCondition uniqueId)?  uniqueId,}) {final _that = this;
 switch (_that) {
-case NotionCheckboxFilter() when checkbox != null:
+case NotionAnd() when and != null:
+return and(_that.and);case NotionOr() when or != null:
+return or(_that.or);case NotionCheckboxFilter() when checkbox != null:
 return checkbox(_that.property,_that.checkbox);case NotionCreatedByFilter() when createdBy != null:
 return createdBy(_that.property,_that.createdBy);case NotionDateFilter() when date != null:
 return date(_that.property,_that.date);case NotionEmailFilter() when email != null:
@@ -949,20 +400,178 @@ return uniqueId(_that.property,_that.uniqueId);case _:
 /// @nodoc
 @JsonSerializable()
 
-class NotionCheckboxFilter extends NotionTypeFilter {
+class NotionAnd extends NotionFilter {
+  const NotionAnd({required final  List<NotionFilter> and, final  String? $type}): _and = and,$type = $type ?? 'and',super._();
+  factory NotionAnd.fromJson(Map<String, dynamic> json) => _$NotionAndFromJson(json);
+
+ final  List<NotionFilter> _and;
+ List<NotionFilter> get and {
+  if (_and is EqualUnmodifiableListView) return _and;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_and);
+}
+
+
+@JsonKey(name: 'type')
+final String $type;
+
+
+/// Create a copy of NotionFilter
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionAndCopyWith<NotionAnd> get copyWith => _$NotionAndCopyWithImpl<NotionAnd>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionAndToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionAnd&&const DeepCollectionEquality().equals(other._and, _and));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_and));
+
+@override
+String toString() {
+  return 'NotionFilter.and(and: $and)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $NotionAndCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
+  factory $NotionAndCopyWith(NotionAnd value, $Res Function(NotionAnd) _then) = _$NotionAndCopyWithImpl;
+@useResult
+$Res call({
+ List<NotionFilter> and
+});
+
+
+
+
+}
+/// @nodoc
+class _$NotionAndCopyWithImpl<$Res>
+    implements $NotionAndCopyWith<$Res> {
+  _$NotionAndCopyWithImpl(this._self, this._then);
+
+  final NotionAnd _self;
+  final $Res Function(NotionAnd) _then;
+
+/// Create a copy of NotionFilter
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? and = null,}) {
+  return _then(NotionAnd(
+and: null == and ? _self._and : and // ignore: cast_nullable_to_non_nullable
+as List<NotionFilter>,
+  ));
+}
+
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class NotionOr extends NotionFilter {
+  const NotionOr({required final  List<NotionFilter> or, final  String? $type}): _or = or,$type = $type ?? 'or',super._();
+  factory NotionOr.fromJson(Map<String, dynamic> json) => _$NotionOrFromJson(json);
+
+ final  List<NotionFilter> _or;
+ List<NotionFilter> get or {
+  if (_or is EqualUnmodifiableListView) return _or;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_or);
+}
+
+
+@JsonKey(name: 'type')
+final String $type;
+
+
+/// Create a copy of NotionFilter
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$NotionOrCopyWith<NotionOr> get copyWith => _$NotionOrCopyWithImpl<NotionOr>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$NotionOrToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionOr&&const DeepCollectionEquality().equals(other._or, _or));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_or));
+
+@override
+String toString() {
+  return 'NotionFilter.or(or: $or)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $NotionOrCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
+  factory $NotionOrCopyWith(NotionOr value, $Res Function(NotionOr) _then) = _$NotionOrCopyWithImpl;
+@useResult
+$Res call({
+ List<NotionFilter> or
+});
+
+
+
+
+}
+/// @nodoc
+class _$NotionOrCopyWithImpl<$Res>
+    implements $NotionOrCopyWith<$Res> {
+  _$NotionOrCopyWithImpl(this._self, this._then);
+
+  final NotionOr _self;
+  final $Res Function(NotionOr) _then;
+
+/// Create a copy of NotionFilter
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') $Res call({Object? or = null,}) {
+  return _then(NotionOr(
+or: null == or ? _self._or : or // ignore: cast_nullable_to_non_nullable
+as List<NotionFilter>,
+  ));
+}
+
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class NotionCheckboxFilter extends NotionFilter {
   const NotionCheckboxFilter({required this.property, required this.checkbox, final  String? $type}): $type = $type ?? 'checkbox',super._();
   factory NotionCheckboxFilter.fromJson(Map<String, dynamic> json) => _$NotionCheckboxFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionCheckboxCondition checkbox;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionCheckboxFilterCopyWith<NotionCheckboxFilter> get copyWith => _$NotionCheckboxFilterCopyWithImpl<NotionCheckboxFilter>(this, _$identity);
 
@@ -982,16 +591,16 @@ int get hashCode => Object.hash(runtimeType,property,checkbox);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.checkbox(property: $property, checkbox: $checkbox)';
+  return 'NotionFilter.checkbox(property: $property, checkbox: $checkbox)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionCheckboxFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionCheckboxFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionCheckboxFilterCopyWith(NotionCheckboxFilter value, $Res Function(NotionCheckboxFilter) _then) = _$NotionCheckboxFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionCheckboxCondition checkbox
 });
@@ -1008,9 +617,9 @@ class _$NotionCheckboxFilterCopyWithImpl<$Res>
   final NotionCheckboxFilter _self;
   final $Res Function(NotionCheckboxFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? checkbox = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? checkbox = null,}) {
   return _then(NotionCheckboxFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,checkbox: null == checkbox ? _self.checkbox : checkbox // ignore: cast_nullable_to_non_nullable
@@ -1018,7 +627,7 @@ as NotionCheckboxCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1033,20 +642,20 @@ $NotionCheckboxConditionCopyWith<$Res> get checkbox {
 /// @nodoc
 @JsonSerializable()
 
-class NotionCreatedByFilter extends NotionTypeFilter {
+class NotionCreatedByFilter extends NotionFilter {
   const NotionCreatedByFilter({required this.property, required this.createdBy, final  String? $type}): $type = $type ?? 'created_by',super._();
   factory NotionCreatedByFilter.fromJson(Map<String, dynamic> json) => _$NotionCreatedByFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionPeopleCondition createdBy;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionCreatedByFilterCopyWith<NotionCreatedByFilter> get copyWith => _$NotionCreatedByFilterCopyWithImpl<NotionCreatedByFilter>(this, _$identity);
 
@@ -1066,16 +675,16 @@ int get hashCode => Object.hash(runtimeType,property,createdBy);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.createdBy(property: $property, createdBy: $createdBy)';
+  return 'NotionFilter.createdBy(property: $property, createdBy: $createdBy)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionCreatedByFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionCreatedByFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionCreatedByFilterCopyWith(NotionCreatedByFilter value, $Res Function(NotionCreatedByFilter) _then) = _$NotionCreatedByFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionPeopleCondition createdBy
 });
@@ -1092,9 +701,9 @@ class _$NotionCreatedByFilterCopyWithImpl<$Res>
   final NotionCreatedByFilter _self;
   final $Res Function(NotionCreatedByFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? createdBy = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? createdBy = null,}) {
   return _then(NotionCreatedByFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,createdBy: null == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
@@ -1102,7 +711,7 @@ as NotionPeopleCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1117,20 +726,20 @@ $NotionPeopleConditionCopyWith<$Res> get createdBy {
 /// @nodoc
 @JsonSerializable()
 
-class NotionDateFilter extends NotionTypeFilter {
+class NotionDateFilter extends NotionFilter {
   const NotionDateFilter({required this.property, required this.date, final  String? $type}): $type = $type ?? 'date',super._();
   factory NotionDateFilter.fromJson(Map<String, dynamic> json) => _$NotionDateFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionDateCondition date;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionDateFilterCopyWith<NotionDateFilter> get copyWith => _$NotionDateFilterCopyWithImpl<NotionDateFilter>(this, _$identity);
 
@@ -1150,16 +759,16 @@ int get hashCode => Object.hash(runtimeType,property,date);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.date(property: $property, date: $date)';
+  return 'NotionFilter.date(property: $property, date: $date)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionDateFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionDateFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionDateFilterCopyWith(NotionDateFilter value, $Res Function(NotionDateFilter) _then) = _$NotionDateFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionDateCondition date
 });
@@ -1176,9 +785,9 @@ class _$NotionDateFilterCopyWithImpl<$Res>
   final NotionDateFilter _self;
   final $Res Function(NotionDateFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? date = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? date = null,}) {
   return _then(NotionDateFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,date: null == date ? _self.date : date // ignore: cast_nullable_to_non_nullable
@@ -1186,7 +795,7 @@ as NotionDateCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1201,20 +810,20 @@ $NotionDateConditionCopyWith<$Res> get date {
 /// @nodoc
 @JsonSerializable()
 
-class NotionEmailFilter extends NotionTypeFilter {
+class NotionEmailFilter extends NotionFilter {
   const NotionEmailFilter({required this.property, required this.email, final  String? $type}): $type = $type ?? 'email',super._();
   factory NotionEmailFilter.fromJson(Map<String, dynamic> json) => _$NotionEmailFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRichTextCondition email;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionEmailFilterCopyWith<NotionEmailFilter> get copyWith => _$NotionEmailFilterCopyWithImpl<NotionEmailFilter>(this, _$identity);
 
@@ -1234,16 +843,16 @@ int get hashCode => Object.hash(runtimeType,property,email);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.email(property: $property, email: $email)';
+  return 'NotionFilter.email(property: $property, email: $email)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionEmailFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionEmailFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionEmailFilterCopyWith(NotionEmailFilter value, $Res Function(NotionEmailFilter) _then) = _$NotionEmailFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRichTextCondition email
 });
@@ -1260,9 +869,9 @@ class _$NotionEmailFilterCopyWithImpl<$Res>
   final NotionEmailFilter _self;
   final $Res Function(NotionEmailFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? email = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? email = null,}) {
   return _then(NotionEmailFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,email: null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
@@ -1270,7 +879,7 @@ as NotionRichTextCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1285,20 +894,20 @@ $NotionRichTextConditionCopyWith<$Res> get email {
 /// @nodoc
 @JsonSerializable()
 
-class NotionFilesFilter extends NotionTypeFilter {
+class NotionFilesFilter extends NotionFilter {
   const NotionFilesFilter({required this.property, required this.files, final  String? $type}): $type = $type ?? 'files',super._();
   factory NotionFilesFilter.fromJson(Map<String, dynamic> json) => _$NotionFilesFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionFilesCondition files;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionFilesFilterCopyWith<NotionFilesFilter> get copyWith => _$NotionFilesFilterCopyWithImpl<NotionFilesFilter>(this, _$identity);
 
@@ -1318,16 +927,16 @@ int get hashCode => Object.hash(runtimeType,property,files);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.files(property: $property, files: $files)';
+  return 'NotionFilter.files(property: $property, files: $files)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionFilesFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionFilesFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionFilesFilterCopyWith(NotionFilesFilter value, $Res Function(NotionFilesFilter) _then) = _$NotionFilesFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionFilesCondition files
 });
@@ -1344,9 +953,9 @@ class _$NotionFilesFilterCopyWithImpl<$Res>
   final NotionFilesFilter _self;
   final $Res Function(NotionFilesFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? files = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? files = null,}) {
   return _then(NotionFilesFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,files: null == files ? _self.files : files // ignore: cast_nullable_to_non_nullable
@@ -1354,7 +963,7 @@ as NotionFilesCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1369,20 +978,20 @@ $NotionFilesConditionCopyWith<$Res> get files {
 /// @nodoc
 @JsonSerializable()
 
-class NotionFormulaFilter extends NotionTypeFilter {
+class NotionFormulaFilter extends NotionFilter {
   const NotionFormulaFilter({required this.property, required this.formula, final  String? $type}): $type = $type ?? 'formula',super._();
   factory NotionFormulaFilter.fromJson(Map<String, dynamic> json) => _$NotionFormulaFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionFormulaCondition formula;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionFormulaFilterCopyWith<NotionFormulaFilter> get copyWith => _$NotionFormulaFilterCopyWithImpl<NotionFormulaFilter>(this, _$identity);
 
@@ -1402,16 +1011,16 @@ int get hashCode => Object.hash(runtimeType,property,formula);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.formula(property: $property, formula: $formula)';
+  return 'NotionFilter.formula(property: $property, formula: $formula)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionFormulaFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionFormulaFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionFormulaFilterCopyWith(NotionFormulaFilter value, $Res Function(NotionFormulaFilter) _then) = _$NotionFormulaFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionFormulaCondition formula
 });
@@ -1428,9 +1037,9 @@ class _$NotionFormulaFilterCopyWithImpl<$Res>
   final NotionFormulaFilter _self;
   final $Res Function(NotionFormulaFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? formula = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? formula = null,}) {
   return _then(NotionFormulaFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,formula: null == formula ? _self.formula : formula // ignore: cast_nullable_to_non_nullable
@@ -1438,7 +1047,7 @@ as NotionFormulaCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1453,20 +1062,20 @@ $NotionFormulaConditionCopyWith<$Res> get formula {
 /// @nodoc
 @JsonSerializable()
 
-class NotionLastEditedByFilter extends NotionTypeFilter {
+class NotionLastEditedByFilter extends NotionFilter {
   const NotionLastEditedByFilter({required this.property, required this.lastEditedBy, final  String? $type}): $type = $type ?? 'last_edited_by',super._();
   factory NotionLastEditedByFilter.fromJson(Map<String, dynamic> json) => _$NotionLastEditedByFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionPeopleCondition lastEditedBy;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionLastEditedByFilterCopyWith<NotionLastEditedByFilter> get copyWith => _$NotionLastEditedByFilterCopyWithImpl<NotionLastEditedByFilter>(this, _$identity);
 
@@ -1486,16 +1095,16 @@ int get hashCode => Object.hash(runtimeType,property,lastEditedBy);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.lastEditedBy(property: $property, lastEditedBy: $lastEditedBy)';
+  return 'NotionFilter.lastEditedBy(property: $property, lastEditedBy: $lastEditedBy)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionLastEditedByFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionLastEditedByFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionLastEditedByFilterCopyWith(NotionLastEditedByFilter value, $Res Function(NotionLastEditedByFilter) _then) = _$NotionLastEditedByFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionPeopleCondition lastEditedBy
 });
@@ -1512,9 +1121,9 @@ class _$NotionLastEditedByFilterCopyWithImpl<$Res>
   final NotionLastEditedByFilter _self;
   final $Res Function(NotionLastEditedByFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? lastEditedBy = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? lastEditedBy = null,}) {
   return _then(NotionLastEditedByFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,lastEditedBy: null == lastEditedBy ? _self.lastEditedBy : lastEditedBy // ignore: cast_nullable_to_non_nullable
@@ -1522,7 +1131,7 @@ as NotionPeopleCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1537,20 +1146,20 @@ $NotionPeopleConditionCopyWith<$Res> get lastEditedBy {
 /// @nodoc
 @JsonSerializable()
 
-class NotionMultiSelectFilter extends NotionTypeFilter {
+class NotionMultiSelectFilter extends NotionFilter {
   const NotionMultiSelectFilter({required this.property, required this.multiSelect, final  String? $type}): $type = $type ?? 'multi_select',super._();
   factory NotionMultiSelectFilter.fromJson(Map<String, dynamic> json) => _$NotionMultiSelectFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionMultiSelectCondition multiSelect;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionMultiSelectFilterCopyWith<NotionMultiSelectFilter> get copyWith => _$NotionMultiSelectFilterCopyWithImpl<NotionMultiSelectFilter>(this, _$identity);
 
@@ -1570,16 +1179,16 @@ int get hashCode => Object.hash(runtimeType,property,multiSelect);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.multiSelect(property: $property, multiSelect: $multiSelect)';
+  return 'NotionFilter.multiSelect(property: $property, multiSelect: $multiSelect)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionMultiSelectFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionMultiSelectFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionMultiSelectFilterCopyWith(NotionMultiSelectFilter value, $Res Function(NotionMultiSelectFilter) _then) = _$NotionMultiSelectFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionMultiSelectCondition multiSelect
 });
@@ -1596,9 +1205,9 @@ class _$NotionMultiSelectFilterCopyWithImpl<$Res>
   final NotionMultiSelectFilter _self;
   final $Res Function(NotionMultiSelectFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? multiSelect = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? multiSelect = null,}) {
   return _then(NotionMultiSelectFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,multiSelect: null == multiSelect ? _self.multiSelect : multiSelect // ignore: cast_nullable_to_non_nullable
@@ -1606,7 +1215,7 @@ as NotionMultiSelectCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1621,20 +1230,20 @@ $NotionMultiSelectConditionCopyWith<$Res> get multiSelect {
 /// @nodoc
 @JsonSerializable()
 
-class NotionNumberFilter extends NotionTypeFilter {
+class NotionNumberFilter extends NotionFilter {
   const NotionNumberFilter({required this.property, required this.formula, final  String? $type}): $type = $type ?? 'number',super._();
   factory NotionNumberFilter.fromJson(Map<String, dynamic> json) => _$NotionNumberFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionNumberCondition formula;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionNumberFilterCopyWith<NotionNumberFilter> get copyWith => _$NotionNumberFilterCopyWithImpl<NotionNumberFilter>(this, _$identity);
 
@@ -1654,16 +1263,16 @@ int get hashCode => Object.hash(runtimeType,property,formula);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.number(property: $property, formula: $formula)';
+  return 'NotionFilter.number(property: $property, formula: $formula)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionNumberFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionNumberFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionNumberFilterCopyWith(NotionNumberFilter value, $Res Function(NotionNumberFilter) _then) = _$NotionNumberFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionNumberCondition formula
 });
@@ -1680,9 +1289,9 @@ class _$NotionNumberFilterCopyWithImpl<$Res>
   final NotionNumberFilter _self;
   final $Res Function(NotionNumberFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? formula = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? formula = null,}) {
   return _then(NotionNumberFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,formula: null == formula ? _self.formula : formula // ignore: cast_nullable_to_non_nullable
@@ -1690,7 +1299,7 @@ as NotionNumberCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1705,20 +1314,20 @@ $NotionNumberConditionCopyWith<$Res> get formula {
 /// @nodoc
 @JsonSerializable()
 
-class NotionPeopleFilter extends NotionTypeFilter {
+class NotionPeopleFilter extends NotionFilter {
   const NotionPeopleFilter({required this.property, required this.people, final  String? $type}): $type = $type ?? 'people',super._();
   factory NotionPeopleFilter.fromJson(Map<String, dynamic> json) => _$NotionPeopleFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionPeopleCondition people;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionPeopleFilterCopyWith<NotionPeopleFilter> get copyWith => _$NotionPeopleFilterCopyWithImpl<NotionPeopleFilter>(this, _$identity);
 
@@ -1738,16 +1347,16 @@ int get hashCode => Object.hash(runtimeType,property,people);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.people(property: $property, people: $people)';
+  return 'NotionFilter.people(property: $property, people: $people)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionPeopleFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionPeopleFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionPeopleFilterCopyWith(NotionPeopleFilter value, $Res Function(NotionPeopleFilter) _then) = _$NotionPeopleFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionPeopleCondition people
 });
@@ -1764,9 +1373,9 @@ class _$NotionPeopleFilterCopyWithImpl<$Res>
   final NotionPeopleFilter _self;
   final $Res Function(NotionPeopleFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? people = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? people = null,}) {
   return _then(NotionPeopleFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,people: null == people ? _self.people : people // ignore: cast_nullable_to_non_nullable
@@ -1774,7 +1383,7 @@ as NotionPeopleCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1789,20 +1398,20 @@ $NotionPeopleConditionCopyWith<$Res> get people {
 /// @nodoc
 @JsonSerializable()
 
-class NotionPhoneNumberFilter extends NotionTypeFilter {
+class NotionPhoneNumberFilter extends NotionFilter {
   const NotionPhoneNumberFilter({required this.property, required this.phoneNumber, final  String? $type}): $type = $type ?? 'phone_number',super._();
   factory NotionPhoneNumberFilter.fromJson(Map<String, dynamic> json) => _$NotionPhoneNumberFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRichTextCondition phoneNumber;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionPhoneNumberFilterCopyWith<NotionPhoneNumberFilter> get copyWith => _$NotionPhoneNumberFilterCopyWithImpl<NotionPhoneNumberFilter>(this, _$identity);
 
@@ -1822,16 +1431,16 @@ int get hashCode => Object.hash(runtimeType,property,phoneNumber);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.phoneNumber(property: $property, phoneNumber: $phoneNumber)';
+  return 'NotionFilter.phoneNumber(property: $property, phoneNumber: $phoneNumber)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionPhoneNumberFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionPhoneNumberFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionPhoneNumberFilterCopyWith(NotionPhoneNumberFilter value, $Res Function(NotionPhoneNumberFilter) _then) = _$NotionPhoneNumberFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRichTextCondition phoneNumber
 });
@@ -1848,9 +1457,9 @@ class _$NotionPhoneNumberFilterCopyWithImpl<$Res>
   final NotionPhoneNumberFilter _self;
   final $Res Function(NotionPhoneNumberFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? phoneNumber = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? phoneNumber = null,}) {
   return _then(NotionPhoneNumberFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,phoneNumber: null == phoneNumber ? _self.phoneNumber : phoneNumber // ignore: cast_nullable_to_non_nullable
@@ -1858,7 +1467,7 @@ as NotionRichTextCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1873,20 +1482,20 @@ $NotionRichTextConditionCopyWith<$Res> get phoneNumber {
 /// @nodoc
 @JsonSerializable()
 
-class NotionRelationFilter extends NotionTypeFilter {
+class NotionRelationFilter extends NotionFilter {
   const NotionRelationFilter({required this.property, required this.relation, final  String? $type}): $type = $type ?? 'relation',super._();
   factory NotionRelationFilter.fromJson(Map<String, dynamic> json) => _$NotionRelationFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRelationCondition relation;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionRelationFilterCopyWith<NotionRelationFilter> get copyWith => _$NotionRelationFilterCopyWithImpl<NotionRelationFilter>(this, _$identity);
 
@@ -1906,16 +1515,16 @@ int get hashCode => Object.hash(runtimeType,property,relation);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.relation(property: $property, relation: $relation)';
+  return 'NotionFilter.relation(property: $property, relation: $relation)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionRelationFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionRelationFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionRelationFilterCopyWith(NotionRelationFilter value, $Res Function(NotionRelationFilter) _then) = _$NotionRelationFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRelationCondition relation
 });
@@ -1932,9 +1541,9 @@ class _$NotionRelationFilterCopyWithImpl<$Res>
   final NotionRelationFilter _self;
   final $Res Function(NotionRelationFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? relation = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? relation = null,}) {
   return _then(NotionRelationFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,relation: null == relation ? _self.relation : relation // ignore: cast_nullable_to_non_nullable
@@ -1942,7 +1551,7 @@ as NotionRelationCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -1957,20 +1566,20 @@ $NotionRelationConditionCopyWith<$Res> get relation {
 /// @nodoc
 @JsonSerializable()
 
-class NotionRollupFilter extends NotionTypeFilter {
+class NotionRollupFilter extends NotionFilter {
   const NotionRollupFilter({required this.property, required this.rollup, final  String? $type}): $type = $type ?? 'rollup',super._();
   factory NotionRollupFilter.fromJson(Map<String, dynamic> json) => _$NotionRollupFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRollupCondition rollup;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionRollupFilterCopyWith<NotionRollupFilter> get copyWith => _$NotionRollupFilterCopyWithImpl<NotionRollupFilter>(this, _$identity);
 
@@ -1990,16 +1599,16 @@ int get hashCode => Object.hash(runtimeType,property,rollup);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.rollup(property: $property, rollup: $rollup)';
+  return 'NotionFilter.rollup(property: $property, rollup: $rollup)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionRollupFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionRollupFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionRollupFilterCopyWith(NotionRollupFilter value, $Res Function(NotionRollupFilter) _then) = _$NotionRollupFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRollupCondition rollup
 });
@@ -2016,9 +1625,9 @@ class _$NotionRollupFilterCopyWithImpl<$Res>
   final NotionRollupFilter _self;
   final $Res Function(NotionRollupFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? rollup = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? rollup = null,}) {
   return _then(NotionRollupFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,rollup: null == rollup ? _self.rollup : rollup // ignore: cast_nullable_to_non_nullable
@@ -2026,7 +1635,7 @@ as NotionRollupCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2041,20 +1650,20 @@ $NotionRollupConditionCopyWith<$Res> get rollup {
 /// @nodoc
 @JsonSerializable()
 
-class NotionRichTextFilter extends NotionTypeFilter {
+class NotionRichTextFilter extends NotionFilter {
   const NotionRichTextFilter({required this.property, required this.richText, final  String? $type}): $type = $type ?? 'rich_text',super._();
   factory NotionRichTextFilter.fromJson(Map<String, dynamic> json) => _$NotionRichTextFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRichTextCondition richText;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionRichTextFilterCopyWith<NotionRichTextFilter> get copyWith => _$NotionRichTextFilterCopyWithImpl<NotionRichTextFilter>(this, _$identity);
 
@@ -2074,16 +1683,16 @@ int get hashCode => Object.hash(runtimeType,property,richText);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.richText(property: $property, richText: $richText)';
+  return 'NotionFilter.richText(property: $property, richText: $richText)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionRichTextFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionRichTextFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionRichTextFilterCopyWith(NotionRichTextFilter value, $Res Function(NotionRichTextFilter) _then) = _$NotionRichTextFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRichTextCondition richText
 });
@@ -2100,9 +1709,9 @@ class _$NotionRichTextFilterCopyWithImpl<$Res>
   final NotionRichTextFilter _self;
   final $Res Function(NotionRichTextFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? richText = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? richText = null,}) {
   return _then(NotionRichTextFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,richText: null == richText ? _self.richText : richText // ignore: cast_nullable_to_non_nullable
@@ -2110,7 +1719,7 @@ as NotionRichTextCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2125,20 +1734,20 @@ $NotionRichTextConditionCopyWith<$Res> get richText {
 /// @nodoc
 @JsonSerializable()
 
-class NotionSelectFilter extends NotionTypeFilter {
+class NotionSelectFilter extends NotionFilter {
   const NotionSelectFilter({required this.property, required this.select, final  String? $type}): $type = $type ?? 'select',super._();
   factory NotionSelectFilter.fromJson(Map<String, dynamic> json) => _$NotionSelectFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionSelectCondition select;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionSelectFilterCopyWith<NotionSelectFilter> get copyWith => _$NotionSelectFilterCopyWithImpl<NotionSelectFilter>(this, _$identity);
 
@@ -2158,16 +1767,16 @@ int get hashCode => Object.hash(runtimeType,property,select);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.select(property: $property, select: $select)';
+  return 'NotionFilter.select(property: $property, select: $select)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionSelectFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionSelectFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionSelectFilterCopyWith(NotionSelectFilter value, $Res Function(NotionSelectFilter) _then) = _$NotionSelectFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionSelectCondition select
 });
@@ -2184,9 +1793,9 @@ class _$NotionSelectFilterCopyWithImpl<$Res>
   final NotionSelectFilter _self;
   final $Res Function(NotionSelectFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? select = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? select = null,}) {
   return _then(NotionSelectFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,select: null == select ? _self.select : select // ignore: cast_nullable_to_non_nullable
@@ -2194,7 +1803,7 @@ as NotionSelectCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2209,20 +1818,20 @@ $NotionSelectConditionCopyWith<$Res> get select {
 /// @nodoc
 @JsonSerializable()
 
-class NotionStatusFilter extends NotionTypeFilter {
+class NotionStatusFilter extends NotionFilter {
   const NotionStatusFilter({required this.property, required this.status, final  String? $type}): $type = $type ?? 'status',super._();
   factory NotionStatusFilter.fromJson(Map<String, dynamic> json) => _$NotionStatusFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionStatusCondition status;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionStatusFilterCopyWith<NotionStatusFilter> get copyWith => _$NotionStatusFilterCopyWithImpl<NotionStatusFilter>(this, _$identity);
 
@@ -2242,16 +1851,16 @@ int get hashCode => Object.hash(runtimeType,property,status);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.status(property: $property, status: $status)';
+  return 'NotionFilter.status(property: $property, status: $status)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionStatusFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionStatusFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionStatusFilterCopyWith(NotionStatusFilter value, $Res Function(NotionStatusFilter) _then) = _$NotionStatusFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionStatusCondition status
 });
@@ -2268,9 +1877,9 @@ class _$NotionStatusFilterCopyWithImpl<$Res>
   final NotionStatusFilter _self;
   final $Res Function(NotionStatusFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? status = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? status = null,}) {
   return _then(NotionStatusFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,status: null == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
@@ -2278,7 +1887,7 @@ as NotionStatusCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2293,20 +1902,20 @@ $NotionStatusConditionCopyWith<$Res> get status {
 /// @nodoc
 @JsonSerializable()
 
-class NotionTitleFilter extends NotionTypeFilter {
+class NotionTitleFilter extends NotionFilter {
   const NotionTitleFilter({required this.property, required this.title, final  String? $type}): $type = $type ?? 'title',super._();
   factory NotionTitleFilter.fromJson(Map<String, dynamic> json) => _$NotionTitleFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRichTextCondition title;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionTitleFilterCopyWith<NotionTitleFilter> get copyWith => _$NotionTitleFilterCopyWithImpl<NotionTitleFilter>(this, _$identity);
 
@@ -2326,16 +1935,16 @@ int get hashCode => Object.hash(runtimeType,property,title);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.title(property: $property, title: $title)';
+  return 'NotionFilter.title(property: $property, title: $title)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionTitleFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionTitleFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionTitleFilterCopyWith(NotionTitleFilter value, $Res Function(NotionTitleFilter) _then) = _$NotionTitleFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRichTextCondition title
 });
@@ -2352,9 +1961,9 @@ class _$NotionTitleFilterCopyWithImpl<$Res>
   final NotionTitleFilter _self;
   final $Res Function(NotionTitleFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? title = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? title = null,}) {
   return _then(NotionTitleFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
@@ -2362,7 +1971,7 @@ as NotionRichTextCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2377,20 +1986,20 @@ $NotionRichTextConditionCopyWith<$Res> get title {
 /// @nodoc
 @JsonSerializable()
 
-class NotionUrlFilter extends NotionTypeFilter {
+class NotionUrlFilter extends NotionFilter {
   const NotionUrlFilter({required this.property, required this.url, final  String? $type}): $type = $type ?? 'url',super._();
   factory NotionUrlFilter.fromJson(Map<String, dynamic> json) => _$NotionUrlFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionRichTextCondition url;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionUrlFilterCopyWith<NotionUrlFilter> get copyWith => _$NotionUrlFilterCopyWithImpl<NotionUrlFilter>(this, _$identity);
 
@@ -2410,16 +2019,16 @@ int get hashCode => Object.hash(runtimeType,property,url);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.url(property: $property, url: $url)';
+  return 'NotionFilter.url(property: $property, url: $url)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionUrlFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionUrlFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionUrlFilterCopyWith(NotionUrlFilter value, $Res Function(NotionUrlFilter) _then) = _$NotionUrlFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionRichTextCondition url
 });
@@ -2436,9 +2045,9 @@ class _$NotionUrlFilterCopyWithImpl<$Res>
   final NotionUrlFilter _self;
   final $Res Function(NotionUrlFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? url = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? url = null,}) {
   return _then(NotionUrlFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,url: null == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
@@ -2446,7 +2055,7 @@ as NotionRichTextCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2461,20 +2070,20 @@ $NotionRichTextConditionCopyWith<$Res> get url {
 /// @nodoc
 @JsonSerializable()
 
-class NotionTimestampFilter extends NotionTypeFilter {
+class NotionTimestampFilter extends NotionFilter {
   const NotionTimestampFilter({required this.property, required this.timestamp, final  String? $type}): $type = $type ?? 'timestamp',super._();
   factory NotionTimestampFilter.fromJson(Map<String, dynamic> json) => _$NotionTimestampFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionTimestampCondition timestamp;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionTimestampFilterCopyWith<NotionTimestampFilter> get copyWith => _$NotionTimestampFilterCopyWithImpl<NotionTimestampFilter>(this, _$identity);
 
@@ -2494,16 +2103,16 @@ int get hashCode => Object.hash(runtimeType,property,timestamp);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.timestamp(property: $property, timestamp: $timestamp)';
+  return 'NotionFilter.timestamp(property: $property, timestamp: $timestamp)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionTimestampFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionTimestampFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionTimestampFilterCopyWith(NotionTimestampFilter value, $Res Function(NotionTimestampFilter) _then) = _$NotionTimestampFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionTimestampCondition timestamp
 });
@@ -2520,9 +2129,9 @@ class _$NotionTimestampFilterCopyWithImpl<$Res>
   final NotionTimestampFilter _self;
   final $Res Function(NotionTimestampFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? timestamp = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? timestamp = null,}) {
   return _then(NotionTimestampFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,timestamp: null == timestamp ? _self.timestamp : timestamp // ignore: cast_nullable_to_non_nullable
@@ -2530,7 +2139,7 @@ as NotionTimestampCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')
@@ -2545,20 +2154,20 @@ $NotionTimestampConditionCopyWith<$Res> get timestamp {
 /// @nodoc
 @JsonSerializable()
 
-class NotionUniqueIdFilter extends NotionTypeFilter {
+class NotionUniqueIdFilter extends NotionFilter {
   const NotionUniqueIdFilter({required this.property, required this.uniqueId, final  String? $type}): $type = $type ?? 'ID',super._();
   factory NotionUniqueIdFilter.fromJson(Map<String, dynamic> json) => _$NotionUniqueIdFilterFromJson(json);
 
-@override final  String property;
+ final  String property;
  final  NotionUniqueIdCondition uniqueId;
 
 @JsonKey(name: 'type')
 final String $type;
 
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
+@JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
 $NotionUniqueIdFilterCopyWith<NotionUniqueIdFilter> get copyWith => _$NotionUniqueIdFilterCopyWithImpl<NotionUniqueIdFilter>(this, _$identity);
 
@@ -2578,16 +2187,16 @@ int get hashCode => Object.hash(runtimeType,property,uniqueId);
 
 @override
 String toString() {
-  return 'NotionTypeFilter.uniqueId(property: $property, uniqueId: $uniqueId)';
+  return 'NotionFilter.uniqueId(property: $property, uniqueId: $uniqueId)';
 }
 
 
 }
 
 /// @nodoc
-abstract mixin class $NotionUniqueIdFilterCopyWith<$Res> implements $NotionTypeFilterCopyWith<$Res> {
+abstract mixin class $NotionUniqueIdFilterCopyWith<$Res> implements $NotionFilterCopyWith<$Res> {
   factory $NotionUniqueIdFilterCopyWith(NotionUniqueIdFilter value, $Res Function(NotionUniqueIdFilter) _then) = _$NotionUniqueIdFilterCopyWithImpl;
-@override @useResult
+@useResult
 $Res call({
  String property, NotionUniqueIdCondition uniqueId
 });
@@ -2604,9 +2213,9 @@ class _$NotionUniqueIdFilterCopyWithImpl<$Res>
   final NotionUniqueIdFilter _self;
   final $Res Function(NotionUniqueIdFilter) _then;
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? property = null,Object? uniqueId = null,}) {
+@pragma('vm:prefer-inline') $Res call({Object? property = null,Object? uniqueId = null,}) {
   return _then(NotionUniqueIdFilter(
 property: null == property ? _self.property : property // ignore: cast_nullable_to_non_nullable
 as String,uniqueId: null == uniqueId ? _self.uniqueId : uniqueId // ignore: cast_nullable_to_non_nullable
@@ -2614,7 +2223,7 @@ as NotionUniqueIdCondition,
   ));
 }
 
-/// Create a copy of NotionTypeFilter
+/// Create a copy of NotionFilter
 /// with the given fields replaced by the non-null parameter values.
 @override
 @pragma('vm:prefer-inline')

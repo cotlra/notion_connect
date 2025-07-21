@@ -1,10 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum NotionCheckboxFilterType {
-  equals,
-  doesNotEqual,
-}
+enum NotionCheckboxFilterType { equals, doesNotEqual }
 
 @JsonEnum(fieldRename: FieldRename.snake)
 enum NotionDateFilterType {
@@ -24,10 +21,8 @@ enum NotionDateFilterType {
   thisWeek,
 }
 
-enum NotionFilesFilterType {
-  isEmpty,
-  isNotEmpty,
-}
+@JsonEnum(fieldRename: FieldRename.snake)
+enum NotionFilesFilterType { isEmpty, isNotEmpty }
 
 @JsonEnum(fieldRename: FieldRename.snake)
 enum NotionMultiSelectFilterType {
@@ -50,20 +45,10 @@ enum NotionNumberFilterType {
 }
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum NotionPeopleFilterType {
-  contains,
-  doesNotContain,
-  isEmpty,
-  isNotEmpty,
-}
+enum NotionPeopleFilterType { contains, doesNotContain, isEmpty, isNotEmpty }
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum NotionRelationFilterType {
-  contains,
-  doesNotContain,
-  isEmpty,
-  isNotEmpty,
-}
+enum NotionRelationFilterType { contains, doesNotContain, isEmpty, isNotEmpty }
 
 @JsonEnum(fieldRename: FieldRename.snake)
 enum NotionRichTextFilterType {
@@ -78,27 +63,13 @@ enum NotionRichTextFilterType {
 }
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum NotionRollupArrayFilterType {
-  any,
-  every,
-  none,
-}
+enum NotionRollupArrayFilterType { any, every, none }
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum NotionSelectFilterType {
-  equals,
-  doesNotEqual,
-  isEmpty,
-  isNotEmpty,
-}
+enum NotionSelectFilterType { equals, doesNotEqual, isEmpty, isNotEmpty }
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum NotionStatusFilterType {
-  equals,
-  doesNotEqual,
-  isEmpty,
-  isNotEmpty,
-}
+enum NotionStatusFilterType { equals, doesNotEqual, isEmpty, isNotEmpty }
 
 @JsonEnum(fieldRename: FieldRename.snake)
 enum NotionIdFilterType {
