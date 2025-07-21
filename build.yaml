@@ -17,3 +17,7 @@ targets:
           explicit_to_json: true
           checked: true
           include_if_null: false
+      retrofit_generator:
+        generate_for:
+          include:
+            - lib/src/notion_api_client_base.dart
