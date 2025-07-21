@@ -11,7 +11,7 @@ import '../notion_database_property/notion_database_property.dart';
 part 'notion_page_or_database.freezed.dart';
 part 'notion_page_or_database.g.dart';
 
-@freezed
+@Freezed(unionKey: 'object')
 sealed class NotionPageOrDatabase with _$NotionPageOrDatabase {
   const factory NotionPageOrDatabase.page({
     String? id,

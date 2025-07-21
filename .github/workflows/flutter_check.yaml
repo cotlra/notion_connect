@@ -12,6 +12,8 @@ jobs:
   test:
     name: Run CI
     runs-on: ubuntu-latest
+    env:
+      API_KEY: ${{ secrets.NOTION_API_KEY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,5 +31,5 @@ jobs:
         run: flutter pub get
       - name: Run linter
         run: flutter analyze
-#      - name: Run tests
-#        run: flutter test
+      - name: Run tests
+        run: flutter test --dart-define=API_KEY=$API_KEY

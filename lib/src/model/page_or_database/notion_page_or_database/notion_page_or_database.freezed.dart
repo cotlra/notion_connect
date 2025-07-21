@@ -14,7 +14,7 @@ T _$identity<T>(T value) => value;
 NotionPageOrDatabase _$NotionPageOrDatabaseFromJson(
   Map<String, dynamic> json
 ) {
-        switch (json['type']) {
+        switch (json['object']) {
                   case 'page':
           return NotionPage.fromJson(
             json
@@ -27,9 +27,9 @@ NotionPageOrDatabase _$NotionPageOrDatabaseFromJson(
           default:
             throw CheckedFromJsonException(
   json,
-  'type',
+  'object',
   'NotionPageOrDatabase',
-  'Invalid union type "${json['type']}"!'
+  'Invalid union type "${json['object']}"!'
 );
         }
       
