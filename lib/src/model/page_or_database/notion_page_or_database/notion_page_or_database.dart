@@ -55,6 +55,7 @@ sealed class NotionPageOrDatabase with _$NotionPageOrDatabase {
 @freezed
 abstract class NotionPage extends NotionPageOrDatabase with _$NotionPage {
   const factory NotionPage({
+    @Default('page') String object,
     String? id,
     DateTime? createdTime,
     NotionUser? createdBy,
@@ -79,6 +80,7 @@ abstract class NotionPage extends NotionPageOrDatabase with _$NotionPage {
 abstract class NotionDatabase extends NotionPageOrDatabase
     with _$NotionDatabase {
   const factory NotionDatabase({
+    @Default('database') String object,
     String? id,
     DateTime? createdTime,
     NotionUser? createdBy,

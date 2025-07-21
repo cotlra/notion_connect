@@ -305,7 +305,7 @@ return database(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 /// @nodoc
 mixin _$NotionPage {
 
- String? get id; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; bool? get archived; bool? get inTrash; NotionIcon? get icon; NotionFile? get cover; Map<String, NotionPageProperty>? get properties; NotionParent? get parent; String? get url; String? get publicUrl;
+ String get object; String? get id; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; bool? get archived; bool? get inTrash; NotionIcon? get icon; NotionFile? get cover; Map<String, NotionPageProperty>? get properties; NotionParent? get parent; String? get url; String? get publicUrl;
 /// Create a copy of NotionPage
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -318,16 +318,16 @@ $NotionPageCopyWith<NotionPage> get copyWith => _$NotionPageCopyWithImpl<NotionP
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionPage&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other.properties, properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionPage&&(identical(other.object, object) || other.object == object)&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other.properties, properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,icon,cover,const DeepCollectionEquality().hash(properties),parent,url,publicUrl);
+int get hashCode => Object.hash(runtimeType,object,id,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,icon,cover,const DeepCollectionEquality().hash(properties),parent,url,publicUrl);
 
 @override
 String toString() {
-  return 'NotionPage(id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, publicUrl: $publicUrl)';
+  return 'NotionPage(object: $object, id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, publicUrl: $publicUrl)';
 }
 
 
@@ -338,7 +338,7 @@ abstract mixin class $NotionPageCopyWith<$Res> implements $NotionPageOrDatabaseC
   factory $NotionPageCopyWith(NotionPage value, $Res Function(NotionPage) _then) = _$NotionPageCopyWithImpl;
 @useResult
 $Res call({
- String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, NotionIcon? icon, NotionFile? cover, Map<String, NotionPageProperty>? properties, NotionParent? parent, String? url, String? publicUrl
+ String object, String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, NotionIcon? icon, NotionFile? cover, Map<String, NotionPageProperty>? properties, NotionParent? parent, String? url, String? publicUrl
 });
 
 
@@ -355,9 +355,10 @@ class _$NotionPageCopyWithImpl<$Res>
 
 /// Create a copy of NotionPage
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? publicUrl = freezed,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? object = null,Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? publicUrl = freezed,}) {
   return _then(_self.copyWith(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+object: null == object ? _self.object : object // ignore: cast_nullable_to_non_nullable
+as String,id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
 as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
 as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
@@ -515,10 +516,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String object,  String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _NotionPage() when $default != null:
-return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case _:
+return $default(_that.object,_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case _:
   return orElse();
 
 }
@@ -536,10 +537,10 @@ return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String object,  String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)  $default,) {final _that = this;
 switch (_that) {
 case _NotionPage():
-return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case _:
+return $default(_that.object,_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -556,10 +557,10 @@ return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String object,  String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  bool? archived,  bool? inTrash,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionPageProperty>? properties,  NotionParent? parent,  String? url,  String? publicUrl)?  $default,) {final _that = this;
 switch (_that) {
 case _NotionPage() when $default != null:
-return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case _:
+return $default(_that.object,_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.archived,_that.inTrash,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.publicUrl);case _:
   return null;
 
 }
@@ -571,9 +572,10 @@ return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 @JsonSerializable()
 
 class _NotionPage extends NotionPage {
-  const _NotionPage({this.id, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.icon, this.cover, final  Map<String, NotionPageProperty>? properties, this.parent, this.url, this.publicUrl}): _properties = properties,super._();
+  const _NotionPage({this.object = 'page', this.id, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, this.archived, this.inTrash, this.icon, this.cover, final  Map<String, NotionPageProperty>? properties, this.parent, this.url, this.publicUrl}): _properties = properties,super._();
   factory _NotionPage.fromJson(Map<String, dynamic> json) => _$NotionPageFromJson(json);
 
+@override@JsonKey() final  String object;
 @override final  String? id;
 @override final  DateTime? createdTime;
 @override final  NotionUser? createdBy;
@@ -609,16 +611,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionPage&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other._properties, _properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionPage&&(identical(other.object, object) || other.object == object)&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other._properties, _properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,icon,cover,const DeepCollectionEquality().hash(_properties),parent,url,publicUrl);
+int get hashCode => Object.hash(runtimeType,object,id,createdTime,createdBy,lastEditedTime,lastEditedBy,archived,inTrash,icon,cover,const DeepCollectionEquality().hash(_properties),parent,url,publicUrl);
 
 @override
 String toString() {
-  return 'NotionPage(id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, publicUrl: $publicUrl)';
+  return 'NotionPage(object: $object, id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, archived: $archived, inTrash: $inTrash, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, publicUrl: $publicUrl)';
 }
 
 
@@ -629,7 +631,7 @@ abstract mixin class _$NotionPageCopyWith<$Res> implements $NotionPageCopyWith<$
   factory _$NotionPageCopyWith(_NotionPage value, $Res Function(_NotionPage) _then) = __$NotionPageCopyWithImpl;
 @override @useResult
 $Res call({
- String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, NotionIcon? icon, NotionFile? cover, Map<String, NotionPageProperty>? properties, NotionParent? parent, String? url, String? publicUrl
+ String object, String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, bool? archived, bool? inTrash, NotionIcon? icon, NotionFile? cover, Map<String, NotionPageProperty>? properties, NotionParent? parent, String? url, String? publicUrl
 });
 
 
@@ -646,9 +648,10 @@ class __$NotionPageCopyWithImpl<$Res>
 
 /// Create a copy of NotionPage
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? publicUrl = freezed,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? object = null,Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? publicUrl = freezed,}) {
   return _then(_NotionPage(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+object: null == object ? _self.object : object // ignore: cast_nullable_to_non_nullable
+as String,id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
 as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
 as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
@@ -732,7 +735,7 @@ $NotionParentCopyWith<$Res>? get parent {
 /// @nodoc
 mixin _$NotionDatabase {
 
- String? get id; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; List<NotionRichText>? get title; List<NotionRichText>? get description; NotionIcon? get icon; NotionFile? get cover; Map<String, NotionDatabaseProperty>? get properties; NotionParent? get parent; String? get url; bool? get archived; bool? get inTrash; bool? get isInline; String? get publicUrl;
+ String get object; String? get id; DateTime? get createdTime; NotionUser? get createdBy; DateTime? get lastEditedTime; NotionUser? get lastEditedBy; List<NotionRichText>? get title; List<NotionRichText>? get description; NotionIcon? get icon; NotionFile? get cover; Map<String, NotionDatabaseProperty>? get properties; NotionParent? get parent; String? get url; bool? get archived; bool? get inTrash; bool? get isInline; String? get publicUrl;
 /// Create a copy of NotionDatabase
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -745,16 +748,16 @@ $NotionDatabaseCopyWith<NotionDatabase> get copyWith => _$NotionDatabaseCopyWith
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabase&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&const DeepCollectionEquality().equals(other.title, title)&&const DeepCollectionEquality().equals(other.description, description)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other.properties, properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.isInline, isInline) || other.isInline == isInline)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is NotionDatabase&&(identical(other.object, object) || other.object == object)&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&const DeepCollectionEquality().equals(other.title, title)&&const DeepCollectionEquality().equals(other.description, description)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other.properties, properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.isInline, isInline) || other.isInline == isInline)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,createdTime,createdBy,lastEditedTime,lastEditedBy,const DeepCollectionEquality().hash(title),const DeepCollectionEquality().hash(description),icon,cover,const DeepCollectionEquality().hash(properties),parent,url,archived,inTrash,isInline,publicUrl);
+int get hashCode => Object.hash(runtimeType,object,id,createdTime,createdBy,lastEditedTime,lastEditedBy,const DeepCollectionEquality().hash(title),const DeepCollectionEquality().hash(description),icon,cover,const DeepCollectionEquality().hash(properties),parent,url,archived,inTrash,isInline,publicUrl);
 
 @override
 String toString() {
-  return 'NotionDatabase(id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, title: $title, description: $description, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, archived: $archived, inTrash: $inTrash, isInline: $isInline, publicUrl: $publicUrl)';
+  return 'NotionDatabase(object: $object, id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, title: $title, description: $description, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, archived: $archived, inTrash: $inTrash, isInline: $isInline, publicUrl: $publicUrl)';
 }
 
 
@@ -765,7 +768,7 @@ abstract mixin class $NotionDatabaseCopyWith<$Res> implements $NotionPageOrDatab
   factory $NotionDatabaseCopyWith(NotionDatabase value, $Res Function(NotionDatabase) _then) = _$NotionDatabaseCopyWithImpl;
 @useResult
 $Res call({
- String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, List<NotionRichText>? title, List<NotionRichText>? description, NotionIcon? icon, NotionFile? cover, Map<String, NotionDatabaseProperty>? properties, NotionParent? parent, String? url, bool? archived, bool? inTrash, bool? isInline, String? publicUrl
+ String object, String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, List<NotionRichText>? title, List<NotionRichText>? description, NotionIcon? icon, NotionFile? cover, Map<String, NotionDatabaseProperty>? properties, NotionParent? parent, String? url, bool? archived, bool? inTrash, bool? isInline, String? publicUrl
 });
 
 
@@ -782,9 +785,10 @@ class _$NotionDatabaseCopyWithImpl<$Res>
 
 /// Create a copy of NotionDatabase
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? title = freezed,Object? description = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? isInline = freezed,Object? publicUrl = freezed,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? object = null,Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? title = freezed,Object? description = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? isInline = freezed,Object? publicUrl = freezed,}) {
   return _then(_self.copyWith(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+object: null == object ? _self.object : object // ignore: cast_nullable_to_non_nullable
+as String,id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
 as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
 as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable
@@ -945,10 +949,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String object,  String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _NotionDatabase() when $default != null:
-return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
+return $default(_that.object,_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
   return orElse();
 
 }
@@ -966,10 +970,10 @@ return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String object,  String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)  $default,) {final _that = this;
 switch (_that) {
 case _NotionDatabase():
-return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
+return $default(_that.object,_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -986,10 +990,10 @@ return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String object,  String? id,  DateTime? createdTime,  NotionUser? createdBy,  DateTime? lastEditedTime,  NotionUser? lastEditedBy,  List<NotionRichText>? title,  List<NotionRichText>? description,  NotionIcon? icon,  NotionFile? cover,  Map<String, NotionDatabaseProperty>? properties,  NotionParent? parent,  String? url,  bool? archived,  bool? inTrash,  bool? isInline,  String? publicUrl)?  $default,) {final _that = this;
 switch (_that) {
 case _NotionDatabase() when $default != null:
-return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
+return $default(_that.object,_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,_that.lastEditedBy,_that.title,_that.description,_that.icon,_that.cover,_that.properties,_that.parent,_that.url,_that.archived,_that.inTrash,_that.isInline,_that.publicUrl);case _:
   return null;
 
 }
@@ -1001,9 +1005,10 @@ return $default(_that.id,_that.createdTime,_that.createdBy,_that.lastEditedTime,
 @JsonSerializable()
 
 class _NotionDatabase extends NotionDatabase {
-  const _NotionDatabase({this.id, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, final  List<NotionRichText>? title, final  List<NotionRichText>? description, this.icon, this.cover, final  Map<String, NotionDatabaseProperty>? properties, this.parent, this.url, this.archived, this.inTrash, this.isInline, this.publicUrl}): _title = title,_description = description,_properties = properties,super._();
+  const _NotionDatabase({this.object = 'database', this.id, this.createdTime, this.createdBy, this.lastEditedTime, this.lastEditedBy, final  List<NotionRichText>? title, final  List<NotionRichText>? description, this.icon, this.cover, final  Map<String, NotionDatabaseProperty>? properties, this.parent, this.url, this.archived, this.inTrash, this.isInline, this.publicUrl}): _title = title,_description = description,_properties = properties,super._();
   factory _NotionDatabase.fromJson(Map<String, dynamic> json) => _$NotionDatabaseFromJson(json);
 
+@override@JsonKey() final  String object;
 @override final  String? id;
 @override final  DateTime? createdTime;
 @override final  NotionUser? createdBy;
@@ -1058,16 +1063,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabase&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&const DeepCollectionEquality().equals(other._title, _title)&&const DeepCollectionEquality().equals(other._description, _description)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other._properties, _properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.isInline, isInline) || other.isInline == isInline)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _NotionDatabase&&(identical(other.object, object) || other.object == object)&&(identical(other.id, id) || other.id == id)&&(identical(other.createdTime, createdTime) || other.createdTime == createdTime)&&(identical(other.createdBy, createdBy) || other.createdBy == createdBy)&&(identical(other.lastEditedTime, lastEditedTime) || other.lastEditedTime == lastEditedTime)&&(identical(other.lastEditedBy, lastEditedBy) || other.lastEditedBy == lastEditedBy)&&const DeepCollectionEquality().equals(other._title, _title)&&const DeepCollectionEquality().equals(other._description, _description)&&(identical(other.icon, icon) || other.icon == icon)&&(identical(other.cover, cover) || other.cover == cover)&&const DeepCollectionEquality().equals(other._properties, _properties)&&(identical(other.parent, parent) || other.parent == parent)&&(identical(other.url, url) || other.url == url)&&(identical(other.archived, archived) || other.archived == archived)&&(identical(other.inTrash, inTrash) || other.inTrash == inTrash)&&(identical(other.isInline, isInline) || other.isInline == isInline)&&(identical(other.publicUrl, publicUrl) || other.publicUrl == publicUrl));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,createdTime,createdBy,lastEditedTime,lastEditedBy,const DeepCollectionEquality().hash(_title),const DeepCollectionEquality().hash(_description),icon,cover,const DeepCollectionEquality().hash(_properties),parent,url,archived,inTrash,isInline,publicUrl);
+int get hashCode => Object.hash(runtimeType,object,id,createdTime,createdBy,lastEditedTime,lastEditedBy,const DeepCollectionEquality().hash(_title),const DeepCollectionEquality().hash(_description),icon,cover,const DeepCollectionEquality().hash(_properties),parent,url,archived,inTrash,isInline,publicUrl);
 
 @override
 String toString() {
-  return 'NotionDatabase(id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, title: $title, description: $description, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, archived: $archived, inTrash: $inTrash, isInline: $isInline, publicUrl: $publicUrl)';
+  return 'NotionDatabase(object: $object, id: $id, createdTime: $createdTime, createdBy: $createdBy, lastEditedTime: $lastEditedTime, lastEditedBy: $lastEditedBy, title: $title, description: $description, icon: $icon, cover: $cover, properties: $properties, parent: $parent, url: $url, archived: $archived, inTrash: $inTrash, isInline: $isInline, publicUrl: $publicUrl)';
 }
 
 
@@ -1078,7 +1083,7 @@ abstract mixin class _$NotionDatabaseCopyWith<$Res> implements $NotionDatabaseCo
   factory _$NotionDatabaseCopyWith(_NotionDatabase value, $Res Function(_NotionDatabase) _then) = __$NotionDatabaseCopyWithImpl;
 @override @useResult
 $Res call({
- String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, List<NotionRichText>? title, List<NotionRichText>? description, NotionIcon? icon, NotionFile? cover, Map<String, NotionDatabaseProperty>? properties, NotionParent? parent, String? url, bool? archived, bool? inTrash, bool? isInline, String? publicUrl
+ String object, String? id, DateTime? createdTime, NotionUser? createdBy, DateTime? lastEditedTime, NotionUser? lastEditedBy, List<NotionRichText>? title, List<NotionRichText>? description, NotionIcon? icon, NotionFile? cover, Map<String, NotionDatabaseProperty>? properties, NotionParent? parent, String? url, bool? archived, bool? inTrash, bool? isInline, String? publicUrl
 });
 
 
@@ -1095,9 +1100,10 @@ class __$NotionDatabaseCopyWithImpl<$Res>
 
 /// Create a copy of NotionDatabase
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? title = freezed,Object? description = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? isInline = freezed,Object? publicUrl = freezed,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? object = null,Object? id = freezed,Object? createdTime = freezed,Object? createdBy = freezed,Object? lastEditedTime = freezed,Object? lastEditedBy = freezed,Object? title = freezed,Object? description = freezed,Object? icon = freezed,Object? cover = freezed,Object? properties = freezed,Object? parent = freezed,Object? url = freezed,Object? archived = freezed,Object? inTrash = freezed,Object? isInline = freezed,Object? publicUrl = freezed,}) {
   return _then(_NotionDatabase(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+object: null == object ? _self.object : object // ignore: cast_nullable_to_non_nullable
+as String,id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String?,createdTime: freezed == createdTime ? _self.createdTime : createdTime // ignore: cast_nullable_to_non_nullable
 as DateTime?,createdBy: freezed == createdBy ? _self.createdBy : createdBy // ignore: cast_nullable_to_non_nullable
 as NotionUser?,lastEditedTime: freezed == lastEditedTime ? _self.lastEditedTime : lastEditedTime // ignore: cast_nullable_to_non_nullable

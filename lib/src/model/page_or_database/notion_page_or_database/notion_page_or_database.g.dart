@@ -11,6 +11,7 @@ _NotionPage _$NotionPageFromJson(Map<String, dynamic> json) => $checkedCreate(
   json,
   ($checkedConvert) {
     final val = _NotionPage(
+      object: $checkedConvert('object', (v) => v as String? ?? 'page'),
       id: $checkedConvert('id', (v) => v as String?),
       createdTime: $checkedConvert(
         'created_time',
@@ -74,6 +75,7 @@ _NotionPage _$NotionPageFromJson(Map<String, dynamic> json) => $checkedCreate(
 Map<String, dynamic> _$NotionPageToJson(
   _NotionPage instance,
 ) => <String, dynamic>{
+  'object': instance.object,
   'id': ?instance.id,
   'created_time': ?instance.createdTime?.toIso8601String(),
   'created_by': ?instance.createdBy?.toJson(),
@@ -96,6 +98,7 @@ _NotionDatabase _$NotionDatabaseFromJson(
   json,
   ($checkedConvert) {
     final val = _NotionDatabase(
+      object: $checkedConvert('object', (v) => v as String? ?? 'database'),
       id: $checkedConvert('id', (v) => v as String?),
       createdTime: $checkedConvert(
         'created_time',
@@ -173,6 +176,7 @@ _NotionDatabase _$NotionDatabaseFromJson(
 Map<String, dynamic> _$NotionDatabaseToJson(
   _NotionDatabase instance,
 ) => <String, dynamic>{
+  'object': instance.object,
   'id': ?instance.id,
   'created_time': ?instance.createdTime?.toIso8601String(),
   'created_by': ?instance.createdBy?.toJson(),
